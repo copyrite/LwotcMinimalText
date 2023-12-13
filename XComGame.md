@@ -10,95 +10,53 @@ Once per turn, when you kill an enemy, you gain a movement action.
 ## Run and Gun
 Free action: Gain a non-movement action.
 
-Adaptive Aim
-Adaptive Aim
-When Overdrive is active, Standard Shots do not incur recoil penalties.
+## Adaptive Aim
+Aim penalty from Overdrive is 0.
 
-    Adaptive Aim eliminates the -15% Aim penalty for consecutive Standard Shots when Overdrive is active.
+## Aggression
++5 crit per enemy you see, up to +30.
+* Enemies in squadsight apply. (Do you need specific perks for this to work?)
 
-Available for: SPARK (Aspirant)
-Aggression
-Aggression
-Gain +5 critical chance for each enemy you can see, up to a maximum of 30.
+## Aid Protocol
+Use your GREMLIN to grant an ally bonus defense until the start of your next turn.
+* 1 action. Does not end turn.
+* Does not break concealment.
+* Bonus improves with GREMLIN tiers.
 
-    Gain +5 critical chance for each enemy you can see, up to a maximum of 30.
-    Units visible at squadsight ranges do confer bonus.
+## Aim
++20 Aim and +20 Crit to your next shot after you Hunker Down.
 
-Available for: Assault (SSgt), Grenadier (XCOM Tier 2), Gunner (XCOM Tier 3), Ranger (Sgt), Sharpshooter (TSgt), Shinobi (XCOM Tier 3), Specialist (XCOM Tier 3), Technical (XCOM Tier 2), Templar (XCOM Tier 2)
-Aid Protocol
-Aid Protocol
-Command your GREMLIN to move to a friendly target. It grants that target a bonus to Defense until the start of the next player turn.
+## Aim Assist
++15 Aim and +15 Crit against holotargeted units.
+* The debuffs from Holotargeter (Weapon) and Holo Targeting (perk) both work.
 
-    Aid Protocol, if used with your first action, will not end your turn.
-    As Aid Protocol takes effect immediately, it can be used to defend against reaction fire from enemies.
-    More advanced GREMLIN models will increase the defensive bonus granted by Aid Protocol.
+## Airdrop
+Use your GREMLIN to grant an explosive grenade to an ally.
+* Grants a Frag Grenade. If the Proving Ground project "Plasma Grenades" is complete, grants a Plasma Grenade instead.
+* 1 action. Does not end turn.
+* Does not break concealment.
+* Charges per mission: 2.
 
-Available for: Specialist (Squaddie)
-Aim
-Aim
-Hunker Down now confers +20 Aim and +20 Crit to the first shot on the following turn.
+## Alpha Mike Foxtrot
++4 to primary weapon damage. +2 to primary weapon critical damage.
 
-    The bonus granted by Aim can apply to any weapon shot.
+## Amplify
+Free action, 1 Focus\
+Debuff a target to take {% AMPLIFY_BONUS_PCT %}% more damage from the next {% AMPLIFY_NUM_ATTACKS %} attacks.
+* Cooldown: {% SelfCooldown_LW %}
 
-Available for: Sharpshooter (XCOM Tier 1), Technical (XCOM Tier 1), Reaper (XCOM Tier 1)
-Aim Assist
-Aim Assist
-Gain additional +15 aim and +15 crit against holotargeted units.
+## Arc Pulser
+Your Arc Thrower can target and damage robotic enemies. -{% ARC_PULSER_ %} to target's Hack Defense on hit.
+* 1 action. Ends turn.
+* {% SelfCooldown_LW %}.
+* Damage improves with Arc Thrower tier.
 
-Notes: Either the Holotargeter or the Holo Targeting perk works for this perk.
-
-Available for: Assault (XCOM Tier 1), Sharpshooter (XCOM Tier 3), Shinobi (XCOM Tier 1), Reaper (XCOM Tier 2), Skirmisher (XCOM Tier 1)
-Airdrop
-Airdrop
-The GREMLIN grants an explosive grenade to the targeted ally. Usable 2 time(s) per mission.
-
-    Grants an explosive grenade to the targeted ally.
-    Airdrop initially confers a frag grenade, but will grant a plasma grenade once researched.
-    Activating Airdrop uses one action and does not end the soldier's turn.
-    Activating Airdrop does not break concealment.
-    Usable 2 time(s) per mission.
-
-Available for: Specialist (SSgt)
-Alpha Mike Foxtrot
-Alpha Mike Foxtrot
-You do 4 additional points of base damage and 2 additional point(s) of bonus critical damage with your primary weapon.
-
-Available for: Sharpshooter (MSgt)
-Amplify
-Amplify
-Mark a single target with a Psionic lens, causing them to take an additional 35% damage from the next 3 attacks. Costs 1 Focus, free action.
-
-    Amplify will last for three damage instances.
-    Amplify is a free action.
-    Has a 2 turn cooldown.
-
-Available for: Templar (Acolyte)
-Arc Pulser
-Arc Pulser
-Your Arc Thrower now damages mechanical enemies and reduces their defense against hacking attempts.
-
-    The Arc Pulser is effective anywhere in the soldier's sight range.
-    Requires one action and ends the soldier's turn when fired.
-    Can use every other turn.
-    Damage to mechanical units increases as arc thrower technology improves.
-    Reduces enemy hack defense by 20.
-
-Available for: Assault (Cpl)
-Arsenal
-Arsenal
+## Arsenal
 The BIT can equip and fire heavy weapons.
 
-    Arsenal allows the SPARK to equip heavy weapons in their loadout.
+## Apex Predator
+On primary weapon crit, the target and enemies in a {% APEX_PREDATOR_RADIUS %} around it have a {% APEX_PREDATOR_PANIC_CHANCE %}% a chance to panic.
 
-Available for: SPARK (Squire)
-Apex Predator
-Apex Predator
-Critical hits with your primary weapon have a chance to panic the target and nearby enemies.
-
-    Critical hits with your primary weapon have a chance to panic the target and nearby (within 4 tiles) enemies.
-
-Available for: Grenadier (XCOM Tier 3), Gunner (XCOM Tier 4), Sharpshooter (XCOM Tier 4), Technical (XCOM Tier 3), Reaper (XCOM Tier 4)
-Apotheosis
 Apotheosis
 Become a god, massively increasing your dodge, Rend damage and mobility. Requires a minimum of 3 focus and consumes it all.
 
@@ -1426,12 +1384,9 @@ Gain bonus aim and crit chance for each point of focus the Templar has.
 Available for: Templar (Disciple)
 Overdrive
 Overdrive
-Take three actions this turn, and no action is turn-ending. Multiple Standard Shots incur a small recoil penalty.
+Gain an action point. You have -15 Aim per shot fired during Overdrive until the start of your next turn.
+Cooldown: {% SelfCooldown_LW %}
 
-    A recoil penalty of -15% Aim is applied after each Standard Shot while Overdrive is active.
-    Overdrive has no cost to activate, but has a 5 turn cooldown.
-
-Available for: SPARK (Squire)
 Overkill
 Overkill
 Your ranged attacks deal +2 more damage to units at 50% HP or less.
