@@ -91,7 +91,6 @@ After each enemy in line of sight takes a turn, take an action after their turn 
     Turns from the Lost and enemy pod reveals do not grant the immediate action.
     Abilities that refund action points, like Implacable and Hit and Run, will not work during Battlelord.
 
-Available for: Skirmisher (MSgt)
 Biggest Booms
 Biggest Booms
 Your grenades and standard rockets can inflict critical damage (50% chance for +3 damage).
@@ -101,7 +100,6 @@ Your grenades and standard rockets can inflict critical damage (50% chance for +
     Does not apply to non-damaging grenades or the concussion rocket or Bunker Buster abilities.
     Grenade crits will grant +1 damage to ongoing damaging effects such as fire.
 
-Available for: Grenadier (TSgt), Technical (Cpl)
 
 ## Blademaster
 +1 to melee damage. +10 aim to melee attacks.
@@ -114,7 +112,6 @@ Free melee attacks on any enemies that enter, exit or attack from melee range on
     If an enemy does not begin their turn in an adjacent tile, then Bladestorm will trigger when that enemy moves into melee range.
     Bladestorm does not trigger on your own turn.
 
-Available for: Gunner (XCOM Tier 2), Shinobi (SSgt), Templar (Magus)
 Blinding Protocol
 Blinding Protocol
 Send the Gremlin to deploy a small flashbang on an enemy target, disorienting all enemy units within a small radius (reducing their Aim by 20 and Mobility by 6).
@@ -122,7 +119,6 @@ Send the Gremlin to deploy a small flashbang on an enemy target, disorienting al
     Works with Squadsight.
     Blinding Protocol has a 4 turn cooldown and ends the turn.
 
-Available for: Specialist (XCOM Tier 2)
 Blood Trail
 Blood Trail
 Shots deal +2 damage and ignore target's Dodge by -40 if the target has been wounded this turn.
@@ -131,7 +127,6 @@ Shots deal +2 damage and ignore target's Dodge by -40 if the target has been wou
     Plan ahead with squadmate attacks to take full advantage of Blood Trail.
     Works with all weapons, including grenades.
 
-Available for: Reaper (LCpl)
 Bluescreen Bombs
 Bluescreen Bombs
 Your flashbang grenades now disorient robotic units and reduce their resistance to hacking.
@@ -139,12 +134,10 @@ Your flashbang grenades now disorient robotic units and reduce their resistance 
     Your flashbang grenades now disorient robotic units.
     Your flashbang grenades also reduce robotic hack defense by 25.
 
-Available for: Grenadier (Sgt)
 Bluescreen Knives
 Bluescreen Knives
 Throwing knives gain +2 pierce and will disorient robotic units.
 
-Available for: Reaper (SSgt)
 Body Shield
 Body Shield
 A targeted enemy receives -20 aim and -50 critical chance against the soldier.
@@ -153,7 +146,6 @@ A targeted enemy receives -20 aim and -50 critical chance against the soldier.
     This is a free action.
     Body Shield has a 2 turn cooldown.
 
-Available for: SPARK (Knight)
 Bombard
 Bombard
 Launch the BIT to any visible location where it releases a powerful explosive blast. Advanced BITs do more damage.
@@ -161,7 +153,6 @@ Launch the BIT to any visible location where it releases a powerful explosive bl
     Bombard can be fired at any location within squadsight.
     Upgrading your BIT will lead to more Bombard damage.
 
-Available for: SPARK (Paladin)
 Bombardier
 Bombardier
 You may throw or launch grenades two additional tiles.
@@ -169,7 +160,6 @@ You may throw or launch grenades two additional tiles.
     Your grenades have 2 tiles extra range.
     This includes both launched and thrown grenades.
 
-Available for: Grenadier (GSgt)
 Boosted Cores
 Boosted Cores
 Explosive grenades and any damage over time effects inflicted by grenades do one additional damage.
@@ -177,7 +167,6 @@ Explosive grenades and any damage over time effects inflicted by grenades do one
     Your grenades have extra explosives and do one additional damage but require special training to handle.
     Damage over time effects applied by grenades such as poison will also do one additional damage.
 
-Available for: Grenadier (Sgt), Technical (XCOM Tier 2)
 Both Barrels
 Both Barrels
 Fire both barrels of sawed-off shotgun at nearby enemy, doing double damage.
@@ -186,14 +175,12 @@ Fire both barrels of sawed-off shotgun at nearby enemy, doing double damage.
     Uses 2 ammo.
     Uses one action.
 
-Available for: Ranger (Squaddie)
 Brawler
 Brawler
 Take 35% less damage against attacks within four tiles.
 
     Take 35% less damage against attacks within four tiles.
 
-Available for: Templar (Adept)
 Bring 'Em On
 Bring 'Em On
 Gain +1 damage on critical hits for every two enemies you can see, up to a maximum of +8. Works for the soldier's primary weapon and explosives.
@@ -202,14 +189,12 @@ Gain +1 damage on critical hits for every two enemies you can see, up to a maxim
     Units visible at squadsight ranges do confer bonus.
     Applies to damage from the soldier's primary weapon and, if the soldier has Biggest Booms, explosives (damaging grenades, rockets, etc.).
 
-Available for: Assault (GSgt), Grenadier (XCOM Tier 1), Gunner (XCOM Tier 2), Ranger (TSgt), Shinobi (XCOM Tier 2), Specialist (XCOM Tier 2), Technical (XCOM Tier 1), Templar (XCOM Tier 2)
 Brutality
 Brutality
 Killing organic enemies with your sawed-off shotgun have a 50% chance to panic other organic enemies within 10 tiles of the target.
 
     Use Brutality as a crowd-control tool to allow the soldier to move forward more aggressively and combine it with the Ruthless ability to increase your killing power.
 
-Available for: Ranger (XCOM Tier 3)
 Bulwark
 Bulwark
 Gain a bonus point of Armor, and always provide high cover to all adjacent squadmates.
@@ -217,7 +202,6 @@ Gain a bonus point of Armor, and always provide high cover to all adjacent squad
     Bulwark adds one point of Armor.
     Any squadmate standing adjacent to the SPARK will gain the high cover Defense bonus.
 
-Available for: SPARK (Cavalier)
 Bunker Buster
 Bunker Buster
 Fire a special rocket that destroys buildings and other objects in the environment.
@@ -225,7 +209,6 @@ Fire a special rocket that destroys buildings and other objects in the environme
     Fire a special rocket with a large area of effect that does moderate damage to enemies but huge damage to buildings, vehicles and other objects in the environment.
     Requires both actions and usable only once per mission.
 
-Available for: Technical (MSgt)
 Burnout
 Burnout
 Activating your Flamethrower leaves a small smoke cloud around your position, providing a defensive bonus.
@@ -233,7 +216,6 @@ Activating your Flamethrower leaves a small smoke cloud around your position, pr
     When fired, your Flamethrower leaves a small smoke cloud around your position, providing a +20 defensive bonus to anyone within.
     Area of effect radius of smoke cloud is 1.5 tiles.
 
-Available for: Technical (Sgt)
 Capacitor Discharge
 Capacitor Discharge
 Send the GREMLIN to a location where it emits a substantial electric discharge, damaging and potentially stunning all nearby units. Robotic units take more damage.
@@ -241,14 +223,12 @@ Send the GREMLIN to a location where it emits a substantial electric discharge, 
     Capacitor Discharge has one charge per mission.
     Capacitor Discharge will deal more damage as you upgrade your GREMLIN.
 
-Available for: Specialist (MSgt)
 Center Mass
 Center Mass
 You do one additional point of base damage when using guns.
 
     You do one additional point of base damage with your primary weapon, pistols or a sawed-off shotgun.
 
-Available for: Grenadier (Cpl), Gunner (LCpl), Ranger (Sgt), Sharpshooter (Cpl), Shinobi (XCOM Tier 2), Reaper (XCOM Tier 3), Templar (XCOM Tier 3)
 Chain Lightning
 Chain Lightning
 Fire your Arc Thrower at a target that is capable of being stunned and bounces up to 3 other targets within 6 tiles.
@@ -258,7 +238,6 @@ Fire your Arc Thrower at a target that is capable of being stunned and bounces u
     Chain Lightning has a 4 turn cooldown.
     Cannot be used from concealment.
 
-Available for: Assault (MSgt)
 Chain Shot
 Chain Shot
 Take a shot with an aim penalty of 10. If you hit the target, you take another shot on the target automatically.
@@ -267,7 +246,6 @@ Take a shot with an aim penalty of 10. If you hit the target, you take another s
     Chain Shot has a 4 turn cooldown.
     Chain Shot can be devastating against non-cover enemies, or when augmented with aim bonuses.
 
-Available for: Grenadier (TSgt), Gunner (SSgt), Sharpshooter (XCOM Tier 3), Reaper (XCOM Tier 4), Skirmisher (Sgt)
 Channel
 Channel
 When an enemy dies, it may leave behind Psionic energy the Templar can collect to raise their Focus level.
@@ -275,7 +253,6 @@ When an enemy dies, it may leave behind Psionic energy the Templar can collect t
     Enemies have a 20% chance to drop Psionic loot.
     Psionic enemies have a 50% chance to drop Psionic loot.
 
-Available for: Templar (Mystic)
 Channeling Field
 Channeling Field
 Every time you are targeted, part of the energy is channeled to your weapon. This energy is unleashed with your next Standard Shot.
@@ -283,7 +260,6 @@ Every time you are targeted, part of the energy is channeled to your weapon. Thi
     Each point of energy channeled by Channeling Field increases the damage of the next weapon attack by 1.
     The energy stored by channeling field is expended even if the next shot misses.
 
-Available for: SPARK (Paladin)
 Cheap Shot
 Cheap Shot
 Once per turn, gain a movement action after shooting with your primary weapon at a unit that was damaged this turn. Cannot trigger on the same turn as Knife Encounters.
@@ -292,7 +268,6 @@ Once per turn, gain a movement action after shooting with your primary weapon at
     Works for Light 'em Up, Chain Shot and Banish in addition to the standard shot.
     The movement action can be used to enter Shadow if it's off cooldown.
 
-Available for: Reaper (SSgt)
 Close and Personal
 Close and Personal
 Confers +30 critical chance against adjacent targets. The bonus declines with distance from the target.
@@ -300,7 +275,6 @@ Confers +30 critical chance against adjacent targets. The bonus declines with di
     Confers +30 critical chance against adjacent targets.
     Bonus reduced by 5 for each additional tile of distance from the target, down to 0 at 7 or more tiles.
 
-Available for: Assault (Cpl), Grenadier (XCOM Tier 1), Gunner (XCOM Tier 2), Ranger (LCpl), Specialist (XCOM Tier 1), Technical (XCOM Tier 1)
 Close Combat Specialist
 Close Combat Specialist
 Fire a free reaction shot with your primary weapon at any visible enemy within four tiles who moves or fires.
@@ -309,7 +283,6 @@ Fire a free reaction shot with your primary weapon at any visible enemy within f
     You may shoot at each enemy with this ability once per turn.
     Each shot requires 2 ammo.
 
-Available for: Assault (GSgt), Grenadier (XCOM Tier 4), Gunner (XCOM Tier 4), Shinobi (XCOM Tier 4), Specialist (XCOM Tier 4), Technical (XCOM Tier 4), Skirmisher (XCOM Tier 4)
 Close Encounters
 Close Encounters
 Once per turn, gain a bonus action after taking a standard shot with your primary weapon at an enemy within four tiles. Cannot trigger on the same turn as Hit and Run.
@@ -318,7 +291,6 @@ Once per turn, gain a bonus action after taking a standard shot with your primar
     A red ring will mark the range of this ability.
     Close Encounters cannot be used on the same turn as Run and Gun.
 
-Available for: Assault (TSgt), Grenadier (XCOM Tier 4), Gunner (XCOM Tier 4), Ranger (XCOM Tier 4), Shinobi (XCOM Tier 4), Specialist (XCOM Tier 4), Technical (XCOM Tier 4), Skirmisher (GSgt)
 Combat Awareness
 Combat Awareness
 Grants 15 defense and an armor point when in overwatch.
@@ -326,7 +298,6 @@ Grants 15 defense and an armor point when in overwatch.
     Gain 15 defense and an armor point when in overwatch.
     This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
-Available for: SPARK (Aspirant)
 Combat Engineer
 Combat Engineer
 Your explosives do significantly greater damage to cover objects and other things on the battlefield.
@@ -334,12 +305,10 @@ Your explosives do significantly greater damage to cover objects and other thing
     More powerful than Sapper by itself, Combat Engineer stacks with Sapper to maximize environmental damage, although either perk alone will still destroy many cover objects.
     Combat Engineer also prevents environmental damage from falling off from the center of an explosion, meaning you will destroy objects in a larger area.
 
-Available for: Assault (XCOM Tier 2), Grenadier (MSgt), Gunner (XCOM Tier 2), Ranger (XCOM Tier 2), Sharpshooter (XCOM Tier 2), Shinobi (XCOM Tier 2), Reaper (XCOM Tier 2), Skirmisher (XCOM Tier 3), Templar (XCOM Tier 2)
 Combat Fitness
 Combat Fitness
 Gain 4 aim, 1 mobility, 2 HP, 4 will, and 4 dodge.
 
-Available for: Assault (XCOM Tier 3), Gunner (MSgt), Ranger (MSgt), Shinobi (XCOM Tier 3), Templar (XCOM Tier 3)
 Combat Presence
 Combat Presence
 Grant an extra action to a squadmate.
@@ -347,7 +316,6 @@ Grant an extra action to a squadmate.
     Combat Presence can be used to get squadmates out of tough situations where they need an extra attack or move.
     Combat Presence has a 4 turn cooldown.
 
-Available for: Skirmisher (Sgt)
 Combat Protocol
 Combat Protocol
 Send the GREMLIN to an enemy to jolt them, dealing guaranteed damage, which is increased against robotic enemies.
@@ -355,7 +323,6 @@ Send the GREMLIN to an enemy to jolt them, dealing guaranteed damage, which is i
     Combat Protocol has two charges per mission.
     Upgrading your GREMLIN will lead to more damage per charge.
 
-Available for: Specialist (LCpl)
 Combatives
 Combatives
 You may parry melee attacks and counterattack with your melee weapon. Also gain +10 dodge.
@@ -364,7 +331,6 @@ You may parry melee attacks and counterattack with your melee weapon. Also gain 
     Combatives grant +90 dodge against first melee attack against you in a turn.
     Soldier also gains 10 dodge.
 
-Available for: Gunner (LCpl), Shinobi (Cpl)
 Conceal
 Conceal
 Immediately enter concealment once per mission.
@@ -372,7 +338,6 @@ Immediately enter concealment once per mission.
     Concealment cannot be used when flanked by nearby enemies.
     Requires one action and ends the soldier's turn.
 
-Available for: Shinobi (MSgt), Templar (XCOM Tier 2)
 Concentration
 Concentration
 Your grazing attacks are automatically upgraded to normal hits.
@@ -380,7 +345,6 @@ Your grazing attacks are automatically upgraded to normal hits.
     Attacks that would normally graze their target are automatically upgraded to normal hits.
     Applies to primary weapons, secondary weapons, and pistols.
 
-Available for: Sharpshooter (XCOM Tier 2), Shinobi (XCOM Tier 3), Specialist (XCOM Tier 2), Technical (XCOM Tier 1), Reaper (XCOM Tier 2), Templar (XCOM Tier 4)
 Concussion Rocket
 Concussion Rocket
 Fire a special rocket that does limited damage but has a chance to stun or disorient organic enemies within its area of effect and leaves a cloud of smoke.
@@ -392,12 +356,10 @@ Fire a special rocket that does limited damage but has a chance to stun or disor
     Elite Codexes and Psi Zombies are immune to all effects including damage.
     Allies cannot be injured by this attack.
 
-Available for: Technical (Sgt)
 Cool Under Pressure
 Cool Under Pressure
 You gain +10 Aim on Overwatch and other reaction shots, and they can critically hit.
 
-Available for: Gunner (TSgt), Ranger (Sgt), Sharpshooter (XCOM Tier 2), Specialist (TSgt), SPARK (Paladin)
 Coup de Grâce
 Coup de Grâce
 Bonus to hit, damage, and critical chance with your weapon against a disoriented, stunned or panicking enemy.
@@ -406,7 +368,6 @@ Bonus to hit, damage, and critical chance with your weapon against a disoriented
     The bonuses are reduced against disoriented enemies.
     For Shinobis and Gunners, this perk is applied to their secondary weapon.
 
-Available for: Assault (XCOM Tier 3), Grenadier (XCOM Tier 1), Gunner (XCOM Tier 1), Ranger (XCOM Tier 2), Sharpshooter (XCOM Tier 3), Shinobi (MSgt), Specialist (XCOM Tier 1), Reaper (XCOM Tier 3), Skirmisher (XCOM Tier 3), Templar (XCOM Tier 4)
 Covering Fire
 Covering Fire
 Reaction shots confer an aim malus on enemies and can now be triggered by any enemy action, not just movement.
@@ -415,7 +376,6 @@ Reaction shots confer an aim malus on enemies and can now be triggered by any en
     In addition, having the Covering Fire ability confers a temporary aim penalty upon any units you take a reaction shot at, regardless of whether it was a covering fire shot or not.
     The penalty does not affect the current action an enemy takes if it is aim-based and would only apply in the next turn. This means that if a covering fire shot was taken against an enemy performing an aim-based action, that action does not suffer the penalty.
 
-Available for: Ranger (Cpl), Specialist (Cpl)
 Covert
 Covert
 Enemies have 25% smaller detection range against you.
@@ -424,7 +384,6 @@ Enemies have 25% smaller detection range against you.
     This ability also grants a small reduction in this soldier's impact on infiltration times.
     Does not apply to ADVENT security towers.
 
-Available for: Shinobi (Sgt), Skirmisher (XCOM Tier 1), Templar (XCOM Tier 1)
 Crippling Strike
 Crippling Strike
 Throw a knife that causes the target to be maimed for 1 turn (zero mobility).
@@ -433,19 +392,16 @@ Throw a knife that causes the target to be maimed for 1 turn (zero mobility).
     This ability has a 3 turn cooldown.
     The maimed status reduces the target's mobility to 0, making it immobile.
 
-Available for: Reaper (Cpl)
 Crusader's Rage
 Crusader's Rage
 Gain 25% damage boost for every 25% HP missing, up to 50% damage boost. Reduce wound recovery times for this soldier by 8 HP.
 
     Wound reduction does not work if the soldier entered a bleeding out state during the mission.
 
-Available for: Skirmisher (XCOM Tier 4), Templar (Warlock)
 Cutthroat
 Cutthroat
 Your melee attacks against biological enemies ignore their armor and have a +15 critical chance and do +2 critical damage.
 
-Available for: Gunner (XCOM Tier 1), Shinobi (Sgt), Skirmisher (XCOM Tier 1), Templar (XCOM Tier 3)
 Cyclic Fire
 Cyclic Fire
 Special Shot: Fire three shots at a target in a single attack. Requires both actions and all shots have aim penalties. Has a 2 turn cooldown.
@@ -455,14 +411,12 @@ Special Shot: Fire three shots at a target in a single attack. Requires both act
     Cyclic Fire has a 2 turn cooldown.
     Requires a burst-fire weapon; ability will not be available when a shotgun or sniper rifle is equipped as a primary weapon.
 
-Available for: Grenadier (XCOM Tier 2), Gunner (TSgt), Specialist (XCOM Tier 2), Technical (XCOM Tier 2)
 Damage Control
 Damage Control
 After taking damage, gain 2 armor through the end of the turn.
 
     Your armor hardens temporarily after an impact. After taking damage, gain 2 armor through the end of the next turn.
 
-Available for: SPARK (Champion)
 Damn Good Ground
 Damn Good Ground
 Confers +10 aim and +10 defense against targets at a lower elevation.
@@ -470,12 +424,10 @@ Confers +10 aim and +10 defense against targets at a lower elevation.
     Confers +10 aim and +10 defense against targets at a lower elevation.
     This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
-Available for: Grenadier (XCOM Tier 1), Gunner (XCOM Tier 1), Ranger (XCOM Tier 1), Sharpshooter (Cpl), Shinobi (XCOM Tier 1), Specialist (XCOM Tier 1), Technical (XCOM Tier 1), Skirmisher (SSgt)
 Danger Zone
 Danger Zone
 Area Suppression suppresses enemies in a 5-tile radius.
 
-Available for: Gunner (TSgt)
 Deadeye
 Deadeye
 Take a shot with a small aim penalty for a significant damage boost.
@@ -484,14 +436,12 @@ Take a shot with a small aim penalty for a significant damage boost.
     Deadeye has a 3 turn cooldown.
     Works with Snap Shot.
 
-Available for: Assault (XCOM Tier 3), Grenadier (XCOM Tier 1), Gunner (XCOM Tier 3), Ranger (XCOM Tier 3), Sharpshooter (TSgt), Shinobi (XCOM Tier 1), Specialist (XCOM Tier 1), Technical (XCOM Tier 1), Reaper (XCOM Tier 3)
 Death Dealer
 Death Dealer
 Grants +25 crit chance. Critical shots against a flanked target while in Shadow will deal double critical damage.
 
     Use Shadow's increased mobility and smaller enemy detection radii to flank enemies and deal massive damage.
 
-Available for: Reaper (TSgt)
 Death From Above
 Death From Above
 Killing an enemy at a lower elevation with your primary weapon refunds a single action, and does not end your turn. Also grants a long-range accuracy bonus for sniper rifles.
@@ -499,7 +449,6 @@ Killing an enemy at a lower elevation with your primary weapon refunds a single 
     Death From Above can combo well with pistol abilities or can simply make a soldier more mobile.
     Also grants a long-range accuracy bonus for sniper rifles and vektor rifles at any elevation.
 
-Available for: Assault (XCOM Tier 2), Ranger (XCOM Tier 3), Sharpshooter (LCpl), Shinobi (XCOM Tier 2), Technical (XCOM Tier 2), Reaper (GSgt)
 Dedication
 Dedication
 Free action. Gain 2 mobility and ignore reaction fire for the rest of the turn. Has a 4 turn cooldown.
@@ -508,14 +457,12 @@ Free action. Gain 2 mobility and ignore reaction fire for the rest of the turn. 
     Free action.
     Dedication has a 4 turn cooldown.
 
-Available for: Assault (XCOM Tier 1), Ranger (XCOM Tier 2), Sharpshooter (XCOM Tier 1), Shinobi (XCOM Tier 2), Technical (XCOM Tier 2), Reaper (XCOM Tier 1), Skirmisher (XCOM Tier 1), Templar (XCOM Tier 2)
 Deep Cover
 Deep Cover
 If you did not attack this turn, hunker down automatically.
 
     Non-offensive actions like Reload can still be performed without invalidating Deep Cover.
 
-Available for: Assault (XCOM Tier 1), Grenadier (XCOM Tier 1), Gunner (XCOM Tier 1), Ranger (XCOM Tier 1), Sharpshooter (XCOM Tier 1), Shinobi (XCOM Tier 1), Specialist (XCOM Tier 1), Technical (XCOM Tier 1), Reaper (XCOM Tier 1), Skirmisher (XCOM Tier 1)
 Demolition
 Demolition
 Unleash a volley of bullets at your target's cover, significantly damaging or destroying it. Deals no damage to your target.
@@ -523,14 +470,12 @@ Unleash a volley of bullets at your target's cover, significantly damaging or de
     Demolition requires 4 ammo points and has a 5 turn cooldown.
     Demolition does increased environmental damage, and will destroy most cover objects.
 
-Available for: Gunner (SSgt)
 Dense Smoke
 Dense Smoke
 Your smoke grenades confer an additional 10 defense.
 
     Your smoke grenades confer an additional 10 defense to those within the smoke, for a total of 30.
 
-Available for: Grenadier (SSgt)
 Disabling Shot
 Disabling Shot
 Stun enemies with a precise shot, with a bonus stun duration if the shot crits. The shot can not do critical damage.
@@ -541,12 +486,10 @@ Stun enemies with a precise shot, with a bonus stun duration if the shot crits. 
     Disabling Shot has a 5 turn cooldown.
     Only Avatars and Psi Zombies can not be stunned.
 
-Available for: Assault (XCOM Tier 4), Ranger (XCOM Tier 4), Sharpshooter (GSgt), Shinobi (XCOM Tier 4), Skirmisher (XCOM Tier 4)
 Disassembly
 Disassembly
 Killing an enemy grants a stackable +20 hack bonus that lasts 3 turns.
 
-Available for: Specialist (XCOM Tier 4)
 Double Tap
 Double Tap
 Activate to fire a standard shot and gain a second action restricted to an additional shot or overwatching.
@@ -555,21 +498,18 @@ Activate to fire a standard shot and gain a second action restricted to an addit
     Double Tap has a 2 turn cooldown.
     Costs the same action it would take to fire a standard shot (Snipers cost 2 AP and all other weapons cost 1)
 
-Available for: Grenadier (XCOM Tier 4), Sharpshooter (MSgt), Shinobi (XCOM Tier 4), Specialist (XCOM Tier 4), Technical (XCOM Tier 4)
 Electroshock
 Electroshock
 Your Arc Thrower disorients the target when it misses.
 
     A miss with your Arc Thrower still disorients non-robotic targets.
 
-Available for: Assault (LCpl)
 Evasive
 Evasive
 Start each mission with 100 bonus dodge. The bonus is removed after you take damage for the first time.
 
     This ability will typically turn the first hit on a soldier into a graze, but being hit with undodgeable attacks will remove it without any bonus being applied.
 
-Available for: Assault (XCOM Tier 3), Grenadier (XCOM Tier 3), Gunner (XCOM Tier 3), Ranger (XCOM Tier 3), Shinobi (TSgt), Specialist (XCOM Tier 3), Technical (XCOM Tier 3), Skirmisher (XCOM Tier 3), Templar (XCOM Tier 3)
 Ever Vigilant
 Ever Vigilant
 If you spend all of your actions on moves, you are granted an automatic overwatch shot at the end of the turn.
@@ -577,31 +517,26 @@ If you spend all of your actions on moves, you are granted an automatic overwatc
     Ever Vigilant enables an extremely mobile style of play for the soldier.
     LITERALLY any action other than moving will invalidate Ever Vigilant.
 
-Available for: Grenadier (XCOM Tier 2), Gunner (XCOM Tier 2), Ranger (LCpl), Sharpshooter (XCOM Tier 2), Specialist (SSgt), Reaper (XCOM Tier 1), Skirmisher (XCOM Tier 1)
 
 WARNING: this perk is currently bugged such that it prioritizes pistol overwatch over standard overwatch. Installing the mod WOTC Reliable Ever Vigilant will fix this.
 Executioner
 Executioner
 Confers +20 aim and +20 critical chance against targets at half or less of their original hit points.
 
-Available for: Assault (XCOM Tier 3), Grenadier (XCOM Tier 1), Gunner (XCOM Tier 2), Ranger (SSgt), Sharpshooter (XCOM Tier 3), Shinobi (Cpl), Specialist (XCOM Tier 1), Technical (XCOM Tier 2), Reaper (XCOM Tier 3), Skirmisher (XCOM Tier 3)
 Extra Conditioning
 Extra Conditioning
 Run and Gun cooldown is reduced by one turn.
 
-Available for: Assault (SSgt)
 Failsafe
 Failsafe
 If you fail a hack, you prevent any negative effects from occurring.
 
-Available for: Specialist (TSgt)
 Field Medic
 Field Medic
 Equipped medikits have 2 extra charges.
 
     If you have the Medical Protocol ability, your GREMLIN gains additional charges as well.
 
-Available for: Assault (XCOM Tier 1), Grenadier (XCOM Tier 1), Gunner (XCOM Tier 1), Ranger (XCOM Tier 1), Sharpshooter (XCOM Tier 1), Shinobi (XCOM Tier 1), Specialist (SSgt), Technical (XCOM Tier 1), Reaper (XCOM Tier 1), Skirmisher (XCOM Tier 1), Templar (XCOM Tier 1)
 Field Surgeon
 Field Surgeon
 Reduce wound recovery times for most soldiers.
@@ -611,7 +546,6 @@ Reduce wound recovery times for most soldiers.
     The effect includes the soldier with the ability.
     It does not affect soldiers who suffered killing wounds and are stabilized from bleeding out.
 
-Available for: Specialist (Cpl)
 Fire and Steel
 Fire and Steel
 Attacks with your gauntlet, and fires set by gauntlet weapons, do +1 damage.
@@ -619,7 +553,6 @@ Attacks with your gauntlet, and fires set by gauntlet weapons, do +1 damage.
     Attacks with your gauntlet, and fires set by gauntlet weapons, do +1 damage.
     This applies to both rocket launcher and flamethrower weapons, and the fires they set.
 
-Available for: Technical (TSgt)
 Fire in the Hole
 Fire in the Hole
 Your rockets are more accurate.
@@ -627,7 +560,6 @@ Your rockets are more accurate.
     Your rockets are more likely to hit their intended point of impact, or at least close to it.
     The maximum it can miss by is reduced by two tiles.
 
-Available for: Technical (LCpl)
 Firestorm
 Firestorm
 Once per battle, attack all units in a complete circle around the soldier's position. Also grants immunity to fire damage.
@@ -638,12 +570,10 @@ Once per battle, attack all units in a complete circle around the soldier's posi
     Usable once per battle.
     It is not recommended the soldier uses Firestorm on rooftops.
 
-Available for: Technical (MSgt)
 Flashbanger
 Flashbanger
 Grants 1 free flashbang item to your inventory.
 
-Available for: Assault (XCOM Tier 1), Grenadier (XCOM Tier 3), Gunner (XCOM Tier 1), Ranger (XCOM Tier 1), Sharpshooter (XCOM Tier 1), Shinobi (XCOM Tier 1), Specialist (XCOM Tier 1), Technical (XCOM Tier 1), Reaper (XCOM Tier 1), Skirmisher (XCOM Tier 2), Templar (XCOM Tier 1)
 Fleche
 Fleche
 Attack any enemy within movement range with your sword. Deals +1 damage for every 4 tiles between your starting position and the target.
@@ -652,7 +582,6 @@ Attack any enemy within movement range with your sword. Deals +1 damage for ever
     A soldier can perform a "Dash" move, using both actions to move, and still trigger an attack against an adjacent enemy.
     Fleche deals 1 bonus damage for every 4 tiles between unit's position at the start of its turn and the target's position up to 5 maximum bonus damage.
 
-Available for: Gunner (XCOM Tier 2), Shinobi (Squaddie)
 Flush
 Flush
 Special shot with a bonus to hit that does little or no damage but confers defense and dodge penalties and forces target to change position if it hits.
@@ -665,7 +594,6 @@ Special shot with a bonus to hit that does little or no damage but confers defen
     Cannot be used from concealment.
     Target loses 10 defense and 30 dodge. The debuff lasts 1 turn.
 
-Available for: Assault (XCOM Tier 1), Grenadier (XCOM Tier 1), Gunner (Cpl), Technical (XCOM Tier 1), Skirmisher (XCOM Tier 1)
 Focus
 Focus
 Gain Focus during missions, increasing stats, damage, and ability effectiveness. Focus can be spent on powerful abilities.
@@ -673,14 +601,12 @@ Gain Focus during missions, increasing stats, damage, and ability effectiveness.
     Templars begin missions weaker than other soldiers, but can become extremely powerful at higher Focus levels.
     Focus is gained by attacking enemies with Rend (even misses count).
 
-Available for: Templar (Initiate)
 Formidable
 Formidable
 Your gear includes an extra layer of protection, granting 2 bonus ablative hit points and 50% less damage from explosive attacks.
 
     Formidable reduces explosive damage taken by 50%.
 
-Available for: Assault (SSgt), Grenadier (Sgt), Gunner (Cpl), Sharpshooter (XCOM Tier 2), Technical (SSgt), Reaper (XCOM Tier 2), Skirmisher (SSgt), Templar (XCOM Tier 2), SPARK (Aspirant)
 Fortify
 Fortify
 Activate to grant +20 defense until the beginning of the next turn. Does not cost an action. Has a 5 turn cooldown.
@@ -689,7 +615,6 @@ Activate to grant +20 defense until the beginning of the next turn. Does not cos
     Does not cost an action.
     Fortify has a 5 turn cooldown.
 
-Available for: Assault (Sgt), Grenadier (XCOM Tier 2), Gunner (XCOM Tier 2), Ranger (SSgt), Shinobi (XCOM Tier 3), Specialist (XCOM Tier 2), Technical (Cpl), Templar (XCOM Tier 3)
 Full Kit
 Full Kit
 Grants +1 charge per grenade item in a utility slot.
@@ -698,7 +623,6 @@ Grants +1 charge per grenade item in a utility slot.
     Applies to explosive and support grenades as well as Battle Scanners.
     Extra grenades provided by Smoker and Flashbanger abilities do not get extra charges.
 
-Available for: Assault (XCOM Tier 3), Grenadier (MSgt), Ranger (XCOM Tier 3), Sharpshooter (XCOM Tier 3), Shinobi (XCOM Tier 3), Specialist (XCOM Tier 3), Technical (XCOM Tier 3), Templar (XCOM Tier 2)
 Full Override
 Full Override
 Take permanent control of a robotic unit and potentially acquire ADVENT MECs for the Resistance.
@@ -710,14 +634,12 @@ Take permanent control of a robotic unit and potentially acquire ADVENT MECs for
     The second hack option, Master Enemy, will grant control of the unit for rest of the mission with a stat bonus for all robots, and will permanently transfer any MEC units to the Resistance.
     If the Master Enemy hack succeeds, and the MEC and the specialist both survive the mission, the MEC will follow new programming and make its way to a Resistance base, where it will serve the Resistance. It does not need to be evacuated when the mission ends.
 
-Available for: Specialist (GSgt)
 Full Throttle
 Full Throttle
 Gain +3 mobility with every kill this turn. Lasts 2 turns, including the current one.
 
     Only kills by the Skirmisher count towards Full Throttle.
 
-Available for: Skirmisher (GSgt)
 Ghost
 Ghost
 Create a duplicate of the Templar from the body of a fallen humanoid. The Ghost disappears when it loses all Focus. Costs 2 Focus.
@@ -729,7 +651,6 @@ Create a duplicate of the Templar from the body of a fallen humanoid. The Ghost 
     Ghost has a 5 turn cooldown.
     Ghosts cannot gain following abilities: Volt, Shield bash, Shield abilities, Deflect, Reflect, Solace, Void Conduit, Bladestorm, Apotheosis, Superior Aptitude, Ionic Storm and Sustain.
 
-Available for: Templar (Master)
 Ghost Grenade
 Ghost Grenade
 A specialized smoke grenade that causes the targeted ally to enter concealment.
@@ -742,7 +663,6 @@ A specialized smoke grenade that causes the targeted ally to enter concealment.
     It does not fit in the standard XCOM grenade launcher and must be thrown at a visible ally.
     The Grenadier cannot use this ability when concealed.
 
-Available for: Grenadier (MSgt), Reaper (SSgt)
 Ghostwalker
 Ghostwalker
 Activate this ability to reduce enemy detection range against you by almost 25% for 2 turn(s).
@@ -753,7 +673,6 @@ Activate this ability to reduce enemy detection range against you by almost 25% 
     This ability also grants a small reduction in this soldier's impact on infiltration times.
     Does not apply to ADVENT security towers.
 
-Available for: Assault (XCOM Tier 1), Shinobi (LCpl)
 Grapple (Skirmisher)
 Grapple (Skirmisher)
 Deploy a grappling hook to move quickly to an elevated position.
@@ -761,7 +680,6 @@ Deploy a grappling hook to move quickly to an elevated position.
     Grapple allows the Skirmisher to get into position without using an action.
     Grapple has a 3 turn cooldown.
 
-Available for: Skirmisher (Squaddie)
 Grazing Fire
 Grazing Fire
 Missed shots with your primary weapon have an additional roll to become a graze.
@@ -770,7 +688,6 @@ Missed shots with your primary weapon have an additional roll to become a graze.
     This effect occurs after normal hit-miss-graze processing.
     Targets with a dodge score subtract that score from the ability's success chance.
 
-Available for: Assault (XCOM Tier 1), Gunner (LCpl), Ranger (TSgt), Skirmisher (XCOM Tier 1)
 Greater Padding
 Greater Padding
 Reduce wound recovery times for this soldier by 1/2/4 HP. Doesn't work if the soldier bleeds out.
@@ -778,14 +695,12 @@ Reduce wound recovery times for this soldier by 1/2/4 HP. Doesn't work if the so
     Greater Padding reduces the number of hit points a soldier must heal after being wounded in battle by 1/2/4.
     It does not affect soldiers who suffered killing wounds and are stabilized from bleeding out.
 
-Available for: Templar (Initiate)
 Hack
 Hack
 Attempt to remotely breach security on a network access point with your GREMLIN/BIT.
 
     Map items (chests, workstations, etc.) can be hacked from a distance using the GREMLIN/BIT.
 
-Available for: Specialist (Squaddie), SPARK (Squire)
 Hail of Bullets
 Hail of Bullets
 Unleash a hail of bullets that is guaranteed to hit your target, but uses a lot of ammunition.
@@ -794,7 +709,6 @@ Unleash a hail of bullets that is guaranteed to hit your target, but uses a lot 
     Hail of Bullets has a 5 turn cooldown.
     Hail of Bullets does not work with shotguns or sniper rifles.
 
-Available for: Assault (XCOM Tier 2), Grenadier (XCOM Tier 2), Gunner (Sgt), Ranger (XCOM Tier 2), Shinobi (XCOM Tier 2), Specialist (XCOM Tier 2), Technical (XCOM Tier 2), Skirmisher (XCOM Tier 2)
 Hard Target
 Hard Target
 Gain 5 dodge per enemy you can see, up to a maximum of +30.
@@ -803,7 +717,6 @@ Gain 5 dodge per enemy you can see, up to a maximum of +30.
     Units visible at squadsight ranges do not confer bonus.
     This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
-Available for: Gunner (XCOM Tier 2), Ranger (XCOM Tier 2), Sharpshooter (XCOM Tier 1), Shinobi (Sgt), Reaper (XCOM Tier 2), Skirmisher (XCOM Tier 2), Templar (XCOM Tier 3)
 Haywire Protocol
 Haywire Protocol
 You may target robotic and mechanical enemies with your GREMLIN, attempting to hack them and seize control.
@@ -812,14 +725,12 @@ You may target robotic and mechanical enemies with your GREMLIN, attempting to h
     Upgrading your GREMLIN will lead to an increased Hacking stat.
     Hacked robotic enemies can only be controlled for a short time.
 
-Available for: Specialist (Squaddie)
 HEAT Warheads
 HEAT Warheads
 Your grenades now pierce up to 2 point(s) of armor and shred 1 additional point(s) of armor.
 
     Your grenades now pierce (ignore) up to 2 point(s) of armor and shred 1 additional point(s) of armor.
 
-Available for: Grenadier (SSgt), Technical (XCOM Tier 2), Skirmisher (XCOM Tier 1)
 Heavy Weapons
 Heavy Weapons
 This soldier is trained to use the XCOM gauntlet, a combination Rocket Launcher and Flamethrower.
@@ -833,28 +744,24 @@ This soldier is trained to use the XCOM gauntlet, a combination Rocket Launcher 
     Using either gauntlet ability requires one action and ends your turn.
     Rocket accuracy is affected by the soldier's aim, target distance, and whether the soldier has used any actions already this turn. Low accuracy-rockets will have higher scatter values, meaning they are more likely to miss the target tile by greater distances. The rocket's maximum possible scatter is noted in the popup, while a value appearing with the targeting cursor will show the expected (average) scatter for a shot on that location.
 
-Available for: Technical (Squaddie)
 Heavy Ordnance
 Heavy Ordnance
 Any damaging grenade in your grenade-only slot gains a bonus use.
 
     All damaging grenades are viable for Heavy Ordnance.
 
-Available for: Grenadier (Cpl)
 HiDef Holo
 HiDef Holo
 Your Holotargeted enemies are easier to critically hit.
 
     The critical hit bonus is +10 with the basic Holotargeter, but improves to +15 and +20 with advanced technology Holotargeting devices.
 
-Available for: Sharpshooter (Sgt)
 Hipfire
 Hipfire
 Firing the sawed-off shotgun no longer ends the turn.
 
     With this ability, Point Blank and Both Barrels do not end the turn, allowing the soldier to shoot or move afterwards.
 
-Available for: Ranger (XCOM Tier 1)
 Hit and Run
 Hit and Run
 Once per turn, gain an additional action after taking a standard shot at a flanked or exposed target with your primary weapon. Cannot trigger on the same turn as Close Encounters.
@@ -862,7 +769,6 @@ Once per turn, gain an additional action after taking a standard shot at a flank
     Cannot be used on the same turn as Run and Gun.
     Bonus full actions from Serial and Death from Above will be awarded first.
 
-Available for: Assault (TSgt), Grenadier (XCOM Tier 4), Gunner (XCOM Tier 4), Shinobi (TSgt), Specialist (XCOM Tier 4), Technical (XCOM Tier 4), Skirmisher (Squaddie)
 Holo Targeting
 Holo Targeting
 Any directed primary weapon shot, hit or miss, will mark the target, increasing your squad's aim by +15 against this target.
@@ -870,7 +776,6 @@ Any directed primary weapon shot, hit or miss, will mark the target, increasing 
     Directed primary weapon-specific abilities will grant Holo Targeting.
     Any abilities that target multiple units will not grant Holo Targeting.
 
-Available for: Grenadier (XCOM Tier 2), Ranger (XCOM Tier 2), Specialist (XCOM Tier 3), Technical (XCOM Tier 3), Reaper (XCOM Tier 2), SPARK (Cavalier)
 Holotarget
 Holotarget
 Holotarget your enemy to grant an aim bonus to all attacks on this target by you and your allies for the remainder of the turn.
@@ -881,7 +786,6 @@ Holotarget your enemy to grant an aim bonus to all attacks on this target by you
     The aim bonus is +10 for the basic Holotargeter, and improves to +15 and +20 with better technology.
     Holotargeting does not break concealment for you or your squad.
 
-Available for: Sharpshooter (Squaddie)
 Homing Mine
 Homing Mine
 Attach a claymore onto an enemy (does not alert the enemy). The Homing mine will explode upon that enemy taking damage.
@@ -890,24 +794,20 @@ Attach a claymore onto an enemy (does not alert the enemy). The Homing mine will
     Homing Mine has 4 charges per mission.
     Homing Mine requires one action and does not end your turn.
 
-Available for: Reaper (MSgt)
 Hunter Protocol
 Hunter Protocol
 When an enemy is revealed, there is a 33% chance to take a free Overwatch shot.
 
     Hunter Protocol makes the SPARK an ideal unit for scouting into the fog of war, since any revealed enemy can be instantly attacked.
 
-Available for: SPARK (Templar)
 Hunter's Instincts
 Hunter's Instincts
 Ranged attacks against flanked enemies deal +2 damage.
 
-Available for: Grenadier (XCOM Tier 3), Gunner (XCOM Tier 4), Sharpshooter (GSgt), Shinobi (GSgt), Specialist (XCOM Tier 3), Technical (XCOM Tier 3), Skirmisher (XCOM Tier 4)
 Impact Compensation
 Impact Compensation
 After taking damage, gain a stacking 20% Damage reduction until the end of your turn up to a maximum of three stacks.
 
-Available for: Templar (Magus)
 Impact Fields
 Impact Fields
 Activate a force field that reduces incoming damage by 33% for two turns. Six-turn cooldown.
@@ -917,12 +817,10 @@ Activate a force field that reduces incoming damage by 33% for two turns. Six-tu
     Uses one action and doesn't automatically end your turn.
     Armor-Piercing weapons do not mitigate this effect.
 
-Available for: SPARK (Templar)
 Impersonal Edge
 Impersonal Edge
 Reduce shadow cooldown by 1 and gain a stackable +20 aim buff for 3 turns when you get a kill with a throwing knife.
 
-Available for: Reaper (GSgt)
 
 ## Implacable
 Once per turn, when you kill an enemy, you gain a movement action.
@@ -930,14 +828,12 @@ Once per turn, when you kill an enemy, you gain a movement action.
 Impulse
 Your ranged attacks gain 10 aim and 10 critical chance if you have moved this turn.
 
-Available for: Ranger (XCOM Tier 2), Shinobi (XCOM Tier 1), Reaper (XCOM Tier 2), Skirmisher (XCOM Tier 3)
 Incinerator
 Incinerator
 Your flamethrower has an increased range and covers a wider area of effect.
 
     The length of the flamethrower increases by 2 tiles and the width increases by 1 tile.
 
-Available for: Technical (TSgt)
 Independent Tracking
 Independent Tracking
 A Holotargeted enemy will remain so for 1 additional turn(s).
@@ -945,7 +841,6 @@ A Holotargeted enemy will remain so for 1 additional turn(s).
     A Holotargeted enemy remains so for 1 additional turn(s).
     Additional uses of Holotargeting on the same target will not stack.
 
-Available for: Sharpshooter (SSgt)
 Indomitable
 Indomitable
 Once per turn, gain 1 focus when you're attacked.
@@ -953,7 +848,6 @@ Once per turn, gain 1 focus when you're attacked.
     Once per turn, gain 1 focus when you're attacked.
     Applies to both melee and ranged attacks.
 
-Available for: Templar (Acolyte)
 Infighter
 Infighter
 Gain 40 dodge against attacks within four tiles.
@@ -962,7 +856,6 @@ Gain 40 dodge against attacks within four tiles.
     Dodge bonus also applies to melee attacks.
     This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
-Available for: Assault (XCOM Tier 2), Grenadier (XCOM Tier 1), Gunner (XCOM Tier 1), Ranger (XCOM Tier 1), Shinobi (XCOM Tier 2), Specialist (XCOM Tier 1), Technical (XCOM Tier 1), Skirmisher (XCOM Tier 2), Templar (XCOM Tier 2)
 Inspire Agility
 Inspire Agility
 Give a friendly unit 30 Dodge until the start of your next turn. Whenever you kill an enemy, you gain an extra charge. Usable once per turn. Starts with one charge, and is a free action.
@@ -972,7 +865,6 @@ Give a friendly unit 30 Dodge until the start of your next turn. Whenever you ki
     Usable once per turn.
     Starts with one charge and is a free action.
 
-Available for: Ranger (XCOM Tier 2), Sharpshooter (XCOM Tier 2), Reaper (XCOM Tier 2), Skirmisher (XCOM Tier 3), Templar (XCOM Tier 2)
 Interference
 Interference
 GREMLIN cancels overwatch on targeted unit.
@@ -981,7 +873,6 @@ GREMLIN cancels overwatch on targeted unit.
     Is a free action.
     3 charges per battle, plus 2 extra charges per better Gremlin tech.
 
-Available for: Specialist (Cpl)
 Interrupt
 Interrupt
 A powerful form of Overwatch. Instead of firing automatically, perform any single action. Free action.
@@ -990,7 +881,6 @@ A powerful form of Overwatch. Instead of firing automatically, perform any singl
     Some actions are not available during Interrupt, like Overwatch.
     Interrupt has a 3 turn cooldown.
 
-Available for: Skirmisher (TSgt)
 Intimidate
 Intimidate
 When targeted by an attack, the enemy has a chance to panic.
@@ -999,7 +889,6 @@ When targeted by an attack, the enemy has a chance to panic.
     Intimidate can be triggered by melee and area of effect attacks.
     Intimidate will not trigger when targeted by Overwatch fire.
 
-Available for: SPARK (Vanguard)
 Invert
 Invert
 Switch locations with a unit. Costs 1 Focus.
@@ -1007,7 +896,6 @@ Switch locations with a unit. Costs 1 Focus.
     Invert has a 2 turn cooldown, and does not end the Templar's turn.
     Can target both ally and enemy units.
 
-Available for: Templar (Acolyte)
 Ionic Storm
 Ionic Storm
 Summon lightning to strike all nearby enemies. Damage increases with Focus level. Costs all Focus.
@@ -1016,7 +904,6 @@ Summon lightning to strike all nearby enemies. Damage increases with Focus level
     Ionic Storm deals double damage to Psionic units.
     Ionic Storm has a 5 turn cooldown.
 
-Available for: Templar (Master)
 Iron Curtain
 Iron Curtain
 Special shot that does 50% of normal damage but reduces target mobility for the following 2 turn(s). Cone-based attack with primary weapon.
@@ -1028,12 +915,10 @@ Special shot that does 50% of normal damage but reduces target mobility for the 
     Iron Curtain does not work with shotguns or sniper rifles.
     Allies in the cone can be hit by this ability.
 
-Available for: Assault (XCOM Tier 1), Grenadier (XCOM Tier 1), Gunner (SSgt), Ranger (XCOM Tier 1), Shinobi (XCOM Tier 1), Specialist (XCOM Tier 1)
 Javelin Rockets
 Javelin Rockets
 The range of your rockets is increased by 6 tiles and you may hit targets beyond your visual range.
 
-Available for: Technical (TSgt)
 Judgement
 Judgement
 Has a chance to panic any enemy that attacks this unit. The higher the will of this unit, the higher the panic chance.
@@ -1044,7 +929,6 @@ Has a chance to panic any enemy that attacks this unit. The higher the will of t
     Judgement works best on units with high will.
     Panic chance is (30 + User's Will) - Enemy Will with a minimum apply chance of 5% and a maximum apply chance of 90%
 
-Available for: Skirmisher (GSgt)
 Justice
 Justice
 Use the Grapple to pull a humanoid target to you and deliver a Ripjack strike.
@@ -1054,7 +938,6 @@ Use the Grapple to pull a humanoid target to you and deliver a Ripjack strike.
     An open space adjacent to the Skirmisher is needed to use Justice.
     Justice has a 4 turn cooldown.
 
-Available for: Skirmisher (LCpl)
 Kill Zone
 Kill Zone
 Take a reaction shot against any enemy that moves or attacks within a cone of fire.
@@ -1063,12 +946,10 @@ Take a reaction shot against any enemy that moves or attacks within a cone of fi
     Kill Zone utilizes Squadsight, even if the soldier does not have the Long Watch ability.
     Kill Zone has a 4 turn cooldown.
 
-Available for: Grenadier (XCOM Tier 3), Gunner (GSgt), Ranger (MSgt), Shinobi (XCOM Tier 3), Specialist (MSgt), Technical (XCOM Tier 3)
 Killer Instinct
 Killer Instinct
 Activating Run and Gun grants +50% critical damage for the rest of the turn.
 
-Available for: Assault (Sgt)
 Knife Encounters
 Knife Encounters
 Once per turn, gain a bonus action after throwing a knife at an enemy within 5 tiles.
@@ -1077,19 +958,16 @@ Once per turn, gain a bonus action after throwing a knife at an enemy within 5 t
     A red ring will mark the range of this ability.
     Knife Encounters cannot be used on the same turn as Run and Gun.
 
-Available for: Reaper (TSgt)
 Knife Fighter
 Knife Fighter
 You may make a melee attack with your knife against adjacent enemies.
 
     Knife attacks use one action and do not end your turn.
 
-Available for: Gunner (Squaddie)
 Knife Juggler
 Knife Juggler
 Adds +1 bonus damage to throwing knives and provides 1 additional throwing knives. Each kill with a primary weapon grants a knife charge.
 
-Available for: Reaper (LCpl)
 Launch Grenade
 Launch Grenade
 The Grenadier uses a grenade launcher to fire grenades rather than throwing them. This allows for greater range and grenade capacity.
@@ -1098,7 +976,6 @@ The Grenadier uses a grenade launcher to fire grenades rather than throwing them
     An additional grenade can be equipped in a unique grenade-only slot.
     The range of launched grenades can be further improved by upgrading to more advanced grenade launchers.
 
-Available for: Grenadier (Squaddie)
 Lead The Target
 Lead The Target
 Grants a +20% increased chance to hit, but delays the shot until the target takes an action on their turn. Costs two actions and has a 3 turn cooldown.
@@ -1106,12 +983,10 @@ Grants a +20% increased chance to hit, but delays the shot until the target take
     Carefully lead the target, granting a +20% increased chance to hit, but delaying the shot until the enemies turn. Takes two actions.
     Lead The Target has a 3 turn cooldown.
 
-Available for: Sharpshooter (XCOM Tier 2)
 Lethal
 Lethal
 You do 2 additional points of base damage and 1 additional point(s) of bonus critical damage with your primary weapon.
 
-Available for: Assault (MSgt), Grenadier (XCOM Tier 4), Ranger (XCOM Tier 4), Sharpshooter (XCOM Tier 4), Shinobi (XCOM Tier 4), Technical (XCOM Tier 4), Reaper (XCOM Tier 4), Skirmisher (MSgt), Templar (XCOM Tier 4)
 Lick Your Wounds
 Lick Your Wounds
 Hunker Down restores 2 health when used, up to a maximum of 8 per mission, and removes poison, burning, and acid burning.
@@ -1119,12 +994,10 @@ Hunker Down restores 2 health when used, up to a maximum of 8 per mission, and r
     Hunker Down restores 2 health when used, up to a maximum of 8 per mission.
     Removes poison, burning, and acid burning.
 
-Available for: Sharpshooter (XCOM Tier 1), Reaper (XCOM Tier 1), Skirmisher (XCOM Tier 1)
 Light 'Em Up
 Light 'Em Up
 Standard shots with your primary weapon are not turn-ending.
 
-Available for: Grenadier (XCOM Tier 3), Ranger (Squaddie), Shinobi (XCOM Tier 2), Specialist (XCOM Tier 3), Technical (XCOM Tier 2), Reaper (MSgt)
 Lightning Reflexes
 Lightning Reflexes
 Reaction fire shots against you have a significantly decreased chance to hit. The bonus goes down with each additional reaction shot you face.
@@ -1133,7 +1006,6 @@ Reaction fire shots against you have a significantly decreased chance to hit. Th
     The first reaction shot against you during a turn is at -100 to hit; the second at -80; the third at -60; the fourth at -40, and the fifth at -20. Further reaction shots at are normal to hit chances.
     This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
-Available for: Assault (LCpl), Grenadier (XCOM Tier 3), Gunner (XCOM Tier 3), Ranger (XCOM Tier 3), Sharpshooter (XCOM Tier 3), Shinobi (XCOM Tier 3), Specialist (XCOM Tier 3), Technical (XCOM Tier 3), Reaper (XCOM Tier 2), Skirmisher (XCOM Tier 4), Templar (XCOM Tier 4)
 Lightning Slash
 Lightning Slash
 Attack any enemy within blue movement range with your weapon. This attack does not end the turn.
@@ -1142,7 +1014,6 @@ Attack any enemy within blue movement range with your weapon. This attack does n
     This attack does not end the turn.
     Lightning Slash has a 3 turn cooldown.
 
-Available for: Gunner (XCOM Tier 3), Shinobi (XCOM Tier 4), Templar (XCOM Tier 4)
 Like Lightning
 Like Lightning
 When Run and Gun is activated, your Arc Thrower cooldown is immediately reset to 0.
@@ -1150,7 +1021,6 @@ When Run and Gun is activated, your Arc Thrower cooldown is immediately reset to
     When Run and Gun is activated, your Arc Thrower cooldown is immediately removed.
     Does not apply to Chain Lightning.
 
-Available for: Assault (XCOM Tier 1)
 Lingering Shadow
 Lingering Shadow
 Provides +15 Defense and +30 Dodge for one turn when the Reaper loses Shadow.
@@ -1158,12 +1028,10 @@ Provides +15 Defense and +30 Dodge for one turn when the Reaper loses Shadow.
     Provides +15 Defense and +30 Dodge as soon as the Reaper loses Shadow, either because they break concealment or Shadow expires.
     Lasts until the start of XCOM's next turn.
 
-Available for: Reaper (XCOM Tier 2)
 Lock 'N Load
 Lock 'N Load
 Kills with your primary weapon restore 1 ammo.
 
-Available for: Assault (XCOM Tier 3), Gunner (XCOM Tier 3), Ranger (XCOM Tier 3), Shinobi (XCOM Tier 2), Specialist (XCOM Tier 3), Skirmisher (XCOM Tier 3)
 Lockdown
 Lockdown
 Gain +20 to hit against enemies who attempt to move when suppressed.
@@ -1171,7 +1039,6 @@ Gain +20 to hit against enemies who attempt to move when suppressed.
     Gain +20 to hit against enemies who attempt to move when suppressed.
     This stacks with other reaction fire bonuses.
 
-Available for: Gunner (Cpl)
 Locked On
 Locked On
 Gain +20 aim and +20 crit for successive shots at the same enemy unit.
@@ -1179,7 +1046,6 @@ Gain +20 aim and +20 crit for successive shots at the same enemy unit.
     Gain +20 aim and +20 crit for repeated shots at the same target. Not cumulative, and only applies to enemy units.
     Area-of-Effect-based shots do not grant the bonus.
 
-Available for: Assault (XCOM Tier 1), Ranger (Cpl), Shinobi (XCOM Tier 1), Skirmisher (XCOM Tier 2)
 Lone Wolf
 Lone Wolf
 Gain bonus Aim and Defense when at least 4 tiles distant from any ally, with a maximum of +12/+12 at 7+ tiles.
@@ -1188,7 +1054,6 @@ Gain bonus Aim and Defense when at least 4 tiles distant from any ally, with a m
     Bonuses cap at +12 Aim, +12 Defense when 7 or more tiles from the nearest ally.
     This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
-Available for: Assault (XCOM Tier 2), Grenadier (XCOM Tier 1), Gunner (XCOM Tier 1), Ranger (XCOM Tier 1), Sharpshooter (Sgt), Shinobi (LCpl), Technical (XCOM Tier 2), Templar (XCOM Tier 2)
 Long Watch
 Long Watch
 Allow Overwatch to trigger with Squadsight.
@@ -1196,12 +1061,10 @@ Allow Overwatch to trigger with Squadsight.
     Like the Overwatch ability it upgrades, Long Watch suffers a base penalty to aim.
     Long Watch also suffers the Squadsight penalty to aim that increases with distance.
 
-Available for: Sharpshooter (SSgt)
 Low Profile
 Low Profile
 Makes partial cover count as full.
 
-Available for: Assault (XCOM Tier 2), Grenadier (XCOM Tier 2), Gunner (XCOM Tier 2), Ranger (XCOM Tier 2), Sharpshooter (SSgt), Shinobi (SSgt), Specialist (XCOM Tier 2), Technical (XCOM Tier 2), Skirmisher (XCOM Tier 2)
 Maim
 Maim
 Fire a shot with your primary weapon that immobilizes the target until the end of their next turn. Uses 1 ammo. Has a 3 turn cooldown.
@@ -1211,7 +1074,6 @@ Fire a shot with your primary weapon that immobilizes the target until the end o
     Uses 1 ammo.
     Maim has a 3 turn cooldown.
 
-Available for: Ranger (XCOM Tier 1), Sharpshooter (XCOM Tier 1), Technical (XCOM Tier 1)
 Manual Override
 Manual Override
 Lowers all ability cooldowns on a selected ally soldier by up to 3 turns.
@@ -1220,7 +1082,6 @@ Lowers all ability cooldowns on a selected ally soldier by up to 3 turns.
     Costs 1 action.
     Manual Override has a 4 turn cooldown.
 
-Available for: Skirmisher (TSgt)
 Marauder
 Marauder
 Standard shots are not turn-ending, allowing for shooting then moving or shooting twice on a turn.
@@ -1228,17 +1089,14 @@ Standard shots are not turn-ending, allowing for shooting then moving or shootin
     Marauder provides more tactical options when planning the Skirmisher's turn.
     Paired with Grapple, Marauder allows the Skirmisher to shoot twice and move on a single turn.
 
-Available for: Skirmisher (XCOM Tier 2)
 Mayhem
 Mayhem
 Gain 25% bonus damage against enemies who attempt to move when suppressed.
 
-Available for: Gunner (Sgt)
 Mechanical Chassis
 Mechanical Chassis
 This unit is immune to fire and poison damage.
 
-Available for: SPARK (Squire)
 Medical Protocol
 Medical Protocol
 The GREMLIN can perform healing actions remotely: GREMLIN Heal and GREMLIN Stabilize. The GREMLIN has a single charge. If a medikit is equipped, the GREMLIN will gain an additional charge.
@@ -1246,12 +1104,10 @@ The GREMLIN can perform healing actions remotely: GREMLIN Heal and GREMLIN Stabi
     Upgrading your GREMLIN will lead to more HP healed per charge.
     GREMLIN Heal or GREMLIN Stabilize, when used as your first action, will not end your turn.
 
-Available for: Specialist (Sgt)
 Momentum
 Momentum
 After using Rend, gain a bonus movement action.
 
-Available for: Templar (Initiate)
 Multitargeting
 Multitargeting
 You may Holotarget multiple enemies with a 2 turn cooldown.
@@ -1261,14 +1117,12 @@ You may Holotarget multiple enemies with a 2 turn cooldown.
     Multitargeting has a 2 turn cooldown.
     Holotargeting does not break concealment for your squad.
 
-Available for: Sharpshooter (GSgt)
 Napalm-X
 Napalm-X
 Your Flamethrower can now panic enemies.
 
     Your Flamethrower can now panic enemies. Enemy units must pass a will check to avoid negative effects.
 
-Available for: Technical (Cpl)
 Needle
 Needle
 Shots taken in Shadow have +2 armor piercing.
@@ -1276,7 +1130,6 @@ Shots taken in Shadow have +2 armor piercing.
     Use Shadow's extra mobility to get close and deal major damage with Needle.
     Only applies while the Reaper is in Shadow.
 
-Available for: Reaper (XCOM Tier 2)
 
 ## Needle Grenades
 +1 explosive damage against unarmored targets. You never destroy loot and corpses of enemies you kill.
@@ -1286,7 +1139,6 @@ Aid Protocol now neutralizes fire, poison, acid and bleeding.
 
     Aid Protocol now neutralizes fire, poison, acid and bleeding.
 
-Available for: Specialist (XCOM Tier 2)
 None Shall Pass
 None Shall Pass
 During enemy turns, fire a free reaction shot that can critically hit with your sawed-off shotgun at any visible enemy within 3 tiles who moves or fires. Can only trigger once per turn.
@@ -1297,7 +1149,6 @@ During enemy turns, fire a free reaction shot that can critically hit with your 
     Can critically hit.
     Works during any enemy turn: alien, Lost, Chosen and Ruler.
 
-Available for: Ranger (XCOM Tier 4)
 Nova
 Nova
 Release a blast of energy, damaging all nearby units. This attack has no cost or cooldown, but consecutive Novas will damage the SPARK.
@@ -1306,17 +1157,14 @@ Release a blast of energy, damaging all nearby units. This attack has no cost or
     The first Nova attack each mission will deal 0 damage to the SPARK.
     All Nova attacks after the first will deal a stacking 2 damage to the SPARK.
 
-Available for: SPARK (Champion)
 One For All
 One For All
 Provide high cover to squadmates wherever you stand, and gain -30 defense. Moving or attacking will cancel the effect. Grants bonus ablative HP based on the shield tier for the duration of the effect.
 
-Available for: Templar (Initiate)
 Open Fire
 Open Fire
 Your ranged attacks gain 10 Aim and 10 Crit against targets that are at full health.
 
-Available for: Sharpshooter (XCOM Tier 3), Specialist (XCOM Tier 2), Reaper (XCOM Tier 3), Skirmisher (XCOM Tier 3)
 Overcharge
 Overcharge
 Gain bonus aim and crit chance for each point of focus the Templar has.
@@ -1324,7 +1172,6 @@ Gain bonus aim and crit chance for each point of focus the Templar has.
     Each point of focus provides +5 aim and +10 crit chance.
     Based on the current focus, not max focus.
 
-Available for: Templar (Disciple)
 Overdrive
 Overdrive
 Gain an action point. You have -15 Aim per shot fired during Overdrive until the start of your next turn.
@@ -1334,7 +1181,6 @@ Overkill
 Overkill
 Your ranged attacks deal +2 more damage to units at 50% HP or less.
 
-Available for: Assault (XCOM Tier 3), Sharpshooter (XCOM Tier 3), Shinobi (XCOM Tier 3), Reaper (XCOM Tier 3), Skirmisher (XCOM Tier 3), Templar (XCOM Tier 3)
 Packmaster
 Packmaster
 Grants +1 charge to every utility item and grenade equipped.
@@ -1343,19 +1189,16 @@ Grants +1 charge to every utility item and grenade equipped.
     Applies to the grenade slot as well as the standard utility slots, but not other slots.
     Extra grenades provided by Smoker and Flashbanger abilities do not get extra charges.
 
-Available for: Reaper (GSgt), Skirmisher (Cpl)
 Paramedic
 Paramedic
 Unlocks an ability to perform a dash move to use a medikit on an ally. Gain a free medikit. Equipped medikits have 2 extra charges.
 
-Available for: Reaper (Cpl), Skirmisher (XCOM Tier 2)
 Parkour
 Parkour
 The cooldown for the Skrimisher's Grapple is reduced by one turn.
 
     Improves the Skirmisher's mobility around the map.
 
-Available for: Skirmisher (XCOM Tier 3)
 Phantom
 Phantom
 When the squad is revealed, this soldier remains concealed.
@@ -1363,7 +1206,6 @@ When the squad is revealed, this soldier remains concealed.
     Even if the squad does not start a mission concealed, soldiers with Phantom will still begin the mission with concealment.
     If the soldier with Phantom is the one who breaks squad concealment, then Phantom does not apply.
 
-Available for: Assault (XCOM Tier 3), Sharpshooter (Cpl), Shinobi (Squaddie), Templar (XCOM Tier 1)
 Phosphorus
 Phosphorus
 Your flamethrower's base damage can now ignore fire immunities, and shred armor.
@@ -1371,7 +1213,6 @@ Your flamethrower's base damage can now ignore fire immunities, and shred armor.
     Your flamethrower can now ignore fire immunities.
     Flamethrower attacks shred 1 armor.
 
-Available for: Technical (SSgt)
 Pillar
 Pillar
 Summon a pillar of Psionic energy to act as a high cover point. Free action, does not cost focus.
@@ -1381,7 +1222,6 @@ Summon a pillar of Psionic energy to act as a high cover point. Free action, doe
     Can be used after Rend.
     Pillar has a 1 turn cooldown.
 
-Available for: Templar (Disciple)
 Point Blank
 Point Blank
 Fire your sawed-off shotgun at a nearby enemy.
@@ -1390,36 +1230,30 @@ Fire your sawed-off shotgun at a nearby enemy.
     Uses one action.
     Shotgun has two ammo.
 
-Available for: Ranger (Squaddie)
 Precision Shot
 Precision Shot
 Take a special shot with +30 bonus to critical chance and 34% bonus critical damage. Has a 4 turn cooldown.
 
-Available for: Grenadier (XCOM Tier 1), Gunner (XCOM Tier 3), Sharpshooter (Sgt), Shinobi (XCOM Tier 1), Specialist (XCOM Tier 1), Technical (XCOM Tier 1)
 Predator
 Predator
 Your ranged attacks gain 15 bonus aim and 15 bonus critical chance against enemies that are flanked or out of cover.
 
-Available for: Grenadier (XCOM Tier 2), Gunner (XCOM Tier 3), Ranger (XCOM Tier 3), Sharpshooter (XCOM Tier 3), Reaper (XCOM Tier 3)
 Preservation
 Preservation
 When your concealment is broken, gain +15 defense for 2 turns.
 
     When your concealment is broken, gain +15 defense for 2 turns.
 
-Available for: Shinobi (XCOM Tier 1)
 Protector
 Protector
 Non-damaging grenades in your grenade-only slot gain a bonus use.
 
     All non-damaging grenades except Ghost Grenades are viable for Protector.
 
-Available for: Grenadier (Cpl)
 Pump Action
 Pump Action
 Gain two extra ammo in your sawed-off shotgun.
 
-Available for: Ranger (Cpl)
 Quickburn
 Quickburn
 Activate so your next use of the flamethrower will not cost an action.
@@ -1427,7 +1261,6 @@ Activate so your next use of the flamethrower will not cost an action.
     Activate so your next use of the flamethrower will not cost an action.
     Quickburn has a 5 turn cooldown.
 
-Available for: Technical (GSgt)
 Quick Zap
 Quick Zap
 Activate this ability to make your next arc thrower shot a free action. Has a 4 turn cooldown.
@@ -1436,7 +1269,6 @@ Activate this ability to make your next arc thrower shot a free action. Has a 4 
     Quick Zap has a 4 turn cooldown.
     Applies to the abilities Stun, Arc Pulser and Chain Lightning.
 
-Available for: Assault (XCOM Tier 4)
 Rainmaker
 Rainmaker
 Equipped heavy weapons deal +2 damage and have increased area of effect.
@@ -1445,7 +1277,6 @@ Equipped heavy weapons deal +2 damage and have increased area of effect.
     Heavy weapons with circular areas of effect have their radius increased by +2.
     Heavy weapons with conic areas of effect have their diameter increased by +2 and length increased by +2.
 
-Available for: SPARK (Knight)
 Rapid Deployment
 Rapid Deployment
 Activate this ability before throwing or launching a support grenade, and the throw will not cost an action.
@@ -1454,19 +1285,16 @@ Activate this ability before throwing or launching a support grenade, and the th
     Applies to Smoke Grenades, Flashbangs, Shaped Charges and Battle Scanners.
     Rapid Deployment has a 3 turn cooldown.
 
-Available for: Assault (XCOM Tier 2), Grenadier (LCpl), Ranger (XCOM Tier 2), Sharpshooter (XCOM Tier 2), Shinobi (XCOM Tier 2), Specialist (XCOM Tier 2), Reaper (Sgt), Skirmisher (XCOM Tier 3), Templar (XCOM Tier 2)
 Rapid Fire
 Rapid Fire
 Fire twice in a row at an enemy. Each shot suffers an Aim penalty of -15. Can be used once per turn.
 
     Rapid Fire has a 1 turn cooldown.
 
-Available for: Assault (TSgt), Grenadier (XCOM Tier 4), Gunner (GSgt), Ranger (GSgt), Sharpshooter (XCOM Tier 4), Shinobi (MSgt), Specialist (XCOM Tier 4), Technical (MSgt)
 Rapid Reaction
 Rapid Reaction
 When in overwatch, each shot you hit with grants another reaction fire shot, up to a maximum of three shots.
 
-Available for: Ranger (GSgt), Reaper (XCOM Tier 3)
 Rapid Targeting
 Rapid Targeting
 You may Holotarget an enemy as a free action with a 4 turn cooldown. In addition, Holotargeting no longer ends your turn.
@@ -1478,12 +1306,10 @@ You may Holotarget an enemy as a free action with a 4 turn cooldown. In addition
     Rapid Targeting has a 4 turn cooldown.
     Holotargeting does not break concealment for your squad.
 
-Available for: Sharpshooter (LCpl)
 Ready For Anything
 Ready For Anything
 Enter overwatch after firing a standard shot with your primary weapon.
 
-Available for: Assault (XCOM Tier 4), Grenadier (XCOM Tier 3), Gunner (XCOM Tier 3), Specialist (XCOM Tier 4), Reaper (XCOM Tier 3), Skirmisher (XCOM Tier 3)
 Reaper
 Reaper
 A devastating chain melee attack where the first melee attack cannot miss. Each melee kill in Reaper mode grants an extra action, but further melee attacks have reduced damage.
@@ -1492,7 +1318,6 @@ A devastating chain melee attack where the first melee attack cannot miss. Each 
     Reaper cannot be combined with Run and Gun.
     As the damage with each successful Reaper strike is reduced, careful ordering of targets may be required to ensure the longest chain of attacks.
 
-Available for: Shinobi (TSgt)
 Reckoning
 Reckoning
 Unlocks the Ripjack Charge.
@@ -1501,7 +1326,6 @@ Unlocks the Ripjack Charge.
     Charge costs 1 action point, is not turn ending, and has a 4 turn cooldown.
     A Skirmisher can perform a dash move with the Charge attack and it will still only cost 1 action point.
 
-Available for: Skirmisher (MSgt)
 Reflex
 Reflex
 When fired upon, gain one extra action on the next turn. Triggers no more than once per turn. Attacks against you suffer a -15 penalty to critical hit chances.
@@ -1509,7 +1333,6 @@ When fired upon, gain one extra action on the next turn. Triggers no more than o
     The Grapple makes the Skirmisher a great advance scout, and Reflex rewards their aggressive positioning.
     Reflex can only be triggered once per turn.
 
-Available for: Skirmisher (Cpl)
 Remote Start
 Remote Start
 Detonate an environmental explosive, causing it to deal double damage within twice its normal radius. Does not reveal the Reaper.
@@ -1518,7 +1341,6 @@ Detonate an environmental explosive, causing it to deal double damage within twi
     Remote Start requires 1 ammo point, and has a 5 turn cooldown.
     Remote Start has 1 charge(s) per mission.
 
-Available for: Reaper (XCOM Tier 2)
 Rend
 Rend
 Melee attack with a chance to stun or disorient the target. Triggers Momentum, and generates Focus on attacks.
@@ -1528,12 +1350,10 @@ Melee attack with a chance to stun or disorient the target. Triggers Momentum, a
     Rend has a 5% chance to Stun. Stunned targets will also be knocked back.
     Rend has a 10% chance to Disorient.
 
-Available for: Templar (Initiate)
 Rend The Marked
 Rend The Marked
 Throwing knives apply a stacking +50 Crit chance against the target from all sources for the remainder of the turn.
 
-Available for: Reaper (MSgt)
 Repair
 Repair
 Send the BIT to a damaged robotic ally and repair it. Advanced BITs can repair slightly more.
@@ -1543,7 +1363,6 @@ Send the BIT to a damaged robotic ally and repair it. Advanced BITs can repair s
     Using Repair as your first action will not end your turn.
     Repair has 2 charges per mission.
 
-Available for: SPARK (Vanguard)
 Reposition
 Reposition
 Once per turn, gain an additional move action after taking a standard shot at a flanked or exposed target with your primary weapon.
@@ -1551,7 +1370,6 @@ Once per turn, gain an additional move action after taking a standard shot at a 
     Once per turn, gain an additional move action after taking a standard shot at a flanked or exposed target with your primary weapon.
     Works with Hit and Run.
 
-Available for: Assault (XCOM Tier 3), Gunner (XCOM Tier 2), Ranger (XCOM Tier 2), Sharpshooter (XCOM Tier 2)
 Rescue Protocol
 Rescue Protocol
 Use your GREMLIN to grant a movement action to an ally and grant them a small boost to dodge and mobility.
@@ -1564,12 +1382,10 @@ Use your GREMLIN to grant a movement action to an ally and grant them a small bo
     Rescue Protocol has 2 charges per mission.
     Charges increase with improved Gremlin technology.
 
-Available for: Specialist (GSgt)
 Resilience
 Resilience
 Enemy attacks against you suffer a -30 penalty to critical hit chances.
 
-Available for: Assault (XCOM Tier 3), Grenadier (XCOM Tier 2), Gunner (XCOM Tier 2), Ranger (XCOM Tier 2), Sharpshooter (XCOM Tier 1), Shinobi (XCOM Tier 3), Specialist (XCOM Tier 2), Technical (XCOM Tier 3), Reaper (XCOM Tier 3), Skirmisher (XCOM Tier 3), Templar (XCOM Tier 3)
 Restoration
 Restoration
 The GREMLIN flies to each squad member, healing or reviving them as needed.
@@ -1577,7 +1393,6 @@ The GREMLIN flies to each squad member, healing or reviving them as needed.
     Restoration has one charge per mission.
     Restoration will heal more HP as you upgrade your GREMLIN.
 
-Available for: Specialist (MSgt)
 Retribution
 Retribution
 Free Ripjack attacks on any enemies that enter or attack from melee range.
@@ -1586,7 +1401,6 @@ Free Ripjack attacks on any enemies that enter or attack from melee range.
     If an enemy does not begin their turn in an adjacent tile, then Retribution will trigger when that enemy moves into melee range.
     Retribution does not trigger on your own turn.
 
-Available for: Skirmisher (TSgt)
 Return Fire
 Return Fire
 When targeted by enemy fire, automatically fire back with your primary weapon once per turn.
@@ -1595,7 +1409,6 @@ When targeted by enemy fire, automatically fire back with your primary weapon on
     Return Fire can be triggered by melee attacks and area of effect attacks.
     Return Fire will not trigger when targeted by overwatch fire.
 
-Available for: Assault (XCOM Tier 2), Grenadier (XCOM Tier 2), Gunner (XCOM Tier 3), Ranger (XCOM Tier 3), Sharpshooter (XCOM Tier 3), Shinobi (XCOM Tier 2), Specialist (XCOM Tier 2), Technical (XCOM Tier 2), Skirmisher (XCOM Tier 2)
 Revival Protocol
 Revival Protocol
 Send the GREMLIN to an ally to remove any negative mental status effects: Disoriented, Stunned, Panicked, or Unconscious.
@@ -1604,14 +1417,12 @@ Send the GREMLIN to an ally to remove any negative mental status effects: Disori
     Revival Protocol, if used with your first action, will not end your turn.
     Starts with two charges, but upgrading your GREMLIN may provide more.
 
-Available for: Specialist (LCpl)
 Ripjack Slash
 Ripjack Slash
 Attack an adjacent target with your Ripjack. Does not end turn.
 
     Ripjack Slash can only be used against adjacent targets.
 
-Available for: Skirmisher (Squaddie)
 Roust
 Roust
 Special Flamethrower shot that does limited damage but forces enemies to change their position.
@@ -1622,7 +1433,6 @@ Special Flamethrower shot that does limited damage but forces enemies to change 
     One use per mission, but can gain an additional use with additional gear.
     Cannot be used from concealment.
 
-Available for: Technical (LCpl)
 Ruthless
 Ruthless
 Killing a panicked or disoriented enemy with your sawed-off shotgun refunds one action point.
@@ -1630,7 +1440,6 @@ Killing a panicked or disoriented enemy with your sawed-off shotgun refunds one 
     By cleverly combining the effects of Brutality and Ruthless, you can kill multiple enemies per turn with your sawed-off shotgun.
     There is no limit to the number of Ruthless activations per turn.
 
-Available for: Ranger (XCOM Tier 3)
 
 ## Run and Gun
 Free action: Gain a non-movement action.
@@ -1643,7 +1452,6 @@ A Rupture shot grants a +50 bonus to critical hit chances and ensures that the t
     Rupture has a 4 turn cooldown.
     Ruptured targets take 3 additional damage from every attack.
 
-Available for: Gunner (GSgt), Ranger (MSgt), Sharpshooter (XCOM Tier 4), Shinobi (XCOM Tier 3), Specialist (XCOM Tier 3), Technical (XCOM Tier 3), Reaper (XCOM Tier 4)
 Sacrifice
 Sacrifice
 Generate a protective field which redirects any attacks against allies inside it towards you. Gain bonus defense and armor while active.
@@ -1651,21 +1459,18 @@ Generate a protective field which redirects any attacks against allies inside it
     The SPARK gains +10 defense and +1 armor while Sacrifice is active.
     Sacrifice has a 6 turn cooldown.
 
-Available for: SPARK (Templar)
 Salvo
 Salvo
 Launching or throwing grenades, using heavy weapons or using the Gauntlet's Rocket Launcher with your first action will not end your turn.
 
     Soldiers with the Salvo ability are prime candidates for heavy armor.
 
-Available for: Assault (XCOM Tier 1), Grenadier (GSgt), Gunner (XCOM Tier 1), Ranger (XCOM Tier 1), Sharpshooter (XCOM Tier 1), Shinobi (XCOM Tier 1), Specialist (XCOM Tier 1), Technical (GSgt), Reaper (XCOM Tier 1), Templar (XCOM Tier 1)
 Sapper
 Sapper
 Your explosives can destroy many cover objects.
 
     Sapper allows frag grenades and other explosives to destroy many cover objects.
 
-Available for: Grenadier (LCpl)
 Saturation Fire
 Saturation Fire
 Fire a cone shaped barrage of bullets at every enemy in an area. In addition, the cover of those enemies can be damaged or destroyed. Uses a lot of ammunition.
@@ -1674,14 +1479,12 @@ Fire a cone shaped barrage of bullets at every enemy in an area. In addition, th
     Saturation Fire has a 7 turn cooldown.
     Saturation Fire will take a standard shot at every enemy in the cone, and will damage or destroy random cover elements in the cone.
 
-Available for: Gunner (MSgt)
 Savior
 Savior
 Healing abilities restore four additional hit points.
 
     Effect applies to GREMLIN heal, Medikits and Restoration abilities.
 
-Available for: Specialist (TSgt)
 Scanning Protocol
 Scanning Protocol
 The GREMLIN can trigger an instant scan of the area, increasing the Specialist's sight radius substantially for one turn, and revealing any hidden or disguised enemies in view. Free Action.
@@ -1692,7 +1495,6 @@ The GREMLIN can trigger an instant scan of the area, increasing the Specialist's
     Scanning Protocol is a free action.
     If the Specialist is employed as Haven Advisor Scanning Protocol will reduce the chance of recruiting Faceless rebels by 40% (stacking cumulatively with other similar abilities).
 
-Available for: Specialist (Sgt)
 Scrap Metal
 Scrap Metal
 Kills with your primary weapon restore one sawed-off shotgun charge.
@@ -1701,14 +1503,12 @@ Kills with your primary weapon restore one sawed-off shotgun charge.
     This does not apply to kills from using the sawed-off shotgun itself.
     This ability cannot grant ammo if the sawed-off shotgun charges are already at their starting value.
 
-Available for: Ranger (XCOM Tier 3)
 Sentinel
 Sentinel
 When in overwatch, you may take two reaction shots.
 
     Reaction shots may only target an enemy once.
 
-Available for: Specialist (LCpl), Technical (XCOM Tier 3), SPARK (Vanguard)
 Serial
 Serial
 A powerful chained shot ability. For every kill made with your primary weapon, your actions will be refunded but your damage and crit chance will be reduced for every subsequent attack.
@@ -1717,7 +1517,6 @@ A powerful chained shot ability. For every kill made with your primary weapon, y
     Every successful kill does result in a reduction to critical hit chance and damage, however.
     Serial has a 7 turn cooldown.
 
-Available for: Assault (XCOM Tier 4), Gunner (XCOM Tier 4), Ranger (XCOM Tier 4), Sharpshooter (MSgt), Reaper (Sgt), Skirmisher (XCOM Tier 4)
 Shadow
 Shadow
 Grants the soldier Shadow, an advanced form of concealment that lasts for 2 turns.
@@ -1726,21 +1525,18 @@ Grants the soldier Shadow, an advanced form of concealment that lasts for 2 turn
     Reaper has increased mobility while in Shadow.
     Entering Shadow is a free action and has a 4 turn cooldown.
 
-Available for: Reaper (Squaddie)
 Shadowstep
 Shadowstep
 This soldier does not trigger overwatch or reaction fire.
 
     A soldier with Shadowstep will not trigger Overwatch shots or Suppression fire, but they will be unable to draw Overwatch fire away from their teammates.
 
-Available for: Assault (XCOM Tier 2), Grenadier (XCOM Tier 2), Gunner (XCOM Tier 2), Ranger (XCOM Tier 2), Sharpshooter (XCOM Tier 1), Shinobi (Cpl), Specialist (XCOM Tier 2), Reaper (XCOM Tier 1), Skirmisher (XCOM Tier 2)
 Shadowstrike
 Shadowstrike
 While concealed, gain +50 bonus aim and +50 bonus critical hit chance when attacking enemies.
 
     Shadowstrike bonuses will apply if the soldier re-enters concealment in a mission.
 
-Available for: Assault (XCOM Tier 3), Gunner (XCOM Tier 3), Ranger (XCOM Tier 1), Sharpshooter (XCOM Tier 2), Shinobi (SSgt), Skirmisher (XCOM Tier 1)
 Shield Bash
 Shield Bash
 Bash an adjacent enemy with your shield, doing some damage and knocking back the target 2 tiles. Free action.
@@ -1749,12 +1545,10 @@ Bash an adjacent enemy with your shield, doing some damage and knocking back the
     Shield Bash is a free action with a 3 turn cooldown.
     Can target enemies in adjacent tiles on the diagonal as well.
 
-Available for: Templar (Adept)
 Shooting Sharp
 Shooting Sharp
 Your ranged attacks gain +2 armor piercing and +15 aim against units in cover.
 
-Available for: Sharpshooter (XCOM Tier 3), Reaper (Cpl), Skirmisher (XCOM Tier 2)
 Shredder
 Shredder
 Your primary weapon attacks shred armor.
@@ -1762,14 +1556,12 @@ Your primary weapon attacks shred armor.
     A successful shot with a conventional weapon will shred 1 armor from the target.
     More advanced weapons will shred more armor from targets.
 
-Available for: Grenadier (XCOM Tier 2), Gunner (Sgt), Ranger (XCOM Tier 3), Sharpshooter (XCOM Tier 3), Shinobi (XCOM Tier 3), Specialist (XCOM Tier 3), Technical (Sgt), Reaper (XCOM Tier 2), SPARK (Knight)
 Silent Killer
 Silent Killer
 Guarantees that the Reaper stays in Shadow with killing shots.
 
     Allows a Reaper to stay safely in Shadow during the enemy turn if they kill a unit with their primary weapon.
 
-Available for: Reaper (Sgt)
 Slash
 Slash
 Attack an adjacent target with your sword. Uses one action.
@@ -1777,7 +1569,6 @@ Attack an adjacent target with your sword. Uses one action.
     Attack an adjacent target with your sword.
     Uses one action and doesn't automatically end your turn, so two attacks a turn are possible.
 
-Available for: Shinobi (Squaddie)
 Slug Shot
 Slug Shot
 Special shot for primary-weapon shotguns only: Fire a shot that pierces 2 armor and has no range penalties. Uses 1 ammo. Has a 2 turn cooldown.
@@ -1788,12 +1579,10 @@ Special shot for primary-weapon shotguns only: Fire a shot that pierces 2 armor 
     Slug shot has a 2 turn cooldown.
     Requires 1 ammo.
 
-Available for: Assault (LCpl)
 Smoker
 Smoker
 Grants one free smoke grenade item to your inventory.
 
-Available for: Assault (XCOM Tier 1), Grenadier (XCOM Tier 3), Gunner (XCOM Tier 1), Ranger (XCOM Tier 1), Sharpshooter (XCOM Tier 1), Shinobi (XCOM Tier 1), Specialist (XCOM Tier 1), Technical (XCOM Tier 1), Reaper (XCOM Tier 1), Skirmisher (XCOM Tier 2), Templar (XCOM Tier 1)
 Snap Shot
 Snap Shot
 You may take standard shots with your sniper rifle after moving, but you suffer severe range penalties beyond 5 tiles of squadsight range.
@@ -1801,7 +1590,6 @@ You may take standard shots with your sniper rifle after moving, but you suffer 
     The soldier may now use the sniper rifle for standard shots after moving, but suffers extreme aim penalties at targets beyond 22 tiles range on those shots.
     The soldier may not enter overwatch with the sniper rifle after moving.
 
-Available for: Sharpshooter (LCpl)
 Soul Harvest
 Soul Harvest
 Provides +10% crit chance. Each kill by this soldier adds +4% crit chance, to a maximum of +20%.
@@ -1809,7 +1597,6 @@ Provides +10% crit chance. Each kill by this soldier adds +4% crit chance, to a 
     Bonus crit chance applies to both primary and secondary weapons.
     The +20% max crit chance bonus applies only to the per-kill component, i.e. it's in addition to the base +10% bonus.
 
-Available for: Reaper (XCOM Tier 3)
 Squadsight
 Squadsight
 You can target enemies within squadmates' sight, provided there is line of sight to the target.
@@ -1818,7 +1605,6 @@ You can target enemies within squadmates' sight, provided there is line of sight
     When using Squadsight, there is no limit on how far your targets can be, but an aim penalty accumulates with distance.
     Overwatch shots do not use squadsight by default.
 
-Available for: Sharpshooter (Squaddie), Reaper (SSgt)
 Steady Hands
 Steady Hands
 If you did not move last turn, gain +10 Aim and +10 Critical chance.
@@ -1826,12 +1612,10 @@ If you did not move last turn, gain +10 Aim and +10 Critical chance.
     The Steady Hands bonus does not stack over multiple turns.
     Steady Hands doubles down on the need to find a high sniper's nest with good sightlines.
 
-Available for: Grenadier (XCOM Tier 1), Gunner (XCOM Tier 1), Ranger (XCOM Tier 2), Sharpshooter (XCOM Tier 2), Specialist (XCOM Tier 1), Reaper (XCOM Tier 1)
 Stiletto
 Stiletto
 Shots fired with your primary weapon pierce 3 armor.
 
-Available for: Assault (XCOM Tier 4), Grenadier (XCOM Tier 3), Gunner (XCOM Tier 4), Ranger (XCOM Tier 4), Shinobi (XCOM Tier 3), Specialist (XCOM Tier 3), Technical (XCOM Tier 3), Skirmisher (XCOM Tier 4)
 Sting
 Sting
 Fire a shot while in Shadow that holotargets for +10 Aim and ruptures for 1. Guaranteed to remain in Shadow.
@@ -1839,7 +1623,6 @@ Fire a shot while in Shadow that holotargets for +10 Aim and ruptures for 1. Gua
     Sting allows for the Reaper to attack in situations where they absolutely do not want to be revealed.
     Sting has 2 charge(s) per mission, requires 1 ammo points, and has a 1 turn cooldown.
 
-Available for: Reaper (XCOM Tier 3)
 Sting Grenades
 Sting Grenades
 Your flashbang grenades have a 50% chance to stun enemies.
@@ -1847,7 +1630,6 @@ Your flashbang grenades have a 50% chance to stun enemies.
     Your flashbang grenades have a 50% chance to stun enemies.
     Enemies' innate flashbang resistance does not affect stun chance.
 
-Available for: Grenadier (TSgt)
 Street Sweeper
 Street Sweeper
 Cone-based shotgun attack that does bonus damage to unarmored targets. Blocked by heavy cover.
@@ -1860,7 +1642,6 @@ Cone-based shotgun attack that does bonus damage to unarmored targets. Blocked b
     Cannot be used with non-shotgun weapons.
     Allies can be injured by this attack.
 
-Available for: Assault (MSgt)
 Strike
 Strike
 Attack any enemy within movement range with a powerful melee attack.
@@ -1868,7 +1649,6 @@ Attack any enemy within movement range with a powerful melee attack.
     You can trigger the Strike ability by placing the movement cursor over an enemy.
     A SPARK can perform a "Dash" move, using both actions to move, and still trigger a Strike against an adjacent enemy.
 
-Available for: SPARK (Cavalier)
 Stun
 Stun
 Fire your Arc Thrower to incapacitate a target.
@@ -1879,14 +1659,12 @@ Fire your Arc Thrower to incapacitate a target.
     Can use every other turn.
     Ineffective against mechanized units without additional soldier training.
 
-Available for: Assault (Squaddie)
 Stun Gunner
 Stun Gunner
 Your Arc Thrower now has a bonus to hit.
 
     The bonus starts at +20 and increases with better Arc Thrower technology, to a maximum of +30.
 
-Available for: Assault (Sgt)
 Stun Strike
 Stun Strike
 Strike an enemy with Psionic force, stunning them. Costs 1 Focus.
@@ -1896,12 +1674,10 @@ Strike an enemy with Psionic force, stunning them. Costs 1 Focus.
     Stun Strike does not end the Templar's turn.
     Stun Strike has a 2 turn cooldown.
 
-Available for: Templar (Adept)
 Superior Aptitude
 Superior Aptitude
 Rend grants an additional focus point.
 
-Available for: Templar (Warlock)
 Suppression
 Suppression
 Fire a barrage that pins down a target, grants reaction fire against it if it moves, restricts the use of many abilities, and imposing a -25 penalty to the target's aim.
@@ -1912,21 +1688,18 @@ Fire a barrage that pins down a target, grants reaction fire against it if it mo
     May not be used if sniper rifle or shotgun-class weapons are equipped.
     Suppression restricts many of the target's abilities, including the use of rockets and grenades.
 
-Available for: Gunner (Squaddie), Ranger (SSgt), Technical (LCpl)
 Survival Instinct
 Survival Instinct
 Gain 20 Defense and 20 Crit chance while injured.
 
     The bonuses are lost if you are healed back to full health.
 
-Available for: Assault (XCOM Tier 2), Ranger (XCOM Tier 1), Sharpshooter (XCOM Tier 1), Shinobi (XCOM Tier 2), Specialist (XCOM Tier 1), Technical (XCOM Tier 3), Reaper (XCOM Tier 3), Skirmisher (XCOM Tier 2), Templar (XCOM Tier 3)
 Sustain
 Sustain
 If the soldier takes enough damage to be killed, they are immediately put in Stasis for 1 turn and their health is only reduced to 1 HP. This can only happen once per mission.
 
     Beware that a sustained soldier may retain damaging status effects like poison or burning after emerging from Stasis.
 
-Available for: Templar (Disciple)
 Tactical Sense
 Tactical Sense
 Gain 3 defense for each enemy you can see, up to a maximum of 15 defense.
@@ -1935,7 +1708,6 @@ Gain 3 defense for each enemy you can see, up to a maximum of 15 defense.
     Units visible at squadsight ranges do not confer bonus.
     This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
-Available for: Assault (XCOM Tier 3), Grenadier (XCOM Tier 2), Ranger (GSgt), Sharpshooter (XCOM Tier 2), Shinobi (XCOM Tier 3), Technical (GSgt), Reaper (XCOM Tier 2), Templar (XCOM Tier 4)
 Tandem Warheads
 Tandem Warheads
 Your grenades, rockets and heavy weapons do full damage to the maximum extent of their area of effect.
@@ -1943,7 +1715,6 @@ Your grenades, rockets and heavy weapons do full damage to the maximum extent of
     Your grenades, rockets and heavy weapons do full damage to units to the maximum extent of their area of effect.
     This doesn't apply to environmental damage.
 
-Available for: Grenadier (SSgt), Technical (SSgt)
 Target Focus
 Target Focus
 Your ranged attacks gain +10 aim and pierce 1 armor against unflankable enemies.
@@ -1951,12 +1722,10 @@ Your ranged attacks gain +10 aim and pierce 1 armor against unflankable enemies.
     Your ranged attacks gain +10 aim and pierce 1 armor against unflankable enemies.
     Unflankable enemies are ones that can't take cover, such as Drones, MECs and Berserkers.
 
-Available for: Assault (XCOM Tier 2), Sharpshooter (XCOM Tier 3), Shinobi (XCOM Tier 1), Specialist (XCOM Tier 2), Reaper (XCOM Tier 1), Skirmisher (XCOM Tier 1)
 Templar Shield
 Templar Shield
 Grants half cover to allies. Gives low cover bonuses to this unit even when flanked.
 
-Available for: Templar (Initiate)
 Terrorize
 Terrorize
 Adds a chance to panic enemies hit by Volt.
@@ -1964,7 +1733,6 @@ Adds a chance to panic enemies hit by Volt.
     Volt can now panic the enemy.
     The chance to panic is based on the Templar's Will stat versus the target's Will.
 
-Available for: Templar (Magus)
 That's Close Enough
 That's Close Enough
 During enemy turns, fire your arc thrower at any visible enemy within 1 tile(s) that moves or fires. Shares cooldown with the arc thrower's Stun ability.
@@ -1972,12 +1740,10 @@ During enemy turns, fire your arc thrower at any visible enemy within 1 tile(s) 
     Will not trigger if soldier is concealed.
     This ability can trigger 1 time(s) per turn.
 
-Available for: Assault (XCOM Tier 4)
 Threat Assessment
 Threat Assessment
 Aid Protocol grants the target a Covering Fire Overwatch shot.
 
-Available for: Specialist (GSgt)
 Total Combat
 Total Combat
 Throwing a grenade or using an item no longer ends the turn and grenades have no cooldown. In addition, you can throw grenades 2 tiles further and their radius is increased by 1. Grants a Grenade-only slot. Grants +5 aim and +1 mobility.
@@ -1986,7 +1752,6 @@ Throwing a grenade or using an item no longer ends the turn and grenades have no
     Removes the cooldown for grenades.
     Grants both Bombard and Volatile Mix, hence it does not stack with either of them.
 
-Available for: Skirmisher (LCpl)
 Tracking
 Tracking
 You detect nearby units even without line of sight.
@@ -1996,17 +1761,14 @@ You detect nearby units even without line of sight.
     Detected units will appear as a visual outline.
     Units will remain detected until the end of the player's turn. If they are outside Tracking's range at that point, they will count as no longer detected.
 
-Available for: Reaper (Squaddie)
 Tradecraft
 Tradecraft
 This soldier has significantly reduced infiltration times while on missions.
 
-Available for: Assault (XCOM Tier 3), Ranger (XCOM Tier 3), Sharpshooter (XCOM Tier 3), Shinobi (GSgt), Skirmisher (XCOM Tier 3), Templar (XCOM Tier 3)
 Traverse Fire
 Traverse Fire
 After taking a standard shot with your primary weapon with your first action, you may take an additional non-movement action.
 
-Available for: Assault (XCOM Tier 2), Gunner (MSgt)
 Trench Gun
 Trench Gun
 Special shot for primary-weapon shotguns only: Fire a short-range cone-based attack at nearby targets. Has a 4 turn cooldown.
@@ -2018,7 +1780,6 @@ Special shot for primary-weapon shotguns only: Fire a short-range cone-based att
     The shot will not penetrate heavy cover, so this ability is best used in flanking situations.
     Allies in the area of effect can take damage.
 
-Available for: Assault (Cpl)
 Trench Warfare
 Trench Warfare
 If you get at least one kill during your turn, automatically Hunker Down at the end of it.
@@ -2026,7 +1787,6 @@ If you get at least one kill during your turn, automatically Hunker Down at the 
     If you get at least one kill during your turn, automatically Hunker Down at the end of it.
     You will only Hunker Down if you would normally be able to.
 
-Available for: Grenadier (XCOM Tier 2), Shinobi (XCOM Tier 2), Technical (XCOM Tier 2), Reaper (XCOM Tier 2), Skirmisher (XCOM Tier 2)
 Trojan
 Trojan
 Enemy units that are hacked take damage and lose their actions on the turn the hack effect ends.
@@ -2035,21 +1795,18 @@ Enemy units that are hacked take damage and lose their actions on the turn the h
     Applies to units stunned or taken over by Haywire Protocol.
     Damage calculated based on Hacking Stat vs. target's Hack Defense.
 
-Available for: Specialist (Sgt)
 Unlimited Power
 Unlimited Power
 Firing your arc thrower no longer ends your turn.
 
     Works for all arc thrower abilities, including Chain Lightning.
 
-Available for: Assault (XCOM Tier 2)
 Untouchable
 Untouchable
 If you score a kill during your turn, the next attack against you during the enemy turn will miss.
 
     When Untouchable is triggered the soldier is immune to the next damage dealing attack during the enemy turn, even Area of Effect attacks.
 
-Available for: Assault (GSgt), Grenadier (XCOM Tier 3), Gunner (XCOM Tier 3), Ranger (XCOM Tier 3), Sharpshooter (XCOM Tier 2), Technical (XCOM Tier 4), Reaper (XCOM Tier 3)
 Vital Point Targeting
 Vital Point Targeting
 Attacks against your Holotargeted enemies deal more damage.
@@ -2057,7 +1814,6 @@ Attacks against your Holotargeted enemies deal more damage.
     The Vital Point Targeting damage bonus is +1 for the basic Holotargeter, and increases to +2 with improved Holotargeting technology.
     Damage bonus is applied to melee and direct (non-Area of Effect) projectile attacks.
 
-Available for: Sharpshooter (TSgt)
 Void Conduit
 Void Conduit
 Trap a humanoid in a Psionic prison, immobilizing them for multiple actions and transferring their health to the Templar. Costs 1 Focus.
@@ -2066,14 +1822,12 @@ Trap a humanoid in a Psionic prison, immobilizing them for multiple actions and 
     Void Conduit lasts for enemy actions equal to the Templar's Focus level when cast.
     Targets trapped by Void Conduit cannot take actions or dodge, but can be targeted by other attacks.
 
-Available for: Templar (Mystic)
 Volatile Mix
 Volatile Mix
 Your grenades' area of effect is increased by one tile.
 
     Your grenades do regular and environmental damage in the expanded area of effect, and apply any additional effects there as well.
 
-Available for: Grenadier (GSgt), Technical (XCOM Tier 2)
 Volt
 Volt
 A non-turn ending AOE attack that makes its targets easier to hit. Costs 1 Focus.
@@ -2081,7 +1835,6 @@ A non-turn ending AOE attack that makes its targets easier to hit. Costs 1 Focus
     Volt has no cooldown, but costs 1 Focus.
     Volt increases your squad's aim by +5 against the targets.
 
-Available for: Templar (Initiate)
 Walk Fire
 Walk Fire
 Take a highly accurate shot with +30 bonus to hit 66% damage and -30 crit. Uses 2 ammo.
@@ -2089,21 +1842,18 @@ Take a highly accurate shot with +30 bonus to hit 66% damage and -30 crit. Uses 
     This is a special shot in which the soldier adjusts their aim in the middle of an automatic weapon burst, conferring +30 aim and -30 crit and doing 66% damage.
     Consumes 2 ammo.
 
-Available for: Ranger (LCpl)
 Watch Them Run
 Watch Them Run
 After throwing or launching a grenade, you will automatically enter overwatch.
 
     After throwing or launching a grenade, you will automatically enter overwatch.
 
-Available for: Grenadier (XCOM Tier 4), Specialist (XCOM Tier 3)
 Weapon Handling
 Weapon Handling
 Reduces the Aim penalty for short-range primary weapon shots by 67%.
 
     Weapon Handling does not affect the aim penalty from Snap Shot.
 
-Available for: Gunner (XCOM Tier 1), Sharpshooter (XCOM Tier 2)
 Whiplash
 Whiplash
 Attack an enemy with an electrical lash. This attack has a 4 turn cooldown.
@@ -2112,14 +1862,12 @@ Attack an enemy with an electrical lash. This attack has a 4 turn cooldown.
     Whiplash requires one action and does not end your turn.
     Whiplash has a 4 turn cooldown.
 
-Available for: Skirmisher (SSgt)
 Whirlwind
 Whirlwind
 If you hit with a melee attack during your turn, gain a bonus move.
 
     A soldier can only gain one move per turn with this ability.
 
-Available for: Gunner (XCOM Tier 2), Shinobi (GSgt)
 Will To Survive
 Will To Survive
 Enemy damage is reduced by 1 when in cover and attacked through that cover. Also grants 5 will.
@@ -2130,7 +1878,6 @@ Enemy damage is reduced by 1 when in cover and attacked through that cover. Also
     This unit also permanently gains 5 will.
     This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
-Available for: Gunner (XCOM Tier 1), Ranger (XCOM Tier 1), Sharpshooter (XCOM Tier 1), Reaper (XCOM Tier 1)
 Wrath
 Wrath
 Use the Grapple to pull yourself to an enemy and deliver a Ripjack strike.
@@ -2140,7 +1887,6 @@ Use the Grapple to pull yourself to an enemy and deliver a Ripjack strike.
     An open space adjacent to the enemy is needed to use Wrath.
     Wrath has a 4 turn cooldown.
 
-Available for: Skirmisher (Cpl)
 Wrecking Ball
 Wrecking Ball
 While Overdrive is active, break through walls and cover when moving.
@@ -2148,12 +1894,10 @@ While Overdrive is active, break through walls and cover when moving.
     Wrecking Ball can be used to expose enemies to flanking shots.
     Use movement waypoints to guide the SPARK on an optimal path for destroying cover and the environment.
 
-Available for: SPARK (Champion)
 Zone of Control
 Zone of Control
 All enemies within the soldier's 5 tile radius suffer penalties of -15 Aim and -4 Mobility.
 
-Available for: Assault (XCOM Tier 2), Shinobi (XCOM Tier 2), Skirmisher (XCOM Tier 1), Templar (XCOM Tier 1)
 Pistol Perks
 Clutch Shot
 Clutch Shot
@@ -2376,7 +2120,6 @@ Fortress now provides immunity to nearby teammates.
     Bastion has a 4 tile radius.
     Moving next to afflicted allies will immediately cleanse their negative physical status effects.
 
-Available for: Psi Operative (Warlock), Templar (XCOM Tier 3)
 Domination
 Domination
 Permanently mind control an enemy. Only one successful Domination can be performed per mission.
@@ -2385,21 +2128,18 @@ Permanently mind control an enemy. Only one successful Domination can be perform
     If an attempted Domination fails, there is a 4 turn cooldown before another Domination can be attempted.
     If the Psi Operative dies or leaves the battlefield, the Domination is broken.
 
-Available for: Psi Operative (Master)
 Fortress
 Fortress
 The soldier is immune to fire, poison, acid, and explosive damage.
 
     A soldier with the Fortress ability can walk through fire, poison and acid with no ill effects.
 
-Available for: Psi Operative (Mystic), Templar (Mystic)
 Fuse
 Fuse
 If an enemy is carrying explosives, they can be remotely detonated by the Psi Operative. Free action.
 
     Fuse has a 5 turn cooldown.
 
-Available for: Psi Operative (Disciple)
 Insanity
 Insanity
 Debilitating telepathic attack that can inflict different negative conditions, including mental control of the target.
@@ -2411,7 +2151,6 @@ Debilitating telepathic attack that can inflict different negative conditions, i
     Mechanical enemies are completely immune to Insanity.
     Insanity requires one action and does not end your turn.
 
-Available for: Psi Operative (Acolyte)
 Mind Merge
 Mind Merge
 Grants bonus will, critical chance and ablative hit points to an ally until the beginning of the player's next turn.
@@ -2426,7 +2165,6 @@ Grants bonus will, critical chance and ablative hit points to an ally until the 
     Improved Psi Amps grant additional bonuses to these effects.
     If the Psi Operative is employed as Haven Adviser Mind Merge will reduce the chance of recruiting Faceless rebels by 40% (stacking cumulatively with other similar abilities).
 
-Available for: Psi Operative (Acolyte)
 Null Lance
 Null Lance
 Project a beam of terrible power that damages every target it passes through. This attack can penetrate multiple enemies and obstacles.
@@ -2434,7 +2172,6 @@ Project a beam of terrible power that damages every target it passes through. Th
     Null Lance has a 4 turn cooldown.
     Null Lance damage can be increased by improving the Psi Operative's Psi Amp.
 
-Available for: Psi Operative (Magus)
 Null Ward
 Null Ward
 project psionic shields around the soldier and nearby allies. The shields will collapse if this soldier is killed.
@@ -2446,7 +2183,6 @@ project psionic shields around the soldier and nearby allies. The shields will c
     Null Ward has a 5 turn cooldown.
     Null Ward has a radius of 8 tiles.
 
-Available for: Psi Operative (Warlock)
 Phase Walk
 Phase Walk
 Temporarily phase out of existence to teleport to a nearby location.
@@ -2458,12 +2194,10 @@ Temporarily phase out of existence to teleport to a nearby location.
     Phase Walk has a radius of 17 tiles.
     Moving with Phase Walk can trigger certain reaction fire abilities.
 
-Available for: Psi Operative (Disciple)
 Quick Study
 Quick Study
 Learn officer abilities in half the time.
 
-Available for: Psi Operative (Initiate)
 Solace
 Solace
 The Psi Operative may immediately extinguish mental impairments for a squadmate.
@@ -2472,7 +2206,6 @@ The Psi Operative may immediately extinguish mental impairments for a squadmate.
     Solace requires one action and does not end your turn.
     Solace has a 3 turn cooldown.
 
-Available for: Psi Operative (Adept)
 Soul Steal
 Soul Steal
 Soulfire transfers the damage done back to the Psi Operative as health and grants an ablative HP for 3 turns, but increases the cooldown of soulfire by 1.
@@ -2480,7 +2213,6 @@ Soulfire transfers the damage done back to the Psi Operative as health and grant
     Soul Steal will replenish lost health for a wounded operative and provide 3/4/6 ablative hit point for 3 turns.
     An operative may increase to no more than 15 ablative HP when using Soul Steal.
 
-Available for: Psi Operative (Adept)
 Soul Storm
 Soul Storm
 Summon meteors of psionic energy to deal damage to enemies inside a target area, and destroy their cover.
@@ -2492,7 +2224,6 @@ Summon meteors of psionic energy to deal damage to enemies inside a target area,
     Soul Storm has a 5 turn cooldown.
     Soul Storm has a radius of 4 tiles.
 
-Available for: Psi Operative (Magus)
 Soulfire
 Soulfire
 Does guaranteed Psionic damage to an organic enemy. Ignores cover and armor.
@@ -2501,7 +2232,6 @@ Does guaranteed Psionic damage to an organic enemy. Ignores cover and armor.
     The damage done by the Soulfire ability can be increased by upgrading the Psi Operative's Psi Amp.
     Robotic and mechanical enemies are completely immune to Soulfire.
 
-Available for: Psi Operative (Initiate)
 Stasis
 Stasis
 Completely stuns the target for 1 turn, but renders them immune to any damage or attack.
@@ -2512,7 +2242,6 @@ Completely stuns the target for 1 turn, but renders them immune to any damage or
 
 Notes: Stasis Shield is automatically included, being able to cast Stasis on allies.
 
-Available for: Psi Operative (Mystic)
 Void Rift
 Void Rift
 Generate an explosive field of Psionic energy that immediately damages everything within. Organic enemies have a chance to suffer Insanity.
@@ -2521,7 +2250,6 @@ Generate an explosive field of Psionic energy that immediately damages everythin
     Void Rift ruptures targets for 1. Rupture amount increases with better Psi Amp technology.
     Void Rift has a 5 turn cooldown.
 
-Available for: Psi Operative (Master)
 Equipment Perks
 Blood Thirst (XCOM)
 Blood Thirst (XCOM)
@@ -2530,17 +2258,14 @@ Every time you attack with your melee weapon, get a stackable +1 damage boost to
     Making any attack will provide a stack regardless of whether it hits.
     Ideal with reaper, being able to not only execute several enemies but performing several attacks will grant several stacks for providing a large damage boost and also mitigating the damage penalty of reaper to create larger chains.
 
-Available for: Katana
 Fatality
 Fatality
 Gain +100 aim and crit against units at 35% hp or lower with your weapon
 
-Available for: Darkclaw
 Grapple
 Grapple
 Deploy a grappling hook to move quickly to an elevated position. 5 Turn Cooldown
 
-Available for: Spider Suit, Wraith Suit
 Mark for Death
 Mark for Death
 Mark a target for death, granting your shots against that unit to be refunded. Effect Lasts till XCOM's next turn.
@@ -2549,7 +2274,6 @@ Mark a target for death, granting your shots against that unit to be refunded. E
     Marking a target refunds the soldier's actions when firing a standard shot or snap shot, allowing to deal heavy damage against a single target. Ideal for taking out durable enemies.
     This bonus applies to the marker, it does not apply for allies.
 
-Available for: Darklance
 Overbearing Superiority
 Overbearing Superiority
 Whenever you get a critical hit with your primary weapon, your actions are refunded.
@@ -2557,22 +2281,18 @@ Whenever you get a critical hit with your primary weapon, your actions are refun
     Whenever you get a critical hit with your primary weapon, your actions are refunded.
     This does not work for multi-shot abilities.
 
-Available for: Disruptor Rifle
 Shieldwall
 Shieldwall
 Provide high cover to squadmates wherever you stand. Moving or attacking will cancel the effect. Grants 30 defense and 5 armor on the turn it is employed.
 
-Available for: WAR Suit
 Vampirism
 Vampirism
 Dealing damage with this weapon heals you for the same amount.
 
-Available for: Arashi
 Wraith
 Wraith
 Activate dimensional shift and pass freely through obstacles for 2 turns. Free Action, 2 Charges
 
-Available for: Spider Suit, Wraith Suit
 Soldier Perks
 
 These are basic perks all soldiers can use when applicable.
