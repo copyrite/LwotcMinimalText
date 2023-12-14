@@ -10,11 +10,9 @@ Use your GREMLIN to grant an ally bonus defense until the start of your next tur
 * 1 action. Does not end turn.
 * Does not break concealment.
 * Bonus improves with GREMLIN tiers.
-{% Watermark %}
 
 ## Aim
 +20 Aim and +20 Crit to your next shot after you Hunker Down.
-{% Watermark %}
 
 ## Aim Assist
 +15 Aim and +15 Crit against holotargeted units.
