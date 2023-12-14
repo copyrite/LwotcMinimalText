@@ -36,7 +36,7 @@ Debuff a target to take {% AMPLIFY_BONUS_PCT %}% more damage from the next {% AM
 ## Arc Pulser
 Your Arc Thrower can target and damage robotic enemies. -{% ARC_PULSER_HACK %} to target's Hack Defense on hit.
 * {% 1AP ET %}
-* {% SelfCooldown_LW %}.
+* {% COOLDOWN %}
 * Damage improves with Arc Thrower tier.
 
 ## Arsenal
@@ -84,12 +84,12 @@ Fire at a target until you run out of ammo or it dies. Banish has -15 Aim per sh
 ## Battlefield Awareness
 Once per turn, you gain the Battlefield Awareness buff on kill. When you have the buff, damaging attacks against you are forced to miss. When this happens, you lose the buff and you cannot gain it for {% SelfCooldown_LW %} turns.
 * Buff lasts for 1 turn.
-* (Optional: If Battlefield Awareness doesn't force an attack to miss, it doesn't go on cooldown.)
+* {% COOLDOWN %}
 
 ## Battlelord
 After each enemy in line of sight takes a turn, take an action after their turn is completed. No action points will be refunded (e.g. from Hit and Run).
 * Battlelord can allow the Skirmisher to prevail in the most dire of circumstances.
-* Battlelord has a 5 turn cooldown.
+* {% COOLDOWN %}
 * Turns from the Lost and enemy pod reveals do not grant the immediate action.
 * Abilities that refund action points, like Implacable and Hit and Run, will not work during Battlelord.
 
@@ -278,7 +278,7 @@ Throw a knife that Maims on hit for 1 turn.
 * {% COOLDOWN %}
 
 ## Crusader's Rage
-You deal 25% more damage per 25% HP missing, up to 50%. Your wound recovery times are reduced by {% CRUSADERS_RAGE_HEAL %} HP.
+You deal 25% more damage per every 25% HP missing, up to 50%. Your wound recovery times are reduced by {% CRUSADERS_RAGE_HEAL %} HP.
 * Wound reduction is not applied if the soldier entered a bleeding out state during the mission.
 
 ## Cutthroat
@@ -293,11 +293,9 @@ Fire three shots with -{% CYCLIC_FIRE_AIM %}.
 
 ## Damage Control
 After taking damage, gain 2 armor through the end of the turn.
-* Your armor hardens temporarily after an impact. After taking damage, gain 2 armor through the end of the next turn.
 
 ## Damn Good Ground
 Confers +10 aim and +10 defense against targets at a lower elevation.
-* Confers +10 aim and +10 defense against targets at a lower elevation.
 * This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
 ## Danger Zone
@@ -306,23 +304,19 @@ Area Suppression suppresses enemies in a 5-tile radius.
 ## Deadeye
 Take a shot with a small aim penalty for a significant damage boost.
 * Deadeye reduces the overall hit chance of a shot by 15%, but increases the base damage of the shot by 50%.
-* Deadeye has a 3 turn cooldown.
-* Works with Snap Shot.
+* {% COOLDOWN %}
 
 ## Death Dealer
 Grants +25 crit chance. Critical shots against a flanked target while in Shadow will deal double critical damage.
-* Use Shadow's increased mobility and smaller enemy detection radii to flank enemies and deal massive damage.
 
 ## Death From Above
 Killing an enemy at a lower elevation with your primary weapon refunds a single action, and does not end your turn. Also grants a long-range accuracy bonus for sniper rifles.
-* Death From Above can combo well with pistol abilities or can simply make a soldier more mobile.
-* Also grants a long-range accuracy bonus for sniper rifles and vektor rifles at any elevation.
 
 ## Dedication
 Free action. Gain 2 mobility and ignore reaction fire for the rest of the turn. Has a 4 turn cooldown.
 * Gain 2 mobility and ignore reaction fire for the rest of the turn.
 * Free action.
-* Dedication has a 4 turn cooldown.
+* {% COOLDOWN %}
 
 ## Deep Cover
 If you did not attack this turn, hunker down automatically.
@@ -330,45 +324,34 @@ If you did not attack this turn, hunker down automatically.
 
 ## Demolition
 Unleash a volley of bullets at your target's cover, significantly damaging or destroying it. Deals no damage to your target.
-* Demolition requires 4 ammo points and has a 5 turn cooldown.
-* Demolition does increased environmental damage, and will destroy most cover objects.
+* {% COOLDOWN %}
 
 ## Dense Smoke
 Your smoke grenades confer an additional 10 defense.
-* Your smoke grenades confer an additional 10 defense to those within the smoke, for a total of 30.
 
 ## Disabling Shot
 Stun enemies with a precise shot, with a bonus stun duration if the shot crits. The shot can not do critical damage.
 * Stuns enemies for 2 actions if the shot hits (including if it grazes).
 * Stuns for an extra 2 actions if the shot crits, but the shot won't inflict the critical damage.
-* Disabling Shot requires 1 ammo to use.
-* Disabling Shot has a 5 turn cooldown.
-* Only Avatars and Psi Zombies can not be stunned.
+* {% COOLDOWN %}
 
 ## Disassembly
 Killing an enemy grants a stackable +20 hack bonus that lasts 3 turns.
 
 ## Double Tap
 Activate to fire a standard shot and gain a second action restricted to an additional shot or overwatching.
-* Activate to fire a standard shot and gain a second action restricted to several different shooting abilities or overwatch.
-* Double Tap has a 2 turn cooldown.
-* Costs the same action it would take to fire a standard shot (Snipers cost 2 AP and all other weapons cost 1)
+* {% COOLDOWN %}
+* Costs the same action it would take to fire a standard shot (Snipers cost 2 AP and all other weapons cost 1) (reword this?)
 
 ## Electroshock
 Your Arc Thrower disorients the target when it misses.
-* A miss with your Arc Thrower still disorients non-robotic targets.
 
 ## Evasive
 Start each mission with 100 bonus dodge. The bonus is removed after you take damage for the first time.
-* This ability will typically turn the first hit on a soldier into a graze, but being hit with undodgeable attacks will remove it without any bonus being applied.
 
 ## Ever Vigilant
 If you spend all of your actions on moves, you are granted an automatic overwatch shot at the end of the turn.
-* Ever Vigilant enables an extremely mobile style of play for the soldier.
-* LITERALLY any action other than moving will invalidate Ever Vigilant.
 
-
-WARNING: this perk is currently bugged such that it prioritizes pistol overwatch over standard overwatch. Installing the mod WOTC Reliable Ever Vigilant will fix this.
 ## Executioner
 Confers +20 aim and +20 critical chance against targets at half or less of their original hit points.
 
@@ -383,27 +366,24 @@ Equipped medikits have 2 extra charges.
 * If you have the Medical Protocol ability, your GREMLIN gains additional charges as well.
 
 ## Field Surgeon
-Reduce wound recovery times for most soldiers.
-* Field Surgeon reduces the number of hit points a soldier must heal after being wounded in battle by 1.
+Reduces the number of hit points a soldier must heal after being wounded in battle by 1.
 * Multiple Field Surgeons on a mission have a chance to reduce wound recovery time further.
 * The effect includes the soldier with the ability.
 * It does not affect soldiers who suffered killing wounds and are stabilized from bleeding out.
 
 ## Fire and Steel
 Attacks with your gauntlet, and fires set by gauntlet weapons, do +1 damage.
-* Attacks with your gauntlet, and fires set by gauntlet weapons, do +1 damage.
 * This applies to both rocket launcher and flamethrower weapons, and the fires they set.
 
 ## Fire in the Hole
 Your rockets are more accurate.
-* Your rockets are more likely to hit their intended point of impact, or at least close to it.
 * The maximum it can miss by is reduced by two tiles.
 
 ## Firestorm
 Once per battle, attack all units in a complete circle around the soldier's position. Also grants immunity to fire damage.
 * This will light fires and do fire damage to all enemies in a circle around the soldier's position, doing +2 bonus damage over regular Flamethrower attacks.
 * Firestorm also grants immunity to fire damage.
-* Requires one action point and will end the soldier's turn when used.
+* Requires two action points and will end the soldier's turn when used.
 * Usable once per battle.
 * It is not recommended the soldier uses Firestorm on rooftops.
 
@@ -413,13 +393,12 @@ Grants 1 free flashbang item to your inventory.
 ## Fleche
 Attack any enemy within movement range with your sword. Deals +1 damage for every 4 tiles between your starting position and the target.
 * You can trigger the Fleche ability by placing the movement cursor over an enemy.
-* A soldier can perform a "Dash" move, using both actions to move, and still trigger an attack against an adjacent enemy.
 * Fleche deals 1 bonus damage for every 4 tiles between unit's position at the start of its turn and the target's position up to 5 maximum bonus damage.
 
 ## Flush
 Special shot with a bonus to hit that does little or no damage but confers defense and dodge penalties and forces target to change position if it hits.
 * Consumes 1 ammo.
-* Flush has a 3 turn cooldown.
+* {% COOLDOWN %}
 * +30 bonus to aim.
 * Damage is reduced by 80%
 * Cannot crit or apply bonus ammo effects.
@@ -428,7 +407,6 @@ Special shot with a bonus to hit that does little or no damage but confers defen
 
 ## Focus
 Gain Focus during missions, increasing stats, damage, and ability effectiveness. Focus can be spent on powerful abilities.
-* Templars begin missions weaker than other soldiers, but can become extremely powerful at higher Focus levels.
 * Focus is gained by attacking enemies with Rend (even misses count).
 
 ## Formidable
@@ -436,20 +414,17 @@ Your gear includes an extra layer of protection, granting 2 bonus ablative hit p
 * Formidable reduces explosive damage taken by 50%.
 
 ## Fortify
-Activate to grant +20 defense until the beginning of the next turn. Does not cost an action. Has a 5 turn cooldown.
-* Activate to grant the soldier +20 defense until the beginning of the soldier's next turn.
-* Does not cost an action.
-* Fortify has a 5 turn cooldown.
+Activate to grant +20 defense until the beginning of the next turn.
+* Free action.
+* {% COOLDOWN %}
 
 ## Full Kit
 Grants +1 charge per grenade item in a utility slot.
-* Grants +1 charge per grenade item in a utility slot.
 * Applies to explosive and support grenades as well as Battle Scanners.
 * Extra grenades provided by Smoker and Flashbanger abilities do not get extra charges.
 
 ## Full Override
 Take permanent control of a robotic unit and potentially acquire ADVENT MECs for the Resistance.
-* Full Override is a special hack action usable against enemy robotic units.
 * It has one charge that is only expended if a successful override occurs.
 * Requires one action and ends the soldier's turn.
 * The first hack option, Greater Shutdown, will disable (stun) the unit for 3 turns.
@@ -458,7 +433,6 @@ Take permanent control of a robotic unit and potentially acquire ADVENT MECs for
 
 ## Full Throttle
 Gain +3 mobility with every kill this turn. Lasts 2 turns, including the current one.
-* Only kills by the Skirmisher count towards Full Throttle.
 
 ## Ghost
 Create a duplicate of the Templar from the body of a fallen humanoid. The Ghost disappears when it loses all Focus. Costs 2 Focus.
@@ -466,14 +440,14 @@ Create a duplicate of the Templar from the body of a fallen humanoid. The Ghost 
 * Ghosts cannot gain Focus, and disappear when all Focus is spent, or their health reaches 0.
 * Rend costs 1 Focus when used by Ghosts.
 * Ghost must be cast on the corpse of a humanoid enemy, and cannot be cast on the same corpse twice.
-* Ghost has a 5 turn cooldown.
+* {% COOLDOWN %}
 * Ghosts cannot gain following abilities: Volt, Shield bash, Shield abilities, Deflect, Reflect, Solace, Void Conduit, Bladestorm, Apotheosis, Superior Aptitude, Ionic Storm and Sustain.
 
 ## Ghost Grenade
 A specialized smoke grenade that causes the targeted ally to enter concealment.
 * This ability only affects a single targeted ally; others in the smoke cloud are not concealed but do receive the defense bonus.
 * Uses one action and ends your turn.
-* One use per mission; abilities that add grenade charges do not provide any bonuses.
+* One use per mission.
 * Only works on XCOM soldiers, as civilians do not have training in concealment techniques.
 * Small smoke cloud grants 20 defense; dense smoke bonuses do not apply.
 * It does not fit in the standard XCOM grenade launcher and must be thrown at a visible ally.
@@ -481,23 +455,20 @@ A specialized smoke grenade that causes the targeted ally to enter concealment.
 
 ## Ghostwalker
 Activate this ability to reduce enemy detection range against you by almost 25% for 2 turn(s).
-* Activate this ability to reduce enemy detection range against you by almost 25% for 2 turn(s) (including the current turn), as denoted by red tiles surrounding enemies who are not alerted to your presence.
-* Ghostwalker has a 4 turn cooldown.
-* Requires no actions to activate.
-* This ability also grants a small reduction in this soldier's impact on infiltration times.
 * Does not apply to ADVENT security towers.
+* {% COOLDOWN %}
+* Free action.
+* This ability also grants a small reduction in this soldier's impact on infiltration times.
 
-Grapple (Skirmisher)
-Grapple (Skirmisher)
+## Grapple
 Deploy a grappling hook to move quickly to an elevated position.
-* Grapple allows the Skirmisher to get into position without using an action.
-* Grapple has a 3 turn cooldown.
+* Free action.
+* {% COOLDOWN %}
 
 ## Grazing Fire
-Missed shots with your primary weapon have an additional roll to become a graze.
-* Missed shots with the soldier's primary weapon generally have a 50% chance to become a graze.
-* This effect occurs after normal hit-miss-graze processing.
+Missed shots with the soldier's primary weapon have 50% base chance to become a graze.
 * Targets with a dodge score subtract that score from the ability's success chance.
+* This effect occurs after normal hit-miss-graze processing.
 
 ## Greater Padding
 Reduce wound recovery times for this soldier by 1/2/4 HP. Doesn't work if the soldier bleeds out.
@@ -510,8 +481,8 @@ Attempt to remotely breach security on a network access point with your GREMLIN/
 
 ## Hail of Bullets
 Unleash a hail of bullets that is guaranteed to hit your target, but uses a lot of ammunition.
-* Hail of Bullets requires 3 ammo points.
-* Hail of Bullets has a 5 turn cooldown.
+* Hail of Bullets consumes 3 ammo.
+* {% COOLDOWN %}
 * Hail of Bullets does not work with shotguns or sniper rifles.
 
 ## Hard Target
@@ -521,14 +492,14 @@ Gain 5 dodge per enemy you can see, up to a maximum of +30.
 * This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
 ## Haywire Protocol
-You may target robotic and mechanical enemies with your GREMLIN, attempting to hack them and seize control.
+Attempt to hack an enemy with your GREMLIN.
 * Hacking a robotic enemy or turret pits the Specialist's Hacking stat against the enemy's Tech Defense stat.
 * Upgrading your GREMLIN will lead to an increased Hacking stat.
 * Hacked robotic enemies can only be controlled for a short time.
 
 ## HEAT Warheads
 Your grenades now pierce up to 2 point(s) of armor and shred 1 additional point(s) of armor.
-* Your grenades now pierce (ignore) up to 2 point(s) of armor and shred 1 additional point(s) of armor.
+* The innate shred thing
 
 ## Heavy Weapons
 This soldier is trained to use the XCOM gauntlet, a combination Rocket Launcher and Flamethrower.
@@ -543,7 +514,6 @@ This soldier is trained to use the XCOM gauntlet, a combination Rocket Launcher 
 
 ## Heavy Ordnance
 Any damaging grenade in your grenade-only slot gains a bonus use.
-* All damaging grenades are viable for Heavy Ordnance.
 
 ## HiDef Holo
 Your Holotargeted enemies are easier to critically hit.
@@ -572,14 +542,14 @@ Holotarget your enemy to grant an aim bonus to all attacks on this target by you
 * Holotargeting does not break concealment for you or your squad.
 
 ## Homing Mine
-Attach a claymore onto an enemy (does not alert the enemy). The Homing mine will explode upon that enemy taking damage.
+Attach a claymore onto an enemy. The Homing mine will explode upon that enemy taking damage.
 * Shots against the mined target are guaranteed to hit.
 * Homing Mine has 4 charges per mission.
 * Homing Mine requires one action and does not end your turn.
+* Attaching a Homing Mine does not reveal you.
 
 ## Hunter Protocol
 When an enemy is revealed, there is a 33% chance to take a free Overwatch shot.
-* Hunter Protocol makes the SPARK an ideal unit for scouting into the fog of war, since any revealed enemy can be instantly attacked.
 
 ## Hunter's Instincts
 Ranged attacks against flanked enemies deal +2 damage.
@@ -588,25 +558,25 @@ Ranged attacks against flanked enemies deal +2 damage.
 After taking damage, gain a stacking 20% Damage reduction until the end of your turn up to a maximum of three stacks.
 
 ## Impact Fields
-Activate a force field that reduces incoming damage by 33% for two turns. Six-turn cooldown.
-* Activate a force field that reduces incoming damage by 33% for two turns.
-* Six-turn cooldown (including the turn in which it was activated).
+Activate a force field that reduces incoming damage by 33% for two turns.
+* {% COOLDOWN %}
 * Uses one action and doesn't automatically end your turn.
 * Armor-Piercing weapons do not mitigate this effect.
 
 ## Impersonal Edge
 Reduce shadow cooldown by 1 and gain a stackable +20 aim buff for 3 turns when you get a kill with a throwing knife.
 
-
 ## Implacable
 Once per turn, when you kill an enemy, you gain a movement action.
 
-Impulse
+## Impulse
 Your ranged attacks gain 10 aim and 10 critical chance if you have moved this turn.
 
 ## Incinerator
 Your flamethrower has an increased range and covers a wider area of effect.
 * The length of the flamethrower increases by 2 tiles and the width increases by 1 tile.
+* Roust?
+* Firestorm?
 
 ## Independent Tracking
 A Holotargeted enemy will remain so for 1 additional turn(s).
@@ -615,25 +585,18 @@ A Holotargeted enemy will remain so for 1 additional turn(s).
 
 ## Indomitable
 Once per turn, gain 1 focus when you're attacked.
-* Once per turn, gain 1 focus when you're attacked.
 * Applies to both melee and ranged attacks.
 
 ## Infighter
 Gain 40 dodge against attacks within four tiles.
-* Gain 40 dodge against attacks within four tiles.
 * Dodge bonus also applies to melee attacks.
 * This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
 ## Inspire Agility
 Give a friendly unit 30 Dodge until the start of your next turn. Whenever you kill an enemy, you gain an extra charge. Usable once per turn. Starts with one charge, and is a free action.
-* Give a friendly unit 30 Dodge until the start of your next turn.
-* Killing an enemy unit grants an extra charge.
-* Usable once per turn.
-* Starts with one charge and is a free action.
 
 ## Interference
 GREMLIN cancels overwatch on targeted unit.
-* Cancels overwatch on targeted unit.
 * Is a free action.
 * 3 charges per battle, plus 2 extra charges per better Gremlin tech.
 
@@ -641,29 +604,29 @@ GREMLIN cancels overwatch on targeted unit.
 A powerful form of Overwatch. Instead of firing automatically, perform any single action. Free action.
 * This is a free action.
 * Some actions are not available during Interrupt, like Overwatch.
-* Interrupt has a 3 turn cooldown.
+* {% COOLDOWN %}
 
 ## Intimidate
 When targeted by an attack, the enemy has a chance to panic.
-* Intimidate's chance to panic the attacker increases with higher tier SPARK armors.
 * Intimidate can be triggered by melee and area of effect attacks.
 * Intimidate will not trigger when targeted by Overwatch fire.
+* Intimidate's chance to panic the attacker increases with higher tier SPARK armors.
 
 ## Invert
 Switch locations with a unit. Costs 1 Focus.
-* Invert has a 2 turn cooldown, and does not end the Templar's turn.
+* {% COOLDOWN %}
 * Can target both ally and enemy units.
 
 ## Ionic Storm
 Summon lightning to strike all nearby enemies. Damage increases with Focus level. Costs all Focus.
 * Ionic Storm's radius increases at higher Focus levels.
 * Ionic Storm deals double damage to Psionic units.
-* Ionic Storm has a 5 turn cooldown.
+* {% COOLDOWN %}
 
 ## Iron Curtain
 Special shot that does 50% of normal damage but reduces target mobility for the following 2 turn(s). Cone-based attack with primary weapon.
 * If this cone-based attack hits, Iron Curtain does 50% of normal damage and imposes -8 mobility to the enemy for 2 turn(s).
-* Iron Curtain has a 3 turn cooldown.
+* {% COOLDOWN %}
 * Uses 3 ammo.
 * Can be used after moving.
 * Iron Curtain does not work with shotguns or sniper rifles.
@@ -685,13 +648,13 @@ Use the Grapple to pull a humanoid target to you and deliver a Ripjack strike.
 * Justice is a great way to pull an enemy out of position.
 * The Ripjack strike is guaranteed to hit if the pull is successful.
 * An open space adjacent to the Skirmisher is needed to use Justice.
-* Justice has a 4 turn cooldown.
+* {% COOLDOWN %}
 
 ## Kill Zone
 Take a reaction shot against any enemy that moves or attacks within a cone of fire.
 * There is no limit to the amount of Kill Zone shots a soldier can take outside of ammo counts.
 * Kill Zone utilizes Squadsight, even if the soldier does not have the Long Watch ability.
-* Kill Zone has a 4 turn cooldown.
+* {% COOLDOWN %}
 
 ## Killer Instinct
 Activating Run and Gun grants +50% critical damage for the rest of the turn.
@@ -718,7 +681,7 @@ The Grenadier uses a grenade launcher to fire grenades rather than throwing them
 ## Lead The Target
 Grants a +20% increased chance to hit, but delays the shot until the target takes an action on their turn. Costs two actions and has a 3 turn cooldown.
 * Carefully lead the target, granting a +20% increased chance to hit, but delaying the shot until the enemies turn. Takes two actions.
-* Lead The Target has a 3 turn cooldown.
+* {% COOLDOWN %}
 
 ## Lethal
 You do 2 additional points of base damage and 1 additional point(s) of bonus critical damage with your primary weapon.
@@ -741,11 +704,11 @@ Reaction fire shots against you have a significantly decreased chance to hit. Th
 Attack any enemy within blue movement range with your weapon. This attack does not end the turn.
 * Attack any enemy within blue movement range with your weapon.
 * This attack does not end the turn.
-* Lightning Slash has a 3 turn cooldown.
+* {% COOLDOWN %}
 
 ## Like Lightning
 When Run and Gun is activated, your Arc Thrower cooldown is immediately reset to 0.
-* When Run and Gun is activated, your Arc Thrower cooldown is immediately removed.
+* {% COOLDOWN %}
 * Does not apply to Chain Lightning.
 
 ## Lingering Shadow
@@ -785,13 +748,13 @@ Fire a shot with your primary weapon that immobilizes the target until the end o
 * Fire a shot with your primary weapon that does normal damage and immobilizes the target until the end of their next turn.
 * Useful to isolate a high-value target during an ambush.
 * Uses 1 ammo.
-* Maim has a 3 turn cooldown.
+* {% COOLDOWN %}
 
 ## Manual Override
 Lowers all ability cooldowns on a selected ally soldier by up to 3 turns.
 * Use the allies' abilities early and often to take full advantage of Manual Override.
 * Costs 1 action.
-* Manual Override has a 4 turn cooldown.
+* {% COOLDOWN %}
 
 ## Marauder
 Standard shots are not turn-ending, allowing for shooting then moving or shooting twice on a turn.
@@ -816,7 +779,7 @@ After using Rend, gain a bonus movement action.
 You may Holotarget multiple enemies with a 2 turn cooldown.
 * HiDef Holo, Independent Tracking, and Vital Point Targeting apply to all targets.
 * Area of effect radius is 4 tiles for the basic Holotargeter and improves to 5 and 6 tiles with better technology.
-* Multitargeting has a 2 turn cooldown.
+* {% COOLDOWN %}
 * Holotargeting does not break concealment for your squad.
 
 Napalm-X
@@ -847,7 +810,7 @@ During enemy turns, fire a free reaction shot that can critically hit with your 
 
 ## Nova
 Release a blast of energy, damaging all nearby units. This attack has no cost or cooldown, but consecutive Novas will damage the SPARK.
-* Nova has no action point cost and no cooldown.
+* {% COOLDOWN %}
 * The first Nova attack each mission will deal 0 damage to the SPARK.
 * All Nova attacks after the first will deal a stacking 2 damage to the SPARK.
 
@@ -897,7 +860,7 @@ Summon a pillar of Psionic energy to act as a high cover point. Free action, doe
 * The pillar will last for a number of turns equal to the Templar's Focus level when summoned.
 * Pillar is a free action.
 * Can be used after Rend.
-* Pillar has a 1 turn cooldown.
+* {% COOLDOWN %}
 
 ## Point Blank
 Fire your sawed-off shotgun at a nearby enemy.
@@ -925,12 +888,12 @@ Gain two extra ammo in your sawed-off shotgun.
 ## Quickburn
 Activate so your next use of the flamethrower will not cost an action.
 * Activate so your next use of the flamethrower will not cost an action.
-* Quickburn has a 5 turn cooldown.
+* {% COOLDOWN %}
 
 ## Quick Zap
 Activate this ability to make your next arc thrower shot a free action. Has a 4 turn cooldown.
 * Activate this ability to make your next arc thrower shot a free action.
-* Quick Zap has a 4 turn cooldown.
+* {% COOLDOWN %}
 * Applies to the abilities Stun, Arc Pulser and Chain Lightning.
 
 ## Rainmaker
@@ -943,11 +906,11 @@ Equipped heavy weapons deal +2 damage and have increased area of effect.
 Activate this ability before throwing or launching a support grenade, and the throw will not cost an action.
 * Activate this ability before throwing or launching a support grenade, and the throw will not cost an action.
 * Applies to Smoke Grenades, Flashbangs, Shaped Charges and Battle Scanners.
-* Rapid Deployment has a 3 turn cooldown.
+* {% COOLDOWN %}
 
 ## Rapid Fire
 Fire twice in a row at an enemy. Each shot suffers an Aim penalty of -15. Can be used once per turn.
-* Rapid Fire has a 1 turn cooldown.
+* {% COOLDOWN %}
 
 ## Rapid Reaction
 When in overwatch, each shot you hit with grants another reaction fire shot, up to a maximum of three shots.
@@ -958,7 +921,7 @@ You may Holotarget an enemy as a free action with a 4 turn cooldown. In addition
 * In addition, Rapid Targeting lets you periodically use Holotargeting against a single enemy as a free action.
 * This works with HiDef Holo, Independent Tracking, and Vital Point Targeting.
 * This does not stack with Multitargeting.
-* Rapid Targeting has a 4 turn cooldown.
+* {% COOLDOWN %}
 * Holotargeting does not break concealment for your squad.
 
 ## Ready For Anything
@@ -966,14 +929,14 @@ Enter overwatch after firing a standard shot with your primary weapon.
 
 ## Reaper
 A devastating chain melee attack where the first melee attack cannot miss. Each melee kill in Reaper mode grants an extra action, but further melee attacks have reduced damage.
-* Reaper has a 4 turn cooldown.
+* {% COOLDOWN %}
 * Reaper cannot be combined with Run and Gun.
 * As the damage with each successful Reaper strike is reduced, careful ordering of targets may be required to ensure the longest chain of attacks.
 
 ## Reckoning
 Unlocks the Ripjack Charge.
 * You can trigger the Charge ability by placing the movement cursor over an enemy and right-clicking (as with Fleche on Shinobis).
-* Charge costs 1 action point, is not turn ending, and has a 4 turn cooldown.
+* {% COOLDOWN %}
 * A Skirmisher can perform a dash move with the Charge attack and it will still only cost 1 action point.
 
 ## Reflex
@@ -984,7 +947,7 @@ When fired upon, gain one extra action on the next turn. Triggers no more than o
 ## Remote Start
 Detonate an environmental explosive, causing it to deal double damage within twice its normal radius. Does not reveal the Reaper.
 * Make sure squadmates are clear of the blast zone!
-* Remote Start requires 1 ammo point, and has a 5 turn cooldown.
+* {% COOLDOWN %}
 * Remote Start has 1 charge(s) per mission.
 
 ## Rend
@@ -1070,13 +1033,13 @@ Free action: Gain a non-movement action.
 Rupture
 A Rupture shot grants a +50 bonus to critical hit chances and ensures that the target takes an additional +3 damage from all attacks in the future.
 * Rupture requires 3 ammo points.
-* Rupture has a 4 turn cooldown.
+* {% COOLDOWN %}
 * Ruptured targets take 3 additional damage from every attack.
 
 ## Sacrifice
 Generate a protective field which redirects any attacks against allies inside it towards you. Gain bonus defense and armor while active.
 * The SPARK gains +10 defense and +1 armor while Sacrifice is active.
-* Sacrifice has a 6 turn cooldown.
+* {% COOLDOWN %}
 
 ## Salvo
 Launching or throwing grenades, using heavy weapons or using the Gauntlet's Rocket Launcher with your first action will not end your turn.
@@ -1089,7 +1052,7 @@ Your explosives can destroy many cover objects.
 ## Saturation Fire
 Fire a cone shaped barrage of bullets at every enemy in an area. In addition, the cover of those enemies can be damaged or destroyed. Uses a lot of ammunition.
 * Saturation Fire requires 4 ammo points.
-* Saturation Fire has a 7 turn cooldown.
+* {% COOLDOWN %}
 * Saturation Fire will take a standard shot at every enemy in the cone, and will damage or destroy random cover elements in the cone.
 
 ## Savior
@@ -1118,13 +1081,13 @@ When in overwatch, you may take two reaction shots.
 A powerful chained shot ability. For every kill made with your primary weapon, your actions will be refunded but your damage and crit chance will be reduced for every subsequent attack.
 * Serial is meant to chain enemy kills in a single action, as every kill is essentially free.
 * Every successful kill does result in a reduction to critical hit chance and damage, however.
-* Serial has a 7 turn cooldown.
+* {% COOLDOWN %}
 
 ## Shadow
 Grants the soldier Shadow, an advanced form of concealment that lasts for 2 turns.
 * Shadow reduces detection ranges to just a few tiles at most.
 * Reaper has increased mobility while in Shadow.
-* Entering Shadow is a free action and has a 4 turn cooldown.
+* {% COOLDOWN %}
 
 ## Shadowstep
 This soldier does not trigger overwatch or reaction fire.
@@ -1137,7 +1100,7 @@ While concealed, gain +50 bonus aim and +50 bonus critical hit chance when attac
 ## Shield Bash
 Bash an adjacent enemy with your shield, doing some damage and knocking back the target 2 tiles. Free action.
 * The damage is equivalent to the base damage of the currently equipped shield.
-* Shield Bash is a free action with a 3 turn cooldown.
+* {% COOLDOWN %}
 * Can target enemies in adjacent tiles on the diagonal as well.
 
 ## Shooting Sharp
@@ -1162,7 +1125,7 @@ Special shot for primary-weapon shotguns only: Fire a shot that pierces 2 armor 
 * Special shot for primary-weapon shotguns only: Fire a shot with no range penalties.
 * The shot will pierce 2 armor point(s).
 * The shot also gains +10 aim
-* Slug shot has a 2 turn cooldown.
+* {% COOLDOWN %}
 * Requires 1 ammo.
 
 ## Smoker
@@ -1195,7 +1158,7 @@ Shots fired with your primary weapon pierce 3 armor.
 ## Sting
 Fire a shot while in Shadow that holotargets for +10 Aim and ruptures for 1. Guaranteed to remain in Shadow.
 * Sting allows for the Reaper to attack in situations where they absolutely do not want to be revealed.
-* Sting has 2 charge(s) per mission, requires 1 ammo points, and has a 1 turn cooldown.
+* {% COOLDOWN %}
 
 ## Sting Grenades
 Your flashbang grenades have a 50% chance to stun enemies.
@@ -1207,7 +1170,7 @@ Cone-based shotgun attack that does bonus damage to unarmored targets. Blocked b
 * Medium-range, cone-based shotgun attack.
 * The spread pattern is blocked by heavy cover.
 * Uses one action and 2 ammo.
-* Street Sweeper has a 5 turn cooldown.
+* {% COOLDOWN %}
 * Does 3 bonus damage against unarmored targets within the spread pattern.
 * Cannot be used with non-shotgun weapons.
 * Allies can be injured by this attack.
@@ -1234,14 +1197,14 @@ Strike an enemy with Psionic force, stunning them. Costs 1 Focus.
 * Stun Strike has a 85% chance to hit, increased by 5% for each Focus level.
 * Stun Strike has a 100% chance to stun the target if successful.
 * Stun Strike does not end the Templar's turn.
-* Stun Strike has a 2 turn cooldown.
+* {% COOLDOWN %}
 
 ## Superior Aptitude
 Rend grants an additional focus point.
 
 ## Suppression
 Fire a barrage that pins down a target, grants reaction fire against it if it moves, restricts the use of many abilities, and imposing a -25 penalty to the target's aim.
-* Suppression costs 2 ammo points to use, but has no cooldown.
+* {% COOLDOWN %}
 * Suppression will be canceled if the suppressing unit is damaged.
 * If multiple units suppress a target, the aim penalty will not stack.
 * May not be used if sniper rifle or shotgun-class weapons are equipped.
@@ -1290,7 +1253,7 @@ Aid Protocol grants the target a Covering Fire Overwatch shot.
 ## Total Combat
 Throwing a grenade or using an item no longer ends the turn and grenades have no cooldown. In addition, you can throw grenades 2 tiles further and their radius is increased by 1. Grants a Grenade-only slot. Grants +5 aim and +1 mobility.
 * Total Combat adds even more flexibility to the Skirmisher's turns, allowing actions to be taken exactly when needed.
-* Removes the cooldown for grenades.
+* {% COOLDOWN %}
 * Grants both Bombard and Volatile Mix, hence it does not stack with either of them.
 
 ## Tracking
@@ -1309,7 +1272,7 @@ After taking a standard shot with your primary weapon with your first action, yo
 ## Trench Gun
 Special shot for primary-weapon shotguns only: Fire a short-range cone-based attack at nearby targets. Has a 4 turn cooldown.
 * Special shot for primary-weapon shotguns only: Fire a short-range cone-based attack at nearby targets.
-* Trench Gun has a 4 turn cooldown.
+* {% COOLDOWN %}
 * Requires 1 ammo.
 * Ability will not be available with other primary weapons.
 * The shot will not penetrate heavy cover, so this ability is best used in flanking situations.
@@ -1351,7 +1314,7 @@ Your grenades' area of effect is increased by one tile.
 
 ## Volt
 A non-turn ending AOE attack that makes its targets easier to hit. Costs 1 Focus.
-* Volt has no cooldown, but costs 1 Focus.
+* {% COOLDOWN %}
 * Volt increases your squad's aim by +5 against the targets.
 
 ## Walk Fire
@@ -1371,7 +1334,7 @@ Reduces the Aim penalty for short-range primary weapon shots by 67%.
 Attack an enemy with an electrical lash. This attack has a 4 turn cooldown.
 * Whiplash does extra damage to robotic enemies.
 * Whiplash requires one action and does not end your turn.
-* Whiplash has a 4 turn cooldown.
+* {% COOLDOWN %}
 
 ## Whirlwind
 If you hit with a melee attack during your turn, gain a bonus move.
@@ -1387,10 +1350,10 @@ Enemy damage is reduced by 1 when in cover and attacked through that cover. Also
 
 ## Wrath
 Use the Grapple to pull yourself to an enemy and deliver a Ripjack strike.
-* Wrath adds extra mobility for the Skirmisher, and can be used while the Grapple is on cooldown.
+* {% COOLDOWN %}
 * The Ripjack strike is guaranteed to hit if the Grapple is successful.
 * An open space adjacent to the enemy is needed to use Wrath.
-* Wrath has a 4 turn cooldown.
+* {% COOLDOWN %}
 
 ## Wrecking Ball
 While Overdrive is active, break through walls and cover when moving.
@@ -1408,25 +1371,25 @@ Once per mission, fire a pistol shot that cannot miss.
 Fire once at every visible enemy with your pistol.
 * Faceoff is best augmented by an aggressive field position, granting a high chance to hit at multiple targets.
 * Faceoff cannot be used while in concealment
-* Faceoff has a 3 turn cooldown
+* {% COOLDOWN %}
 
 ## Fan Fire
 Fire the pistol three times at the same target.
 * Each shot in Fan Fire rolls a separate chance to hit.
 * Fan Fire can deal a devastating amount of damage if every shot hits.
-* Fan Fire has a 3 turn cooldown.
+* {% COOLDOWN %}
 
 ## Gunslinger
 Take a reaction shot that is guaranteed to hit and crit with your pistol against any enemy that moves or attacks within 8 tiles.
 * There is no limit to the amount of shots a soldier can take.
 * Range is 8 tiles.
-* Gunslinger has a 3 turn cooldown.
+* {% COOLDOWN %}
 * Cannot be used from concealment.
 
 ## Lightning Hands
 Fire your pistol at a target. This attack does not cost an action.
 * Lightning Hands can combo well with two-action abilities, as it does not prevent their use in the same turn.
-* Lightning Hands has a 3 turn cooldown.
+* {% COOLDOWN %}
 
 ## Quickdraw
 Firing your pistol with your first action no longer ends your turn and negate pistol weight.
@@ -1486,7 +1449,7 @@ Rank: Lieutenant Colonel (5)
 Spend an action to pinpoint a target and grant your squad cumulative Aim bonuses and 1 Armor Piercing on attacks against that target for the rest of the turn.
 * Spend an action to pinpoint a target and grant your squad cumulative aim bonuses and 1 armor piercing on attacks against that target for the rest of the turn.
 * Each successive direct weapon attack against the target in the same turn grants an additional +5 aim bonus.
-* 3-turn cooldown.
+* {% COOLDOWN %}
 
 Rank: Second Lieutenant (1)
 ## Get Some
@@ -1501,7 +1464,7 @@ Incoming!
 Activate this ability to grant everyone within command range four points of damage resistance against explosive attacks through the end of the next alien turn.
 * Activate this ability to grant all allies in command range four points of damage resistance against explosive attacks through the end of the next alien turn.
 * Requires no actions.
-* Five-turn cooldown.
+* {% COOLDOWN %}
 * Command Range increases with each new officer level.
 * Does not apply to panicked soldiers or units suppressing other targets.
 
@@ -1572,7 +1535,7 @@ Fortress now provides immunity to nearby teammates.
 ## Domination
 Permanently mind control an enemy. Only one successful Domination can be performed per mission.
 * Domination requires a contest of the Psi Operative's Psi Strength stat versus the Will of the target.
-* If an attempted Domination fails, there is a 4 turn cooldown before another Domination can be attempted.
+* {% COOLDOWN %}
 * If the Psi Operative dies or leaves the battlefield, the Domination is broken.
 
 ## Fortress
@@ -1581,11 +1544,11 @@ The soldier is immune to fire, poison, acid, and explosive damage.
 
 ## Fuse
 If an enemy is carrying explosives, they can be remotely detonated by the Psi Operative. Free action.
-* Fuse has a 5 turn cooldown.
+* {% COOLDOWN %}
 
 ## Insanity
 Debilitating telepathic attack that can inflict different negative conditions, including mental control of the target.
-* Insanity has a 1 turn cooldown.
+* {% COOLDOWN %}
 * Insanity requires a contest between the Psi Operative's Psi Strength stat, and the target's will.
 * Insanity can disorient, panic, or mind control the target if it succeeds.
 * There is about a 10%, 85%, 5% chance to trigger the respective effects (Very approximate chances)
@@ -1598,7 +1561,7 @@ Grants bonus will, critical chance and ablative hit points to an ally until the 
 * Grants the targeted ally 1 will per 5 psi offense score of the Psi Operative.
 * Also grants the ally +1 critical chance per 7 psi offense score of the Psi Operative.
 * Effect lasts until the Psi Operative's next turn.
-* Mind Merge has a 4 turn cooldown.
+* {% COOLDOWN %}
 * Mind Merge requires one action and does not end your turn.
 * Only visible allies may be targeted.
 * Improved Psi Amps grant additional bonuses to these effects.
@@ -1606,7 +1569,7 @@ Grants bonus will, critical chance and ablative hit points to an ally until the 
 
 ## Null Lance
 Project a beam of terrible power that damages every target it passes through. This attack can penetrate multiple enemies and obstacles.
-* Null Lance has a 4 turn cooldown.
+* {% COOLDOWN %}
 * Null Lance damage can be increased by improving the Psi Operative's Psi Amp.
 
 ## Null Ward
@@ -1615,7 +1578,7 @@ project psionic shields around the soldier and nearby allies. The shields will c
 * Null Ward grants 3 ablative hit points.
 * Improved Psi Amps grant additional bonuses to ablative hit points.
 * Null Ward requires one action and does not end your turn.
-* Null Ward has a 5 turn cooldown.
+* {% COOLDOWN %}
 * Null Ward has a radius of 8 tiles.
 
 ## Phase Walk
@@ -1623,7 +1586,7 @@ Temporarily phase out of existence to teleport to a nearby location.
 * Temporarily phase out of existence to teleport to a nearby location.
 * The targeted tile must be visible (works with squadsight).
 * Phase Walk requires one action and does not end your turn.
-* Phase Walk has a 2 turn cooldown.
+* {% COOLDOWN %}
 * Phase Walk has a radius of 17 tiles.
 * Moving with Phase Walk can trigger certain reaction fire abilities.
 
@@ -1634,7 +1597,7 @@ Learn officer abilities in half the time.
 The Psi Operative may immediately extinguish mental impairments for a squadmate.
 * Solace cleanses disorientation, mind control, panic and stun effects.
 * Solace requires one action and does not end your turn.
-* Solace has a 3 turn cooldown.
+* {% COOLDOWN %}
 
 ## Soul Steal
 Soulfire transfers the damage done back to the Psi Operative as health and grants an ablative HP for 3 turns, but increases the cooldown of soulfire by 1.
@@ -1647,18 +1610,18 @@ Summon meteors of psionic energy to deal damage to enemies inside a target area,
 * Soul Storm area of effect is centered on the user.
 * Cannot destroy floors or ceilings.
 * Soul Storm requires one action and ends your turn.
-* Soul Storm has a 5 turn cooldown.
+* {% COOLDOWN %}
 * Soul Storm has a radius of 4 tiles.
 
 ## Soulfire
 Does guaranteed Psionic damage to an organic enemy. Ignores cover and armor.
-* Soulfire has a 2 turn cooldown.
+* {% COOLDOWN %}
 * The damage done by the Soulfire ability can be increased by upgrading the Psi Operative's Psi Amp.
 * Robotic and mechanical enemies are completely immune to Soulfire.
 
 ## Stasis
 Completely stuns the target for 1 turn, but renders them immune to any damage or attack.
-* Stasis has a 5 turn cooldown.
+* {% COOLDOWN %}
 * Stasis cannot target units larger than 1 tile such as sectopods.
 * As Stasis completely removes an enemy unit from combat for a turn, it can be used defensively to protect vulnerable soldiers, or it can be used offensively to set up a coordinated attack.
 
@@ -1668,7 +1631,7 @@ Notes: Stasis Shield is automatically included, being able to cast Stasis on all
 Generate an explosive field of Psionic energy that immediately damages everything within. Organic enemies have a chance to suffer Insanity.
 * Generate an explosive field of Psionic energy that immediately damages everything within. Organic enemies have a chance to suffer Insanity.
 * Void Rift ruptures targets for 1. Rupture amount increases with better Psi Amp technology.
-* Void Rift has a 5 turn cooldown.
+* {% COOLDOWN %}
 
 Equipment Perks
 Blood Thirst (XCOM)
