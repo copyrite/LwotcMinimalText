@@ -23,7 +23,7 @@ Use your GREMLIN to grant an explosive grenade to an ally.
 * Grants a Frag Grenade. If the Proving Ground project "Plasma Grenades" is complete, grants a Plasma Grenade instead.
 * 1 action. Does not end turn.
 * Does not break concealment.
-* Charges per mission: 2.
+* Charges: 2
 
 ## Alpha Mike Foxtrot
 +4 to primary weapon damage. +2 to primary weapon critical damage.
@@ -43,78 +43,46 @@ Your Arc Thrower can target and damage robotic enemies. -{% ARC_PULSER_ %} to ta
 The BIT can equip and fire heavy weapons.
 
 ## Apex Predator
-On primary weapon crit, the target and enemies in a {% APEX_PREDATOR_RADIUS %} around it have a {% APEX_PREDATOR_PANIC_CHANCE %}% a chance to panic.
+On primary weapon crit, the target and enemies in a {% APEX_PREDATOR_RADIUS %} around it have a {% APEX_PREDATOR_PANIC_CHANCE %}% chance to panic.
 
-Apotheosis
-Become a god, massively increasing your dodge, Rend damage and mobility. Requires a minimum of 3 focus and consumes it all.
+## Apotheosis
+Free action, consumes all focus. Bonuses to Rend damage, Dodge and Mobility per Focus above 2.
+* 50% more Rend damage per consumed Focus above 2.
+* +20 Dodge per consumed Focus above 2.
+* +2 Mobility per consumed Focus above 2.
+* Requires at least 3 Focus.
+* Cooldown: {% SelfCooldown_LW %}
 
-    A free action that makes the Templar substantially more powerful for two turns.
-    Increases Rend damage by 50% for each point of focus above 2.
-    Increases Dodge by 20 for each point of focus above 2.
-    Increases mobility by 2 for each point of focus above 2.
-    Requires a minimum of 3 focus.
-    Consumes all focus.
-    5 Turn Cooldown
+## Arc Welder
+Use your Arc Thrower to heal robotic allies for {% ARC_WELDER_HEAL %} HP.
+* Uses per mission: {% ARC_WELDER_CHARGES %}
 
-Available for: Templar (Master)
-Arc Welder
-Arc Welder
-You can use your arc thrower to heal friendly mechanical units.
+## Area Suppression
+Suppress an area in a 4-tile radius around an enemy. Suppressed enemies trigger reaction fire from you, have -25 to Aim and have many abilities disabled.
+* Area Suppression costs 2 ammo points to use, plus one additional ammo for each reaction shot.
+* Suppression rockets and grenades.
+* Area suppression ends if you take damage.
+* Cannot be used when concealed.
+* Not usable with shotguns or sniper rifles.
 
-    Starts each battle with 2 charges that heal 4 HP.
-    Works for any friendly robotic unit, including SPARKs, resistance MECs and hacked ADVENT units.
+## Arc Wave
+Rend deals damage in a cone behind the primary target.
+* Arc Wave does not affect the primary target of Rend.
+* Arc Wave deals 4/7/10 damage depanding on weapon tier.
+* Arc Wave is not stopped by cover.
 
-Available for: Assault (XCOM Tier 1)
-Area Suppression
-Area Suppression
+## Avenger
+Once per enemy turn, take a reaction shot with your primary weapon at an enemy that has taken a hostile action against an ally.
+* Avenger will also activate on hostile actions with no target.
 
-Fire a barrage that pins down multiple targets within a 4-tile radius, granting reaction fire against anyone that moves, and imposing a -25 penalty to all targets' aim until suppression is removed. Cannot be used when concealed.
+## Banish
+Fire at a target until you run out of ammo or it dies. Banish has -15 Aim per Banish shot fired.
+* Banish reveals you before you fire.
+* Cooldown: {% SelfCooldown_LW %}
 
-    Area Suppression cannot be used when the soldier is concealed.
-    Any unit that attempts to move will face reaction fire as long as the suppressing unit has ammo remaining.
-    Does not work with shotguns or sniper rifles.
-    Area Suppression costs 3 ammo points to use, plus one additional ammo for each reaction shot. It has no cooldown.
-    Area suppression will be canceled if the suppressing unit is damaged.
-    If multiple units suppress a target, the aim penalty will not stack.
-    Suppression restricts many of the target's abilities, including the use of rockets and grenades.
+## Battlefield Awareness
+If you kill during your turn, the next attack against you during the enemy turn will miss. When Battlefield Awareness causes an attack to miss, it goes on a {% SelfCooldown_LW %} turn cooldown.
 
-Available for: Gunner (Squaddie)
-Arc Wave
-Arc Wave
-Rend generates a wave of Psionic energy in the direction of the attack. Damage increases with Gauntlet tier.
-
-    Arc Wave does not affect the target of the original Rend attack.
-    Arc Wave deals 4/7/10 damage depanding on weapon tier.
-    Arc Wave travels through environmental objects.
-
-Available for: Templar (Warlock)
-Avenger
-Avenger
-Once per turn, take a reaction shot with your primary weapon at a visible enemy that has fired upon a visible ally.
-
-    Avenger will not activate if this unit is shot at.
-    Can only activate during the enemy's turn.
-    Can only trigger once per turn.
-
-Available for: Grenadier (XCOM Tier 3), Sharpshooter (XCOM Tier 4), Technical (XCOM Tier 3)
-Banish
-Banish
-Fire at a target until you run out of ammo or it dies. Each shot has 15 aim less than the previous one. Reveals the Reaper. 2 Turn Cooldown.
-
-    Each shot in Banish rolls a separate chance to hit.
-    Banish cannot be activated with only 1 ammo remaining.
-    Banish shots can crit.
-    Banish can fire from squadsight
-
-Available for: Reaper (TSgt)
-Battlefield Awareness
-Battlefield Awareness
-If you score a kill during your turn, the next attack against you during the enemy turn will miss. Upon usage, the ability goes on a 4 turn cooldown.
-
-    When Battlefield Awareness is triggered the soldier is immune to the next damage-dealing attack during the enemy turn, including area of effect attacks.
-
-Available for: Skirmisher (LCpl)
-Battlelord
 Battlelord
 After each enemy in line of sight takes a turn, take an action after their turn is completed. No action points will be refunded (e.g. from Hit and Run).
 
