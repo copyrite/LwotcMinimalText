@@ -33,11 +33,11 @@ Use your GREMLIN to grant an explosive grenade to an ally.
 ## Amplify
 Free action, 1 Focus\
 Debuff a target to take {% AMPLIFY_BONUS_PCT %}% more damage from the next {% AMPLIFY_NUM_ATTACKS %} attacks.
-* Cooldown: {% SelfCooldown_LW %}
+* {% COOLDOWN %}
 
 ## Arc Pulser
-Your Arc Thrower can target and damage robotic enemies. -{% ARC_PULSER_ %} to target's Hack Defense on hit.
-* 1 action. Ends turn.
+Your Arc Thrower can target and damage robotic enemies. -{% ARC_PULSER_HACK %} to target's Hack Defense on hit.
+* {% 1AP ET %}
 * {% SelfCooldown_LW %}.
 * Damage improves with Arc Thrower tier.
 
@@ -53,7 +53,7 @@ Free action, consumes all focus. Bonuses to Rend damage, Dodge and Mobility per 
 * +20 Dodge per consumed Focus above 2.
 * +2 Mobility per consumed Focus above 2.
 * Requires at least 3 Focus.
-* Cooldown: {% SelfCooldown_LW %}
+* {% COOLDOWN %}
 
 ## Arc Welder
 Use your Arc Thrower to heal a robotic ally for {% ARC_WELDER_HEAL %} HP.
@@ -62,7 +62,6 @@ Use your Arc Thrower to heal a robotic ally for {% ARC_WELDER_HEAL %} HP.
 
 ## Area Suppression
 Suppress an area in a 4-tile radius around an enemy. Suppressed enemies trigger reaction fire from you, have -25 to Aim and have many abilities disabled.
-* 1 action. Ends turn.
 * Area Suppression costs 2 ammo points to use, plus one additional ammo for each reaction shot.
 * Examples of abilities disabled by suppression include rocket launches and grenades throws.
 * Area suppression ends if you take damage.
@@ -82,8 +81,7 @@ Once per enemy turn, take a reaction shot with your primary weapon at an enemy t
 ## Banish
 Fire at a target until you run out of ammo or it dies. Banish has -15 Aim per shot fired.
 * Banish reveals you before you fire.
-* 1 action. Ends turn.
-* Cooldown: {% SelfCooldown_LW %}
+* {% COOLDOWN %}
 
 ## Battlefield Awareness
 Once per turn, you gain the Battlefield Awareness buff on kill. When you have the buff, damaging attacks against you are forced to miss. When this happens, you lose the buff and you cannot gain it for {% SelfCooldown_LW %} turns.
@@ -107,13 +105,14 @@ Your grenades and standard rockets can crit. Their crit chance is 50% and crit d
 
 ## Bladestorm
 You automatically reaction attack with your melee weapon on enemy turns. Bladestorm triggers against enemies that enter, exit or attack from melee range.
+* Will not trigger if you are concealed.
 * Impairments?
 
 ## Blinding Protocol
 Use your GREMLIN to disorient a non-robotic enemy and all other enemies in a {% BLINDING_PROTOCOL_RADIUS %} tile radius around it.
 * Squadsight targeting with line of sight required.
-* 1 action. Ends turn.
-* Cooldown: {% SelfCooldown_LW %}
+* {% 1AP ET %}
+* {% COOLDOWN %}
 
 ## Blood Trail
 +2 to ranged attack damage against targets that have taken damage after the start of their turn. Ignore 40 Dodge of targets that have taken damage after the start of their turn.
@@ -127,7 +126,7 @@ You disorient robotic enemies and apply -{% BLUESCREEN_BOMBS_HACK %} to Hack Def
 ## Body Shield
 Debuff an enemy to have -20 Aim against you and -50 Crit against you.
 * Free action
-* Cooldown: {% SelfCooldown_LW %}
+* {% COOLDOWN %}
 
 ## Bombard
 Launch the BIT to any visible location where it releases a powerful explosive blast. Advanced BITs do more damage.
@@ -143,7 +142,7 @@ Launch the BIT to any visible location where it releases a powerful explosive bl
 
 ## Both Barrels
 Fire your sawed-off shotgun at a nearby enemy. Consumes 2 charges to deal double damage.
-* 1 action. Ends turn.
+* {% 1AP ET %}
 
 ## Brawler
 You take {% BRAWLER_DR_PCT %}% less damage from enemies in {% BRAWLER_RADIUS %} tile radius.
@@ -156,128 +155,111 @@ Your primary weapon and explosives have +1 critical damage per every 2 enemies y
 When you kill a non-robotic enemy with your sawed-off shotgun, other non-robotic enemies within {% BRUTALITY_RADIUS %} tile radius of the target have a 50% chance to panic.
 
 ## Bulwark
-+{% BULWARK_ARMOR %} Armor. The tile you are on counts as a high cover object.
++{% BULWARK_ARMOR %} Armor. You are a high cover object.
 
 ## Bunker Buster
-Fire a special rocket that destroys buildings and other objects in the environment.
-* Fire a special rocket with a large area of effect that does moderate damage to enemies but huge damage to buildings, vehicles and other objects in the environment.
-* Requires both actions and usable only once per mission.
+Fire a rocket that deals moderate damage and huge environmental damage in a large area of effect.
+* 2 actions.
+* Uses per mission: {% BUNKER_BUSTER_CHARGES %}
 
 ## Burnout
-Activating your Flamethrower leaves a small smoke cloud around your position, providing a defensive bonus.
-* When fired, your Flamethrower leaves a small smoke cloud around your position, providing a +20 defensive bonus to anyone within.
-* Area of effect radius of smoke cloud is 1.5 tiles.
+When you attack with your flamethrower, you leave a smoke cloud with a {% BURNOUT_RADIUS %} tile radius centered at your position.
+* +20 Defense to all units on tiles with Burnout smoke.
 
 ## Capacitor Discharge
-Send the GREMLIN to a location where it emits a substantial electric discharge, damaging and potentially stunning all nearby units. Robotic units take more damage.
-* Capacitor Discharge has one charge per mission.
-* Capacitor Discharge will deal more damage as you upgrade your GREMLIN.
+Use your GREMLIN to deal damage and a {% CAPACITOR_DISCHARGE_RADIUS %} tile radius around a location. Affected units have a chance to be stunned. Robotic units take more damage.
+* Uses per mission: {% CAPACITOR_DISCHARGE_CHARGES %}
+* Damage improves with GREMLIN tier.
 
 ## Center Mass
 +1 to primary weapon damage, pistol damage and sawed-off shotgun damage.
 
 ## Chain Lightning
-Fire your Arc Thrower at a target that is capable of being stunned and bounces up to 3 other targets within 6 tiles.
-* Fire your Arc Thrower at a target that is capable of being stunned and bounces up to 3 other targets within 6 tiles.
-* Requires one action and ends your turn.
-* Chain Lightning has a 4 turn cooldown.
-* Cannot be used from concealment.
+Fire your Arc Thrower at a target that you can stun. Chain Lightning bounces up to {% CHAIN_LIGHTNING_CHAINS %} other targets within {% CHAIN_LIGHTNING_RADIUS %} tiles.
+* {% 1AP ET %}
+* {% COOLDOWN %}
+* Cannot be used when concealed.
 
 ## Chain Shot
-Take a shot with an aim penalty of 10. If you hit the target, you take another shot on the target automatically.
-* Chain Shot requires 2 ammo points.
-* Chain Shot has a 4 turn cooldown.
+Take a shot with -10 Aim. If you hit, you take another shot with -10 Aim.
+* Consumes 1 ammo per shot.
+* {% COOLDOWN %}
 * Chain Shot can be devastating against non-cover enemies, or when augmented with aim bonuses.
 
 ## Channel
-When an enemy dies, it may leave behind Psionic energy the Templar can collect to raise their Focus level.
-* Enemies have a 20% chance to drop Psionic loot.
-* Psionic enemies have a 50% chance to drop Psionic loot.
+Enemies have a chance to drop Psionic Loot when they die. Any unit with Focus can collect Psionic Loot to raise their Focus level.
+* Non-psionic enemies have {% CHANNEL_NONPSI_CHANCE %}% chance to drop Psionic Loot.
+* Psionic enemies have {% CHANNEL_PSI_CHANCE %}% chance to drop Psionic Loot.
 
 ## Channeling Field
-Every time you are targeted, part of the energy is channeled to your weapon. This energy is unleashed with your next Standard Shot.
-* Each point of energy channeled by Channeling Field increases the damage of the next weapon attack by 1.
-* The energy stored by channeling field is expended even if the next shot misses.
+You gain a stackable Channeling Field buff when an enemy targets you. +1 standard shot damage per stack. Stacks are lost when you attack.
 
 ## Cheap Shot
-Once per turn, gain a movement action after shooting with your primary weapon at a unit that was damaged this turn. Cannot trigger on the same turn as Knife Encounters.
-* Cheap Shot triggers if the target was previously damaged by any type of damage since the player's last turn, i.e. overwatch and damage over time during the enemy turn counts.
-* Works for Light 'em Up, Chain Shot and Banish in addition to the standard shot.
-* The movement action can be used to enter Shadow if it's off cooldown.
+Once per turn, gain a movement action after firing your primary weapon at a unit that was damaged after the start of its own turn.
+* Cannot trigger on the same turn as Knife Encounters.
+* Does it work for special shots or not?
 
 ## Close and Personal
-Confers +30 critical chance against adjacent targets. The bonus declines with distance from the target.
-* Confers +30 critical chance against adjacent targets.
-* Bonus reduced by 5 for each additional tile of distance from the target, down to 0 at 7 or more tiles.
++30 crit chance against adjacent targets. The bonus is reduced by 5 per tile of distance to the target.
 
 ## Close Combat Specialist
-Fire a free reaction shot with your primary weapon at any visible enemy within four tiles who moves or fires.
+You automatically reaction attack with your primary weapon on enemy turns. Triggers against enemies that enter, exit or attack in a {% CCS_RADIUS %} tile radius.
 * Will not trigger if soldier is concealed.
 * You may shoot at each enemy with this ability once per turn.
-* Each shot requires 2 ammo.
+* Consumes 2 ammo per shot.
 
 ## Close Encounters
-Once per turn, gain a bonus action after taking a standard shot with your primary weapon at an enemy within four tiles. Cannot trigger on the same turn as Hit and Run.
-* Once per turn, gain a bonus action after taking a standard shot with your primary weapon at an enemy within four tiles.
+Once per turn, gain an action after taking a standard shot with your primary weapon at an enemy in a {% CE_RADIUS %} tile radius.
 * A red ring will mark the range of this ability.
-* Close Encounters cannot be used on the same turn as Run and Gun.
+* Cannot trigger on the same turn as Hit and Run, or Run and Gun.
 
 ## Combat Awareness
-Grants 15 defense and an armor point when in overwatch.
-* Gain 15 defense and an armor point when in overwatch.
-* This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
++15 Defense when on Overwatch. +1 Armor when on Overwatch.
+* Bonuses do not apply if this unit is mentally impaired.
 
 ## Combat Engineer
-Your explosives do significantly greater damage to cover objects and other things on the battlefield.
-* More powerful than Sapper by itself, Combat Engineer stacks with Sapper to maximize environmental damage, although either perk alone will still destroy many cover objects.
-* Combat Engineer also prevents environmental damage from falling off from the center of an explosion, meaning you will destroy objects in a larger area.
+Bonuses to environmental damage of your explosives. Your explosives' environmental damage no longer suffers from falloff.
 
 ## Combat Fitness
-Gain 4 aim, 1 mobility, 2 HP, 4 will, and 4 dodge.
++{% COMFIT_AIM %} Aim. +{% COMFIT_MOB %} Mobility. +{% COMFIT_HP %} HP. +{% COMFIT_WILL %} Will. +{% COMFIT_DODGE %} Dodge.
 
 ## Combat Presence
-Grant an extra action to a squadmate.
-* Combat Presence can be used to get squadmates out of tough situations where they need an extra attack or move.
-* Combat Presence has a 4 turn cooldown.
+Give an action to a visible ally. (squadmate? do VIPs count?)
+* {% 1AP NTE %}
+* {% COOLDOWN %}
 
 ## Combat Protocol
-Send the GREMLIN to an enemy to jolt them, dealing guaranteed damage, which is increased against robotic enemies.
-* Combat Protocol has two charges per mission.
-* Upgrading your GREMLIN will lead to more damage per charge.
+Use your GREMLIN to attack with a guaranteed hit. Damage is increased against robotic enemies.
+* Squadsight targeting with line of sight required.
+* {% CHARGES %}
+* Damage improves with GREMLIN tier.
 
 ## Combatives
-You may parry melee attacks and counterattack with your melee weapon. Also gain +10 dodge.
-* You will parry any grazed melee attack against you and counterattack with your melee weapon.
-* Combatives grant +90 dodge against first melee attack against you in a turn.
-* Soldier also gains 10 dodge.
+You will parry and counter melee attacks that graze or miss against you. +90 Dodge against the first melee attack against you per turn. +10 Dodge.
+* Combatives does not trigger against area of effect melee attacks.
 
 ## Conceal
-Immediately enter concealment once per mission.
-* Concealment cannot be used when flanked by nearby enemies.
-* Requires one action and ends the soldier's turn.
+Enter individual concealment.
+* {% 1AP ET %}
+* Cannot be used while concealed.
+* Cannot be used when flanked by enemies that see you.
 
 ## Concentration
-Your grazing attacks are automatically upgraded to normal hits.
-* Attacks that would normally graze their target are automatically upgraded to normal hits.
-* Applies to primary weapons, secondary weapons, and pistols.
+Your grazes are converted to normal hits.
+* The hit result conversion happens after the usual hit-miss-crit-dodge resolution.
 
 ## Concussion Rocket
-Fire a special rocket that does limited damage but has a chance to stun or disorient organic enemies within its area of effect and leaves a cloud of smoke.
-* One use per mission.
-* Stun chances based on target's Will score and the soldier's gauntlet tier.
-* Disorientation chances based on target's Will score only.
-* Requires one action and ends the soldier's turn.
-* Elite Codexes and Psi Zombies are immune to all effects including damage.
-* Allies cannot be injured by this attack.
+Fire a rocket that deals low damage and has a chance stun or disorient non-robotic enemies on hit.
+* Stun chance is {% CONC_ROCKET_STUN_CHANCE %}%. Always disorients enemies it hits but does not stun.
+* {% 1AP ET %}
+* {% CHARGES %}
+* Allies are immune to all effects, including damage.
 
 ## Cool Under Pressure
-You gain +10 Aim on Overwatch and other reaction shots, and they can critically hit.
++10 Aim to reaction attacks. Your reaction attacks now have a crit roll.
 
 ## Coup de Grâce
-Bonus to hit, damage, and critical chance with your weapon against a disoriented, stunned or panicking enemy.
-* Coup de Grâce grants +50 aim, +50 critical chance and +2 damage against stunned and panicking enemies.
-* The bonuses are reduced against disoriented enemies.
-* For Shinobis and Gunners, this perk is applied to their secondary weapon.
++{% CDG_AIM %} Aim, +{% CDG_CRIT %} Crit, and {% CDG_DAMAGE %} damage to your {% BOUND_WEAPON_NAME %} attacks against stunned and panicking enemies. Bonuses apply at 50% effectiveness against disoriented enemies.
 
 ## Covering Fire
 Reaction shots confer an aim malus on enemies and can now be triggered by any enemy action, not just movement.
@@ -286,30 +268,30 @@ Reaction shots confer an aim malus on enemies and can now be triggered by any en
 * The penalty does not affect the current action an enemy takes if it is aim-based and would only apply in the next turn. This means that if a covering fire shot was taken against an enemy performing an aim-based action, that action does not suffer the penalty.
 
 ## Covert
-Enemies have 25% smaller detection range against you.
-* Enemies have 25% smaller detection range against you, as denoted by red tiles surrounding enemies who are not alerted to your presence.
-* This ability also grants a small reduction in this soldier's impact on infiltration times.
+Enemies have 25% reduced detection radius against you.
 * Does not apply to ADVENT security towers.
+* Infiltration rate bonus? How does that work?
 
 ## Crippling Strike
-Throw a knife that causes the target to be maimed for 1 turn (zero mobility).
-* Throws a throwing knife, without breaking Shadow.
-* This ability has a 3 turn cooldown.
-* The maimed status reduces the target's mobility to 0, making it immobile.
+Throw a knife that Maims on hit for 1 turn.
+* Maimed enemies have 0 mobility.
+* Breaks concealment, but not Shadow.
+* Shares charges with other Throwing Knife skills.
+* {% COOLDOWN %}
 
 ## Crusader's Rage
-Gain 25% damage boost for every 25% HP missing, up to 50% damage boost. Reduce wound recovery times for this soldier by 8 HP.
-* Wound reduction does not work if the soldier entered a bleeding out state during the mission.
+You deal 25% more damage per 25% HP missing, up to 50%. Your wound recovery times are reduced by {% CRUSADERS_RAGE_HEAL %} HP.
+* Wound reduction is not applied if the soldier entered a bleeding out state during the mission.
 
 ## Cutthroat
-Your melee attacks against biological enemies ignore their armor and have a +15 critical chance and do +2 critical damage.
++15 crit chance and +2 crit damage to melee attacks against non-robotic(?) enemies. Your melee attacks pierce all armor of non-robotic enemies.
 
 ## Cyclic Fire
-Special Shot: Fire three shots at a target in a single attack. Requires both actions and all shots have aim penalties. Has a 2 turn cooldown.
-* Special Shot: Fire three shots at a target in a single attack. Requires two actions and all shots have a -10 penalty to aim.
-* Requires 3 ammo.
-* Cyclic Fire has a 2 turn cooldown.
-* Requires a burst-fire weapon; ability will not be available when a shotgun or sniper rifle is equipped as a primary weapon.
+Fire three shots with -{% CYCLIC_FIRE_AIM %}.
+* {% 2AP %}
+* {% COOLDOWN %}
+* {% AMMO %}
+* Does not work with shotguns or sniper rifles.
 
 ## Damage Control
 After taking damage, gain 2 armor through the end of the turn.
@@ -884,7 +866,7 @@ Gain bonus aim and crit chance for each point of focus the Templar has.
 
 ## Overdrive
 Gain an action point. You have -15 Aim per shot fired during Overdrive until the start of your next turn.
-Cooldown: {% SelfCooldown_LW %}
+{% COOLDOWN %}
 
 ## Overkill
 Your ranged attacks deal +2 more damage to units at 50% HP or less.
@@ -1085,7 +1067,7 @@ Killing a panicked or disoriented enemy with your sawed-off shotgun refunds one 
 
 ## Run and Gun
 Free action: Gain a non-movement action.
-* Cooldown: {% SelfCooldown_LW %}
+* {% COOLDOWN %}
 
 Rupture
 A Rupture shot grants a +50 bonus to critical hit chances and ensures that the target takes an additional +3 damage from all attacks in the future.
