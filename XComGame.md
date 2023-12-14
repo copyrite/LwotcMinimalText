@@ -1,15 +1,3 @@
-## Blademaster
-+1 to melee damage. +10 aim to melee attacks.
-
-## Implacable
-Once per turn, when you kill an enemy, you gain a movement action.
-
-## Needle Grenades
-+1 explosive damage against unarmored targets. You never destroy loot and corpses of enemies you kill.
-
-## Run and Gun
-Free action: Gain a non-movement action.
-
 ## Adaptive Aim
 Aim penalty from Overdrive is 0.
 
@@ -146,14 +134,10 @@ Your grenades and standard rockets can inflict critical damage (50% chance for +
     Grenade crits will grant +1 damage to ongoing damaging effects such as fire.
 
 Available for: Grenadier (TSgt), Technical (Cpl)
-Blademaster
-Blademaster
-All melee attacks deal +1 extra damage and have +10 Aim.
 
-    Blademaster deals a bonus +1 damage on every successful melee attack.
-    Blademaster grants +10 Aim to melee attacks.
+## Blademaster
++1 to melee damage. +10 aim to melee attacks.
 
-Available for: Gunner (XCOM Tier 1), Shinobi (LCpl)
 Bladestorm
 Bladestorm
 Free melee attacks on any enemies that enter, exit or attack from melee range on enemy turns.
@@ -971,14 +955,10 @@ Impersonal Edge
 Reduce shadow cooldown by 1 and gain a stackable +20 aim buff for 3 turns when you get a kill with a throwing knife.
 
 Available for: Reaper (GSgt)
-Implacable
-Implacable
-If you score one or more kills on your turn, you are granted a single bonus move.
 
-    The Fleche ability cannot be used after gaining a bonus move from Implacable.
+## Implacable
+Once per turn, when you kill an enemy, you gain a movement action.
 
-Available for: Assault (XCOM Tier 4), Grenadier (XCOM Tier 3), Gunner (XCOM Tier 3), Ranger (TSgt), Sharpshooter (XCOM Tier 4), Shinobi (XCOM Tier 4), Specialist (XCOM Tier 3), Technical (XCOM Tier 3), Reaper (XCOM Tier 4), Skirmisher (Sgt), Templar (XCOM Tier 4)
-Impulse
 Impulse
 Your ranged attacks gain 10 aim and 10 critical chance if you have moved this turn.
 
@@ -1329,15 +1309,10 @@ Shots taken in Shadow have +2 armor piercing.
     Only applies while the Reaper is in Shadow.
 
 Available for: Reaper (XCOM Tier 2)
-Needle Grenades
-Needle Grenades
-Your explosives do not destroy loot when they kill enemies and deal 1 bonus damage to unarmored enemies.
 
-    You have received extra training that enables you to employ explosive grenades that deploy specialized slivers that leave enemy loot and corpse intact and tears through unreinforced material.
-    Loot and corpses of enemies killed by any other explosives of this soldier, such as heavy weapons, are also preserved.
+## Needle Grenades
++1 explosive damage against unarmored targets. You never destroy loot and corpses of enemies you kill.
 
-Available for: Grenadier (LCpl)
-Neutralizing Agents
 Neutralizing Agents
 Aid Protocol now neutralizes fire, poison, acid and bleeding.
 
@@ -1688,15 +1663,11 @@ Killing a panicked or disoriented enemy with your sawed-off shotgun refunds one 
     There is no limit to the number of Ruthless activations per turn.
 
 Available for: Ranger (XCOM Tier 3)
-Run and Gun
-Run and Gun
-Take an action after dashing.
 
-    Run and Gun allows soldiers to close the distance to their targets rapidly, or to easily take a flanking position.
-    Run and Gun has a 4 turn cooldown.
+## Run and Gun
+Free action: Gain a non-movement action.
+* Cooldown: {% SelfCooldown_LW %}
 
-Available for: Assault (Squaddie), Grenadier (XCOM Tier 3), Gunner (XCOM Tier 3), Ranger (XCOM Tier 4), Sharpshooter (XCOM Tier 4), Shinobi (XCOM Tier 3), Specialist (XCOM Tier 3), Technical (XCOM Tier 4), Reaper (XCOM Tier 4)
-Rupture
 Rupture
 A Rupture shot grants a +50 bonus to critical hit chances and ensures that the target takes an additional +3 damage from all attacks in the future.
 
