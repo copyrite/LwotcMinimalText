@@ -1,8 +1,8 @@
 ## Adaptive Aim
-Aim penalty from Overdrive is 0.
+Overdrive no longer applies an Aim penalty.
 
 ## Aggression
-+5 crit per enemy you see, up to +30.
++5 Crit per enemy you see, up to +30.
 * Enemies in squadsight apply. (Do you need specific perks for this to work?)
 
 ## Aid Protocol
@@ -10,9 +10,11 @@ Use your GREMLIN to grant an ally bonus defense until the start of your next tur
 * 1 action. Does not end turn.
 * Does not break concealment.
 * Bonus improves with GREMLIN tiers.
+{% Watermark %}
 
 ## Aim
 +20 Aim and +20 Crit to your next shot after you Hunker Down.
+{% Watermark %}
 
 ## Aim Assist
 +15 Aim and +15 Crit against holotargeted units.
@@ -54,34 +56,39 @@ Free action, consumes all focus. Bonuses to Rend damage, Dodge and Mobility per 
 * Cooldown: {% SelfCooldown_LW %}
 
 ## Arc Welder
-Use your Arc Thrower to heal robotic allies for {% ARC_WELDER_HEAL %} HP.
+Use your Arc Thrower to heal a robotic ally for {% ARC_WELDER_HEAL %} HP.
+* 1 action. Ends turn?
 * Uses per mission: {% ARC_WELDER_CHARGES %}
 
 ## Area Suppression
 Suppress an area in a 4-tile radius around an enemy. Suppressed enemies trigger reaction fire from you, have -25 to Aim and have many abilities disabled.
+* 1 action. Ends turn.
 * Area Suppression costs 2 ammo points to use, plus one additional ammo for each reaction shot.
-* Suppression rockets and grenades.
+* Examples of abilities disabled by suppression include rocket launches and grenades throws.
 * Area suppression ends if you take damage.
 * Cannot be used when concealed.
 * Not usable with shotguns or sniper rifles.
 
 ## Arc Wave
 Rend deals damage in a cone behind the primary target.
-* Arc Wave does not affect the primary target of Rend.
+* The primary target of Rend is not affected by Arc Wave.
 * Arc Wave deals 4/7/10 damage depanding on weapon tier.
-* Arc Wave is not stopped by cover.
+* Arc Wave passes through environment.
 
 ## Avenger
 Once per enemy turn, take a reaction shot with your primary weapon at an enemy that has taken a hostile action against an ally.
 * Avenger will also activate on hostile actions with no target.
 
 ## Banish
-Fire at a target until you run out of ammo or it dies. Banish has -15 Aim per Banish shot fired.
+Fire at a target until you run out of ammo or it dies. Banish has -15 Aim per shot fired.
 * Banish reveals you before you fire.
+* 1 action. Ends turn.
 * Cooldown: {% SelfCooldown_LW %}
 
 ## Battlefield Awareness
-If you kill during your turn, the next attack against you during the enemy turn will miss. When Battlefield Awareness causes an attack to miss, it goes on a {% SelfCooldown_LW %} turn cooldown.
+Once per turn, you gain the Battlefield Awareness buff on kill. When you have the buff, damaging attacks against you are forced to miss. When this happens, you lose the buff and you cannot gain it for {% SelfCooldown_LW %} turns.
+* Buff lasts for 1 turn.
+* (Optional: If Battlefield Awareness doesn't force an attack to miss, it doesn't go on cooldown.)
 
 ## Battlelord
 After each enemy in line of sight takes a turn, take an action after their turn is completed. No action points will be refunded (e.g. from Hit and Run).
@@ -91,84 +98,65 @@ After each enemy in line of sight takes a turn, take an action after their turn 
 * Abilities that refund action points, like Implacable and Hit and Run, will not work during Battlelord.
 
 ## Biggest Booms
-Your grenades and standard rockets can inflict critical damage (50% chance for +3 damage).
-* Grenades, standard rockets, and MEC micromissiles can inflict critical damage (50% chance for +3 damage).
-* 50% chance for critical damage is not affected by other critical chance modifiers.
-* Does not apply to non-damaging grenades or the concussion rocket or Bunker Buster abilities.
-* Grenade crits will grant +1 damage to ongoing damaging effects such as fire.
+Your grenades and standard rockets can crit. Their crit chance is 50% and crit damage is +3.
+* +1 to damage-per-turn effects from grenade crits.
+* The critical chance provided by Biggest Booms cannot be modified in any way.
 
 ## Blademaster
-+1 to melee damage. +10 aim to melee attacks.
++1 to melee damage. +10 Aim to melee attacks.
 
 ## Bladestorm
-Free melee attacks on any enemies that enter, exit or attack from melee range on enemy turns.
-* If an enemy begins their turn in an adjacent tile, Bladestorm will trigger if that enemy tries to attack the soldier.
-* If an enemy does not begin their turn in an adjacent tile, then Bladestorm will trigger when that enemy moves into melee range.
-* Bladestorm does not trigger on your own turn.
+You automatically reaction attack with your melee weapon on enemy turns. Bladestorm triggers against enemies that enter, exit or attack from melee range.
+* Impairments?
 
 ## Blinding Protocol
-Send the Gremlin to deploy a small flashbang on an enemy target, disorienting all enemy units within a small radius (reducing their Aim by 20 and Mobility by 6).
-* Works with Squadsight.
-* Blinding Protocol has a 4 turn cooldown and ends the turn.
+Use your GREMLIN to disorient a non-robotic enemy and all other enemies in a {% BLINDING_PROTOCOL_RADIUS %} tile radius around it.
+* Squadsight targeting with line of sight required.
+* 1 action. Ends turn.
+* Cooldown: {% SelfCooldown_LW %}
 
 ## Blood Trail
-Shots deal +2 damage and ignore target's Dodge by -40 if the target has been wounded this turn.
-* Only applies on the same turn the enemy is damaged.
-* Plan ahead with squadmate attacks to take full advantage of Blood Trail.
-* Works with all weapons, including grenades.
++2 to ranged attack damage against targets that have taken damage after the start of their turn. Ignore 40 Dodge of targets that have taken damage after the start of their turn.
 
-## Bluescreen BombsYour flashbang grenades now disorient robotic units and reduce their resistance to hacking.
-* Your flashbang grenades now disorient robotic units.
-* Your flashbang grenades also reduce robotic hack defense by 25.
+## Bluescreen Bombs
+You disorient robotic enemies and apply -{% BLUESCREEN_BOMBS_HACK %} to Hack Defense on Flashbang hits.
 
 ## Bluescreen Knives
-Throwing knives gain +2 pierce and will disorient robotic units.
++2 Pierce to Throwing Knives. You disorient robotic units on Throwing Knife hits.
 
 ## Body Shield
-A targeted enemy receives -20 aim and -50 critical chance against the soldier.
-* A targeted enemy receives -20 aim and -50 critical chance against the soldier.
-* This is a free action.
-* Body Shield has a 2 turn cooldown.
+Debuff an enemy to have -20 Aim against you and -50 Crit against you.
+* Free action
+* Cooldown: {% SelfCooldown_LW %}
 
 ## Bombard
 Launch the BIT to any visible location where it releases a powerful explosive blast. Advanced BITs do more damage.
-* Bombard can be fired at any location within squadsight.
-* Upgrading your BIT will lead to more Bombard damage.
+* 1 action. Does not end turn.
+* Squadsight targeting with no line of sight required.
+* Damage improves with BIT tier.
 
 ## Bombardier
-You may throw or launch grenades two additional tiles.
-* Your grenades have 2 tiles extra range.
-* This includes both launched and thrown grenades.
++{% BOMBARDIER_RANGE %} to grenade launch and throw range.
 
 ## Boosted Cores
-Explosive grenades and any damage over time effects inflicted by grenades do one additional damage.
-* Your grenades have extra explosives and do one additional damage but require special training to handle.
-* Damage over time effects applied by grenades such as poison will also do one additional damage.
++1 to grenade damage. +1 to damage-per-turn effects from grenades.
 
 ## Both Barrels
-Fire both barrels of sawed-off shotgun at nearby enemy, doing double damage.
-* Fire both barrels of sawed-off shotgun at nearby enemy, doing double damage.
-* Uses 2 ammo.
-* Uses one action.
+Fire your sawed-off shotgun at a nearby enemy. Consumes 2 charges to deal double damage.
+* 1 action. Ends turn.
 
 ## Brawler
-Take 35% less damage against attacks within four tiles.
-* Take 35% less damage against attacks within four tiles.
+You take {% BRAWLER_DR_PCT %}% less damage from enemies in {% BRAWLER_RADIUS %} tile radius.
 
 ## Bring 'Em On
-Gain +1 damage on critical hits for every two enemies you can see, up to a maximum of +8. Works for the soldier's primary weapon and explosives.
-* Gain +1 damage on critical hits for every two enemies you can see, up to a maximum of +8.
-* Units visible at squadsight ranges do confer bonus.
-* Applies to damage from the soldier's primary weapon and, if the soldier has Biggest Booms, explosives (damaging grenades, rockets, etc.).
+Your primary weapon and explosives have +1 critical damage per every 2 enemies you can see, up to a maximum of +8.
+* Units visible at squadsight ranges apply. (But do you need squadsight for it?)
 
 ## Brutality
-Killing organic enemies with your sawed-off shotgun have a 50% chance to panic other organic enemies within 10 tiles of the target.
-* Use Brutality as a crowd-control tool to allow the soldier to move forward more aggressively and combine it with the Ruthless ability to increase your killing power.
+When you kill a non-robotic enemy with your sawed-off shotgun, other non-robotic enemies within {% BRUTALITY_RADIUS %} tile radius of the target have a 50% chance to panic.
 
 ## Bulwark
-Gain a bonus point of Armor, and always provide high cover to all adjacent squadmates.
-* Bulwark adds one point of Armor.
-* Any squadmate standing adjacent to the SPARK will gain the high cover Defense bonus.
++{% BULWARK_ARMOR %} Armor. The tile you are on counts as a high cover object.
 
 ## Bunker Buster
 Fire a special rocket that destroys buildings and other objects in the environment.
@@ -186,8 +174,7 @@ Send the GREMLIN to a location where it emits a substantial electric discharge, 
 * Capacitor Discharge will deal more damage as you upgrade your GREMLIN.
 
 ## Center Mass
-You do one additional point of base damage when using guns.
-* You do one additional point of base damage with your primary weapon, pistols or a sawed-off shotgun.
++1 to primary weapon damage, pistol damage and sawed-off shotgun damage.
 
 ## Chain Lightning
 Fire your Arc Thrower at a target that is capable of being stunned and bounces up to 3 other targets within 6 tiles.
@@ -1364,8 +1351,8 @@ Firing your arc thrower no longer ends your turn.
 * Works for all arc thrower abilities, including Chain Lightning.
 
 ## Untouchable
-If you score a kill during your turn, the next attack against you during the enemy turn will miss.
-* When Untouchable is triggered the soldier is immune to the next damage dealing attack during the enemy turn, even Area of Effect attacks.
+Once per turn, you gain the Untouchable buff on kill. When you have the buff, damaging attacks against you are forced to miss. When this happens, you lose the buff.
+* Buff lasts for 1 turn.
 
 ## Vital Point Targeting
 Attacks against your Holotargeted enemies deal more damage.
