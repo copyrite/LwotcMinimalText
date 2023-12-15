@@ -279,10 +279,10 @@ Throw a knife that Maims on hit for 1 turn.
 
 ## Crusader's Rage
 You deal 25% more damage per every 25% HP missing, up to 50%. Your wound recovery times are reduced by {% CRUSADERS_RAGE_HEAL %} HP.
-* Wound reduction is not applied if the soldier entered a bleeding out state during the mission.
+* Wound recovery time reduction is not applied if the soldier entered a bleeding out state during the mission.
 
 ## Cutthroat
-+15 crit chance and +2 crit damage to melee attacks against non-robotic(?) enemies. Your melee attacks pierce all armor of non-robotic enemies.
++15 crit chance to melee attacks against non-robotic enemies. +2 crit damage to melee attacks against non-robotic(?) enemies. Your melee attacks pierce all armor of non-robotic enemies.
 
 ## Cyclic Fire
 Fire three shots with -{% CYCLIC_FIRE_AIM %}.
@@ -292,186 +292,176 @@ Fire three shots with -{% CYCLIC_FIRE_AIM %}.
 * Does not work with shotguns or sniper rifles.
 
 ## Damage Control
-After taking damage, gain 2 armor through the end of the turn.
+Once per turn, gain +2 Armor after you take damage. If you gained Armor this way, lose 2 Armor at the start of your turn.
 
 ## Damn Good Ground
-Confers +10 aim and +10 defense against targets at a lower elevation.
-* This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
++10 Aim and +10 Defense against targets at a lower elevation.
+* Defensive bonuses do not apply if you are impaired (fire included).
 
 ## Danger Zone
-Area Suppression suppresses enemies in a 5-tile radius.
+Your Area Suppression radius is 5 tiles.
 
 ## Deadeye
-Take a shot with a small aim penalty for a significant damage boost.
-* Deadeye reduces the overall hit chance of a shot by 15%, but increases the base damage of the shot by 50%.
+Take a shot with 15% less Aim and 50% more base damage.
 * {% COOLDOWN %}
 
 ## Death Dealer
-Grants +25 crit chance. Critical shots against a flanked target while in Shadow will deal double critical damage.
++25 crit chance against all targets. Weapon critical damage is doubled against flanked targets while you are in Shadow.
 
 ## Death From Above
-Killing an enemy at a lower elevation with your primary weapon refunds a single action, and does not end your turn. Also grants a long-range accuracy bonus for sniper rifles.
+Once per turn, gain an action after killing an enemy at a lower elevation with your primary weapon. Aim penalty from long range is halved for sniper rifles and vektor rifles.
+* Aim penalty from sources such as Snap Shot is not halved.
 
 ## Dedication
-Free action. Gain 2 mobility and ignore reaction fire for the rest of the turn. Has a 4 turn cooldown.
-* Gain 2 mobility and ignore reaction fire for the rest of the turn.
++2 Mobility until the start of your next turn. Ignore reaction fire until the start of your next turn.
 * Free action.
 * {% COOLDOWN %}
 
 ## Deep Cover
-If you did not attack this turn, hunker down automatically.
-* Non-offensive actions like Reload can still be performed without invalidating Deep Cover.
+If you did not use hostile actions this turn, hunker down automatically.
 
 ## Demolition
-Unleash a volley of bullets at your target's cover, significantly damaging or destroying it. Deals no damage to your target.
+Destroy or damage the cover of an enemy. Deals no damage to the target.
+* {% AMMO %}
 * {% COOLDOWN %}
 
 ## Dense Smoke
-Your smoke grenades confer an additional 10 defense.
++10 to Defense provided by your Smoke Grenades.
 
 ## Disabling Shot
-Stun enemies with a precise shot, with a bonus stun duration if the shot crits. The shot can not do critical damage.
-* Stuns enemies for 2 actions if the shot hits (including if it grazes).
-* Stuns for an extra 2 actions if the shot crits, but the shot won't inflict the critical damage.
+Take a shot that stuns for 2 actions on hit. +2 to stun duration if the shot crits. Deals 50% reduced base damage and critical hits are converted to normal hits.
+* The hit result conversion causes Disabling Shot to never trigger other effects that depend on dealing critical damage, other than its own bonus stun duration.
 * {% COOLDOWN %}
 
 ## Disassembly
-Killing an enemy grants a stackable +20 hack bonus that lasts 3 turns.
+You gain a stackable Disassembly buff when you kill an enemy. +20 Hack per stack. Stacks have an independent duration of 3 turns.
 
 ## Double Tap
-Activate to fire a standard shot and gain a second action restricted to an additional shot or overwatching.
+Fire a standard shot, then gain another action that can only be used for shooting or overwatching.
 * {% COOLDOWN %}
-* Costs the same action it would take to fire a standard shot (Snipers cost 2 AP and all other weapons cost 1) (reword this?)
+* Same action cost as standard shot with your weapon (Snipers cost 2 AP and all other weapons cost 1) (reword this?)
 
 ## Electroshock
-Your Arc Thrower disorients the target when it misses.
+Your Arc Thrower disorients the target on miss.
+* What about robots?
 
 ## Evasive
-Start each mission with 100 bonus dodge. The bonus is removed after you take damage for the first time.
+You gain a buff of +100 Dodge when the mission starts. You lose the buff when you take damage.
 
 ## Ever Vigilant
-If you spend all of your actions on moves, you are granted an automatic overwatch shot at the end of the turn.
+You will enter overwatch at the end of your turn if you only used movement actions.
 
 ## Executioner
-Confers +20 aim and +20 critical chance against targets at half or less of their original hit points.
++20 Aim and +20 Crit chance against targets at 50% or less health.
 
 ## Extra Conditioning
-Run and Gun cooldown is reduced by one turn.
+-1 to Run and Gun cooldown.
 
 ## Failsafe
-If you fail a hack, you prevent any negative effects from occurring.
+Negative effects no longer occur when you fail a hack.
+* Negative effects prevented by Failsafe include losing squad concealment.
 
 ## Field Medic
-Equipped medikits have 2 extra charges.
-* If you have the Medical Protocol ability, your GREMLIN gains additional charges as well.
++2 charges to equipped Medikits.
+* Medical Protocol?
 
 ## Field Surgeon
-Reduces the number of hit points a soldier must heal after being wounded in battle by 1.
-* Multiple Field Surgeons on a mission have a chance to reduce wound recovery time further.
-* The effect includes the soldier with the ability.
-* It does not affect soldiers who suffered killing wounds and are stabilized from bleeding out.
+Wound recovery times of all organic squad members are reduced by 1 HP.
+* Multiple units with Field Surgeon on a mission have a chance to reduce wound recovery time further.
+* Wound recovery time reduction is not applied to units that entered a bleeding out state during the mission.
 
 ## Fire and Steel
-Attacks with your gauntlet, and fires set by gauntlet weapons, do +1 damage.
-* This applies to both rocket launcher and flamethrower weapons, and the fires they set.
++1 damage to XCOM gauntlet attacks. +1 damage per turn to fires set by XCOM gauntlet attacks.
 
 ## Fire in the Hole
-Your rockets are more accurate.
-* The maximum it can miss by is reduced by two tiles.
+-2 to your rocket scatter rolls.
 
 ## Firestorm
-Once per battle, attack all units in a complete circle around the soldier's position. Also grants immunity to fire damage.
-* This will light fires and do fire damage to all enemies in a circle around the soldier's position, doing +2 bonus damage over regular Flamethrower attacks.
-* Firestorm also grants immunity to fire damage.
-* Requires two action points and will end the soldier's turn when used.
-* Usable once per battle.
+Dash to a position and spray fire in a {% FIRESTORM_RADIUS_TILES %} tile radius around yourself. You are immune to fire damage.
+* Firestorm deals +2 damage over your Flamethrower's base damage.
+* {% 2AP %}
+* {% CHARGES %}
 * It is not recommended the soldier uses Firestorm on rooftops.
 
 ## Flashbanger
-Grants 1 free flashbang item to your inventory.
+You start the mission with +1 Flashbang.
 
 ## Fleche
-Attack any enemy within movement range with your sword. Deals +1 damage for every 4 tiles between your starting position and the target.
-* You can trigger the Fleche ability by placing the movement cursor over an enemy.
-* Fleche deals 1 bonus damage for every 4 tiles between unit's position at the start of its turn and the target's position up to 5 maximum bonus damage.
+Dash to an enemy within movement range and attack it with your sword. Bonus damage against more distant targets.
+* +1 damage per every 4 tiles of distance between your position at the start of the turn and your target, up to 5.
 
 ## Flush
-Special shot with a bonus to hit that does little or no damage but confers defense and dodge penalties and forces target to change position if it hits.
-* Consumes 1 ammo.
+Take a shot with +30 Aim and 50% less base damage. Debuffs the target for -10 Defense and -30 Dodge on hit. 
+* {% AMMO %}
 * {% COOLDOWN %}
-* +30 bonus to aim.
-* Damage is reduced by 80%
-* Cannot crit or apply bonus ammo effects.
-* Cannot be used from concealment.
-* Target loses 10 defense and 30 dodge. The debuff lasts 1 turn.
+* 1 turn debuff duration.
+* Does not apply bonus ammo effects.
+* Cannot crit.
+* Cannot be used when concealed.
 
 ## Focus
-Gain Focus during missions, increasing stats, damage, and ability effectiveness. Focus can be spent on powerful abilities.
-* Focus is gained by attacking enemies with Rend (even misses count).
+Gain Focus during missions. Focus can be spent on powerful abilities and modifies the stats of some abilities.
+* Your primary source if Focus is Rend, which generates Focus after you attack.
 
 ## Formidable
-Your gear includes an extra layer of protection, granting 2 bonus ablative hit points and 50% less damage from explosive attacks.
-* Formidable reduces explosive damage taken by 50%.
++2 ablative hit points. 50% less explosive damage taken.
 
 ## Fortify
-Activate to grant +20 defense until the beginning of the next turn.
++20 defense until the start of your next turn.
 * Free action.
 * {% COOLDOWN %}
 
 ## Full Kit
-Grants +1 charge per grenade item in a utility slot.
+Grenades in utility slots have +1 charges.
 * Applies to explosive and support grenades as well as Battle Scanners.
 * Extra grenades provided by Smoker and Flashbanger abilities do not get extra charges.
 
 ## Full Override
-Take permanent control of a robotic unit and potentially acquire ADVENT MECs for the Resistance.
-* It has one charge that is only expended if a successful override occurs.
-* Requires one action and ends the soldier's turn.
-* The first hack option, Greater Shutdown, will disable (stun) the unit for 3 turns.
-* The second hack option, Master Enemy, will grant control of the unit for rest of the mission with a stat bonus for all robots, and will permanently transfer any MEC units to the Resistance.
-* If the Master Enemy hack succeeds, and the MEC and the specialist both survive the mission, the MEC will follow new programming and make its way to a Resistance base, where it will serve the Resistance. It does not need to be evacuated when the mission ends.
+Use your GREMLIN to shutdown or permanently control an enemy robot. Permanently controlled MECs that survive the mission become Resistance MECs.
+* Full Override hacks are a contest of the Hack and Hack Defense.
+* Greater Shutdown stuns the target for 6 actions.
+* Master Enemy permanently controls the target and grants it a stat bonus. If it is a MEC and it survives, it will become a Resistance MEC in the mission region.
+* {% 1AP ET %}
+* Charges: 1. Failed attempts do not consume charges.
 
 ## Full Throttle
-Gain +3 mobility with every kill this turn. Lasts 2 turns, including the current one.
+You gain a stackable Full Throttle buff when you kill an enemy. +3 mobility per stack. Stacks have an independent duration of 2 turns.
 
 ## Ghost
-Create a duplicate of the Templar from the body of a fallen humanoid. The Ghost disappears when it loses all Focus. Costs 2 Focus.
-* Ghosts start with Focus equal to the Templar's Focus level when created minus 1.
-* Ghosts cannot gain Focus, and disappear when all Focus is spent, or their health reaches 0.
-* Rend costs 1 Focus when used by Ghosts.
+Raise a Ghost from the body of a fallen humanoid. The Ghost expires when it loses all Focus. Costs 2 Focus.
+* Ghosts are copies of yourself. It starts with your Focus level minus 1, and its Rend consumes 1 Focus.
 * Ghost must be cast on the corpse of a humanoid enemy, and cannot be cast on the same corpse twice.
 * {% COOLDOWN %}
-* Ghosts cannot gain following abilities: Volt, Shield bash, Shield abilities, Deflect, Reflect, Solace, Void Conduit, Bladestorm, Apotheosis, Superior Aptitude, Ionic Storm and Sustain.
+* Ghosts cannot gain following abilities: Volt, Shield bash, Shield abilities, Deflect, Reflect, Solace, Void Conduit, Bladestorm, Apotheosis, Superior Aptitude, Ionic Storm and Sustain. What can they even gain?
 
 ## Ghost Grenade
-A specialized smoke grenade that causes the targeted ally to enter concealment.
-* This ability only affects a single targeted ally; others in the smoke cloud are not concealed but do receive the defense bonus.
-* Uses one action and ends your turn.
-* One use per mission.
-* Only works on XCOM soldiers, as civilians do not have training in concealment techniques.
-* Small smoke cloud grants 20 defense; dense smoke bonuses do not apply.
-* It does not fit in the standard XCOM grenade launcher and must be thrown at a visible ally.
-* The Grenadier cannot use this ability when concealed.
+Throw a specialized smoke grenade to conceal a squadmate in line of sight.
+* Does not use grenade targeting and only conceals a single unit.
+* Produces a smoke cloud centered at the target. +20 Defense to units in Ghost Grenade smoke.
+* {% 1AP ET %}
+* {% CHARGES %}
+* Cannot be used while concealed.
+* Cannot target civilians.
 
 ## Ghostwalker
-Activate this ability to reduce enemy detection range against you by almost 25% for 2 turn(s).
+Activate to reduce enemy detection radius against you by almost 25% for 2 turn(s).
 * Does not apply to ADVENT security towers.
 * {% COOLDOWN %}
 * Free action.
 * This ability also grants a small reduction in this soldier's impact on infiltration times.
 
 ## Grapple
-Deploy a grappling hook to move quickly to an elevated position.
+Deploy a grappling hook to move to an elevated position.
 * Free action.
 * {% COOLDOWN %}
 
 ## Grazing Fire
-Missed shots with the soldier's primary weapon have 50% base chance to become a graze.
-* Targets with a dodge score subtract that score from the ability's success chance.
+Your primary weapon misses have 50% base chance to be converted to a graze.
+* -1% chance to convert misses to grazes per 1 Dodge on target.
 * This effect occurs after normal hit-miss-graze processing.
 
 ## Greater Padding
-Reduce wound recovery times for this soldier by 1/2/4 HP. Doesn't work if the soldier bleeds out.
+Reduce wound recovery time for this soldier by 1/2/4 HP.
 * Greater Padding reduces the number of hit points a soldier must heal after being wounded in battle by 1/2/4.
 * It does not affect soldiers who suffered killing wounds and are stabilized from bleeding out.
 
