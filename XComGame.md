@@ -209,7 +209,8 @@ You automatically reaction attack with your primary weapon on enemy turns. Trigg
 ## Close Encounters
 Once per turn, gain an action after taking a standard shot with your primary weapon at an enemy in a {% CE_RADIUS %} tile radius.
 * A red ring will mark the range of this ability.
-* Cannot trigger on the same turn as Hit and Run, or Run and Gun.
+* Cannot trigger on the same turn as Hit and Run.
+* Cannot trigger on the same turn as Run and Gun. Run and Gun cannot be used if you have gained an action from Close Encounters.
 
 ## Combat Awareness
 +15 Defense when on Overwatch. +1 Armor when on Overwatch.
@@ -375,6 +376,7 @@ Wound recovery times of all organic squad members are reduced by 1 HP.
 
 ## Fire in the Hole
 -2 to your rocket scatter rolls.
+* Concussion Rocket?
 
 ## Firestorm
 Dash to a position and spray fire in a {% FIRESTORM_RADIUS_TILES %} tile radius around yourself. You are immune to fire damage.
@@ -463,123 +465,115 @@ Your primary weapon misses have 50% base chance to be converted to a graze.
 ## Greater Padding
 Reduce wound recovery time for this soldier by 1/2/4 HP.
 * Greater Padding reduces the number of hit points a soldier must heal after being wounded in battle by 1/2/4.
-* It does not affect soldiers who suffered killing wounds and are stabilized from bleeding out.
+* Wound recovery time reduction is not applied to units that entered a bleeding out state during the mission.
 
 ## Hack
-Attempt to remotely breach security on a network access point with your GREMLIN/BIT.
-* Map items (chests, workstations, etc.) can be hacked from a distance using the GREMLIN/BIT.
+Remotely hack an object with your {% BOUND_WEAPON_NAME %}.
+* Requires vision to the target.
 
 ## Hail of Bullets
-Unleash a hail of bullets that is guaranteed to hit your target, but uses a lot of ammunition.
+Take a shot that is guaranteed to hit.
 * Hail of Bullets consumes 3 ammo.
 * {% COOLDOWN %}
-* Hail of Bullets does not work with shotguns or sniper rifles.
+* Cannot be used with shotguns or sniper rifles.
 
 ## Hard Target
-Gain 5 dodge per enemy you can see, up to a maximum of +30.
-* Gain 5 dodge per enemy you can see, up to a maximum of +30.
++5 Dodge per enemy you see, up to +30.
 * Units visible at squadsight ranges do not confer bonus.
 * This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
 ## Haywire Protocol
-Attempt to hack an enemy with your GREMLIN.
-* Hacking a robotic enemy or turret pits the Specialist's Hacking stat against the enemy's Tech Defense stat.
-* Upgrading your GREMLIN will lead to an increased Hacking stat.
-* Hacked robotic enemies can only be controlled for a short time.
+Use your GREMLIN to shutdown or control an enemy robot.
+* Haywire Protocol hacks are a contest of the Hack and Hack Defense.
+* Shutdown stuns the target for 2 actions.
+* Control Enemy controls the target for {% HAYWIRE_PROT_CONTROL_TURNS %} turns.
+* {% 1AP ET %}
 
 ## HEAT Warheads
-Your grenades now pierce up to 2 point(s) of armor and shred 1 additional point(s) of armor.
-* The innate shred thing
++2 pierce with grenades. +1 shred with grenades.
+* The grenade must shred innately to benefit from the additional shred.
 
 ## Heavy Weapons
 This soldier is trained to use the XCOM gauntlet, a combination Rocket Launcher and Flamethrower.
-* The XCOM gauntlet is an advanced device that carries both a mini-rocket launcher and a flamethrower.
-* The Rocket Launcher carries one rocket initially and that has a three-tile radius for its area of effect.
-* It may target anything in sight range.
-* Damage from rockets falls off from the point of impact.
+* The Rocket Launcher may be targeted at any tile in sight range. It has a 3 tile radius and its damage is subject to falloff.
+* When you launch a rocket, you roll a series of Aim checks to determine how many tiles a rocket scatters. Each failed roll increases scatter by 1 tile. The base number of scatter rolls is 4. If you only have one action remaining, you have +2 to number of scatter rolls.
+* Rocket launcher charges: 1
 * The flamethrower is a short-range weapon that causes damage to multiple targets within a cone-shaped area of effect.
-* The flamethrower has two uses per battle. It does not damage mechanical units without upgrades.
-* Using either gauntlet ability requires one action and ends your turn.
-* Rocket accuracy is affected by the soldier's aim, target distance, and whether the soldier has used any actions already this turn. Low accuracy-rockets will have higher scatter values, meaning they are more likely to miss the target tile by greater distances. The rocket's maximum possible scatter is noted in the popup, while a value appearing with the targeting cursor will show the expected (average) scatter for a shot on that location.
+* Flamethrower charges: 2
+* {% 1AP ET %}
 
 ## Heavy Ordnance
-Any damaging grenade in your grenade-only slot gains a bonus use.
+Damaging grenades in your grenade-only slot have +1 charges.
 
 ## HiDef Holo
-Your Holotargeted enemies are easier to critically hit.
-* The critical hit bonus is +10 with the basic Holotargeter, but improves to +15 and +20 with advanced technology Holotargeting devices.
+All units have +10/+15/+20 to crit chance against your Holotargeted enemies.
 
 ## Hipfire
-Firing the sawed-off shotgun no longer ends the turn.
-* With this ability, Point Blank and Both Barrels do not end the turn, allowing the soldier to shoot or move afterwards.
+Firing your sawed-off shotgun no longer ends the turn.
 
 ## Hit and Run
-Once per turn, gain an additional action after taking a standard shot at a flanked or exposed target with your primary weapon. Cannot trigger on the same turn as Close Encounters.
-* Cannot be used on the same turn as Run and Gun.
+Once per turn, gain an action after taking a standard shot at a flanked or exposed target with your primary weapon.
+* Cannot trigger on the same turn as Hit and Run.
+* Cannot trigger on the same turn as Run and Gun. Run and Gun cannot be used if you have gained an action from Hit and Run.
 * Bonus full actions from Serial and Death from Above will be awarded first.
 
 ## Holo Targeting
-Any directed primary weapon shot, hit or miss, will mark the target, increasing your squad's aim by +15 against this target.
+You primary weapon attacks Holo Target enemies. All units have +15 Aim against your Holo Targeted enemies.
 * Directed primary weapon-specific abilities will grant Holo Targeting.
 * Any abilities that target multiple units will not grant Holo Targeting.
+* 1 turn duration.
 
 ## Holotarget
-Holotarget your enemy to grant an aim bonus to all attacks on this target by you and your allies for the remainder of the turn.
-* Holotargeting takes a single action.
-* The Holotargeting effect lasts until the start of your next turn.
-* Multiple holotarget effects do not stack with each other.
-* The aim bonus is +10 for the basic Holotargeter, and improves to +15 and +20 with better technology.
-* Holotargeting does not break concealment for you or your squad.
+Use your Holotargeter to debuff an enemy. All units have +10/+15/+20 Aim against the target.
+* {% 1AP ET %}
+* 1 turn duration.
+* Does not break concealment.
 
 ## Homing Mine
-Attach a claymore onto an enemy. The Homing mine will explode upon that enemy taking damage.
-* Shots against the mined target are guaranteed to hit.
-* Homing Mine has 4 charges per mission.
-* Homing Mine requires one action and does not end your turn.
-* Attaching a Homing Mine does not reveal you.
+Attach an explosive to an enemy. It will explode when that enemy takes damage.
+* {% 1AP NTE %}
+* {% CHARGES %}
+* Attacks against the mined target are guaranteed to hit.
+* Does not break concealment.
 
 ## Hunter Protocol
-When an enemy is revealed, there is a 33% chance to take a free Overwatch shot.
+When an enemy makes a scamper move, you have a 33% chance to reaction attack it with your primary weapon.
 
 ## Hunter's Instincts
-Ranged attacks against flanked enemies deal +2 damage.
++2 damage with ranged attacks against flanked enemies.
 
 ## Impact Compensation
-After taking damage, gain a stacking 20% Damage reduction until the end of your turn up to a maximum of three stacks.
+You gain a stackable Impact Compensation buff after you take damage. You take 20% less damage (multiplicative) per stack. Stacks are lost at the start of your turn.
+* The damage you take after Impact Compensation is (100% - 20%)^(number of stacks).
 
 ## Impact Fields
-Activate a force field that reduces incoming damage by 33% for two turns.
+You take 33% less damage for 2 turns.
 * {% COOLDOWN %}
-* Uses one action and doesn't automatically end your turn.
-* Armor-Piercing weapons do not mitigate this effect.
+* {% 1AP NTE %}
 
 ## Impersonal Edge
-Reduce shadow cooldown by 1 and gain a stackable +20 aim buff for 3 turns when you get a kill with a throwing knife.
+Gain a stack of Impersonal Edge and tick your Shadow cooldown by 1 every time you kill with a Throwin Knife. +20 Aim per stack. Stacks have an independent 3 turn duration.
 
 ## Implacable
 Once per turn, when you kill an enemy, you gain a movement action.
 
 ## Impulse
-Your ranged attacks gain 10 aim and 10 critical chance if you have moved this turn.
++10 Aim and +10 Crit chance if you have moved this turn.
 
 ## Incinerator
-Your flamethrower has an increased range and covers a wider area of effect.
-* The length of the flamethrower increases by 2 tiles and the width increases by 1 tile.
++2 to your Flamethrower's length. +1 to you Flamethrower's width.
 * Roust?
 * Firestorm?
 
 ## Independent Tracking
-A Holotargeted enemy will remain so for 1 additional turn(s).
-* A Holotargeted enemy remains so for 1 additional turn(s).
-* Additional uses of Holotargeting on the same target will not stack.
++1 to your Holotargeting duration.
 
 ## Indomitable
-Once per turn, gain 1 focus when you're attacked.
-* Applies to both melee and ranged attacks.
+Once per turn, when an enemy targets you, gain 1 focus.
+* Reaction attacks are not targeted.
 
 ## Infighter
-Gain 40 dodge against attacks within four tiles.
-* Dodge bonus also applies to melee attacks.
++40 dodge against attacks in a {% INFIGHTER_RADIUS_TILES %} tile radius.
 * This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
 ## Inspire Agility
