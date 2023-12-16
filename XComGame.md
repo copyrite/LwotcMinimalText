@@ -77,7 +77,7 @@ Once per enemy turn, take a reaction shot with your primary weapon at an enemy t
 * Avenger will also activate on hostile actions with no target.
 
 ## Banish
-Fire at a target until you run out of ammo or it dies. Banish has -15 Aim per shot fired.
+Fire at a target until you run out of ammo or it dies. -15 to Aim per Banish shot until Banish ends.
 * Banish reveals you before you fire.
 * {% COOLDOWN %}
 
@@ -552,7 +552,7 @@ You take 33% less damage for 2 turns.
 * {% 1AP NTE %}
 
 ## Impersonal Edge
-Gain a stack of Impersonal Edge and tick your Shadow cooldown by 1 every time you kill with a Throwin Knife. +20 Aim per stack. Stacks have an independent 3 turn duration.
+Gain a stack of Impersonal Edge and tick your Shadow cooldown by 1 when you kill with a Throwing Knife. +20 Aim per stack. Stacks have an independent 3 turn duration.
 
 ## Implacable
 Once per turn, when you kill an enemy, you gain a movement action.
@@ -573,16 +573,21 @@ Once per turn, when an enemy targets you, gain 1 focus.
 * Reaction attacks are not targeted.
 
 ## Infighter
-+40 dodge against attacks in a {% INFIGHTER_RADIUS_TILES %} tile radius.
++40 Dodge against attacks in a {% INFIGHTER_RADIUS_TILES %} tile radius.
 * This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
 ## Inspire Agility
-Give a friendly unit 30 Dodge until the start of your next turn. Whenever you kill an enemy, you gain an extra charge. Usable once per turn. Starts with one charge, and is a free action.
+Give an ally +30 Dodge until the start of your turn. You gain an extra charge on kill.
+* {% COOLDOWN %}
+* {% CHARGES %}
+* {% 0AP %}
 
 ## Interference
-GREMLIN cancels overwatch on targeted unit.
-* Is a free action.
-* 3 charges per battle, plus 2 extra charges per better Gremlin tech.
+Use your GREMLIN to cancel the Overwatch of an enemy.
+* Squadsight targeting.
+* {% 0AP %}
+* {% CHARGES %}
+* Number of charges increases with GREMLIN tier.
 
 ## Interrupt
 A powerful form of Overwatch. Instead of firing automatically, perform any single action. Free action.
@@ -591,10 +596,10 @@ A powerful form of Overwatch. Instead of firing automatically, perform any singl
 * {% COOLDOWN %}
 
 ## Intimidate
-When targeted by an attack, the enemy has a chance to panic.
-* Intimidate can be triggered by melee and area of effect attacks.
-* Intimidate will not trigger when targeted by Overwatch fire.
-* Intimidate's chance to panic the attacker increases with higher tier SPARK armors.
+After an enemy targets you with an attack, it has a chance to panic.
+* Reaction attacks are not targeted.
+* What's the panic chance?
+* Chance to panic improves with armor tier.
 
 ## Invert
 Switch locations with a unit. Costs 1 Focus.
@@ -602,111 +607,101 @@ Switch locations with a unit. Costs 1 Focus.
 * Can target both ally and enemy units.
 
 ## Ionic Storm
-Summon lightning to strike all nearby enemies. Damage increases with Focus level. Costs all Focus.
-* Ionic Storm's radius increases at higher Focus levels.
-* Ionic Storm deals double damage to Psionic units.
+Dash to a location, then deal damage in a radius around yourself. Additional damage and radius per Focus. Consumes all Focus.
+* Ionic Storm's base damage is doubled against Psionic units.
+* Focus on kills?
 * {% COOLDOWN %}
 
 ## Iron Curtain
-Special shot that does 50% of normal damage but reduces target mobility for the following 2 turn(s). Cone-based attack with primary weapon.
-* If this cone-based attack hits, Iron Curtain does 50% of normal damage and imposes -8 mobility to the enemy for 2 turn(s).
+Attack enemies in a cone with 50% less base damage. -8 to target mobility on hit.
 * {% COOLDOWN %}
-* Uses 3 ammo.
-* Can be used after moving.
+* Consumes 3 ammo.
+* Debuff has 2 turn duration.
+* Blocked by high cover.
+* Does not apply ammo effects.
 * Iron Curtain does not work with shotguns or sniper rifles.
-* Allies in the cone can be hit by this ability.
 
 ## Javelin Rockets
-The range of your rockets is increased by 6 tiles and you may hit targets beyond your visual range.
++6 tiles to rocket range. You may target tiles outside your visual range.
 
 ## Judgement
-Has a chance to panic any enemy that attacks this unit. The higher the will of this unit, the higher the panic chance.
-* Judgement can be triggered by melee and area of effect attacks.
-* Judgement will not trigger when targeted by Overwatch fire.
-* The chance of panic depends on both the will of the attacking unit and the will of the unit with Judgement.
-* Judgement works best on units with high will.
-* Panic chance is (30 + User's Will) - Enemy Will with a minimum apply chance of 5% and a maximum apply chance of 90%
+After an enemy targets you with an attack, it has a chance to panic. The chance is based on a contest of Wills.
+* Reaction attacks are not targeted.
+* The chance to panic is 30%. +1% Chance to panic per your Will. -1% Chance to panic per target Will.
+* The minimum and maximum panic chance are 5% and 90%.
 
 ## Justice
-Use the Grapple to pull a humanoid target to you and deliver a Ripjack strike.
-* Justice is a great way to pull an enemy out of position.
-* The Ripjack strike is guaranteed to hit if the pull is successful.
-* An open space adjacent to the Skirmisher is needed to use Justice.
+Use the Grapple to pull a humanoid target to you and attack it with your Ripjack.
+* Only the pull is subject to an Aim roll. The Ripjack attack is a guaranteed to hit.
+* Requires an empty tile adjacent to you.
 * {% COOLDOWN %}
 
 ## Kill Zone
 Take a reaction shot against any enemy that moves or attacks within a cone of fire.
-* There is no limit to the amount of Kill Zone shots a soldier can take outside of ammo counts.
-* Kill Zone utilizes Squadsight, even if the soldier does not have the Long Watch ability.
+* If you have Squadsight, Kill Zone shots are taken at squadsight range.
 * {% COOLDOWN %}
 
 ## Killer Instinct
-Activating Run and Gun grants +50% critical damage for the rest of the turn.
++50% more damage with critical hits until the start of your next turn after you activate Run and Gun.
 
 ## Knife Encounters
-Once per turn, gain a bonus action after throwing a knife at an enemy within 5 tiles.
-* Once per turn, gain a bonus action after throwing a knife at an enemy within 5 tiles.
+Once per turn, gain an action after throwing a knife at an enemy in a {% KNIFE_ENCOUNTERS_RADIUS %} tile radius.
 * A red ring will mark the range of this ability.
-* Knife Encounters cannot be used on the same turn as Run and Gun.
+* Cannot trigger on the same turn as Hit and Run.
+* Cannot trigger on the same turn as Close Encounters.
+* Cannot trigger on the same turn as Run and Gun. Run and Gun cannot be used if you have gained an action from Close Encounters.
 
 ## Knife Fighter
-You may make a melee attack with your knife against adjacent enemies.
-* Knife attacks use one action and do not end your turn.
+Attack an adjacent enemy with your combat knife.
+* {% 1AP NTE %}
 
 ## Knife Juggler
-Adds +1 bonus damage to throwing knives and provides 1 additional throwing knives. Each kill with a primary weapon grants a knife charge.
++1 to Throwing Knife damage. +1 to Throwing knife charges. You gain a throwing knife charge when you kill your primary weapon.
 
 ## Launch Grenade
-The Grenadier uses a grenade launcher to fire grenades rather than throwing them. This allows for greater range and grenade capacity.
-* All grenades benefit from the grenade launcher's range increase, including non-offensive munitions like Smoke Grenades.
-* An additional grenade can be equipped in a unique grenade-only slot.
-* The range of launched grenades can be further improved by upgrading to more advanced grenade launchers.
+You use your grenade launcher to fire grenades, rather than throwing them. Additional grenade launch range. You have a grenade-only slot.
+* {% COOLDOWN %}
+* Grenade launch range improves with grenade launcher tier.
 
 ## Lead The Target
-Grants a +20% increased chance to hit, but delays the shot until the target takes an action on their turn. Costs two actions and has a 3 turn cooldown.
-* Carefully lead the target, granting a +20% increased chance to hit, but delaying the shot until the enemies turn. Takes two actions.
+Take a delayed shot with +{% LEAD_TARGET_AIM_BONUS %} Aim at an enemy if it moves.
+* {% 2AP %}
 * {% COOLDOWN %}
+* To take the shot, you need line of sight to the enemy when it moves.
+* Lead The Target ends if you haven't taken the shot until the start of your next turn.
+* Lead The Target is not a reaction attack, despite activating on enemy movement.
 
 ## Lethal
-You do 2 additional points of base damage and 1 additional point(s) of bonus critical damage with your primary weapon.
++2 to primary weapon damage. +1 to primary weapon critical damage.
 
 ## Lick Your Wounds
-Hunker Down restores 2 health when used, up to a maximum of 8 per mission, and removes poison, burning, and acid burning.
-* Hunker Down restores 2 health when used, up to a maximum of 8 per mission.
-* Removes poison, burning, and acid burning.
+Heal for 2 HP when you Hunker Down, up to 8 per mission. Cure poison, burning, and acid burning when you Hunker Down.
+* Does it also work if you're out of charges?
 
 ## Light 'Em Up
-Standard shots with your primary weapon are not turn-ending.
+Replaces your primary weapon's standard shot. It no longer ends the turn.
 
 ## Lightning Reflexes
-Reaction fire shots against you have a significantly decreased chance to hit. The bonus goes down with each additional reaction shot you face.
-* Reaction fire shots against you have a significantly decreased chance to hit.
-* The first reaction shot against you during a turn is at -100 to hit; the second at -80; the third at -60; the fourth at -40, and the fifth at -20. Further reaction shots at are normal to hit chances.
+Reaction attacks against you have -100 Aim. This Aim penalty decays by 20 per reaction attack you have taken since the start of your turn.
 * This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
 ## Lightning Slash
-Attack any enemy within blue movement range with your weapon. This attack does not end the turn.
-* Attack any enemy within blue movement range with your weapon.
-* This attack does not end the turn.
+Move to an enemy within the range of a single move and attack it with your {% BOUND_WEAPON_NAME %}.
+* {% 1AP NTE %}
 * {% COOLDOWN %}
 
 ## Like Lightning
-When Run and Gun is activated, your Arc Thrower cooldown is immediately reset to 0.
-* {% COOLDOWN %}
+When you activate Run and Gun, your Arc Thrower cooldown resets to 0.
 * Does not apply to Chain Lightning.
 
 ## Lingering Shadow
-Provides +15 Defense and +30 Dodge for one turn when the Reaper loses Shadow.
-* Provides +15 Defense and +30 Dodge as soon as the Reaper loses Shadow, either because they break concealment or Shadow expires.
-* Lasts until the start of XCOM's next turn.
++15 Defense and +30 Dodge after you are revealed from Shadow. 1 turn duration.
 
 ## Lock 'N Load
-Kills with your primary weapon restore 1 ammo.
+Restore 1 ammo when you kill with your primary weapon.
 
 ## Lockdown
-Gain +20 to hit against enemies who attempt to move when suppressed.
-* Gain +20 to hit against enemies who attempt to move when suppressed.
-* This stacks with other reaction fire bonuses.
++20 Aim with Suppression attacks.
 
 ## Locked On
 Gain +20 aim and +20 crit for successive shots at the same enemy unit.
