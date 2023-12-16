@@ -59,12 +59,11 @@ Use your Arc Thrower to heal a robotic ally for {% ARC_WELDER_HEAL %} HP.
 * Uses per mission: {% ARC_WELDER_CHARGES %}
 
 ## Area Suppression
-Suppress an area in a 4-tile radius around an enemy. Suppressed enemies trigger reaction fire from you, have -25 to Aim and have many abilities disabled.
-* Area Suppression costs 2 ammo points to use, plus one additional ammo for each reaction shot.
-* Examples of abilities disabled by suppression include rocket launches and grenades throws.
-* Area suppression ends if you take damage.
+Target an area in a 4-tile radius around an enemy. The area and enemies that enter it become Suppressed.
+* Requires 3 ammo to use. Consumes 2 ammo to activate and 1 ammo per reaction shot fired.
+* Ends if you take damage.
 * Cannot be used when concealed.
-* Not usable with shotguns or sniper rifles.
+* Cannot be used with a sniper rifle or shotgun.
 
 ## Arc Wave
 Rend deals damage in a cone behind the primary target.
@@ -73,11 +72,11 @@ Rend deals damage in a cone behind the primary target.
 * Arc Wave passes through environment.
 
 ## Avenger
-Once per enemy turn, take a reaction shot with your primary weapon at an enemy that has taken a hostile action against an ally.
+Once per enemy turn, fire a reaction shot with your primary weapon at an enemy that has taken a hostile action against an ally.
 * Avenger will also activate on hostile actions with no target.
 
 ## Banish
-Fire at a target until you run out of ammo or it dies. -15 to Aim per Banish shot until Banish ends.
+Fire at a target until you run out of ammo or it dies. The Aim of this attack decays by 15 per shot.
 * Banish reveals you before you fire.
 * {% COOLDOWN %}
 
@@ -116,10 +115,10 @@ Use your GREMLIN to disorient a non-robotic enemy and all other enemies in a {% 
 +2 to ranged attack damage against targets that have taken damage after the start of their turn. Ignore 40 Dodge of targets that have taken damage after the start of their turn.
 
 ## Bluescreen Bombs
-You disorient robotic enemies and apply -{% BLUESCREEN_BOMBS_HACK %} to Hack Defense on Flashbang hits.
+Your Flashbangs disorient robotic enemies and apply -{% BLUESCREEN_BOMBS_HACK %} Hack Defense.
 
 ## Bluescreen Knives
-+2 Pierce to Throwing Knives. You disorient robotic units on Throwing Knife hits.
++2 Pierce with throwing knives. Your throwing knife attacks disorient robotic units on hit.
 
 ## Body Shield
 Debuff an enemy to have -20 Aim against you and -50 Crit against you.
@@ -179,7 +178,7 @@ Fire your Arc Thrower at a target that you can stun. Chain Lightning bounces up 
 * Cannot be used when concealed.
 
 ## Chain Shot
-Take a shot with -10 Aim. If you hit, you take another shot with -10 Aim.
+Fire a shot with -10 Aim. If you hit, you fire another shot with -10 Aim.
 * Consumes 1 ammo per shot.
 * {% COOLDOWN %}
 * Chain Shot can be devastating against non-cover enemies, or when augmented with aim bonuses.
@@ -272,7 +271,7 @@ Enemies have 25% reduced detection radius against you.
 * Infiltration rate bonus? How does that work?
 
 ## Crippling Strike
-Throw a knife that Maims on hit for 1 turn.
+Throw a knife that Maims the target on hit for 1 turn.
 * Maimed enemies have 0 mobility.
 * Breaks concealment, but not Shadow.
 * Shares charges with other Throwing Knife skills.
@@ -303,11 +302,12 @@ Once per turn, gain +2 Armor after you take damage. If you gained Armor this way
 Your Area Suppression radius is 5 tiles.
 
 ## Deadeye
-Take a shot with 15% less Aim and 50% more base damage.
+Fire a shot with 15% less Aim and 50% more base damage.
 * {% COOLDOWN %}
 
 ## Death Dealer
-+25 crit chance against all targets. Weapon critical damage is doubled against flanked targets while you are in Shadow.
+Weapon critical damage is doubled against flanked targets while you are in Shadow.\
+Passive: +25 crit chance.
 
 ## Death From Above
 Once per turn, gain an action after killing an enemy at a lower elevation with your primary weapon. Aim penalty from long range is halved for sniper rifles and vektor rifles.
@@ -330,7 +330,7 @@ Destroy or damage the cover of an enemy. Deals no damage to the target.
 +10 to Defense provided by your Smoke Grenades.
 
 ## Disabling Shot
-Take a shot that stuns for 2 actions on hit. +2 to stun duration if the shot crits. Deals 50% reduced base damage and critical hits are converted to normal hits.
+Fire a shot that stuns for 2 actions on hit. +2 to stun duration if the shot crits. Deals 50% reduced base damage and critical hits are converted to normal hits.
 * The hit result conversion causes Disabling Shot to never trigger other effects that depend on dealing critical damage, other than its own bonus stun duration.
 * {% COOLDOWN %}
 
@@ -360,7 +360,7 @@ You will enter overwatch at the end of your turn if you only used movement actio
 
 ## Failsafe
 Negative effects no longer occur when you fail a hack.
-* Negative effects prevented by Failsafe include losing squad concealment.
+* Negative effects prevented by Failsafe include breaking squad concealment.
 
 ## Field Medic
 +2 charges to equipped Medikits.
@@ -379,7 +379,8 @@ Wound recovery times of all organic squad members are reduced by 1 HP.
 * Concussion Rocket?
 
 ## Firestorm
-Dash to a position and spray fire in a {% FIRESTORM_RADIUS_TILES %} tile radius around yourself. You are immune to fire damage.
+Dash to a position and spray fire in a {% FIRESTORM_RADIUS_TILES %} tile radius around yourself.\
+Passive: You are immune to fire damage.
 * Firestorm deals +2 damage over your Flamethrower's base damage.
 * {% 2AP %}
 * {% CHARGES %}
@@ -393,7 +394,7 @@ Dash to an enemy within movement range and attack it with your sword. Bonus dama
 * +1 damage per every 4 tiles of distance between your position at the start of the turn and your target, up to 5.
 
 ## Flush
-Take a shot with +30 Aim and 50% less base damage. Debuffs the target for -10 Defense and -30 Dodge on hit. 
+Fire a shot with +30 Aim and 50% less base damage. Debuffs the target for -10 Defense and -30 Dodge on hit. Forces the target to move on hit.
 * {% AMMO %}
 * {% COOLDOWN %}
 * 1 turn debuff duration.
@@ -437,7 +438,7 @@ Raise a Ghost from the body of a fallen humanoid. The Ghost expires when it lose
 * Ghosts cannot gain following abilities: Volt, Shield bash, Shield abilities, Deflect, Reflect, Solace, Void Conduit, Bladestorm, Apotheosis, Superior Aptitude, Ionic Storm and Sustain. What can they even gain?
 
 ## Ghost Grenade
-Throw a specialized smoke grenade to conceal a squadmate in line of sight.
+Throw a specialized smoke grenade to conceal a squad member in line of sight.
 * Does not use grenade targeting and only conceals a single unit.
 * Produces a smoke cloud centered at the target. +20 Defense to units in Ghost Grenade smoke.
 * {% 1AP ET %}
@@ -472,7 +473,7 @@ Remotely hack an object with your {% BOUND_WEAPON_NAME %}.
 * Requires vision to the target.
 
 ## Hail of Bullets
-Take a shot that is guaranteed to hit.
+Fire a shot that is guaranteed to hit.
 * Hail of Bullets consumes 3 ammo.
 * {% COOLDOWN %}
 * Cannot be used with shotguns or sniper rifles.
@@ -561,7 +562,7 @@ Once per turn, when you kill an enemy, you gain a movement action.
 +10 Aim and +10 Crit chance if you have moved this turn.
 
 ## Incinerator
-+2 to your Flamethrower's length. +1 to you Flamethrower's width.
++2 to flamethrower length. +1 to flamethrower width.
 * Roust?
 * Firestorm?
 
@@ -596,7 +597,7 @@ A powerful form of Overwatch. Instead of firing automatically, perform any singl
 * {% COOLDOWN %}
 
 ## Intimidate
-After an enemy targets you with an attack, it has a chance to panic.
+After an enemy targets you, it has a chance to panic.
 * Reaction attacks are not targeted.
 * What's the panic chance?
 * Chance to panic improves with armor tier.
@@ -613,7 +614,7 @@ Dash to a location, then deal damage in a radius around yourself. Additional dam
 * {% COOLDOWN %}
 
 ## Iron Curtain
-Attack enemies in a cone with 50% less base damage. -8 to target mobility on hit.
+Attack enemies in a cone for 50% less base damage. -8 to target mobility on hit.
 * {% COOLDOWN %}
 * Consumes 3 ammo.
 * Debuff has 2 turn duration.
@@ -625,7 +626,7 @@ Attack enemies in a cone with 50% less base damage. -8 to target mobility on hit
 +6 tiles to rocket range. You may target tiles outside your visual range.
 
 ## Judgement
-After an enemy targets you with an attack, it has a chance to panic. The chance is based on a contest of Wills.
+After an enemy targets you, it has a chance to panic. The chance is based on a contest of Wills.
 * Reaction attacks are not targeted.
 * The chance to panic is 30%. +1% Chance to panic per your Will. -1% Chance to panic per target Will.
 * The minimum and maximum panic chance are 5% and 90%.
@@ -637,7 +638,7 @@ Use the Grapple to pull a humanoid target to you and attack it with your Ripjack
 * {% COOLDOWN %}
 
 ## Kill Zone
-Take a reaction shot against any enemy that moves or attacks within a cone of fire.
+Fire a reaction shot against any enemy that moves or attacks within a cone of fire.
 * If you have Squadsight, Kill Zone shots are taken at squadsight range.
 * {% COOLDOWN %}
 
@@ -659,12 +660,12 @@ Attack an adjacent enemy with your combat knife.
 +1 to Throwing Knife damage. +1 to Throwing knife charges. You gain a throwing knife charge when you kill your primary weapon.
 
 ## Launch Grenade
-You use your grenade launcher to fire grenades, rather than throwing them. Additional grenade launch range. You have a grenade-only slot.
+You use your grenade launcher to launch grenades, rather than throwing them. Additional grenade launch range. You have a grenade-only slot.
 * {% COOLDOWN %}
 * Grenade launch range improves with grenade launcher tier.
 
 ## Lead The Target
-Take a delayed shot with +{% LEAD_TARGET_AIM_BONUS %} Aim at an enemy if it moves.
+Target an enemy. Fire a shot at it with +{% LEAD_TARGET_AIM_BONUS %} Aim if it moves.
 * {% 2AP %}
 * {% COOLDOWN %}
 * To take the shot, you need line of sight to the enemy when it moves.
@@ -679,10 +680,10 @@ Heal for 2 HP when you Hunker Down, up to 8 per mission. Cure poison, burning, a
 * Does it also work if you're out of charges?
 
 ## Light 'Em Up
-Replaces your primary weapon's standard shot. It no longer ends the turn.
+Replaces your primary weapon's standard shot. Light 'em Up counts as a standard shot and does not ends your turn.
 
 ## Lightning Reflexes
-Reaction attacks against you have -100 Aim. This Aim penalty decays by 20 per reaction attack you have taken since the start of your turn.
+You have +100 Defense against reaction attacks. This bonus decays by 20 per reaction attack against you after the start of your turn.
 * This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
 ## Lightning Slash
@@ -701,32 +702,25 @@ When you activate Run and Gun, your Arc Thrower cooldown resets to 0.
 Restore 1 ammo when you kill with your primary weapon.
 
 ## Lockdown
-+20 Aim with Suppression attacks.
++20 Aim with attacks that trigger when a target you are suppressing moves.
 
 ## Locked On
-Gain +20 aim and +20 crit for successive shots at the same enemy unit.
-* Gain +20 aim and +20 crit for repeated shots at the same target. Not cumulative, and only applies to enemy units.
++20 Aim and +10 Crit to attacks against the target of your previous primary weapon attack.
 * Area-of-Effect-based shots do not grant the bonus.
 
 ## Lone Wolf
-Gain bonus Aim and Defense when at least 4 tiles distant from any ally, with a maximum of +12/+12 at 7+ tiles.
-* Gain +3 Aim and +3 Defense for each tile of distance between this soldier and the nearest ally, starting at 4 tiles distant.
-* Bonuses cap at +12 Aim, +12 Defense when 7 or more tiles from the nearest ally.
++12 Aim and +12 Defense if you are at least 7 tiles away from the nearest ally. This bonus decays by 3 Aim and 3 Defense per tile.
 * This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
 ## Long Watch
-Allow Overwatch to trigger with Squadsight.
-* Like the Overwatch ability it upgrades, Long Watch suffers a base penalty to aim.
-* Long Watch also suffers the Squadsight penalty to aim that increases with distance.
+Replaces Overwatch. Long Watch can trigger at Squadsight range.
 
 ## Low Profile
 Makes partial cover count as full.
 
 ## Maim
-Fire a shot with your primary weapon that immobilizes the target until the end of their next turn. Uses 1 ammo. Has a 3 turn cooldown.
-* Fire a shot with your primary weapon that does normal damage and immobilizes the target until the end of their next turn.
-* Useful to isolate a high-value target during an ambush.
-* Uses 1 ammo.
+Fire a shot that Maims the target on hit.
+* Maimed enemies have 0 mobility.
 * {% COOLDOWN %}
 
 ## Manual Override
@@ -736,345 +730,293 @@ Lowers all ability cooldowns on a selected ally soldier by up to 3 turns.
 * {% COOLDOWN %}
 
 ## Marauder
-Standard shots are not turn-ending, allowing for shooting then moving or shooting twice on a turn.
-* Marauder provides more tactical options when planning the Skirmisher's turn.
-* Paired with Grapple, Marauder allows the Skirmisher to shoot twice and move on a single turn.
+Your standard shots no longer end the turn.
 
 ## Mayhem
 Gain 25% bonus damage against enemies who attempt to move when suppressed.
 
 ## Mechanical Chassis
-This unit is immune to fire and poison damage.
+You are immune to fire and poison.
 
 ## Medical Protocol
-The GREMLIN can perform healing actions remotely: GREMLIN Heal and GREMLIN Stabilize. The GREMLIN has a single charge. If a medikit is equipped, the GREMLIN will gain an additional charge.
-* Upgrading your GREMLIN will lead to more HP healed per charge.
-* GREMLIN Heal or GREMLIN Stabilize, when used as your first action, will not end your turn.
+Use your GREMLIN to heal or stabilize an organic ally remotely. +1 charge per equipped medikit.
+* {% 1AP NTE %}
+* Healed HP improves with GREMLIN tier.
 
 ## Momentum
-After using Rend, gain a bonus movement action.
+You gain a Momentum action after you use Rend. Momentum actions can be used for movement or deploying your Templar Shield.
 
 ## Multitargeting
-You may Holotarget multiple enemies with a 2 turn cooldown.
-* HiDef Holo, Independent Tracking, and Vital Point Targeting apply to all targets.
-* Area of effect radius is 4 tiles for the basic Holotargeter and improves to 5 and 6 tiles with better technology.
+Holotarget all enemies in a 4/5/6 tile radius around an enemy.
+* {% 1AP ET %}
 * {% COOLDOWN %}
-* Holotargeting does not break concealment for your squad.
+* HiDef Holo, Independent Tracking, and Vital Point Targeting apply to all targets.
 
-Napalm-X
-Napalm-X
+## Napalm-X
 Your Flamethrower can now panic enemies.
-* Your Flamethrower can now panic enemies. Enemy units must pass a will check to avoid negative effects.
+* What's the panic chance?
 
 ## Needle
-Shots taken in Shadow have +2 armor piercing.
-* Use Shadow's extra mobility to get close and deal major damage with Needle.
-* Only applies while the Reaper is in Shadow.
-
++2 pierce to shots taken in Shadow.
 
 ## Needle Grenades
 +1 explosive damage against unarmored targets. You never destroy loot and corpses of enemies you kill.
 
-Neutralizing Agents
-Aid Protocol now neutralizes fire, poison, acid and bleeding.
-* Aid Protocol now neutralizes fire, poison, acid and bleeding.
+## Neutralizing Agents
+Aid Protocol now neutralizes fire, poison, acid, and bleeding.
 
 ## None Shall Pass
-During enemy turns, fire a free reaction shot that can critically hit with your sawed-off shotgun at any visible enemy within 3 tiles who moves or fires. Can only trigger once per turn.
-* Will not trigger if soldier is concealed.
-* Only triggers once per turn.
-* Uses 1 ammo and will only trigger if the sawed-off shotgun is loaded.
-* Can critically hit.
-* Works during any enemy turn: alien, Lost, Chosen and Ruler.
+Once per enemy turn, you automatically reaction fire your sawed-off shotgun against an enemy that moves or attacks in a 3 tile radius around you. This attack can critically hit.
+* Will not trigger if you are concealed.
+* Works during any enemy turn: Alien, Lost, Chosen and Ruler.
 
 ## Nova
-Release a blast of energy, damaging all nearby units. This attack has no cost or cooldown, but consecutive Novas will damage the SPARK.
+Deal damage to all units around you in a {% NOVA_RADIUS_TILES %} tile radius. You take 0 damage from the first Nova in a mission, and afterwards 2 damage per Nova you've used in the mission.
+* {% 0AP %}
 * {% COOLDOWN %}
-* The first Nova attack each mission will deal 0 damage to the SPARK.
-* All Nova attacks after the first will deal a stacking 2 damage to the SPARK.
 
 ## One For All
-Provide high cover to squadmates wherever you stand, and gain -30 defense. Moving or attacking will cancel the effect. Grants bonus ablative HP based on the shield tier for the duration of the effect.
+-30 Defense and bonus ablative HP until the start of your turn. You are a high cover object until you move or attack.
+{% Momentum %}
 
 ## Open Fire
-Your ranged attacks gain 10 Aim and 10 Crit against targets that are at full health.
++10 Aim and +10 Crit with ranged attacks against targets at full health.
 
 ## Overcharge
-Gain bonus aim and crit chance for each point of focus the Templar has.
-* Each point of focus provides +5 aim and +10 crit chance.
-* Based on the current focus, not max focus.
++5 Aim and +10 Crit per Focus to melee attacks.
 
 ## Overdrive
-Gain an action point. You have -15 Aim per shot fired during Overdrive until the start of your next turn.
+Gain an action point. No action ends turn. -15 Aim per primary weapon shot you've fired after activating Overdrive until the start of your turn.
 {% COOLDOWN %}
 
 ## Overkill
-Your ranged attacks deal +2 more damage to units at 50% HP or less.
++2 damage to ranged attacks against units at 50% HP or less.
 
 ## Packmaster
-Grants +1 charge to every utility item and grenade equipped.
-* Grants +1 charge to every utility item equipped.
-* Applies to the grenade slot as well as the standard utility slots, but not other slots.
-* Extra grenades provided by Smoker and Flashbanger abilities do not get extra charges.
+Items in utility and grenade slots have +1 charges.
 
 ## Paramedic
-Unlocks an ability to perform a dash move to use a medikit on an ally. Gain a free medikit. Equipped medikits have 2 extra charges.
+Dash to an organic ally and heal or stabilize it. +2 charges per equipped medikit.
+* {% CHARGES %}
+* {% 1AP NTE %}
 
 ## Parkour
-The cooldown for the Skrimisher's Grapple is reduced by one turn.
-* Improves the Skirmisher's mobility around the map.
+-1 to Grapple cooldown.
 
 ## Phantom
-When the squad is revealed, this soldier remains concealed.
-* Even if the squad does not start a mission concealed, soldiers with Phantom will still begin the mission with concealment.
-* If the soldier with Phantom is the one who breaks squad concealment, then Phantom does not apply.
+You remain concealed when the squad concealment breaks. You start the mission concealed even if the mission starts without squad concealment.
+* If you are detected, you break your individual concealment and squad's concealment.
 
 ## Phosphorus
-Your flamethrower's base damage can now ignore fire immunities, and shred armor.
-* Your flamethrower can now ignore fire immunities.
-* Flamethrower attacks shred 1 armor.
+Your flamethrower attacks deal their base damage to fire immune enemies. Your flamethrower attacks now shreds 1 Armor.
 
 ## Pillar
-Summon a pillar of Psionic energy to act as a high cover point. Free action, does not cost focus.
-* The pillar will last for a number of turns equal to the Templar's Focus level when summoned.
-* Pillar is a free action.
-* Can be used after Rend.
+Place a high cover object.
+* {% 0AP %}
+* {% 1FOCUS %}
+* Duration: Equal to Focus level when cast.
 * {% COOLDOWN %}
+
+## Both Barrels
+Fire your sawed-off shotgun at a nearby enemy. Consumes 2 charges to deal double damage.
+* {% 1AP ET %}
 
 ## Point Blank
 Fire your sawed-off shotgun at a nearby enemy.
-* Rapidly loses accuracy beyond four tiles range.
-* Uses one action.
-* Shotgun has two ammo.
+{% 1AP ET %}
 
 ## Precision Shot
-Take a special shot with +30 bonus to critical chance and 34% bonus critical damage. Has a 4 turn cooldown.
+Fire a shot with +30 Crit. Precision Shot deals 34% more damage with critical hits.
+* {% COOLDOWN %}
 
 ## Predator
-Your ranged attacks gain 15 bonus aim and 15 bonus critical chance against enemies that are flanked or out of cover.
++15 Aim and +15 Crit with ranged attacks against flanked enemies.
 
 ## Preservation
-When your concealment is broken, gain +15 defense for 2 turns.
-* When your concealment is broken, gain +15 defense for 2 turns.
++15 defense after you are revealed. 2 turn duration.
 
 ## Protector
-Non-damaging grenades in your grenade-only slot gain a bonus use.
-* All non-damaging grenades except Ghost Grenades are viable for Protector.
+Support grenades in your grenade-only slot have +1 charges.
+* Examples of support grenades include Flashbangs, Smoke grenades, Battlescanners and Shaped charges.
 
 ## Pump Action
-Gain two extra ammo in your sawed-off shotgun.
++2 to sawed-off shotgun charges. 
 
 ## Quickburn
-Activate so your next use of the flamethrower will not cost an action.
-* Activate so your next use of the flamethrower will not cost an action.
+Your next flamethrower attack will not cost an action.
 * {% COOLDOWN %}
 
 ## Quick Zap
-Activate this ability to make your next arc thrower shot a free action. Has a 4 turn cooldown.
-* Activate this ability to make your next arc thrower shot a free action.
+Your next arc thrower attack will not cost an action.
 * {% COOLDOWN %}
-* Applies to the abilities Stun, Arc Pulser and Chain Lightning.
+* Applies to Stun and Arc Pulser.
 
 ## Rainmaker
-Equipped heavy weapons deal +2 damage and have increased area of effect.
-* Rainmaker adds +2 damage to all heavy weapons.
-* Heavy weapons with circular areas of effect have their radius increased by +2.
-* Heavy weapons with conic areas of effect have their diameter increased by +2 and length increased by +2.
++2 damage with heavy weapons. +2 to heavy weapon radii. +2 to heavy weapon cone length. +2 to heavy weapon cone width.
 
 ## Rapid Deployment
-Activate this ability before throwing or launching a support grenade, and the throw will not cost an action.
-* Activate this ability before throwing or launching a support grenade, and the throw will not cost an action.
-* Applies to Smoke Grenades, Flashbangs, Shaped Charges and Battle Scanners.
+Your next use of a support grenade will not cost an action.
 * {% COOLDOWN %}
+* Examples of support grenades include Flashbangs, Smoke grenades, Battlescanners and Shaped charges.
 
 ## Rapid Fire
-Fire twice in a row at an enemy. Each shot suffers an Aim penalty of -15. Can be used once per turn.
+Fire twice with -15 Aim.
 * {% COOLDOWN %}
 
 ## Rapid Reaction
-When in overwatch, each shot you hit with grants another reaction fire shot, up to a maximum of three shots.
+Up to 2 times per turn, +1 Overwatch shot when you hit an Overwatch shot.
+* If you can fire additional Overwatch shots unconditionally, they can start new Rapid Reaction chains.
 
 ## Rapid Targeting
-You may Holotarget an enemy as a free action with a 4 turn cooldown. In addition, Holotargeting no longer ends your turn.
-* Using your Holotargeter no longer ends your turn.
-* In addition, Rapid Targeting lets you periodically use Holotargeting against a single enemy as a free action.
-* This works with HiDef Holo, Independent Tracking, and Vital Point Targeting.
-* This does not stack with Multitargeting.
+Use your Holotargeter to debuff an enemy. All units have +10/+15/+20 Aim against the target.\
+Passive: Holotargeting and Multitargeting do not end your turn.
 * {% COOLDOWN %}
-* Holotargeting does not break concealment for your squad.
+* HiDef Holo, Independent Tracking, and Vital Point Targeting apply to all targets.
 
 ## Ready For Anything
-Enter overwatch after firing a standard shot with your primary weapon.
+You enter Overwatch after you fire a turn-ending standard shot with your primary weapon.
 
 ## Reaper
-A devastating chain melee attack where the first melee attack cannot miss. Each melee kill in Reaper mode grants an extra action, but further melee attacks have reduced damage.
+Enter Reaper mode until the end of your turn. The first melee attack in Reaper mode will not miss. While in Reaper mode, you gain an action on melee kill. -2 melee damage per melee attack you've performed in Reaper mode this turn.
 * {% COOLDOWN %}
-* Reaper cannot be combined with Run and Gun.
-* As the damage with each successful Reaper strike is reduced, careful ordering of targets may be required to ensure the longest chain of attacks.
+* Reaper and Run and Gun cannot be used on the same turn.
+* What does it mean to not miss?
 
 ## Reckoning
-Unlocks the Ripjack Charge.
-* You can trigger the Charge ability by placing the movement cursor over an enemy and right-clicking (as with Fleche on Shinobis).
+Dash to an enemy within movement range and attack it with your Ripjack.
+* {% 1AP NTE %}
+* Only costs 1 action point even if you would need more actions to reach the target.
 * {% COOLDOWN %}
-* A Skirmisher can perform a dash move with the Charge attack and it will still only cost 1 action point.
 
 ## Reflex
-When fired upon, gain one extra action on the next turn. Triggers no more than once per turn. Attacks against you suffer a -15 penalty to critical hit chances.
-* The Grapple makes the Skirmisher a great advance scout, and Reflex rewards their aggressive positioning.
-* Reflex can only be triggered once per turn.
+Once per enemy turn, gain an action on your next turn when an enemy attacks you. -15 to enemy crit chance against you.
 
 ## Remote Start
-Detonate an environmental explosive, causing it to deal double damage within twice its normal radius. Does not reveal the Reaper.
-* Make sure squadmates are clear of the blast zone!
+Detonate an environmental explosive. It deals double damage and has double radius. Does not break concealment.
 * {% COOLDOWN %}
-* Remote Start has 1 charge(s) per mission.
+* {% CHARGES %}
+* Does it only reveal you from concealment?
 
 ## Rend
-Melee attack with a chance to stun or disorient the target. Triggers Momentum, and generates Focus on attacks.
-* Using Rend is the Templar's primary method for generating Focus.
-* After casting Rend, the Templar will gain Momentum, allowing them one movement action. Use this to return to cover after attacking.
-* Rend has a 5% chance to Stun. Stunned targets will also be knocked back.
-* Rend has a 10% chance to Disorient.
+Dash to an enemy within movement range and attack it with your gauntlet. Gain a Momentum action and +1 Focus after you attack.
+* Rend has {% REND_DISORIENT_CHANCE %}% chance to disorient and {% REND_STUN_CHANCE %}% chance to stun.
+* Stunned targets will also be knocked back.
 
 ## Rend The Marked
-Throwing knives apply a stacking +50 Crit chance against the target from all sources for the remainder of the turn.
+Throwing knives apply a stacking debuff of +50 crit chance against the target per stack. 1 turn duration.
 
 ## Repair
-Send the BIT to a damaged robotic ally and repair it. Advanced BITs can repair slightly more.
-* Repair will restore 6 health.
-* Upgrading your BIT will lead to more HP repaired.
-* Using Repair as your first action will not end your turn.
-* Repair has 2 charges per mission.
+Use your BIT to heal a robotic ally for 6 HP.
+* {% 1AP NTE %}
+* {% CHARGES %}
+* Healed HP improves with BIT tier.
 
 ## Reposition
-Once per turn, gain an additional move action after taking a standard shot at a flanked or exposed target with your primary weapon.
-* Once per turn, gain an additional move action after taking a standard shot at a flanked or exposed target with your primary weapon.
-* Works with Hit and Run.
+Once per turn, gain an movement action after firing a standard shot with your primary weapon at a flanked target.
 
 ## Rescue Protocol
-Use your GREMLIN to grant a movement action to an ally and grant them a small boost to dodge and mobility.
-* Rescue Protocol grants +15 dodge and +5 mobility.
-* Rescue Protocol can only be used on allies with no action points left.
-* It cannot be used on concealed, suppressing or overwatching units.
-* An ally cannot benefit from both Command and Rescue Protocol in the same turn.
-* Uses one action and does not end your turn.
-* Rescue Protocol has 2 charges per mission.
-* Charges increase with improved Gremlin technology.
+Use your GREMLIN to grant +15 Dodge, +5 Mobility and a movement action to an ally with no remaining actions.
+* Not usable on units that are Concealed, Suppressing or on Overwatch.
+* A unit cannot be the target of both Command and Rescue Protocol on the same turn.
+* {% 1AP NTE %}
+* {% CHARGES %}
+* Number of charges increases with GREMLIN tier.
 
 ## Resilience
-Enemy attacks against you suffer a -30 penalty to critical hit chances.
+-30 to enemy crit chance against you.
 
 ## Restoration
-The GREMLIN flies to each squad member, healing or reviving them as needed.
-* Restoration has one charge per mission.
-* Restoration will heal more HP as you upgrade your GREMLIN.
+Use your GREMLIN to heal or revive all organic squad members.
+* {% CHARGES %}
+* Healed HP improves with GREMLIN tier.
 
 ## Retribution
-Free Ripjack attacks on any enemies that enter or attack from melee range.
-* If an enemy begins their turn in an adjacent tile, Retribution will trigger if that enemy tries to attack the Skirmisher.
-* If an enemy does not begin their turn in an adjacent tile, then Retribution will trigger when that enemy moves into melee range.
-* Retribution does not trigger on your own turn.
+You automatically reaction attack with your {% BOUND_WEAPON_NAME %} on enemy turns. Retribution triggers against enemies that enter, exit or attack from melee range.
+* Will not trigger if you are concealed.
+* Impairments?
 
 ## Return Fire
-When targeted by enemy fire, automatically fire back with your primary weapon once per turn.
-* Return Fire will only trigger once per turn.
-* Return Fire can be triggered by melee attacks and area of effect attacks.
-* Return Fire will not trigger when targeted by overwatch fire.
+Once per turn, after an enemy targets you, you fire back with your primary weapon.
+* Reaction fire is not targeted.
 
 ## Revival Protocol
-Send the GREMLIN to an ally to remove any negative mental status effects: Disoriented, Stunned, Panicked, or Unconscious.
-* Revival Protocol can be used to revive unconscious soldiers, including those who have been stabilized after bleeding out.
-* Revival Protocol, if used with your first action, will not end your turn.
-* Starts with two charges, but upgrading your GREMLIN may provide more.
+Use your GREMLIN to revive a squadmate from being disoriented, stunned, panicked, or unconscious.
+* {% 1AP NTE %}
+* {% CHARGES %}
+* Number of charges increases with GREMLIN tier.
 
 ## Ripjack Slash
-Attack an adjacent target with your Ripjack. Does not end turn.
-* Ripjack Slash can only be used against adjacent targets.
+Attack an adjacent enemy with your Ripjack.
+* {% 1AP NTE %}
 
 ## Roust
-Special Flamethrower shot that does limited damage but forces enemies to change their position.
-* Has a 20% chance to set enemies in the area of effect on fire and does limited damage.
-* The narrow jet of flame has less impact on the environment.
-* Units hit by the shot will be forced to move, often triggering overwatch fire.
-* One use per mission, but can gain an additional use with additional gear.
+Flamethrower attack with +{% ROUST_LENGTH %} length, -{% ROUST_WIDTH%} width, {% ROUST_BURN_CHANCE %} chance to burn and -{% ROUST_DAMAGE_PENALTY %}% less base damage. Forces targets to move on hit.
+* {% CHARGES %}
 * Cannot be used from concealment.
 
 ## Ruthless
-Killing a panicked or disoriented enemy with your sawed-off shotgun refunds one action point.
-* By cleverly combining the effects of Brutality and Ruthless, you can kill multiple enemies per turn with your sawed-off shotgun.
-* There is no limit to the number of Ruthless activations per turn.
-
+You gain an action point when you kill a panicked or disoriented enemy with your sawed-off shotgun.
 
 ## Run and Gun
 Free action: Gain a non-movement action.
 * {% COOLDOWN %}
 
 Rupture
-A Rupture shot grants a +50 bonus to critical hit chances and ensures that the target takes an additional +3 damage from all attacks in the future.
-* Rupture requires 3 ammo points.
+Fire a shot with +50 crit and ruptures the target for 3.
+* Targets ruptured by this attack take +3 damage from all attacks for the rest of the mission.
+* {% AMMO %}
 * {% COOLDOWN %}
-* Ruptured targets take 3 additional damage from every attack.
 
 ## Sacrifice
-Generate a protective field which redirects any attacks against allies inside it towards you. Gain bonus defense and armor while active.
-* The SPARK gains +10 defense and +1 armor while Sacrifice is active.
+Move to a position and redirect all ranged(?) attacks against allies in a {% SACRIFICE_RADIUS_TILES %} tile radius around you to yourself. +10 Defense and +1 Armor until the start of your turn.
 * {% COOLDOWN %}
 
 ## Salvo
-Launching or throwing grenades, using heavy weapons or using the Gauntlet's Rocket Launcher with your first action will not end your turn.
-* Soldiers with the Salvo ability are prime candidates for heavy armor.
+Grenade throws, grenade launches, heavy weapon attacks and XCOM gauntlet attacks(?) are no longer turn ending.
 
 ## Sapper
-Your explosives can destroy many cover objects.
-* Sapper allows frag grenades and other explosives to destroy many cover objects.
+Bonuses to environmental damage of your explosives.
 
 ## Saturation Fire
-Fire a cone shaped barrage of bullets at every enemy in an area. In addition, the cover of those enemies can be damaged or destroyed. Uses a lot of ammunition.
-* Saturation Fire requires 4 ammo points.
+Attack enemies and deal environmental damage in a cone.
+* Saturation Fire is equivalent to firing a standard shot at all targets in the cone, and damaging or destroying random cover elements in it.
+* {% AMMO %}
 * {% COOLDOWN %}
-* Saturation Fire will take a standard shot at every enemy in the cone, and will damage or destroy random cover elements in the cone.
 
 ## Savior
-Healing abilities restore four additional hit points.
-* Effect applies to GREMLIN heal, Medikits and Restoration abilities.
++4 to healed HP of your GREMLIN heal, medikit heal and Restoration.
 
 ## Scanning Protocol
-The GREMLIN can trigger an instant scan of the area, increasing the Specialist's sight radius substantially for one turn, and revealing any hidden or disguised enemies in view. Free Action.
-* Scanning Protocol has 2 initial charges.
-* Scanning Protocol gains bonus charges with improved Gremlins.
-* In addition to hidden and disguised enemies, enemies blocked from line of sight by walls or obstructions will also be revealed by Scanning Protocol.
-* Scanning Protocol is a free action.
-* If the Specialist is employed as Haven Advisor Scanning Protocol will reduce the chance of recruiting Faceless rebels by 40% (stacking cumulatively with other similar abilities).
+Use your GREMLIN to scan all units in a {% SCANNING_PROT_RADIUS_TILES %} tile radius around yourself, including hidden or disguised units. +{% SCANNING_PROT_LOS_TILES %} tiles to line of sight for a {% SCANNING_PROT_LOS_DURATION %} turn duration.
+* You will see scanned enemies through walls for a {% SCANNING_PROT_DURATION %} turn duration.
+* {% 0AP %}
+* {% CHARGES %}
+* Number of charges increases with GREMLIN tier.
+* Passive: 40% less chance to recruit Faceless when you are the Haven adviser.
 
 ## Scrap Metal
-Kills with your primary weapon restore one sawed-off shotgun charge.
-* Kills with your primary weapon restore one sawed-off shotgun charge.
-* This does not apply to kills from using the sawed-off shotgun itself.
-* This ability cannot grant ammo if the sawed-off shotgun charges are already at their starting value.
++1 sawed-off shotgun charge when you kill with your primary weapon.
+* You cannot gain more charges than the number of charges you had at mission start.
 
 ## Sentinel
-When in overwatch, you may take two reaction shots.
-* Reaction shots may only target an enemy once.
++1 to Overwatch shots.
 
 ## Serial
-A powerful chained shot ability. For every kill made with your primary weapon, your actions will be refunded but your damage and crit chance will be reduced for every subsequent attack.
-* Serial is meant to chain enemy kills in a single action, as every kill is essentially free.
-* Every successful kill does result in a reduction to critical hit chance and damage, however.
+Enter Serial mode until the end of your turn. While in Serial mode, your primary weapon actions you spend to kill enemies are refunded. Penalties to damage and crit per kill in Serial mode this turn.
+* -{% SERIAL_DAMAGE_PENALTY %} primary weapon damage per kill in Serial mode until the start of your turn.
+* -{% SERIAL_CRIT_PENALTY %} primary weapon crit per kill in Serial mode until the start of your turn.
 * {% COOLDOWN %}
 
 ## Shadow
-Grants the soldier Shadow, an advanced form of concealment that lasts for 2 turns.
-* Shadow reduces detection ranges to just a few tiles at most.
-* Reaper has increased mobility while in Shadow.
+Enter Shadow. In shadow, you have +{% SHADOW_MOB %} mobility and enemies have {% SHADOW_DETECTION_RADIUS %}% reduced detection radius against you.
+* 2 turn duration.
 * {% COOLDOWN %}
 
 ## Shadowstep
-This soldier does not trigger overwatch or reaction fire.
-* A soldier with Shadowstep will not trigger Overwatch shots or Suppression fire, but they will be unable to draw Overwatch fire away from their teammates.
+Enemy reaction attacks no longer trigger against you.
 
 ## Shadowstrike
-While concealed, gain +50 bonus aim and +50 bonus critical hit chance when attacking enemies.
-* Shadowstrike bonuses will apply if the soldier re-enters concealment in a mission.
++50 Aim and +50 crit in concealment.
 
 ## Shield Bash
 Bash an adjacent enemy with your shield, doing some damage and knocking back the target 2 tiles. Free action.
@@ -1083,115 +1025,94 @@ Bash an adjacent enemy with your shield, doing some damage and knocking back the
 * Can target enemies in adjacent tiles on the diagonal as well.
 
 ## Shooting Sharp
-Your ranged attacks gain +2 armor piercing and +15 aim against units in cover.
++2 pierce and +15 aim with your ranged attacks against units in cover.
 
 ## Shredder
-Your primary weapon attacks shred armor.
-* A successful shot with a conventional weapon will shred 1 armor from the target.
-* More advanced weapons will shred more armor from targets.
++1/+1/+2/+2/+3 shred with your primary weapon.
 
 ## Silent Killer
-Guarantees that the Reaper stays in Shadow with killing shots.
-* Allows a Reaper to stay safely in Shadow during the enemy turn if they kill a unit with their primary weapon.
+You are no longer revealed when you kill with your primary weapon in Shadow.
 
 ## Slash
-Attack an adjacent target with your sword. Uses one action.
-* Attack an adjacent target with your sword.
-* Uses one action and doesn't automatically end your turn, so two attacks a turn are possible.
+Attack an adjacent enemy with your sword.
+* {% 1AP NTE %}
 
 ## Slug Shot
-Special shot for primary-weapon shotguns only: Fire a shot that pierces 2 armor and has no range penalties. Uses 1 ammo. Has a 2 turn cooldown.
-* Special shot for primary-weapon shotguns only: Fire a shot with no range penalties.
-* The shot will pierce 2 armor point(s).
-* The shot also gains +10 aim
+Fire a shot with +2 pierce, +10 aim, and no range penalties. Requires a shotgun.
 * {% COOLDOWN %}
-* Requires 1 ammo.
 
 ## Smoker
-Grants one free smoke grenade item to your inventory.
+You start the mission with +1 Smoke grenade.
 
 ## Snap Shot
-You may take standard shots with your sniper rifle after moving, but you suffer severe range penalties beyond 5 tiles of squadsight range.
-* The soldier may now use the sniper rifle for standard shots after moving, but suffers extreme aim penalties at targets beyond 22 tiles range on those shots.
-* The soldier may not enter overwatch with the sniper rifle after moving.
+Fire your sniper rifle with one action remaining. This attack suffers severe aim penalties against targets beyond 5 tiles of your sight radius.\
+Passive: Many {% ClassName %} abilities can be used after moving with the same aim penalties.
+* Abilities you can use with one action remaining: Deadeye, Precision Shot, Disabling Shot, Chain Shot, Rapid Fire.
+* You may not enter Overwatch with one action remaining.
 
 ## Soul Harvest
-Provides +10% crit chance. Each kill by this soldier adds +4% crit chance, to a maximum of +20%.
-* Bonus crit chance applies to both primary and secondary weapons.
-* The +20% max crit chance bonus applies only to the per-kill component, i.e. it's in addition to the base +10% bonus.
++4 crit per enemy you have killed this mission, up to +20.\
+Passive: +10 crit.
 
 ## Squadsight
-You can target enemies within squadmates' sight, provided there is line of sight to the target.
-* Squadsight is best augmented by high ground, allowing soldiers relatively clear sight lines and an additional aim bonus to offset Squadsight's aim penalty.
-* When using Squadsight, there is no limit on how far your targets can be, but an aim penalty accumulates with distance.
-* Overwatch shots do not use squadsight by default.
+Your primary weapon attacks can target enemies out of your visual range, but are in your line of sight and seen by a squadmate.
+* There is no limit on how far your targets can be, but there is an aim penalty that increases with distance.
+* Overwatch attacks are not taken at squasight range.
 
 ## Steady Hands
-If you did not move last turn, gain +10 Aim and +10 Critical chance.
-* The Steady Hands bonus does not stack over multiple turns.
-* Steady Hands doubles down on the need to find a high sniper's nest with good sightlines.
++10 Aim and +10 Crit if you did not move last turn.
 
 ## Stiletto
-Shots fired with your primary weapon pierce 3 armor.
++3 pierce with your primary weapon.
 
 ## Sting
-Fire a shot while in Shadow that holotargets for +10 Aim and ruptures for 1. Guaranteed to remain in Shadow.
-* Sting allows for the Reaper to attack in situations where they absolutely do not want to be revealed.
+Fire a shot that with 1 rupture and Holo Targets for +10 Aim. Must be fired from Shadow. Does not reveal you.
 * {% COOLDOWN %}
 
 ## Sting Grenades
 Your flashbang grenades have a 50% chance to stun enemies.
-* Your flashbang grenades have a 50% chance to stun enemies.
-* Enemies' innate flashbang resistance does not affect stun chance.
+* Flashbang resistance does not mitigate Sting Grenades' stun chance.
 
 ## Street Sweeper
-Cone-based shotgun attack that does bonus damage to unarmored targets. Blocked by heavy cover.
-* Medium-range, cone-based shotgun attack.
-* The spread pattern is blocked by heavy cover.
-* Uses one action and 2 ammo.
+Attack enemies in a cone with your shotgun. +3 damage against unarmored targets. Blocked by heavy cover.
+* {% AMMO %}
 * {% COOLDOWN %}
-* Does 3 bonus damage against unarmored targets within the spread pattern.
-* Cannot be used with non-shotgun weapons.
-* Allies can be injured by this attack.
+* Requires a shotgun.
 
 ## Strike
-Attack any enemy within movement range with a powerful melee attack.
-* You can trigger the Strike ability by placing the movement cursor over an enemy.
-* A SPARK can perform a "Dash" move, using both actions to move, and still trigger a Strike against an adjacent enemy.
+Dash to an enemy within movement range and punch it in the face.
+* Damage improves with armor tier.
 
 ## Stun
-Fire your Arc Thrower to incapacitate a target.
-* The Arc Thrower is effective anywhere in the soldier's sight range, doing no damage but stunning targets for their next turn if it hits.
-* Improved versions can extend the duration of the stun effect.
-* Requires one action and ends the soldier's turn when fired.
-* Can use every other turn.
-* Ineffective against mechanized units without additional soldier training.
+Fire your arc thrower to stun a non-robotic enemy for 2 actions.
+* {% 1AP ET %}
+* {% COOLDOWN %}
+* Stun duration increases with arc thrower tier.
 
 ## Stun Gunner
-Your Arc Thrower now has a bonus to hit.
-* The bonus starts at +20 and increases with better Arc Thrower technology, to a maximum of +30.
++20 aim with arc thrower attacks.
+* Aim bonus increases with arc thrower tier.
 
 ## Stun Strike
-Strike an enemy with Psionic force, stunning them. Costs 1 Focus.
-* Stun Strike has a 85% chance to hit, increased by 5% for each Focus level.
-* Stun Strike has a 100% chance to stun the target if successful.
-* Stun Strike does not end the Templar's turn.
+Stun an enemy for 2 actions. 85% chance to hit at 1 Focus. +5% chance to hit per Focus.
+* {% FOCUS1 %}
+* {% 1AP NTE %}
 * {% COOLDOWN %}
 
 ## Superior Aptitude
-Rend grants an additional focus point.
++1 Focus after you attack with Rend.
 
 ## Suppression
-Fire a barrage that pins down a target, grants reaction fire against it if it moves, restricts the use of many abilities, and imposing a -25 penalty to the target's aim.
+Continuously fire at an enemy. Suppressed enemies have -25 to aim, are unable to use many abilities, and take a reaction shot from you if they move.
+* Examples of abilities restricted by Suppression include rocket launches and grenades throws.
+* {% AMMO %}
 * {% COOLDOWN %}
-* Suppression will be canceled if the suppressing unit is damaged.
-* If multiple units suppress a target, the aim penalty will not stack.
-* May not be used if sniper rifle or shotgun-class weapons are equipped.
-* Suppression restricts many of the target's abilities, including the use of rockets and grenades.
+* Ends if you don't attack until the start of your turn.
+* Ends if you take damage.
+* Cannot be used with a sniper rifle or shotgun.
 
 ## Survival Instinct
-Gain 20 Defense and 20 Crit chance while injured.
-* The bonuses are lost if you are healed back to full health.
++20 Defense and +20 Crit while not at full health.
 
 ## Sustain
 If the soldier takes enough damage to be killed, they are immediately put in Stasis for 1 turn and their health is only reduced to 1 HP. This can only happen once per mission.
