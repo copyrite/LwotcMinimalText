@@ -3,11 +3,11 @@ Overdrive no longer applies an Aim penalty.
 
 ## Aggression
 +5 Crit per enemy you see, up to +30.
-* Enemies in squadsight apply. (Do you need specific perks for this to work?)
+* Units visible at squadsight ranges do confer bonus.
 
 ## Aid Protocol
 Use your GREMLIN to grant an ally bonus defense until the start of your next turn.
-* 1 action. Does not end turn.
+* {% 1AP NTE %}
 * Does not break concealment.
 * Bonus improves with GREMLIN tiers.
 
@@ -16,14 +16,14 @@ Use your GREMLIN to grant an ally bonus defense until the start of your next tur
 
 ## Aim Assist
 +15 Aim and +15 Crit against holotargeted units.
-* The debuffs from Holotargeter (Weapon) and Holo Targeting (perk) both work.
+* The debuffs from Holotargeter (weapon) and Holo Targeting (ability) both work.
 
 ## Airdrop
 Use your GREMLIN to grant an explosive grenade to an ally.
 * Grants a Frag Grenade. If the Proving Ground project "Plasma Grenades" is complete, grants a Plasma Grenade instead.
-* 1 action. Does not end turn.
+* {% 1AP NTE %}
 * Does not break concealment.
-* Charges: 2
+* {% CHARGES %}
 
 ## Alpha Mike Foxtrot
 +4 to primary weapon damage. +2 to primary weapon critical damage.
@@ -778,7 +778,7 @@ Deal damage to all units around you in a {% NOVA_RADIUS_TILES %} tile radius. Yo
 
 ## One For All
 -30 Defense and bonus ablative HP until the start of your turn. You are a high cover object until you move or attack.
-{% Momentum %}
+{% MOMENTUM %}
 
 ## Open Fire
 +10 Aim and +10 Crit with ranged attacks against targets at full health.
@@ -894,10 +894,10 @@ Dash to an enemy within movement range and attack it with your Ripjack.
 Once per enemy turn, gain an action on your next turn when an enemy attacks you. -15 to enemy crit chance against you.
 
 ## Remote Start
-Detonate an environmental explosive. It deals double damage and has double radius. Does not break concealment.
+Detonate an environmental explosive for double damage and double explosion radius. Does not break concealment.
 * {% COOLDOWN %}
 * {% CHARGES %}
-* Does it only reveal you from concealment?
+* TODO: It doesn't reveal from Shadow, but what about concealment?
 
 ## Rend
 Dash to an enemy within movement range and attack it with your gauntlet. Gain a Momentum action and +1 Focus after you attack.
@@ -1068,7 +1068,7 @@ Your primary weapon attacks can target enemies out of your visual range, but are
 +3 pierce with your primary weapon.
 
 ## Sting
-Fire a shot that with 1 rupture and Holo Targets for +10 Aim. Must be fired from Shadow. Does not reveal you.
+Fire a shot that Ruptures for 1 and Holo Targets for +10 Aim. Must be fired from Shadow. Does not reveal you.
 * {% COOLDOWN %}
 
 ## Sting Grenades
@@ -1100,6 +1100,7 @@ Stun an enemy for 2 actions. 85% chance to hit at 1 Focus. +5% chance to hit per
 * {% FOCUS1 %}
 * {% 1AP NTE %}
 * {% COOLDOWN %}
+* Cannot target units larger than 1 tile.
 
 ## Superior Aptitude
 +1 Focus after you attack with Rend.
@@ -1188,7 +1189,7 @@ Once per turn, you become Untouchable on kill. While Untouchable, damaging attac
 Your holotargeted enemies take +1/+2/+2 damage.
 
 ## Void Conduit
-Imprison a humanoid enemy for 2 turns and steal {% VOIDCONDUITDMG %} HP from it. Steal {% VOIDCONDUITACTIONDMG %} health from it per action lost to imprisonment. Costs 1 Focus.
+Imprison a humanoid enemy for 2 turns and deal {% VOIDCONDUITDMG %} damage to it. Deal {% VOIDCONDUITACTIONDMG %} damage to it when it loses an action to imprisonment. Damage is stolen to you as health. Costs 1 Focus.
 * Imprisoned units cannot take actions or dodge, but can be targeted by other attacks.
 * {% COOLDOWN %}
 * TODO: Is the flat damage also stolen?
@@ -1234,7 +1235,7 @@ Use the Grapple to pull yourself to an enemy and attack with your Ripjack.
 * {% COOLDOWN %}
 
 ## Wrecking Ball
-While in Overdrive, you will destroy environmental objects while moving.
+While in Overdrive, you will destroy cover and environmental objects while moving.
 
 ## Zone of Control
 -15 aim and -4 mobility to all enemies in a {% ZOC_RADIUS_TILES %} tile radius around yourself.
@@ -1380,7 +1381,7 @@ Your allies in a {% BASTION_RADIUS_TILES %} tile radius are immune to fire, pois
 * Moving into range of an ally with any of the listed effects will remove the effects.
 
 ## Domination
-Permanently mind control an enemy.
+Permanently mind control an enemy in sight.
 * Requires a contest of your Psi versus the target's Will.
 * {% CHARGES %}
 * Failed attempts do not consume charges.
@@ -1396,7 +1397,7 @@ Detonate the explosive of a visible enemy or corpse.
 * {% COOLDOWN %}
 
 ## Insanity
-Disorient, panic or mind control a non-robotic enemy.
+Disorient, panic or mind control a non-robotic enemy in sight.
 * {% 1AP NTE %}
 * {% COOLDOWN %}
 * Requires a contest of your Psi and target's Will.
@@ -1404,116 +1405,107 @@ Disorient, panic or mind control a non-robotic enemy.
 * TODO: Check the above numbers.
 
 ## Mind Merge
-Grants bonus will, critical chance and ablative hit points to an ally until the beginning of the player's next turn.
-* Grants the targeted ally 1 ablative (shield) hit point, plus another one per 20 psi offense score of the Psi Operative using Mind Merge.
-* Grants the targeted ally 1 will per 5 psi offense score of the Psi Operative.
-* Also grants the ally +1 critical chance per 7 psi offense score of the Psi Operative.
-* Effect lasts until the Psi Operative's next turn.
+Give bonus ablative HP, will, and crit to a visible ally.
+* Base bonuses are +1 ablative HP, 0 will, and 0 crit.
+* +1 ablative HP per 20 Psi, +1 will per 5 Psi, and +1 crit per 7 Psi.
+* {% 1AP NTE %}
 * {% COOLDOWN %}
-* Mind Merge requires one action and does not end your turn.
-* Only visible allies may be targeted.
-* Improved Psi Amps grant additional bonuses to these effects.
-* If the Psi Operative is employed as Haven Adviser Mind Merge will reduce the chance of recruiting Faceless rebels by 40% (stacking cumulatively with other similar abilities).
+* {% DURATION %}
+* Flat bonuses improve with psi amp tier.
+* Passive: 40% less chance to recruit Faceless when you are the Haven adviser.
 
 ## Null Lance
-Project a beam of terrible power that damages every target it passes through. This attack can penetrate multiple enemies and obstacles.
+Deal damage in a line with {% NULL_LANCE_LENGTH %} tile length. Guaranteed hit.
 * {% COOLDOWN %}
-* Null Lance damage can be increased by improving the Psi Operative's Psi Amp.
+* Damage improves with psi amp tier.
+* TODO: Armor and ablative pierce?
 
 ## Null Ward
-project psionic shields around the soldier and nearby allies. The shields will collapse if this soldier is killed.
-* Project psionic shields around the soldier and nearby allies. The shields will collapse if this soldier is killed.
+Give +3 ablative HP to allies in a {% NULL_WARD_RADIUS_TILES %} radius around you.
 * Null Ward grants 3 ablative hit points.
-* Improved Psi Amps grant additional bonuses to ablative hit points.
-* Null Ward requires one action and does not end your turn.
 * {% COOLDOWN %}
-* Null Ward has a radius of 8 tiles.
+* Reveals you.
+* The effect ends if you die or evac.
+* Ablative HP increases with psi amp tier.
 
 ## Phase Walk
-Temporarily phase out of existence to teleport to a nearby location.
-* Temporarily phase out of existence to teleport to a nearby location.
-* The targeted tile must be visible (works with squadsight).
-* Phase Walk requires one action and does not end your turn.
+Teleport to a tile in a {% PHASE_WALK_RANGE_TILES %} radius around you that in sight of the squad.
+* {% 1AP NTE %}
 * {% COOLDOWN %}
-* Phase Walk has a radius of 17 tiles.
-* Moving with Phase Walk can trigger certain reaction fire abilities.
+* Does not trigger Overwatch, but can trigger other reaction attacks.
 
 ## Quick Study
-Learn officer abilities in half the time.
+50% less Officer training time.
 
 ## Solace
-The Psi Operative may immediately extinguish mental impairments for a squadmate.
-* Solace cleanses disorientation, mind control, panic and stun effects.
-* Solace requires one action and does not end your turn.
+Remove a disorientation, stun, panic, or mind control from an ally in sight.
+* {% 1AP NTE %}
 * {% COOLDOWN %}
 
 ## Soul Steal
-Soulfire transfers the damage done back to the Psi Operative as health and grants an ablative HP for 3 turns, but increases the cooldown of soulfire by 1.
-* Soul Steal will replenish lost health for a wounded operative and provide 3/4/6 ablative hit point for 3 turns.
-* An operative may increase to no more than 15 ablative HP when using Soul Steal.
+You gain +3/+4/+6 ablative HP after you cast Soulfire. Damage is stolen to you as health.
+* Soul Steal will not increase ablative HP over 15.
 
 ## Soul Storm
-Summon meteors of psionic energy to deal damage to enemies inside a target area, and destroy their cover.
-* Summon meteors of psionic energy to deal damage to enemies inside a target area, and destroy their cover.
-* Soul Storm area of effect is centered on the user.
+Deal damage and environmental damage in a {% SOUL_STORM_RADIUS %} tile radius around yourself. Guaranteed hit.
 * Cannot destroy floors or ceilings.
-* Soul Storm requires one action and ends your turn.
+* {% 1AP NTE %}
 * {% COOLDOWN %}
-* Soul Storm has a radius of 4 tiles.
 
 ## Soulfire
-Does guaranteed Psionic damage to an organic enemy. Ignores cover and armor.
+Deal damage a non-robotic enemy. Pierces all Armor and ablative HP. Guaranteed hit.
 * {% COOLDOWN %}
-* The damage done by the Soulfire ability can be increased by upgrading the Psi Operative's Psi Amp.
-* Robotic and mechanical enemies are completely immune to Soulfire.
+* Damage increases with psi amp tier.
 
 ## Stasis
-Completely stuns the target for 1 turn, but renders them immune to any damage or attack.
+Place a unit in Stasis. Units in Stasis cannot gain actions until the start of your next turn, but are immune to damage and untargetable.
+* Both allies and enemies can be targeted.
+* Cannot target units larger than 1 tile.
 * {% COOLDOWN %}
-* Stasis cannot target units larger than 1 tile such as sectopods.
-* As Stasis completely removes an enemy unit from combat for a turn, it can be used defensively to protect vulnerable soldiers, or it can be used offensively to set up a coordinated attack.
-
-Notes: Stasis Shield is automatically included, being able to cast Stasis on allies.
 
 ## Void Rift
-Generate an explosive field of Psionic energy that immediately damages everything within. Organic enemies have a chance to suffer Insanity.
-* Generate an explosive field of Psionic energy that immediately damages everything within. Organic enemies have a chance to suffer Insanity.
-* Void Rift ruptures targets for 1. Rupture amount increases with better Psi Amp technology.
+Deal damage to units in a {% VOID_RIFT_RADIUS_TILES %} tile radius around a tile in sight. Ruptures for 1. {% VOID_RIFT_INSANITY_CHANCE %}% chance to cast Insanity to non-robotic targets on hit.
 * {% COOLDOWN %}
+* Insanity casts on hit do not require vision to the target.
+* Rupture effect increases with psi amp tier.
 
 ## Blood Thirst
-Every time you attack with your melee weapon, get a stackable +1 damage boost to your melee attacks. Lasts 5 turns.
-* Making any attack will provide a stack regardless of whether it hits.
-* Ideal with reaper, being able to not only execute several enemies but performing several attacks will grant several stacks for providing a large damage boost and also mitigating the damage penalty of reaper to create larger chains.
+Gain a stack of Blood Thirst when you attack with your melee weapon. +1 melee damage per stack. Stacks have 5 turn duration.
 
 ## Fatality
-Gain +100 aim and crit against units at 35% hp or lower with your weapon
++100 aim and +100 crit against targets with at 50% or less health.
 
 ## Grapple
-Deploy a grappling hook to move quickly to an elevated position. 5 Turn Cooldown
+Deploy a grappling hook to move to an elevated position.
+* Free action.
+* {% COOLDOWN %}
 
 ## Mark for Death
-Mark a target for death, granting your shots against that unit to be refunded. Effect Lasts till XCOM's next turn.
-* Marking a target reveals the soldier and ends their turn.
-* Marking a target refunds the soldier's actions when firing a standard shot or snap shot, allowing to deal heavy damage against a single target. Ideal for taking out durable enemies.
-* This bonus applies to the marker, it does not apply for allies.
+Mark a target for death. Your primary weapon standard shots and Snap Shots against the marked target are refunded.
+* {% 1AP ET %}
+* {% DURATION %}
+* Reveals you.
 
 ## Overbearing Superiority
-Whenever you get a critical hit with your primary weapon, your actions are refunded.
-* Whenever you get a critical hit with your primary weapon, your actions are refunded.
-* This does not work for multi-shot abilities.
+Single shot attacks with your primary weapon that deal critical damage are refunded.
 
 ## Shieldwall
-Provide high cover to squadmates wherever you stand. Moving or attacking will cancel the effect. Grants 30 defense and 5 armor on the turn it is employed.
++30 defense and 5 armor until the start of your turn. You are a high cover object until you move or attack.
+* TODO: action cost?
 
 ## Vampirism
-Dealing damage with this weapon heals you for the same amount.
+Damage with your {% BOUND_WEAPON_NAME %} is stolen to you as health.
 
 ## Wraith
-Activate dimensional shift and pass freely through obstacles for 2 turns. Free Action, 2 Charges
+Pass through environment and cover. 2 turn duration.
+* {% 0AP %}
+* {% CHARGES %}
 
 ## Get Up
-Revive an unconscious soldier and disorient them for 2 turns. Requires 2 actions.
+Revive an unconscious ally and disorient it for a {% GET_UP_DURATION %} turn duration.
+* {% 2AP %}
 
 ## Stock Strike
-Strike a Mind Controlled Soldier with a butt of your weapon, stunning the target for 1 turn and dealing 30% of their max hp as damage.
+Deal 30% of the target's maximum HP as damage to an adjacent ally mind controlled by an enemy. Stuns for 1 turn on hit.
+* TODO: Health scaling?
+* TODO: Stuns for how long?
