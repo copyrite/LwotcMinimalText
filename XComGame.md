@@ -81,8 +81,8 @@ Fire at a target until you run out of ammo or it dies. The Aim of this attack de
 * {% COOLDOWN %}
 
 ## Battlefield Awareness
-Once per turn, you gain the Battlefield Awareness buff on kill. When you have the buff, damaging attacks against you are forced to miss. When this happens, you lose the buff and you cannot gain it for {% SelfCooldown_LW %} turns.
-* Buff lasts for 1 turn.
+Once per turn, you enter Battlefield Awareness on kill. While in Battlefield Awareness, damaging attacks against you are forced to miss. When this happens, you exit Battlefield Awareness and you cannot enter it for {% SelfCooldown_LW %} turns.
+* You will also exit Battlefield Awareness at the start of your turn.
 * {% COOLDOWN %}
 
 ## Battlelord
@@ -628,7 +628,7 @@ Attack enemies in a cone for 50% less base damage. -8 to target mobility on hit.
 ## Judgement
 After an enemy targets you, it has a chance to panic. The chance is based on a contest of Wills.
 * Reaction attacks are not targeted.
-* The chance to panic is 30%. +1% Chance to panic per your Will. -1% Chance to panic per target Will.
+* The base chance to panic is 30%. +1% Chance to panic per your Will. -1% Chance to panic per target Will.
 * The minimum and maximum panic chance are 5% and 90%.
 
 ## Justice
@@ -844,6 +844,7 @@ Support grenades in your grenade-only slot have +1 charges.
 
 ## Quickburn
 Your next flamethrower attack will not cost an action.
+* Works with Flamethrower and Roust.
 * {% COOLDOWN %}
 
 ## Quick Zap
@@ -1038,7 +1039,7 @@ Attack an adjacent enemy with your sword.
 * {% 1AP NTE %}
 
 ## Slug Shot
-Fire a shot with +2 pierce, +10 aim, and no range penalties. Requires a shotgun.
+Fire a shot with +2 pierce, +10 aim, and no aim penalty from long range. Requires a shotgun.
 * {% COOLDOWN %}
 
 ## Smoker
@@ -1074,10 +1075,10 @@ Your flashbang grenades have a 50% chance to stun enemies.
 * Flashbang resistance does not mitigate Sting Grenades' stun chance.
 
 ## Street Sweeper
-Attack enemies in a cone with your shotgun. +3 damage against unarmored targets. Blocked by heavy cover.
+Attack enemies in a cone. +3 damage against unarmored targets. Blocked by high cover. Requires a shotgun.
+* Range: {% STREET_SWEEPER_RANGE %}
 * {% AMMO %}
 * {% COOLDOWN %}
-* Requires a shotgun.
 
 ## Strike
 Dash to an enemy within movement range and punch it in the face.
@@ -1115,195 +1116,158 @@ Continuously fire at an enemy. Suppressed enemies have -25 to aim, are unable to
 +20 Defense and +20 Crit while not at full health.
 
 ## Sustain
-If the soldier takes enough damage to be killed, they are immediately put in Stasis for 1 turn and their health is only reduced to 1 HP. This can only happen once per mission.
-* Beware that a sustained soldier may retain damaging status effects like poison or burning after emerging from Stasis.
+Once per mission, when you take lethal damage, you will instead survive with 1 HP and enter Stasis until the start of your next turn.
+* Entering Stasis will not remove damaging status effects, like poison, burning, or acid burning.
 
 ## Tactical Sense
-Gain 3 defense for each enemy you can see, up to a maximum of 15 defense.
-* Gain 3 defense for each living enemy you can see, up to a maximum of 15 defense.
++3 Defense per enemy you see, up to +15.
 * Units visible at squadsight ranges do not confer bonus.
 * This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
 ## Tandem Warheads
-Your grenades, rockets and heavy weapons do full damage to the maximum extent of their area of effect.
-* Your grenades, rockets and heavy weapons do full damage to units to the maximum extent of their area of effect.
-* This doesn't apply to environmental damage.
+Your explosive damage no longer suffers from falloff.
+* This does not apply to environmental damage.
 
 ## Target Focus
-Your ranged attacks gain +10 aim and pierce 1 armor against unflankable enemies.
-* Your ranged attacks gain +10 aim and pierce 1 armor against unflankable enemies.
-* Unflankable enemies are ones that can't take cover, such as Drones, MECs and Berserkers.
++10 aim and +1 pierce to ranged attacks against unflankable enemies.
 
 ## Templar Shield
-Grants half cover to allies. Gives low cover bonuses to this unit even when flanked.
+You are in low cover. You are a low cover object.
 
 ## Terrorize
-Adds a chance to panic enemies hit by Volt.
-* Volt can now panic the enemy.
-* The chance to panic is based on the Templar's Will stat versus the target's Will.
+Volt has a chance to panic on hit. The chance is based on a contest of Wills.
+* The base chance to panic is P%. +1% chance to panic per your Will. -1% chance to panic per target Will.
 
 ## That's Close Enough
-During enemy turns, fire your arc thrower at any visible enemy within 1 tile(s) that moves or fires. Shares cooldown with the arc thrower's Stun ability.
-* Will not trigger if soldier is concealed.
-* This ability can trigger 1 time(s) per turn.
+During enemy turns, you automatically reaction fire your arc thrower against an enemy that moves or attacks in a 1 tile radius around you. Shares cooldown with arc thrower Stun.
+* Will not trigger if you are concealed.
+* Works during any enemy turn: Alien, Lost, Chosen and Ruler.
 
 ## Threat Assessment
-Aid Protocol grants the target a Covering Fire Overwatch shot.
+Your Aid Protocol target will enter Overwatch. Your Aid Protocol target has Covering Fire for the duration of the buff.
 
 ## Total Combat
-Throwing a grenade or using an item no longer ends the turn and grenades have no cooldown. In addition, you can throw grenades 2 tiles further and their radius is increased by 1. Grants a Grenade-only slot. Grants +5 aim and +1 mobility.
-* Total Combat adds even more flexibility to the Skirmisher's turns, allowing actions to be taken exactly when needed.
-* {% COOLDOWN %}
-* Grants both Bombard and Volatile Mix, hence it does not stack with either of them.
+Grenade throws and item uses no longer end the turn. Grenade throws have no cooldown. Gain a grenade slot. Gain Volatile Mix. +3 grenade throw range. +5 aim. +1 mobility.
+* Volatile Mix: +1 to grenade radius.
 
 ## Tracking
-You detect nearby units even without line of sight.
-* Tracking allows the unit to detect units that are behind walls and other line-of-sight blockers.
-* Tracking detects enemies up to 14 tiles.
-* Detected units will appear as a visual outline.
+You detect units in a {% TRACKING_RADIUS_TILES %} tile radius even without line of sight.
+* You can not see the detection tiles of detected units that you do not see.
+* You can not directly target detected units that you do not see.
 * Units will remain detected until the end of the player's turn. If they are outside Tracking's range at that point, they will count as no longer detected.
 
 ## Tradecraft
 This soldier has significantly reduced infiltration times while on missions.
+* TODO: How does this work?
 
 ## Traverse Fire
-After taking a standard shot with your primary weapon with your first action, you may take an additional non-movement action.
+Gain a non-movement action after you fire a standard shot with two actions remaining.
 
 ## Trench Gun
-Special shot for primary-weapon shotguns only: Fire a short-range cone-based attack at nearby targets. Has a 4 turn cooldown.
-* Special shot for primary-weapon shotguns only: Fire a short-range cone-based attack at nearby targets.
+Attack enemies in a cone. Blocked by high cover. Requires a shotgun.
+* Range: {% TRENCH_GUN_RANGE %}
 * {% COOLDOWN %}
-* Requires 1 ammo.
-* Ability will not be available with other primary weapons.
-* The shot will not penetrate heavy cover, so this ability is best used in flanking situations.
-* Allies in the area of effect can take damage.
 
 ## Trench Warfare
-If you get at least one kill during your turn, automatically Hunker Down at the end of it.
-* If you get at least one kill during your turn, automatically Hunker Down at the end of it.
+You will Hunker Down at the end of your turn if you killed on your turn turn.
 * You will only Hunker Down if you would normally be able to.
 
 ## Trojan
-Enemy units that are hacked take damage and lose their actions on the turn the hack effect ends.
-* Enemy units hacked by Haywire Protocol take 0 to 8 damage and lose their actions on the turn the hack effect ends.
-* Applies to units stunned or taken over by Haywire Protocol.
-* Damage calculated based on Hacking Stat vs. target's Hack Defense.
+When your hack ends, the hacked unit takes up to 8 damage and loses its actions.
+* Trojan deals 1 damage per successful Hack contest against Hack Defense.
 
 ## Unlimited Power
 Firing your arc thrower no longer ends your turn.
-* Works for all arc thrower abilities, including Chain Lightning.
 
 ## Untouchable
-Once per turn, you gain the Untouchable buff on kill. When you have the buff, damaging attacks against you are forced to miss. When this happens, you lose the buff.
-* Buff lasts for 1 turn.
+Once per turn, you become Untouchable on kill. While Untouchable, damaging attacks against you are forced to miss. When this happens, you are no longer Untouchable.
+* You will also exit Untouchable at the start of your turn.
 
 ## Vital Point Targeting
-Attacks against your Holotargeted enemies deal more damage.
-* The Vital Point Targeting damage bonus is +1 for the basic Holotargeter, and increases to +2 with improved Holotargeting technology.
-* Damage bonus is applied to melee and direct (non-Area of Effect) projectile attacks.
+Your holotargeted enemies take +1/+2/+2 damage.
 
 ## Void Conduit
-Trap a humanoid in a Psionic prison, immobilizing them for multiple actions and transferring their health to the Templar. Costs 1 Focus.
-* Void Conduit will deal 1 damage initially, then drain 3 health per enemy action.
-* Void Conduit lasts for enemy actions equal to the Templar's Focus level when cast.
-* Targets trapped by Void Conduit cannot take actions or dodge, but can be targeted by other attacks.
+Imprison a humanoid enemy for 2 turns and steal {% VOIDCONDUITDMG %} HP from it. Steal {% VOIDCONDUITACTIONDMG %} health from it per action lost to imprisonment. Costs 1 Focus.
+* Imprisoned units cannot take actions or dodge, but can be targeted by other attacks.
+* {% COOLDOWN %}
+* TODO: Is the flat damage also stolen?
 
 ## Volatile Mix
-Your grenades' area of effect is increased by one tile.
-* Your grenades do regular and environmental damage in the expanded area of effect, and apply any additional effects there as well.
++1 to grenade radius.
 
 ## Volt
-A non-turn ending AOE attack that makes its targets easier to hit. Costs 1 Focus.
+Deal guaranteed damage to a non-robotic enemy and other non-robotic enemies in a {% VOLT_RADIUS_TILES %} tile radius around it. -15 to targets' defense on hit.
+* {% 1AP NTE %}
+* {% FOCUS1 %}
 * {% COOLDOWN %}
-* Volt increases your squad's aim by +5 against the targets.
+* {% VOLT_DEBUFF_DURATION %} turn duration.
 
 ## Walk Fire
-Take a highly accurate shot with +30 bonus to hit 66% damage and -30 crit. Uses 2 ammo.
-* This is a special shot in which the soldier adjusts their aim in the middle of an automatic weapon burst, conferring +30 aim and -30 crit and doing 66% damage.
+Fire a shot with +30 aim, 34% less base damage and -30 crit.
 * Consumes 2 ammo.
 
 ## Watch Them Run
-After throwing or launching a grenade, you will automatically enter overwatch.
-* After throwing or launching a grenade, you will automatically enter overwatch.
+You will enter Overwatch after you throw or launch a grenade.
 
 ## Weapon Handling
-Reduces the Aim penalty for short-range primary weapon shots by 67%.
-* Weapon Handling does not affect the aim penalty from Snap Shot.
+67% less aim penalty from short range with primary weapons.
 
 ## Whiplash
-Attack an enemy with an electrical lash. This attack has a 4 turn cooldown.
-* Whiplash does extra damage to robotic enemies.
-* Whiplash requires one action and does not end your turn.
+Attack an enemy in visual range with your Ripjack. Deals bonus damage against robotic enemies.
+* {% 1AP NTE %}
 * {% COOLDOWN %}
 
 ## Whirlwind
-If you hit with a melee attack during your turn, gain a bonus move.
-* A soldier can only gain one move per turn with this ability.
+Once per turn, you gain a movement action when you hit an enemy with a melee attack.
 
 ## Will To Survive
-Enemy damage is reduced by 1 when in cover and attacked through that cover. Also grants 5 will.
-* Enemy damage is reduced by 1 when in cover and attacked through that cover.
-* Cover against explosives and other indirect attacks is calculated from the point of the explosion.
-* Armor piercing effects do not eliminate this bonus.
-* This unit also permanently gains 5 will.
+-1 damage taken from enemies that are not flanking you.\
+Passive: +5 will.
+* -1 damage taken from explosives and other indirect attacks if you are not flanked to their center tile.
 * This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
 ## Wrath
-Use the Grapple to pull yourself to an enemy and deliver a Ripjack strike.
-* {% COOLDOWN %}
-* The Ripjack strike is guaranteed to hit if the Grapple is successful.
-* An open space adjacent to the enemy is needed to use Wrath.
+Use the Grapple to pull yourself to an enemy and attack with your Ripjack.
+* Only the pull is subject to an Aim roll. The Ripjack attack is a guaranteed to hit.
+* Requires an empty tile adjacent to the enemy.
 * {% COOLDOWN %}
 
 ## Wrecking Ball
-While Overdrive is active, break through walls and cover when moving.
-* Wrecking Ball can be used to expose enemies to flanking shots.
-* Use movement waypoints to guide the SPARK on an optimal path for destroying cover and the environment.
+While in Overdrive, you will destroy environmental objects while moving.
 
 ## Zone of Control
-All enemies within the soldier's 5 tile radius suffer penalties of -15 Aim and -4 Mobility.
+-15 aim and -4 mobility to all enemies in a {% ZOC_RADIUS_TILES %} tile radius around yourself.
 
 ## Clutch Shot
-Once per mission, fire a pistol shot that cannot miss.
-* Once per mission, fire a pistol shot that cannot miss.
+Fire a pistol shot that is guaranteed to hit.
+* {% CHARGES %}
 
 ## Faceoff
-Fire once at every visible enemy with your pistol.
-* Faceoff is best augmented by an aggressive field position, granting a high chance to hit at multiple targets.
-* Faceoff cannot be used while in concealment
+Fire your pistol at all enemies you see.
 * {% COOLDOWN %}
+* Cannot be used when concealed.
 
 ## Fan Fire
-Fire the pistol three times at the same target.
-* Each shot in Fan Fire rolls a separate chance to hit.
-* Fan Fire can deal a devastating amount of damage if every shot hits.
+Fire three pistol shots with -{% FAN_FIRE_AIM %}.
 * {% COOLDOWN %}
 
 ## Gunslinger
-Take a reaction shot that is guaranteed to hit and crit with your pistol against any enemy that moves or attacks within 8 tiles.
-* There is no limit to the amount of shots a soldier can take.
-* Range is 8 tiles.
+Enter Gunslinger Overwatch. While in Gunslinger, you will fire a reaction pistol shot against all enemies that move or attack in a 8 tile radius around you. Gunslinger attacks are guaranteed to hit and crit.
 * {% COOLDOWN %}
 * Cannot be used from concealment.
 
 ## Lightning Hands
-Fire your pistol at a target. This attack does not cost an action.
-* Lightning Hands can combo well with two-action abilities, as it does not prevent their use in the same turn.
+Fire your pistol.
+* {% 0AP %}
 * {% COOLDOWN %}
 
 ## Quickdraw
-Firing your pistol with your first action no longer ends your turn and negate pistol weight.
-* Quickdraw allows the soldier to spread their fire around to different targets in the same turn.
-* Quickdraw negates the weight allowing the soldier to carry a pistol without any reduction to mobility.
+Your standard pistol shot no longer ends turn. +1 mobility if you're carrying a pistol.
 
 ## Magnum
 Standard pistol shots have no long range penalty.
-* Only applies to standard pistol shot, and pistol overwatch.
-* Does not apply to special abilities like Lightning Hands, Gunslinger or Faceoff.
+* Only applies to standard pistol shot and pistol overwatch.
 
-Officer Perks
-
-These perks are only available to Officers.
 ## Air Controller
 The Skyranger will arrive 2 turns sooner during evacuations.
 * The officer is skilled at directing allied air assets, allowing the Skyranger to arrive 2 turns sooner after evac flare is deployed.
