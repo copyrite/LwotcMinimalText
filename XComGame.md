@@ -1269,62 +1269,52 @@ Standard pistol shots have no long range penalty.
 * Only applies to standard pistol shot and pistol overwatch.
 
 ## Air Controller
-The Skyranger will arrive 2 turns sooner during evacuations.
-* The officer is skilled at directing allied air assets, allowing the Skyranger to arrive 2 turns sooner after evac flare is deployed.
-* Note that there is a minimum time that the Skyranger will take to arrive regardless of any bonuses.
+-2 to evac timer.
+* Evac timer still has a minimum of {% EVAC_TURNS_MIN %}
 
-Rank: Colonel (6)
 ## Collector
-Any kills of a non-human enemy by the squad have a 33% chance to grant 1 intel point as long as the Officer is healthy.
-* Any kills of a non-human enemy by the squad have a 33% chance to grant 1 intel point as long as the Officer is healthy.
+Squad members have 33% chance to gain 1 intel on non-human enemy kills while you have full health.
+* Is it actually full health, or not taken damage this mission, or have not been wounded this mission?
 
-Rank: Major (4)
 ## Combined Arms
-All allies within Command Range of the Officer do +1 damage with all successful attacks.
-* All allies within Command Range of the Officer do +1 damage with all successful attacks.
-* Command Range increases with each new Officer level.
+Allies in Leadership Range deal +1 damage.
 
-Rank: Field Commander (7)
 ## Command
-End your turn to grant a bonus action to any visible member of the squad. The number of charges is dependent on the officer's rank.
-* Requires one action and ends your turn.
-* Second and first lieutenants have one charge of the ability; captains and majors have two charges; lieutenant and full colonels have three charges, and field commanders have four charges.
-* Cannot be used on units on overwatch or suppressing another target.
+Give an action to a visible ally. (squadmate? do VIPs count?)
+Give an action to a visible organic squadmate. The number of charges is dependent on the officer's rank.
+* {% 1AP ET %}
+* {% CHARGES %}
+* +1 charge if rank is at least Captain.
+* +1 charge if rank is at least Lieutenant Colonel.
+* +1 charge if rank is at least Field Commander.
+* Cannot be used on Overwatching or Suppressing units.
 
-Rank: Second Lieutenant (1)
 ## Commissar
-Pistol shots against allies who have been mind-controlled by enemies have +50 to hit, cannot be dodged, and automatically kill the target if a hit occurs.
-* Pistol shots against allies who have been mind-controlled by enemies have +50 to hit, cannot be dodged, and automatically kill the target if a hit occurs.
+Pistol shots against allies who have been mind controlled by enemies have +50 to hit, cannot be dodged, and automatically kill the target if a hit occurs.
 
-Rank: Second Lieutenant (1)
 ## Defilade
 Soldiers within Command Range of the Officer receive +5 bonus to defense value provided by cover.
 * Soldiers within Command Range of the Officer receive +5 bonus to defense value provided by cover.
 * Command Range increases with each new Officer level.
 
-Rank: Lieutenant Colonel (5)
 ## Fire Discipline
 All allies within Command Range of the Officer gain +10% to hit on reaction fire.
 * All allies within Command Range of the Officer gain +10% to hit on reaction fire.
 * Command Range increases with each new Officer level.
 
-Rank: Lieutenant Colonel (5)
 ## Focus Fire
 Spend an action to pinpoint a target and grant your squad cumulative Aim bonuses and 1 Armor Piercing on attacks against that target for the rest of the turn.
 * Spend an action to pinpoint a target and grant your squad cumulative aim bonuses and 1 armor piercing on attacks against that target for the rest of the turn.
 * Each successive direct weapon attack against the target in the same turn grants an additional +5 aim bonus.
 * {% COOLDOWN %}
 
-Rank: Second Lieutenant (1)
 ## Get Some
 Twice per mission, spend an action to grant all allies within Command Range a +20 bonus to Critical Hit chances for the remainder of the turn.
 * Spend an action to grant all friendly units within Command Range a +20 bonus to Critical Hit chances for the remainder of the turn.
 * Usable twice per mission.
 * Command Range increases with each new Officer level.
 
-Rank: First Lieutenant (2)
-Incoming!
-Incoming!
+## Incoming!
 Activate this ability to grant everyone within command range four points of damage resistance against explosive attacks through the end of the next alien turn.
 * Activate this ability to grant all allies in command range four points of damage resistance against explosive attacks through the end of the next alien turn.
 * Requires no actions.
@@ -1332,12 +1322,10 @@ Activate this ability to grant everyone within command range four points of dama
 * Command Range increases with each new officer level.
 * Does not apply to panicked soldiers or units suppressing other targets.
 
-Rank: First Lieutenant (2)
 ## Infiltrator
 The officer's squad will infiltrate enemy targets more quickly.
 * The squad of an officer with this perk will be significantly stealthier than it otherwise would be and will have reduced infiltration times.
 
-Rank: Colonel (6)
 ## Intervention
 Activate this ability to spend 10 intel and gain two turns on the current mission timer. The number of charges is dependent on the officer's rank.
 * Activate this ability to spend 10 intel and gain two turns on the current mission timer.
@@ -1346,50 +1334,40 @@ Activate this ability to spend 10 intel and gain two turns on the current missio
 * Will do nothing if there is no mission timer.
 * Intel cost can be influenced by events; the ability will not fire if XCOM has fewer than 10 intel.
 
-Rank: Second Lieutenant (1)
 ## Jammer
 Once per battle, delay the arrival of incoming enemy reinforcements by one turn.
 * Activate this ability to cause incoming enemy reinforcements to be delayed by one turn.
 * If no reinforcements are reported as inbound, it will instead delay future reinforcements.
 
-Rank: Captain (3)
 ## Lead By Example
 The Officer improves the Aim, Will and Hack of soldiers within Command Range by half the difference between soldier and Officer.
 * If the Officer's Aim, Will and/or Hack scores are higher than any soldier within Command Range, the soldier gains bonuses to those scores equal to half the difference between the Officer and the soldier.
 * Command Range increases with each new Officer level.
 
-Rank: Major (4)
 ## Leadership
 This officer provides bonuses to will, dodge and infiltration to soldiers who have previously served under his or her command. These bonuses scale up the more missions they go on together.
 * This officer provides bonuses to will, dodge and infiltration to soldiers who have previously served under his or her command. These bonuses scale up the more missions they go on together.
 
-Rank: Second Lieutenant (1)
 ## Oscar Mike
 Spend an action to give all allies within Command Range +5 Mobility for the remainder of the turn. Usable once per mission.
 * Spend an action to give all allies within Command Range +3 Mobility for the remainder of the turn.
 * Usable once per mission.
 * Command Range increases with each new Officer level.
 
-Rank: Second Lieutenant (1)
 ## Scavenger
 Mission rewards of supplies, Alien Alloys and Elerium increased by 30% after successful missions. Squad members have a chance of collecting extra Alien Alloys and Elerium from aliens.
 * If the Officer survives the mission and is conscious, mission rewards of supplies, Alien Alloys and Elerium are increased by 30 percent.
 * Squad may recover Alien Alloys and Elerium from dead aliens.
 
-Rank: Field Commander (7)
 ## Trial By Fire
 Any soldiers below the rank of sergeant will be automatically promoted after a successful mission with this officer.
 * This bonus only applies if the commanding officer has this perk, and it does not grant bonuses to other officers on the mission.
 
-Rank: Captain (3)
 ## You'll Need This
 Pass a spare pistol to a civilian ally.
 * Anytime you equip a pistol (of any technology level), you carry a spare conventional pistol that you can hand to any adjacent civilian ally who does not already have a pistol.
 * The spare pistol does not impose a weight penalty on this soldier, but the ally will incur a one-mobility penalty when receiving the sidearm.
 * Note: This ability will not appear in your Tactical ability icons unless you can use it.
-
-Rank: Second Lieutenant (1)
-Psionic Perks
 
 ## Bastion
 Fortress now provides immunity to nearby teammates.
@@ -1497,9 +1475,7 @@ Generate an explosive field of Psionic energy that immediately damages everythin
 * Void Rift ruptures targets for 1. Rupture amount increases with better Psi Amp technology.
 * {% COOLDOWN %}
 
-Equipment Perks
-Blood Thirst (XCOM)
-Blood Thirst (XCOM)
+## Blood Thirst
 Every time you attack with your melee weapon, get a stackable +1 damage boost to your melee attacks. Lasts 5 turns.
 * Making any attack will provide a stack regardless of whether it hits.
 * Ideal with reaper, being able to not only execute several enemies but performing several attacks will grant several stacks for providing a large damage boost and also mitigating the damage penalty of reaper to create larger chains.
@@ -1530,10 +1506,8 @@ Dealing damage with this weapon heals you for the same amount.
 ## Wraith
 Activate dimensional shift and pass freely through obstacles for 2 turns. Free Action, 2 Charges
 
-Soldier Perks
-
-These are basic perks all soldiers can use when applicable.
 ## Get Up
 Revive an unconscious soldier and disorient them for 2 turns. Requires 2 actions.
+
 ## Stock Strike
 Strike a Mind Controlled Soldier with a butt of your weapon, stunning the target for 1 turn and dealing 30% of their max hp as damage.
