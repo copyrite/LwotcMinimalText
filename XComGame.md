@@ -425,7 +425,8 @@ Use your GREMLIN to shutdown or permanently control an enemy robot. Permanently 
 * Greater Shutdown stuns the target for 6 actions.
 * Master Enemy permanently controls the target and grants it a stat bonus. If it is a MEC and it survives, it will become a Resistance MEC in the mission region.
 * {% 1AP ET %}
-* Charges: 1. Failed attempts do not consume charges.
+* {% CHARGES %}
+* Failed attempts do not consume charges.
 
 ## Full Throttle
 You gain a stackable Full Throttle buff when you kill an enemy. +3 mobility per stack. Stacks have an independent duration of 2 turns.
@@ -1274,14 +1275,14 @@ Standard pistol shots have no long range penalty.
 
 ## Collector
 Squad members have 33% chance to gain 1 intel on non-human enemy kills while you have full health.
-* Is it actually full health, or not taken damage this mission, or have not been wounded this mission?
+* TODO: Is it actually full health, or not taken damage this mission, or have not been wounded this mission?
+* TODO: Does it apply to the Officer?
 
 ## Combined Arms
-Allies in Leadership Range deal +1 damage.
+Allies in Leadership range deal +1 damage.
 
 ## Command
-Give an action to a visible ally. (squadmate? do VIPs count?)
-Give an action to a visible organic squadmate. The number of charges is dependent on the officer's rank.
+Give an action to a visible organic squadmate.
 * {% 1AP ET %}
 * {% CHARGES %}
 * +1 charge if rank is at least Captain.
@@ -1290,112 +1291,117 @@ Give an action to a visible organic squadmate. The number of charges is dependen
 * Cannot be used on Overwatching or Suppressing units.
 
 ## Commissar
-Pistol shots against allies who have been mind controlled by enemies have +50 to hit, cannot be dodged, and automatically kill the target if a hit occurs.
++50 aim, ignore all Dodge, and Execute on hit with pistol shots against allies that are mind controlled by an enemy.
+* TODO: What does it mean in this context to Execute?
 
 ## Defilade
-Soldiers within Command Range of the Officer receive +5 bonus to defense value provided by cover.
-* Soldiers within Command Range of the Officer receive +5 bonus to defense value provided by cover.
-* Command Range increases with each new Officer level.
+Squad members in Leadership range have +5 to cover defense.
+* TODO: Does this apply to the Officer?
 
 ## Fire Discipline
-All allies within Command Range of the Officer gain +10% to hit on reaction fire.
-* All allies within Command Range of the Officer gain +10% to hit on reaction fire.
-* Command Range increases with each new Officer level.
+Allies in Leadership range have +10 aim with reaction attacks.
+* TODO: Does this apply to reaction shots, or reaction attacks?
+* TODO: Does this apply to the Officer?
 
 ## Focus Fire
-Spend an action to pinpoint a target and grant your squad cumulative Aim bonuses and 1 Armor Piercing on attacks against that target for the rest of the turn.
-* Spend an action to pinpoint a target and grant your squad cumulative aim bonuses and 1 armor piercing on attacks against that target for the rest of the turn.
-* Each successive direct weapon attack against the target in the same turn grants an additional +5 aim bonus.
+Debuff a visible enemy to have -1 armor and -5 Defense until the start of its turn. The defense penalty increases by 5 every time the target is attacked with an attack subject to an aim roll.
+* {% 1AP NTE %}
 * {% COOLDOWN %}
 
 ## Get Some
-Twice per mission, spend an action to grant all allies within Command Range a +20 bonus to Critical Hit chances for the remainder of the turn.
-* Spend an action to grant all friendly units within Command Range a +20 bonus to Critical Hit chances for the remainder of the turn.
-* Usable twice per mission.
-* Command Range increases with each new Officer level.
+Give +20 crit to all allies in Leadership range until the end of their turn.
+* {% 1AP NTE %}
+* {% CHARGES %}
+* TODO: Does it really tick at the end of their turn?
 
 ## Incoming!
-Activate this ability to grant everyone within command range four points of damage resistance against explosive attacks through the end of the next alien turn.
-* Activate this ability to grant all allies in command range four points of damage resistance against explosive attacks through the end of the next alien turn.
-* Requires no actions.
-* {% COOLDOWN %}
-* Command Range increases with each new officer level.
+Give +4 explosive damage resistance to all allies in Leadership range until the start of your turn.
 * Does not apply to panicked soldiers or units suppressing other targets.
+* {% 0AP %}
+* {% COOLDOWN %}
 
 ## Infiltrator
 The officer's squad will infiltrate enemy targets more quickly.
-* The squad of an officer with this perk will be significantly stealthier than it otherwise would be and will have reduced infiltration times.
+* TODO: What does this actually do?
 
 ## Intervention
-Activate this ability to spend 10 intel and gain two turns on the current mission timer. The number of charges is dependent on the officer's rank.
-* Activate this ability to spend 10 intel and gain two turns on the current mission timer.
-* Requires one action.
-* The number of charges is dependent on the officer's rank.
-* Will do nothing if there is no mission timer.
-* Intel cost can be influenced by events; the ability will not fire if XCOM has fewer than 10 intel.
+Spend 10 intel for +2 mission timer.
+* {% 1AP NTE %}
+* {% CHARGES %}
+* TODO: Number of charges increases with officer rank. But how many at which ranks?
+* Intervention does nothing if there is no mission timer.
+* TODO: Can it be used on missions without timer? Is it a no-op? Does it still consume intel?
 
 ## Jammer
-Once per battle, delay the arrival of incoming enemy reinforcements by one turn.
-* Activate this ability to cause incoming enemy reinforcements to be delayed by one turn.
-* If no reinforcements are reported as inbound, it will instead delay future reinforcements.
+Delay the arrival of imminent enemy reinforcements by one turn.
+* {% 1AP ET %}
+* {% CHARGES %}
+* Only works if the reinforcements will enter next turn.
+* If reinforcements are also queued for the enemy turn after the next one, Jammer will cause two waves of reinforcements to enter that turn.
 
 ## Lead By Example
-The Officer improves the Aim, Will and Hack of soldiers within Command Range by half the difference between soldier and Officer.
-* If the Officer's Aim, Will and/or Hack scores are higher than any soldier within Command Range, the soldier gains bonuses to those scores equal to half the difference between the Officer and the soldier.
-* Command Range increases with each new Officer level.
+Squadmates in Leadership range have aim, will and hack bonuses equal to half the stat difference between you and the ally.
+* If the squadmate has a higher stat, the Lead By Example bonus for that stat does not apply.
+* TODO: Does it apply to SPARKs?
 
 ## Leadership
-This officer provides bonuses to will, dodge and infiltration to soldiers who have previously served under his or her command. These bonuses scale up the more missions they go on together.
-* This officer provides bonuses to will, dodge and infiltration to soldiers who have previously served under his or her command. These bonuses scale up the more missions they go on together.
+Squadmates have will, dodge and infiltration bonuses per successful mission they have served under your command.
+* TODO: Give me some numbers.
 
 ## Oscar Mike
-Spend an action to give all allies within Command Range +5 Mobility for the remainder of the turn. Usable once per mission.
-* Spend an action to give all allies within Command Range +3 Mobility for the remainder of the turn.
-* Usable once per mission.
-* Command Range increases with each new Officer level.
+Give +5 mobility to all allies in Leadership range until the end of your turn.
+* {% 1AP NTE %}
+* {% CHARGES %}
+* All allies, or all squadmates?
 
 ## Scavenger
-Mission rewards of supplies, Alien Alloys and Elerium increased by 30% after successful missions. Squad members have a chance of collecting extra Alien Alloys and Elerium from aliens.
-* If the Officer survives the mission and is conscious, mission rewards of supplies, Alien Alloys and Elerium are increased by 30 percent.
-* Squad may recover Alien Alloys and Elerium from dead aliens.
+30% more supply, Alien Alloy and Elerium Crystal rewards from successful missions. Squad members have a chance to gain Alien Alloys and Elerium Crystals from alien kills.
+* Multiplicative reward bonus only applies if you survive the mission and are conscious at the end of it.
+* TODO: How does the latter half actually work?
 
 ## Trial By Fire
-Any soldiers below the rank of sergeant will be automatically promoted after a successful mission with this officer.
+Squadmates below Sergeant rank gain experience to be promoted to their next rank at the end of the mission.
+* Squadmates that otherwise gained enough experience to be promoted do not gain any bonus experience.
+* Trial By Fire does not promote squadmates directly to Sergeants, only to their next rank.
 * This bonus only applies if the commanding officer has this perk, and it does not grant bonuses to other officers on the mission.
+* TODO: Does this work on SPARKs?
+* TODO: Does this really not work for officer trained people?
 
 ## You'll Need This
-Pass a spare pistol to a civilian ally.
-* Anytime you equip a pistol (of any technology level), you carry a spare conventional pistol that you can hand to any adjacent civilian ally who does not already have a pistol.
-* The spare pistol does not impose a weight penalty on this soldier, but the ally will incur a one-mobility penalty when receiving the sidearm.
+Give a conventional pistol to an allied civilian.
+* You carry a spare conventional pistol if you have a pistol of any kind in your inventory.
+* You have no mobility penalty from the spare conventional pistol. -1 mobility to the ally that receives the spare conventional pistol.
 * Note: This ability will not appear in your Tactical ability icons unless you can use it.
+* TODO: What does the last part mean? Is it a UX bug?
 
 ## Bastion
-Fortress now provides immunity to nearby teammates.
+Your allies in a {% BASTION_RADIUS_TILES %} tile radius are immune to fire, poison, acid, and explosive damage.
 * Bastion has a 4 tile radius.
-* Moving next to afflicted allies will immediately cleanse their negative physical status effects.
+* Moving into range of an ally with any of the listed effects will remove the effects.
 
 ## Domination
-Permanently mind control an enemy. Only one successful Domination can be performed per mission.
-* Domination requires a contest of the Psi Operative's Psi Strength stat versus the Will of the target.
+Permanently mind control an enemy.
+* Requires a contest of your Psi versus the target's Will.
+* {% CHARGES %}
+* Failed attempts do not consume charges.
 * {% COOLDOWN %}
-* If the Psi Operative dies or leaves the battlefield, the Domination is broken.
+* Domination ends if you die, become mentally impaired, or evac.
 
 ## Fortress
-The soldier is immune to fire, poison, acid, and explosive damage.
-* A soldier with the Fortress ability can walk through fire, poison and acid with no ill effects.
+You are immune to fire, poison, acid, and explosive damage.
 
 ## Fuse
-If an enemy is carrying explosives, they can be remotely detonated by the Psi Operative. Free action.
+Detonate the explosive of a visible enemy or corpse.
+* {% 1AP NTE %}
 * {% COOLDOWN %}
 
 ## Insanity
-Debilitating telepathic attack that can inflict different negative conditions, including mental control of the target.
+Disorient, panic or mind control a non-robotic enemy.
+* {% 1AP NTE %}
 * {% COOLDOWN %}
-* Insanity requires a contest between the Psi Operative's Psi Strength stat, and the target's will.
-* Insanity can disorient, panic, or mind control the target if it succeeds.
-* There is about a 10%, 85%, 5% chance to trigger the respective effects (Very approximate chances)
-* Mechanical enemies are completely immune to Insanity.
-* Insanity requires one action and does not end your turn.
+* Requires a contest of your Psi and target's Will.
+* If you win the contest, there is a 10%/85%/5% chance to disorient, panic, or mind control the target.
+* TODO: Check the above numbers.
 
 ## Mind Merge
 Grants bonus will, critical chance and ablative hit points to an ally until the beginning of the player's next turn.
