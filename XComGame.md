@@ -1,8 +1,8 @@
 ## Adaptive Aim
-Overdrive no longer applies an Aim penalty.
+Overdrive no longer applies an aim penalty.
 
 ## Aggression
-+5 Crit per enemy you see, up to +30.
++5 crit per enemy you see, up to +30.
 * Units visible at squadsight ranges do confer bonus.
 
 ## Aid Protocol
@@ -11,11 +11,11 @@ Use your GREMLIN to give an ally +{ AID_PROT_DEFENSE } defense until the start o
 * Defense improves with GREMLIN tiers.
 
 ## Aim
-+20 Aim and +20 Crit to your next shot after you Hunker Down.
++20 aim and +20 crit to your next shot after you Hunker Down.
 * TODO: On your next turn?
 
 ## Aim Assist
-+15 Aim and +15 Crit against holotargeted units.
++15 aim and +15 crit against holotargeted units.
 * The debuffs from Holotargeter (weapon) and Holo Targeting (ability) both work.
 
 ## Airdrop
@@ -34,7 +34,7 @@ Target an enemy in sight. It will take {% AMPLIFY_BONUS_PCT %}% more damage from
 * {% COOLDOWN %}
 
 ## Arc Pulser
-Your Arc Thrower can target and damage robotic enemies. -{% ARC_PULSER_HACK %} to target's Hack Defense on hit.
+Your Arc Thrower can target and damage robotic enemies. -{% ARC_PULSER_HACK %} to target's hack defense on hit.
 * {% AP1 ET %}
 * {% COOLDOWN %}
 * Damage improves with Arc Thrower tier.
@@ -46,10 +46,10 @@ The BIT can equip and fire heavy weapons.
 On primary weapon crit, the primary target and enemies in a {% APEX_PREDATOR_RADIUS %} around it have a {% APEX_PREDATOR_PANIC_CHANCE %}% chance to panic.
 
 ## Apotheosis
-Bonuses to Rend damage, Dodge and Mobility per Focus above 2.
+Bonuses to Rend damage, dodge and mobility per Focus above 2.
 * 50% more Rend damage per consumed Focus above 2.
-* +20 Dodge per consumed Focus above 2.
-* +2 Mobility per consumed Focus above 2.
+* +20 dodge per consumed Focus above 2.
+* +2 mobility per consumed Focus above 2.
 * Requires at least 3 Focus.
 * {% AP0 %}
 * {% FOCUSALL %}
@@ -58,7 +58,7 @@ Bonuses to Rend damage, Dodge and Mobility per Focus above 2.
 ## Arc Welder
 Use your Arc Thrower to heal a robotic ally for {% ARC_WELDER_HEAL %} HP.
 * TODO: {% AP1 ET%}?
-* Uses per mission: {% ARC_WELDER_CHARGES %}
+* {% CHARGES %}
 
 ## Area Suppression
 Target an area in a 4-tile radius around an enemy. The area and enemies that enter it become Suppressed.
@@ -78,7 +78,7 @@ Once per enemy turn, fire a reaction shot with your primary weapon at an enemy t
 * Avenger will also activate on hostile actions with no target.
 
 ## Banish
-Fire at a target until you run out of ammo or it dies. The Aim of this attack decays by 15 per shot.
+Fire at a target until you run out of ammo or it dies. The aim of this attack decays by 15 per shot.
 * Reveals you.
 * {% COOLDOWN %}
 
@@ -100,7 +100,7 @@ Your grenades and standard rockets have 50% chance to crit. Their crit damage is
 * The critical chance provided by Biggest Booms cannot be modified in any way.
 
 ## Blademaster
-+1 melee damage. +10 Aim with melee attacks.
++1 melee damage. +10 aim with melee attacks.
 
 ## Bladestorm
 You will reaction attack with your {% BOUND_WEAPON_NAME %} enemies that enter, exit or attack from melee range on enemy turns.
@@ -117,7 +117,7 @@ Use your GREMLIN to disorient a non-robotic enemy and other non-robotic enemies 
 +2 ranged attack damage and ignore 40 dodge of targets that have taken damage after the start of their turn.
 
 ## Bluescreen Bombs
-Your Flashbangs disorient robotic enemies and apply -{% BLUESCREEN_BOMBS_HACK %} Hack Defense on hit.
+Your Flashbangs disorient robotic enemies and apply -{% BLUESCREEN_BOMBS_HACK %} hack defense on hit.
 * TODO: Duration?
 
 ## Bluescreen Knives
@@ -165,7 +165,7 @@ Fire a rocket that deals moderate damage and huge environmental damage in a larg
 
 ## Burnout
 You leave a smoke cloud with a {% BURNOUT_RADIUS %} tile radius centered at your position when you attack with your flamethrower.
-* +20 Defense to all units on tiles with Burnout smoke.
+* +20 defense to all units on tiles with Burnout smoke.
 
 ## Capacitor Discharge
 Use your GREMLIN to deal damage and a {% CAPACITOR_DISCHARGE_RADIUS %} tile radius around a location. Affected units have a chance to be stunned. Robotic units take more damage.
@@ -183,7 +183,7 @@ Fire your Arc Thrower at a target that you can stun. Chain Lightning bounces up 
 * Cannot be used when concealed.
 
 ## Chain Shot
-Fire a shot with -10 Aim. If you hit, you fire another shot with -10 Aim.
+Fire a shot with -10 aim. If you hit, you fire another shot with -10 aim.
 * {% COOLDOWN %}
 * Chain Shot can be devastating against non-cover enemies, or when augmented with aim bonuses.
 
@@ -217,7 +217,7 @@ Once per turn, gain an action after taking a standard shot with your primary wea
 * Cannot trigger on the same turn as Run and Gun. Run and Gun cannot be used if you have gained an action from Close Encounters.
 
 ## Combat Awareness
-+15 Defense when on Overwatch. +1 Armor when on Overwatch.
++15 defense when on Overwatch. +1 Armor when on Overwatch.
 * This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
 ## Combat Engineer
@@ -225,7 +225,7 @@ Bonuses to environmental damage of your explosives. Your explosives' environment
 * TODO: What are the numbers?
 
 ## Combat Fitness
-+{% COMFIT_AIM %} Aim. +{% COMFIT_MOB %} Mobility. +{% COMFIT_HP %} HP. +{% COMFIT_WILL %} Will. +{% COMFIT_DODGE %} Dodge.
++{% COMFIT_AIM %} aim. +{% COMFIT_MOB %} mobility. +{% COMFIT_HP %} HP. +{% COMFIT_WILL %} will. +{% COMFIT_DODGE %} dodge.
 
 ## Combat Presence
 Give an action to a visible ally.
@@ -239,8 +239,8 @@ Use your GREMLIN to deal damage to an enemy in squadsight range. Guaranteed hit.
 * Damage improves with GREMLIN tier.
 
 ## Combatives
-You will parry and counter melee attacks that graze or miss against you. +90 Dodge against the first melee attack against you each turn.\
-Passive: +10 Dodge.
+You will parry and counter melee attacks that graze or miss against you. +90 dodge against the first melee attack against you each turn.\
+Passive: +10 dodge.
 * Combatives does not trigger against area of effect melee attacks.
 
 ## Conceal
@@ -262,10 +262,10 @@ Fire a rocket that deals low damage and has a chance to stun or disorient non-ro
 * TODO: Scatter rules?
 
 ## Cool Under Pressure
-+10 Aim with reaction attacks. Your reaction attacks now have a crit roll.
++10 aim with reaction attacks. Your reaction attacks now have a crit roll.
 
 ## Coup de Grâce
-+{% CDG_AIM %} Aim, +{% CDG_CRIT %} Crit, and +{% CDG_DAMAGE %} damage to your {% BOUND_WEAPON_NAME %} attacks against stunned and panicking enemies. Bonuses apply at 50% effectiveness against disoriented enemies.
++{% CDG_AIM %} aim, +{% CDG_CRIT %} crit, and +{% CDG_DAMAGE %} damage to your {% BOUND_WEAPON_NAME %} attacks against stunned and panicking enemies. Bonuses apply at 50% effectiveness against disoriented enemies.
 
 ## Covering Fire
 Reaction shots confer an aim malus on enemies and can now be triggered by any enemy action, not just movement.
@@ -303,14 +303,14 @@ Fire three shots with -{% CYCLIC_FIRE_AIM %} aim.
 Once per turn, gain +2 Armor after you take damage. If you gained Armor this way, lose 2 Armor at the start of your turn.
 
 ## Damn Good Ground
-+10 Aim and +10 Defense against targets at a lower elevation.
++10 aim and +10 defense against targets at a lower elevation.
 * This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
 ## Danger Zone
 Your Area Suppression radius is 5 tiles.
 
 ## Deadeye
-Fire a shot with 15% less Aim and 50% more base damage.
+Fire a shot with 15% less aim and 50% more base damage.
 * {% COOLDOWN %}
 
 ## Death Dealer
@@ -323,7 +323,7 @@ Once per turn, gain an action after killing an enemy at a lower elevation with y
 * TODO: Can the penalty just be called "Squadsight aim penalty"?
 
 ## Dedication
-+2 Mobility until the start of your turn. Ignore reaction fire until the start of your turn.
++2 mobility until the start of your turn. Ignore reaction fire until the start of your turn.
 * {% AP0 %}
 * {% COOLDOWN %}
 
@@ -345,7 +345,7 @@ Fire a shot that stuns for 2 actions on hit. +2 stun duration if the shot crits.
 * {% COOLDOWN %}
 
 ## Disassembly
-You gain a stack of Disassembly when you kill an enemy. +20 Hack per stack. Each stack has a 3 turn duration.
+You gain a stack of Disassembly when you kill an enemy. +20 hack per stack. Each stack has a 3 turn duration.
 
 ## Double Tap
 Fire a standard shot, then gain another action that can only be used for shooting or overwatching.
@@ -358,13 +358,13 @@ Your Arc Thrower disorients the target on miss.
 * What about robots?
 
 ## Evasive
-You start the mission with +100 Dodge. You lose this bonus when you take damage.
+You start the mission with +100 dodge. You lose this bonus when you take damage.
 
 ## Ever Vigilant
 You will enter overwatch at the end of the turn if you only used movement actions this turn.
 
 ## Executioner
-+20 Aim and +20 Crit chance against targets at 50% or less health.
++20 aim and +20 crit chance against targets at 50% or less health.
 
 ## Extra Conditioning
 -1 to Run and Gun cooldown.
@@ -406,7 +406,7 @@ Dash to an enemy within movement range and attack it with your sword. Bonus dama
 * +1 damage per every 4 tiles of distance between your position at the start of the turn and your target, up to 5.
 
 ## Flush
-Fire a shot with +30 Aim and 50% less base damage. Debuffs the target for -10 Defense and -30 Dodge on hit. Forces the target to move on hit.
+Fire a shot with +30 aim and 50% less base damage. Debuffs the target for -10 defense and -30 dodge on hit. Forces the target to move on hit.
 * {% AMMO %}
 * {% COOLDOWN %}
 * 1 turn debuff duration.
@@ -434,7 +434,7 @@ Grenades in utility slots have +1 charges.
 
 ## Full Override
 Use your GREMLIN to shutdown or permanently control an enemy robot. Permanently controlled MECs that survive the mission become Resistance MECs.
-* Success chance is based on a contest of your Hack and target's Hack Defense.
+* Success chance is based on a contest of your hack and target's hack defense.
 * Greater Shutdown stuns the target for 6 actions.
 * Master Enemy permanently controls the target and gives it a stat bonus. If it is a MEC and it survives, it will become a Resistance MEC in the mission region.
 * {% AP1 ET %}
@@ -456,7 +456,7 @@ Raise a Ghost from the body of a fallen humanoid. The Ghost expires when it lose
 ## Ghost Grenade
 Throw a specialized smoke grenade to conceal a squad member in line of sight.
 * Does not use grenade targeting and only conceals a single unit.
-* Produces a smoke cloud centered at the target. +20 Defense to units in Ghost Grenade smoke.
+* Produces a smoke cloud centered at the target. +20 defense to units in Ghost Grenade smoke.
 * {% AP1 ET %}
 * {% CHARGES %}
 * Cannot be used while concealed.
@@ -476,7 +476,7 @@ Deploy a grappling hook to move to an elevated position.
 
 ## Grazing Fire
 Your primary weapon misses have 50% base chance to be converted to a graze.
-* -1% chance to convert misses to grazes per 1 Dodge on target.
+* -1% chance to convert misses to grazes per 1 dodge on target.
 * This effect occurs after normal hit-miss-graze processing.
 
 ## Greater Padding
@@ -495,13 +495,13 @@ Fire a shot that is guaranteed to hit.
 * Cannot be used with shotguns or sniper rifles.
 
 ## Hard Target
-+5 Dodge per enemy you see, up to +30.
++5 dodge per enemy you see, up to +30.
 * Units visible at squadsight ranges do not confer bonus.
 * This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
 ## Haywire Protocol
 Use your GREMLIN to shutdown or control an enemy robot.
-* Success chance is based on a contest of your Hack and target's Hack Defense.
+* Success chance is based on a contest of your hack and target's hack defense.
 * Shutdown stuns the target for 2 actions.
 * Control Enemy controls the target for {% HAYWIRE_PROT_CONTROL_TURNS %} turns.
 * {% AP1 ET %}
@@ -514,7 +514,7 @@ Use your GREMLIN to shutdown or control an enemy robot.
 ## Heavy Weapons
 You can equip the XCOM gauntlet, a combination Rocket Launcher and Flamethrower.
 * The Rocket Launcher may be targeted at any tile in sight range. It has a 3 tile radius and its damage is subject to falloff.
-* When you launch a rocket, you roll a series of Aim checks to determine how many tiles a rocket scatters. Each failed roll increases scatter by 1 tile. The base number of scatter rolls is 4. If you only have one action remaining, you have +2 number of scatter rolls.
+* When you launch a rocket, you roll a series of aim checks to determine how many tiles a rocket scatters. Each failed roll increases scatter by 1 tile. The base number of scatter rolls is 4. If you only have one action remaining, you have +2 number of scatter rolls.
 * Rocket launcher charges: 1
 * The flamethrower is a short-range weapon that causes damage to multiple targets within a cone-shaped area of effect.
 * Flamethrower charges: 2
@@ -537,13 +537,13 @@ Once per turn, gain an action after firing a standard shot at a flanked enemy wi
 * Bonus full actions from Serial and Death from Above will be awarded first.
 
 ## Holo Targeting
-You primary weapon attacks Holo Target enemies. All units have +15 Aim against your Holo Targeted enemies.
+You primary weapon attacks Holo Target enemies. All units have +15 aim against your Holo Targeted enemies.
 * Directed primary weapon-specific abilities will apply Holo Targeting.
 * Abilities that target multiple units will not apply Holo Targeting.
 * 1 turn duration.
 
 ## Holotarget
-Use your Holotargeter to Holotarget an enemy. All units have +10/+15/+20 Aim against your Holotargeted enemy.
+Use your Holotargeter to Holotarget an enemy. All units have +10/+15/+20 aim against your Holotargeted enemy.
 * {% AP1 ET %}
 * 1 turn duration.
 * Does not break concealment.
@@ -572,13 +572,13 @@ Take 33% less damage. 2 turn duration.
 * {% AP1 NTE %}
 
 ## Impersonal Edge
-Gain a stack of Impersonal Edge and reduce your Shadow cooldown by 1 when you kill with a Throwing Knife. +20 Aim per stack. Each stack has a 3 turn duration.
+Gain a stack of Impersonal Edge and reduce your Shadow cooldown by 1 when you kill with a Throwing Knife. +20 aim per stack. Each stack has a 3 turn duration.
 
 ## Implacable
 Once per turn, when you kill an enemy, you gain a movement action.
 
 ## Impulse
-+10 Aim and +10 Crit chance if you have moved this turn.
++10 aim and +10 crit chance if you have moved this turn.
 * TODO: Until the start of your turn, right?
 
 ## Incinerator
@@ -595,11 +595,11 @@ Once per turn, when an enemy targets you, gain 1 focus.
 * Reaction attacks are not targeted.
 
 ## Infighter
-+40 Dodge against attacks in a {% INFIGHTER_RADIUS_TILES %} tile range.
++40 dodge against attacks in a {% INFIGHTER_RADIUS_TILES %} tile range.
 * This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
 ## Inspire Agility
-Give an ally +30 Dodge until the start of your turn. You gain an extra charge on kill.
+Give an ally +30 dodge until the start of your turn. You gain an extra charge on kill.
 * {% COOLDOWN %}
 * {% CHARGES %}
 * {% AP0 %}
@@ -630,7 +630,7 @@ Switch locations with a unit. Costs 1 Focus.
 
 ## Ionic Storm
 Dash to a location, then deal damage in a {% IONIC_STORM_RADIUS_TILE %} tile range. Additional damage and range per Focus. Consumes all Focus.
-* Ionic Storm's base damage is doubled against Psionic units.
+* Ionic Storm's base damage is doubled against psionic units.
 * {% COOLDOWN %}
 * TODO: Focus on kills?
 
@@ -649,12 +649,12 @@ Attack enemies in a cone for 50% less base damage. -8 to target mobility on hit.
 ## Judgement
 After an enemy targets you, it has a chance to panic. The chance is based on a contest of wills.
 * Reaction attacks are not targeted.
-* The base chance to panic is 30%. +1% Chance to panic per your Will. -1% Chance to panic per target Will.
+* The base chance to panic is 30%.
 * The minimum and maximum panic chance are 5% and 90%.
 
 ## Justice
 Use the Grapple to pull a humanoid target to you and attack it with your Ripjack.
-* Only the pull is subject to an Aim roll. The Ripjack attack is guaranteed to hit.
+* Only the pull is subject to an aim roll. The Ripjack attack is guaranteed to hit.
 * Requires an empty tile adjacent to you.
 * {% COOLDOWN %}
 
@@ -687,7 +687,7 @@ You use your grenade launcher to launch grenades, rather than throwing them. Bon
 * Grenade launch range improves with grenade launcher tier.
 
 ## Lead The Target
-Target an enemy. Fire a shot at it with +{% LEAD_TARGET_AIM_BONUS %} Aim if it moves.
+Target an enemy. Fire a shot at it with +{% LEAD_TARGET_AIM_BONUS %} aim if it moves.
 * {% AP2 %}
 * {% COOLDOWN %}
 * To fire the shot, you need line of sight to the enemy when it moves.
@@ -706,7 +706,7 @@ Your standard shots no longer end your turn.
 * Light 'Em Up replaces your primary weapon's standard shot. It counts as a standard shot.
 
 ## Lightning Reflexes
-You have +100 Defense against reaction attacks. This bonus decays by 20 per reaction attack against you after the start of your turn.
+You have +100 defense against reaction attacks. This bonus decays by 20 per reaction attack against you after the start of your turn.
 * This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
 ## Lightning Slash
@@ -719,20 +719,20 @@ When you enter Run and Gun, your Arc Thrower cooldown resets to 0.
 * Does not apply to Chain Lightning.
 
 ## Lingering Shadow
-+15 Defense and +30 Dodge after you are revealed from Shadow. 1 turn duration.
++15 defense and +30 dodge after you are revealed from Shadow. 1 turn duration.
 
 ## Lock 'N Load
 Restore 1 ammo when you kill with your primary weapon.
 
 ## Lockdown
-+20 Aim with attacks that trigger when a target you are suppressing moves.
++20 aim with attacks that trigger when a target you are suppressing moves.
 
 ## Locked On
-+20 Aim and +10 Crit to attacks against the target of your previous primary weapon attack.
++20 aim and +10 crit to attacks against the target of your previous primary weapon attack.
 * Area-of-Effect-based shots do not grant the bonus.
 
 ## Lone Wolf
-+12 Aim and +12 Defense if you are at least 7 tiles away from the nearest ally. This bonus decays by 3 Aim and 3 Defense per tile.
++12 aim and +12 defense if you are at least 7 tiles away from the nearest ally. This bonus decays by 3 aim and 3 defense per tile.
 * This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
 ## Long Watch
@@ -798,15 +798,15 @@ Deal damage to all units in a {% NOVA_RADIUS_TILES %} tile range. You take 0 dam
 * {% COOLDOWN %}
 
 ## One For All
--30 Defense and bonus ablative HP until the start of your turn. You are a high cover object until you move or attack.
+-30 defense and bonus ablative HP until the start of your turn. You are a high cover object until you move or attack.
 * {% AP1 ET %}
 * Can be used with a Momentum action.
 
 ## Open Fire
-+10 Aim and +10 Crit with ranged attacks against targets at full health.
++10 aim and +10 crit with ranged attacks against targets at full health.
 
 ## Overcharge
-+5 Aim per Focus and +10 Crit per Focus to melee attacks.
++5 aim per Focus and +10 crit per Focus to melee attacks.
 
 ## Overdrive
 Gain an action. No action ends turn. While in Overdrive, your aim decays by -15 per primary weapon attack until the start of your turn.
@@ -845,11 +845,11 @@ Fire your sawed-off shotgun at a nearby enemy.
 {% AP1 ET %}
 
 ## Precision Shot
-Fire a shot with +30 Crit. Precision Shot deals 34% more damage with critical hits.
+Fire a shot with +30 crit. Precision Shot deals 34% more damage with critical hits.
 * {% COOLDOWN %}
 
 ## Predator
-+15 Aim and +15 Crit with ranged attacks against flanked enemies.
++15 aim and +15 crit with ranged attacks against flanked enemies.
 
 ## Preservation
 +15 defense after you are revealed. 2 turn duration.
@@ -880,7 +880,7 @@ Your next use of a support grenade will not cost an action.
 * Examples of support grenades include Flashbangs, Smoke grenades, Battlescanners and Shaped charges.
 
 ## Rapid Fire
-Fire twice with -15 Aim.
+Fire twice with -15 aim.
 * {% COOLDOWN %}
 
 ## Rapid Reaction
@@ -888,7 +888,7 @@ Up to 2 times per turn, +1 Overwatch shot when you hit with an Overwatch shot.
 * If you can fire additional Overwatch shots unconditionally, they can start new Rapid Reaction chains.
 
 ## Rapid Targeting
-Use your Holotargeter to debuff an enemy. All units have +10/+15/+20 Aim against the target.\
+Use your Holotargeter to debuff an enemy. All units have +10/+15/+20 aim against the target.\
 Passive: Holotargeting and Multitargeting do not end your turn.
 * {% COOLDOWN %}
 
@@ -934,7 +934,7 @@ Use your BIT to heal a robotic ally for 6 HP.
 Once per turn, gain an movement action after firing a standard shot with your primary weapon at a flanked target.
 
 ## Rescue Protocol
-Use your GREMLIN to give +15 Dodge, +5 Mobility and a movement action to an ally with no remaining actions.
+Use your GREMLIN to give +15 dodge, +5 mobility and a movement action to an ally with no remaining actions.
 * Not usable on units that are Concealed, Suppressing or on Overwatch.
 * A unit cannot be the target of both Command and Rescue Protocol on the same turn.
 * {% AP1 NTE %}
@@ -989,7 +989,7 @@ Fire a shot with +50 crit and ruptures the target for 3.
 * {% COOLDOWN %}
 
 ## Sacrifice
-Move to a position and redirect all ranged attacks against allies in a {% SACRIFICE_RADIUS_TILES %} tile range to yourself. +10 Defense and +1 Armor until the start of your turn.
+Move to a position and redirect all ranged attacks against allies in a {% SACRIFICE_RADIUS_TILES %} tile range to yourself. +10 defense and +1 Armor until the start of your turn.
 * {% COOLDOWN %}
 * TODO: All ranged, probably?
 
@@ -1038,7 +1038,7 @@ Enter Shadow. In shadow, you have +{% SHADOW_MOB %} mobility and enemies have {%
 Enemy reaction attacks no longer trigger against you.
 
 ## Shadowstrike
-+50 Aim and +50 crit in concealment.
++50 aim and +50 crit in concealment.
 
 ## Shield Bash
 Bash an adjacent enemy with your shield, doing some damage and knocking back the target 2 tiles. Free action.
@@ -1083,13 +1083,13 @@ Your primary weapon attacks can now target units outside your sight range if the
 * Overwatch attacks are not fired at squadsight range.
 
 ## Steady Hands
-+10 Aim and +10 Crit if you did not move last turn.
++10 aim and +10 crit if you did not move last turn.
 
 ## Stiletto
 +3 pierce with your primary weapon.
 
 ## Sting
-Fire a shot that Ruptures for 1 and Holo Targets for +10 Aim. Must be fired from Shadow. Does not reveal you.
+Fire a shot that Ruptures for 1 and Holo Targets for +10 aim. Must be fired from Shadow. Does not reveal you.
 * {% COOLDOWN %}
 
 ## Sting Grenades
@@ -1136,14 +1136,14 @@ Suppress an enemy. Suppressed enemies have -25 to aim, are unable to use many ab
 * Cannot be used with a sniper rifle or shotgun.
 
 ## Survival Instinct
-+20 Defense and +20 Crit while not at full health.
++20 defense and +20 crit while not at full health.
 
 ## Sustain
 Once per mission, when you take lethal damage, you will instead survive with 1 HP and enter Stasis until the start of your turn.
 * Entering Stasis will not remove damaging status effects, like poison, burning, or acid burning.
 
 ## Tactical Sense
-+3 Defense per enemy you see, up to +15.
++3 defense per enemy you see, up to +15.
 * Units visible at squadsight ranges do not confer bonus.
 * This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
@@ -1158,7 +1158,7 @@ Your explosive damage no longer suffers from falloff.
 You are in low cover. You are a low cover object.
 
 ## Terrorize
-Volt has a chance to panic on hit. The chance is based on a contest of Wills.
+Volt has a chance to panic on hit. The chance is based on a contest of wills.
 * TODO: What's the base chance?
 
 ## That's Close Enough
@@ -1199,7 +1199,7 @@ You will Hunker Down at the end of your turn if you killed on your turn turn.
 
 ## Trojan
 When your hack ends, the hacked unit takes up to 8 damage and loses its actions.
-* Trojan deals 1 damage per successful contest of your hack against the target's Hack Defense.
+* Trojan deals 1 damage per successful contest of your hack against the target's hack defense.
 
 ## Unlimited Power
 Firing your arc thrower no longer ends your turn.
@@ -1254,7 +1254,7 @@ Passive: +5 will.
 
 ## Wrath
 Use the Grapple to pull yourself to an enemy and attack with your Ripjack.
-* Only the pull is subject to an Aim roll. The Ripjack attack is guaranteed to hit.
+* Only the pull is subject to an aim roll. The Ripjack attack is guaranteed to hit.
 * Requires an empty tile adjacent to the enemy.
 * {% COOLDOWN %}
 
@@ -1316,7 +1316,7 @@ Give an action to a visible organic squadmate.
 * Cannot be used on Overwatching or Suppressing units.
 
 ## Commissar
-+50 aim, ignore all Dodge, and Execute on hit with pistol shots against allies that are mind controlled by an enemy.
++50 aim, ignore all dodge, and Execute on hit with pistol shots against allies that are mind controlled by an enemy.
 * TODO: What does it mean in this context to Execute?
 
 ## Defilade
@@ -1329,7 +1329,7 @@ Allies in Leadership range have +10 aim with reaction attacks.
 * TODO: Does this apply to the Officer?
 
 ## Focus Fire
-Debuff a visible enemy to have -1 armor and -5 Defense until the start of its turn. The defense penalty increases by 5 every time the target is attacked with an attack subject to an aim roll.
+Debuff a visible enemy to have -1 armor and -5 defense until the start of its turn. The defense penalty increases by 5 every time the target is attacked with an attack subject to an aim roll.
 * {% AP1 NTE %}
 * {% COOLDOWN %}
 
@@ -1405,7 +1405,7 @@ Your allies in a {% BASTION_RADIUS_TILES %} tile range are immune to fire, poiso
 
 ## Domination
 Permanently mind control an enemy in sight.
-* Requires a contest of your Psi versus the target's Will.
+* Requires a contest of your psi versus the target's will.
 * {% CHARGES %}
 * Failed attempts do not consume charges.
 * {% COOLDOWN %}
@@ -1423,14 +1423,14 @@ Detonate the explosive of a visible enemy or corpse.
 Disorient, panic or mind control a non-robotic enemy in sight.
 * {% AP1 NTE %}
 * {% COOLDOWN %}
-* Requires a contest of your Psi and target's Will.
+* Requires a contest of your psi and target's will.
 * If you win the contest, there is a 10%/85%/5% chance to disorient, panic, or mind control the target.
 * TODO: Check the above numbers.
 
 ## Mind Merge
 Give bonus ablative HP, will, and crit to a visible ally.
 * Base bonuses are +1 ablative HP, 0 will, and 0 crit.
-* +1 ablative HP per 20 Psi, +1 will per 5 Psi, and +1 crit per 7 Psi.
+* +1 ablative HP per 20 psi, +1 will per 5 psi, and +1 crit per 7 psi.
 * {% AP1 NTE %}
 * {% COOLDOWN %}
 * {% DURATION %}
