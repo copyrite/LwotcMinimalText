@@ -44,7 +44,7 @@ Your arc thrower can target and damage robotic enemies. -{{ ARC_PULSER_HACK }} t
 The BIT can equip and fire heavy weapons.
 
 ## Apex Predator
-On primary weapon crit, the primary target and enemies in a {{ APEX_PREDATOR_RADIUS }} around it have a {{ APEX_PREDATOR_PANIC_CHANCE }}% chance to panic.
+On primary weapon crit, the primary target and enemies in a {{ APEX_PREDATOR_RADIUS }} radius around it have a {{ APEX_PREDATOR_PANIC_CHANCE }}% chance to panic.
 
 ## Apotheosis
 Bonuses to Rend damage, dodge and mobility per Focus above 2.
@@ -97,7 +97,7 @@ After each enemy in line of sight takes a turn, take an action after their turn 
 
 ## Biggest Booms
 Your grenades and standard rockets have 50% chance to crit. Their crit damage is 3.
-* +1 to damage-per-turn effects from grenade crits.
+* +1 to damage-per-turn effects from critical hits with grenades.
 * The critical chance provided by Biggest Booms cannot be modified in any way.
 
 ## Blademaster
@@ -122,7 +122,7 @@ Your Flashbangs disorient robotic enemies and apply -{{ BLUESCREEN_BOMBS_HACK }}
 * TODO: Duration?
 
 ## Bluescreen Knives
-+2 Pierce with throwing knives. Your throwing knife attacks disorient robotic units on hit.
++2 pierce with throwing knives. Your throwing knife attacks disorient robotic units on hit.
 
 ## Body Shield
 Give an enemy in sight -20 aim against you and -50 crit against you.
@@ -340,7 +340,7 @@ Destroy or damage the cover of an enemy. Deals no damage to the target.
 +10 defense from your Smoke grenades.
 
 ## Disabling Shot
-Fire a shot that stuns for 2 actions on hit. +2 stun duration if the shot crits. Deals 50% reduced base damage and critical hits are converted to normal hits.
+Fire a shot that stuns for 2 actions on hit. +2 stun duration on crit. Deals 50% reduced base damage and critical hits are converted to normal hits.
 * The hit result conversion happens after the usual hit-miss-crit-dodge resolution.
 * The hit result conversion causes Disabling Shot to never trigger other effects that depend on dealing a critical hit, other than its own bonus stun duration.
 * {{ COOLDOWN }}
