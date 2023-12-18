@@ -6,7 +6,7 @@ Overdrive no longer applies an aim penalty.
 * Units visible at squadsight ranges do confer bonus.
 
 ## Aid Protocol
-Use your GREMLIN to give an ally +{ AID_PROT_DEFENSE } defense until the start of your turn.
+Remotely give an ally +{ AID_PROT_DEFENSE } defense until the start of your turn.
 * {% AP1 NTE %}
 * Defense improves with GREMLIN tiers.
 
@@ -19,7 +19,7 @@ Use your GREMLIN to give an ally +{ AID_PROT_DEFENSE } defense until the start o
 * The debuffs from Holotargeter (weapon) and Holo Targeting (ability) both work.
 
 ## Airdrop
-Use your GREMLIN to give an explosive grenade to an ally.
+Remotely give an explosive grenade to an ally.
 * Gives a Frag Grenade. If the project "Plasma Grenades" is completed, gives a Plasma Grenade instead.
 * {% AP1 NTE %}
 * {% CHARGES %}
@@ -108,7 +108,7 @@ You will reaction attack with your {% BOUND_WEAPON_NAME %} enemies that enter, e
 * TODO: Impairments?
 
 ## Blinding Protocol
-Use your GREMLIN to disorient a non-robotic enemy and other non-robotic enemies in a {% BLINDING_PROTOCOL_RADIUS %} tile radius around it.
+Remotely disorient a non-robotic enemy and other non-robotic enemies in a {% BLINDING_PROTOCOL_RADIUS %} tile radius around it.
 * Squadsight targeting with line of sight required.
 * {% AP1 ET %}
 * {% COOLDOWN %}
@@ -168,7 +168,7 @@ You leave a smoke cloud with a {% BURNOUT_RADIUS %} tile radius centered at your
 * +20 defense to all units on tiles with Burnout smoke.
 
 ## Capacitor Discharge
-Use your GREMLIN to deal damage and a {% CAPACITOR_DISCHARGE_RADIUS %} tile radius around a location. Affected units have a chance to be stunned. Robotic units take more damage.
+Remotely deal damage and a {% CAPACITOR_DISCHARGE_RADIUS %} tile radius around a location. Affected units have a chance to be stunned. Robotic units take more damage.
 * Uses per mission: {% CAPACITOR_DISCHARGE_CHARGES %}
 * Damage improves with GREMLIN tier.
 
@@ -234,7 +234,7 @@ Give an action to a visible ally.
 * TODO: Are VIPs, rebels, etc. valid targets?
 
 ## Combat Protocol
-Use your GREMLIN to deal damage to an enemy in squadsight range. Guaranteed hit. Additional damage against robotic enemies.
+Remotely deal guaranteed damage to an enemy in squadsight range. Additional damage against robotic enemies.
 * {% CHARGES %}
 * Damage improves with GREMLIN tier.
 
@@ -433,7 +433,7 @@ Grenades in utility slots have +1 charges.
 * TODO: reword?
 
 ## Full Override
-Use your GREMLIN to shutdown or permanently control an enemy robot. Permanently controlled MECs that survive the mission become Resistance MECs.
+Remotely shutdown or permanently control an enemy robot. Permanently controlled MECs that survive the mission become Resistance MECs.
 * Success chance is based on a contest of your hack and target's hack defense.
 * Greater Shutdown stuns the target for 6 actions.
 * Master Enemy permanently controls the target and gives it a stat bonus. If it is a MEC and it survives, it will become a Resistance MEC in the mission region.
@@ -486,7 +486,7 @@ Reduce wound recovery time for this soldier by 1/2/4 HP.
 
 ## Hack
 Remotely hack an object with your {% BOUND_WEAPON_NAME %}.
-* Requires vision to the target.
+* The target needs to be in your sight.
 
 ## Hail of Bullets
 Fire a shot that is guaranteed to hit.
@@ -500,7 +500,7 @@ Fire a shot that is guaranteed to hit.
 * This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
 
 ## Haywire Protocol
-Use your GREMLIN to shutdown or control an enemy robot.
+Remotely shutdown or control an enemy robot.
 * Success chance is based on a contest of your hack and target's hack defense.
 * Shutdown stuns the target for 2 actions.
 * Control Enemy controls the target for {% HAYWIRE_PROT_CONTROL_TURNS %} turns.
@@ -605,7 +605,7 @@ Give an ally +30 dodge until the start of your turn. You gain an extra charge on
 * {% AP0 %}
 
 ## Interference
-Use your GREMLIN to cancel the Overwatch of an enemy.
+Remotely cancel the Overwatch of an enemy.
 * Squadsight targeting.
 * {% AP0 %}
 * {% CHARGES %}
@@ -762,7 +762,7 @@ Your standard shots no longer end your turn.
 You are immune to fire and poison.
 
 ## Medical Protocol
-Use your GREMLIN to heal or stabilize an organic ally. +1 charge per equipped medikit.
+Remotely heal or stabilize an organic ally. +1 charge per equipped medikit.
 * {% AP1 NTE %}
 * Healed HP improves with GREMLIN tier.
 
@@ -934,7 +934,7 @@ Use your BIT to heal a robotic ally for 6 HP.
 Once per turn, gain an movement action after firing a standard shot with your primary weapon at a flanked target.
 
 ## Rescue Protocol
-Use your GREMLIN to give +15 dodge, +5 mobility and a movement action to an ally with no remaining actions.
+Remotely give +15 dodge, +5 mobility and a movement action to an ally with no remaining actions.
 * Not usable on units that are Concealed, Suppressing or on Overwatch.
 * A unit cannot be the target of both Command and Rescue Protocol on the same turn.
 * {% AP1 NTE %}
@@ -945,7 +945,7 @@ Use your GREMLIN to give +15 dodge, +5 mobility and a movement action to an ally
 -30 to enemy crit against you.
 
 ## Restoration
-Use your GREMLIN to heal or revive all organic squad members.
+Remotely heal or revive all organic squad members.
 * {% CHARGES %}
 * Healed HP improves with GREMLIN tier.
 
@@ -960,7 +960,7 @@ Once per turn, after an enemy targets you, you fire back with your primary weapo
 * Reaction fire is not targeted.
 
 ## Revival Protocol
-Use your GREMLIN to revive a squadmate from being disoriented, stunned, panicked, or unconscious.
+Remotely revive a squadmate from being disoriented, stunned, panicked, or unconscious.
 * {% AP1 NTE %}
 * {% CHARGES %}
 * Number of charges increases with GREMLIN tier.
@@ -1009,7 +1009,7 @@ Attack enemies and deal environmental damage in a cone.
 +4 to healed HP of your GREMLIN heal, medikit heal and Restoration.
 
 ## Scanning Protocol
-Use your GREMLIN to scan all units in a {% SCANNING_PROT_RADIUS_TILES %} tile range, including hidden or disguised units. +{% SCANNING_PROT_LOS_TILES %} tiles to line of sight for a {% SCANNING_PROT_LOS_DURATION %} turn duration.
+Scan all units in a {% SCANNING_PROT_RADIUS_TILES %} tile range, including hidden or disguised units. +{% SCANNING_PROT_LOS_TILES %} tiles to line of sight for a {% SCANNING_PROT_LOS_DURATION %} turn duration.
 * You will see scanned enemies through walls for a {% SCANNING_PROT_DURATION %} turn duration.
 * {% AP0 %}
 * {% CHARGES %}
@@ -1438,7 +1438,7 @@ Give bonus ablative HP, will, and crit to a visible ally.
 * Passive: 40% less chance to recruit Faceless when you are the Haven adviser.
 
 ## Null Lance
-Deal damage in a line with {% NULL_LANCE_LENGTH %} tile length. Guaranteed hit.
+Deal guaranteed damage in a line with {% NULL_LANCE_LENGTH %} tile length.
 * {% COOLDOWN %}
 * Damage improves with psi amp tier.
 * TODO: Armor and ablative pierce?
@@ -1470,13 +1470,13 @@ You gain +3/+4/+6 ablative HP after you cast Soulfire. Damage is stolen to you a
 * Soul Steal will not increase ablative HP over 15.
 
 ## Soul Storm
-Deal damage and environmental damage in a {% SOUL_STORM_RADIUS %} tile range. Guaranteed hit.
+Deal guaranteed damage and environmental damage in a {% SOUL_STORM_RADIUS %} tile range.
 * Cannot destroy floors or ceilings.
 * {% AP1 NTE %}
 * {% COOLDOWN %}
 
 ## Soulfire
-Deal damage a non-robotic enemy. Pierces all Armor and ablative HP. Guaranteed hit.
+Deal guaranteed damage a non-robotic enemy. Pierces all Armor and ablative HP.
 * {% COOLDOWN %}
 * Damage increases with psi amp tier.
 
