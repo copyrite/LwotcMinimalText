@@ -2,8 +2,9 @@
 Overdrive no longer applies an aim penalty.
 
 ## Aggression
-+5 crit per enemy you see, up to +30.
++5 crit per enemy in line of sight, up to +30.
 * Units visible at squadsight ranges do confer bonus.
+* TODO: What's the visibility rule?
 
 ## Aid Protocol
 Remotely give an ally +{{ AID_PROT_DEFENSE }} defense until the start of your turn.
@@ -495,9 +496,10 @@ Fire a shot that is guaranteed to hit.
 * Cannot be used with shotguns or sniper rifles.
 
 ## Hard Target
-+5 dodge per enemy you see, up to +30.
++5 dodge per enemy in sight, up to +30.
 * Units visible at squadsight ranges do not confer bonus.
 * This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
+* TODO: What's the visibility rule?
 
 ## Haywire Protocol
 Remotely shutdown or control an enemy robot.
@@ -1143,9 +1145,10 @@ Once per mission, when you take lethal damage, you will instead survive with 1 H
 * Entering Stasis will not remove damaging status effects, like poison, burning, or acid burning.
 
 ## Tactical Sense
-+3 defense per enemy you see, up to +15.
++3 defense per enemy in sight, up to +15.
 * Units visible at squadsight ranges do not confer bonus.
 * This ability does not provide defensive bonuses if the unit is disoriented, stunned, panicking, on fire or otherwise impaired.
+* TODO: What's the visibility rule?
 
 ## Tandem Warheads
 Your explosive damage no longer suffers from falloff.
@@ -1269,7 +1272,7 @@ Fire a pistol shot that is guaranteed to hit.
 * {{ CHARGES }}
 
 ## Faceoff
-Fire your pistol at all enemies you see.
+Fire your pistol at all enemies in sight.
 * {{ COOLDOWN }}
 * Cannot be used when concealed.
 
