@@ -288,7 +288,7 @@ Throw a knife that Maims the target on hit for a 1 turn duration.
 
 ## Crusader's Rage
 You deal 25% more damage per every 25% HP missing, up to 50%. Your wound recovery times are reduced by {{ CRUSADERS_RAGE_HEAL }} HP.
-* Wound recovery time reduction is not applied if the soldier entered a bleeding out state during the mission.
+* Wound recovery time reduction is not applied if you entered a bleeding out state during the mission.
 
 ## Cutthroat
 +15 crit, +2 crit damage and infinite pierce to melee attacks against non-robotic enemies.
@@ -369,7 +369,7 @@ You will enter overwatch at the end of the turn if you only used movement action
 +20 aim and +20 crit chance against targets at 50% or less health.
 
 ## Extra Conditioning
--1 to Run and Gun cooldown.
+§§-1 to Run and Gun cooldown.
 
 ## Failsafe
 Negative effects no longer occur when you fail a hack.
@@ -398,7 +398,7 @@ Passive: You are immune to fire damage.
 * Firestorm deals +2 damage over your Flamethrower's base damage.
 * {{ AP2 }}
 * {{ CHARGES }}
-* It is not recommended the soldier uses Firestorm on rooftops.
+* It is not recommended to use Firestorm on rooftops.
 
 ## Flashbanger
 You start the mission with +1 Flashbang.
@@ -482,7 +482,7 @@ Your primary weapon misses have 50% base chance to be converted to a graze.
 * This effect occurs after normal hit-miss-graze processing.
 
 ## Greater Padding
-Reduce wound recovery time for this soldier by 1/2/4 HP.
+Your wound recovery time is reduced by 1/2/4 HP.
 * Greater Padding reduces the number of hit points a soldier must heal after being wounded in battle by 1/2/4.
 * Wound recovery time reduction is not applied to units that entered a bleeding out state during the mission.
 
@@ -575,7 +575,7 @@ Take 33% less damage. 2 turn duration.
 * {{ AP1 NTE }}
 
 ## Impersonal Edge
-Gain a stack of Impersonal Edge and reduce your Shadow cooldown by 1 when you kill with a Throwing Knife. +20 aim per stack. Each stack has a 3 turn duration.
+Gain a stack of Impersonal Edge and progress your Shadow cooldown by 1 on throwing knife kill. +20 aim per stack. Each stack has a 3 turn duration.
 
 ## Implacable
 Once per turn, when you kill an enemy, you gain a movement action.
@@ -750,7 +750,7 @@ Fire a shot that Maims the target on hit.
 * {{ COOLDOWN }}
 
 ## Manual Override
-Lowers all ability cooldowns on a selected ally soldier by up to 3 turns.
+Progress all cooldowns of an ally in sight by 3.
 * {{ 1AP NTE }}
 * {{ COOLDOWN }}
 * TODO: Action cost?
@@ -1187,7 +1187,7 @@ You detect units in a {{ TRACKING_RADIUS_TILES }} tile range even without line o
 * Units will remain detected until the end of the player's turn. If they are outside Tracking's range at that point, they will count as no longer detected.
 
 ## Tradecraft
-This soldier has significantly reduced infiltration times while on missions.
+You have significantly reduced infiltration times while on missions.
 * TODO: How does this work?
 
 ## Traverse Fire
@@ -1346,7 +1346,7 @@ Give +20 crit to all allies in Leadership range until the end of their turn.
 
 ## Incoming!
 Give +4 explosive damage resistance to all allies in Leadership range until the start of your turn.
-* Does not apply to panicked soldiers or units suppressing other targets.
+* Does not apply to panicked units or units suppressing other targets.
 * {{ AP0 }}
 * {{ COOLDOWN }}
 
