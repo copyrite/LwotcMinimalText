@@ -34,10 +34,10 @@ Target an enemy in sight. It will take {{ AMPLIFY_BONUS_PCT }}% more damage from
 * {{ COOLDOWN }}
 
 ## Arc Pulser
-Your Arc Thrower can target and damage robotic enemies. -{{ ARC_PULSER_HACK }} to target's hack defense on hit.
+Your arc thrower can target and damage robotic enemies. -{{ ARC_PULSER_HACK }} to target's hack defense on hit.
 * {{ AP1 ET }}
 * {{ COOLDOWN }}
-* Damage improves with Arc Thrower tier.
+* Damage improves with arc thrower tier.
 
 ## Arsenal
 The BIT can equip and fire heavy weapons.
@@ -56,7 +56,7 @@ Bonuses to Rend damage, dodge and mobility per Focus above 2.
 * {{ COOLDOWN }}
 
 ## Arc Welder
-Use your Arc Thrower to heal a robotic ally for {{ ARC_WELDER_HEAL }} HP.
+Use your arc thrower to heal a robotic ally for {{ ARC_WELDER_HEAL }} HP.
 * TODO: {{ AP1 ET}}?
 * {{ CHARGES }}
 
@@ -177,7 +177,7 @@ Remotely deal damage and a {{ CAPACITOR_DISCHARGE_RADIUS }} tile radius around a
 * If your primary weapon is not a gun, +1 primary weapon damage.
 
 ## Chain Lightning
-Fire your Arc Thrower at a target that you can stun. Chain Lightning bounces up to {{ CHAIN_LIGHTNING_CHAINS }} other targets within {{ CHAIN_LIGHTNING_RADIUS }} tiles.
+Fire your arc thrower at a target that you can stun. Chain Lightning bounces up to {{ CHAIN_LIGHTNING_CHAINS }} other targets within {{ CHAIN_LIGHTNING_RADIUS }} tiles.
 * {{ AP1 ET }}
 * {{ COOLDOWN }}
 * Cannot be used when concealed.
@@ -354,7 +354,7 @@ Fire a standard shot, then gain another action that can only be used for shootin
 * TODO: reword action cost bullet?
 
 ## Electroshock
-Your Arc Thrower disorients the target on miss.
+Your arc thrower disorients the target on miss.
 * What about robots?
 
 ## Evasive
@@ -715,7 +715,7 @@ Move to an enemy within the range of a single move and attack it with your {{ BO
 * {{ COOLDOWN }}
 
 ## Like Lightning
-When you enter Run and Gun, your Arc Thrower cooldown resets to 0.
+When you enter Run and Gun, your arc thrower cooldown resets to 0.
 * Does not apply to Chain Lightning.
 
 ## Lingering Shadow
