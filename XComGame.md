@@ -6,7 +6,7 @@ Overdrive no longer applies an Aim penalty.
 * Units visible at squadsight ranges do confer bonus.
 
 ## Aid Protocol
-Use your GREMLIN to give an ally +{ AID_PROT_DEFENSE } defense until the start of your next turn.
+Use your GREMLIN to give an ally +{ AID_PROT_DEFENSE } defense until the start of your turn.
 * {% AP1 NTE %}
 * Defense improves with GREMLIN tiers.
 
@@ -100,7 +100,7 @@ Your grenades and standard rockets have 50% chance to crit. Their crit damage is
 * The critical chance provided by Biggest Booms cannot be modified in any way.
 
 ## Blademaster
-+1 to melee damage. +10 Aim with melee attacks.
++1 melee damage. +10 Aim with melee attacks.
 
 ## Bladestorm
 You will reaction attack with your {% BOUND_WEAPON_NAME %} enemies that enter, exit or attack from melee range on enemy turns.
@@ -114,7 +114,7 @@ Use your GREMLIN to disorient a non-robotic enemy and other non-robotic enemies 
 * {% COOLDOWN %}
 
 ## Blood Trail
-+2 to ranged attack damage and ignore 40 dodge of targets that have taken damage after the start of their turn.
++2 ranged attack damage and ignore 40 dodge of targets that have taken damage after the start of their turn.
 
 ## Bluescreen Bombs
 Your Flashbangs disorient robotic enemies and apply -{% BLUESCREEN_BOMBS_HACK %} Hack Defense on hit.
@@ -136,10 +136,10 @@ Deal damage to all units in a {% BOMBARD_RADIUS_TILES %} tile radius around a ti
 * Damage improves with BIT tier.
 
 ## Bombardier
-+{% BOMBARDIER_RANGE %} to grenade launch and throw range.
++{% BOMBARDIER_RANGE %} grenade launch and throw range.
 
 ## Boosted Cores
-+1 to grenade damage. +1 to damage-per-turn effects from grenades.
++1 grenade damage. +1 to damage-per-turn effects from grenades.
 
 ## Both Barrels
 Fire your sawed-off shotgun at a nearby enemy. Base damage is doubled. Consumes 2 charges.
@@ -265,7 +265,7 @@ Fire a rocket that deals low damage and has a chance to stun or disorient non-ro
 +10 Aim with reaction attacks. Your reaction attacks now have a crit roll.
 
 ## Coup de Grâce
-+{% CDG_AIM %} Aim, +{% CDG_CRIT %} Crit, and {% CDG_DAMAGE %} damage to your {% BOUND_WEAPON_NAME %} attacks against stunned and panicking enemies. Bonuses apply at 50% effectiveness against disoriented enemies.
++{% CDG_AIM %} Aim, +{% CDG_CRIT %} Crit, and +{% CDG_DAMAGE %} damage to your {% BOUND_WEAPON_NAME %} attacks against stunned and panicking enemies. Bonuses apply at 50% effectiveness against disoriented enemies.
 
 ## Covering Fire
 Reaction shots confer an aim malus on enemies and can now be triggered by any enemy action, not just movement.
@@ -279,10 +279,9 @@ Reaction shots confer an aim malus on enemies and can now be triggered by any en
 * Infiltration rate bonus? How does that work?
 
 ## Crippling Strike
-Throw a knife that Maims the target on hit for 1 turn.
+Throw a knife that Maims the target on hit for a 1 turn duration.
 * Maimed enemies have 0 mobility.
 * Breaks concealment, but not Shadow.
-* Shares charges with other Throwing Knife skills.
 * {% COOLDOWN %}
 
 ## Crusader's Rage
@@ -315,15 +314,16 @@ Fire a shot with 15% less Aim and 50% more base damage.
 * {% COOLDOWN %}
 
 ## Death Dealer
-Weapon critical damage is doubled against flanked targets while you are in Shadow.\
+Weapon critical damage is doubled against flanked targets while in Shadow.\
 Passive: +25 crit chance.
 
 ## Death From Above
-Once per turn, gain an action after killing an enemy at a lower elevation with your primary weapon. Aim penalty from long range is halved for sniper rifles and vektor rifles.
+Once per turn, gain an action after killing an enemy at a lower elevation with your primary weapon. Long range aim penalty is halved for sniper rifles and vektor rifles.
 * Aim penalty from sources such as Snap Shot is not halved.
+* TODO: Can the penalty just be called "Squadsight aim penalty"?
 
 ## Dedication
-+2 Mobility until the start of your next turn. Ignore reaction fire until the start of your next turn.
++2 Mobility until the start of your turn. Ignore reaction fire until the start of your turn.
 * {% AP0 %}
 * {% COOLDOWN %}
 
@@ -336,10 +336,10 @@ Destroy or damage the cover of an enemy. Deals no damage to the target.
 * {% COOLDOWN %}
 
 ## Dense Smoke
-+10 to defense from your Smoke grenades.
++10 defense from your Smoke grenades.
 
 ## Disabling Shot
-Fire a shot that stuns for 2 actions on hit. +2 to stun duration if the shot crits. Deals 50% reduced base damage and critical hits are converted to normal hits.
+Fire a shot that stuns for 2 actions on hit. +2 stun duration if the shot crits. Deals 50% reduced base damage and critical hits are converted to normal hits.
 * The hit result conversion happens after the usual hit-miss-crit-dodge resolution.
 * The hit result conversion causes Disabling Shot to never trigger other effects that depend on dealing critical damage, other than its own bonus stun duration.
 * {% COOLDOWN %}
@@ -384,10 +384,10 @@ Wound recovery times of all organic squad members are reduced by 1 HP.
 * TODO: What's the chance?
 
 ## Fire and Steel
-+1 damage to XCOM gauntlet attacks. +1 damage per turn to fires set by XCOM gauntlet attacks.
++1 XCOM gauntlet attack damage. +1 damage per turn to fires set by XCOM gauntlet attacks.
 
 ## Fire in the Hole
--2 to your rocket scatter rolls.
+-2 to number of rocket scatter rolls.
 * TODO: Concussion Rocket?
 
 ## Firestorm
@@ -422,7 +422,7 @@ Gain Focus during missions. Focus can be spent on powerful abilities and modifie
 +2 ablative hit points. 50% less explosive damage taken.
 
 ## Fortify
-+20 defense until the start of your next turn.
++20 defense until the start of your turn.
 * {% AP0 %}
 * {% COOLDOWN %}
 
@@ -512,9 +512,9 @@ Use your GREMLIN to shutdown or control an enemy robot.
 * The grenade must shred innately to benefit from the additional shred.
 
 ## Heavy Weapons
-This soldier is trained to use the XCOM gauntlet, a combination Rocket Launcher and Flamethrower.
+You can equip the XCOM gauntlet, a combination Rocket Launcher and Flamethrower.
 * The Rocket Launcher may be targeted at any tile in sight range. It has a 3 tile radius and its damage is subject to falloff.
-* When you launch a rocket, you roll a series of Aim checks to determine how many tiles a rocket scatters. Each failed roll increases scatter by 1 tile. The base number of scatter rolls is 4. If you only have one action remaining, you have +2 to number of scatter rolls.
+* When you launch a rocket, you roll a series of Aim checks to determine how many tiles a rocket scatters. Each failed roll increases scatter by 1 tile. The base number of scatter rolls is 4. If you only have one action remaining, you have +2 number of scatter rolls.
 * Rocket launcher charges: 1
 * The flamethrower is a short-range weapon that causes damage to multiple targets within a cone-shaped area of effect.
 * Flamethrower charges: 2
@@ -524,7 +524,8 @@ This soldier is trained to use the XCOM gauntlet, a combination Rocket Launcher 
 Damaging grenades in your grenade-only slot have +1 charges.
 
 ## HiDef Holo
-All units have +10/+15/+20 to crit chance against your Holotargeted enemies.
+All units have +10/+15/+20 crit chance against your Holotargeted enemies.
+* Applies to Holo Targeting, Rapid Targeting, and Multitargeting.
 
 ## Hipfire
 Firing your sawed-off shotgun no longer ends the turn.
@@ -578,15 +579,16 @@ Once per turn, when you kill an enemy, you gain a movement action.
 
 ## Impulse
 +10 Aim and +10 Crit chance if you have moved this turn.
-* TODO: Until the start of your next turn, right?
+* TODO: Until the start of your turn, right?
 
 ## Incinerator
-+2 to flamethrower length. +1 to flamethrower width.
++2 flamethrower length. +1 flamethrower width.
 * Roust?
 * Firestorm?
 
 ## Independent Tracking
 +1 to your Holotargeting duration.
+* Applies to Holo Targeting, Rapid Targeting, and Multitargeting.
 
 ## Indomitable
 Once per turn, when an enemy targets you, gain 1 focus.
@@ -652,7 +654,7 @@ After an enemy targets you, it has a chance to panic. The chance is based on a c
 
 ## Justice
 Use the Grapple to pull a humanoid target to you and attack it with your Ripjack.
-* Only the pull is subject to an Aim roll. The Ripjack attack is a guaranteed to hit.
+* Only the pull is subject to an Aim roll. The Ripjack attack is guaranteed to hit.
 * Requires an empty tile adjacent to you.
 * {% COOLDOWN %}
 
@@ -676,7 +678,7 @@ Attack an adjacent enemy with your combat knife.
 * {% AP1 NTE %}
 
 ## Knife Juggler
-+1 to throwing knife damage. +1 to throwing knife charges. You gain a throwing knife charge when you kill with your primary weapon.
++1 throwing knife damage. +1 throwing knife charges. You gain a throwing knife charge when you kill with your primary weapon.
 
 ## Launch Grenade
 You use your grenade launcher to launch grenades, rather than throwing them. Bonus to grenade launch range. Gain a grenade slot.
@@ -688,12 +690,12 @@ You use your grenade launcher to launch grenades, rather than throwing them. Bon
 Target an enemy. Fire a shot at it with +{% LEAD_TARGET_AIM_BONUS %} Aim if it moves.
 * {% AP2 %}
 * {% COOLDOWN %}
-* To take the shot, you need line of sight to the enemy when it moves.
-* Lead The Target ends if you haven't taken the shot until the start of your next turn.
+* To fire the shot, you need line of sight to the enemy when it moves.
+* Lead The Target ends if you haven't fired the shot until the start of your turn.
 * Lead The Target is not a reaction attack, despite activating on enemy movement.
 
 ## Lethal
-+2 to primary weapon damage. +1 to primary weapon critical damage.
++2 primary weapon damage. +1 primary weapon critical damage.
 
 ## Lick Your Wounds
 Heal for 2 HP when you Hunker Down, up to 8 per mission. Remove poison, burning, and acid burning when you Hunker Down.
@@ -771,14 +773,13 @@ You gain a Momentum action after you use Rend. Momentum actions can be used for 
 Holotarget all enemies in a 4/5/6 tile radius around an enemy.
 * {% AP1 ET %}
 * {% COOLDOWN %}
-* HiDef Holo, Independent Tracking, and Vital Point Targeting apply to all targets.
 
 ## Napalm-X
 Your Flamethrower can now panic enemies.
 * TOOD: What's the panic chance?
 
 ## Needle
-+2 pierce to shots taken in Shadow.
++2 pierce to shots fired in Shadow.
 
 ## Needle Grenades
 +1 explosive damage against unarmored targets. You never destroy loot and corpses of enemies you kill.
@@ -805,15 +806,15 @@ Deal damage to all units in a {% NOVA_RADIUS_TILES %} tile range. You take 0 dam
 +10 Aim and +10 Crit with ranged attacks against targets at full health.
 
 ## Overcharge
-+5 Aim and +10 Crit per Focus to melee attacks.
++5 Aim per Focus and +10 Crit per Focus to melee attacks.
 
 ## Overdrive
-Gain an action. No action ends turn. While in Overdrive, -15 Aim per primary weapon shot you've fired in Overdrive.
+Gain an action. No action ends turn. While in Overdrive, your aim decays by -15 per primary weapon attack until the start of your turn.
 {% AP0 %}
 {% COOLDOWN %}
 
 ## Overkill
-+2 damage to ranged attacks against units at 50% HP or less.
++2 damage with ranged attacks against units at 50% HP or less.
 
 ## Packmaster
 Items in utility and grenade slots have +1 charges.
@@ -839,10 +840,6 @@ Place a high cover object.
 * Duration: Equal to Focus level when cast. 1 turn minimum duration.
 * {% COOLDOWN %}
 
-## Both Barrels
-Fire your sawed-off shotgun at a nearby enemy. Consumes 2 charges to deal double damage.
-* {% AP1 ET %}
-
 ## Point Blank
 Fire your sawed-off shotgun at a nearby enemy.
 {% AP1 ET %}
@@ -862,7 +859,7 @@ Support grenades in your grenade-only slot have +1 charges.
 * Examples of support grenades include Flashbangs, Smoke grenades, Battlescanners and Shaped charges.
 
 ## Pump Action
-+2 to sawed-off shotgun charges. 
++2 sawed-off shotgun charges. 
 
 ## Quickburn
 Your next flamethrower attack will not cost an action.
@@ -887,14 +884,13 @@ Fire twice with -15 Aim.
 * {% COOLDOWN %}
 
 ## Rapid Reaction
-Up to 2 times per turn, +1 Overwatch shot when you hit an Overwatch shot.
+Up to 2 times per turn, +1 Overwatch shot when you hit with an Overwatch shot.
 * If you can fire additional Overwatch shots unconditionally, they can start new Rapid Reaction chains.
 
 ## Rapid Targeting
 Use your Holotargeter to debuff an enemy. All units have +10/+15/+20 Aim against the target.\
 Passive: Holotargeting and Multitargeting do not end your turn.
 * {% COOLDOWN %}
-* HiDef Holo, Independent Tracking, and Vital Point Targeting apply to all targets.
 
 ## Ready For Anything
 You enter Overwatch after you fire a turn-ending standard shot with your primary weapon.
@@ -993,8 +989,9 @@ Fire a shot with +50 crit and ruptures the target for 3.
 * {% COOLDOWN %}
 
 ## Sacrifice
-Move to a position and redirect all ranged(?) attacks against allies in a {% SACRIFICE_RADIUS_TILES %} tile range to yourself. +10 Defense and +1 Armor until the start of your turn.
+Move to a position and redirect all ranged attacks against allies in a {% SACRIFICE_RADIUS_TILES %} tile range to yourself. +10 Defense and +1 Armor until the start of your turn.
 * {% COOLDOWN %}
+* TODO: All ranged, probably?
 
 ## Salvo
 Grenade throws, grenade launches, heavy weapon attacks and XCOM gauntlet attacks(?) are no longer turn ending.
@@ -1080,9 +1077,10 @@ Passive: Many {% ClassName %} abilities can be used after moving with the same a
 Passive: +10 crit.
 
 ## Squadsight
-Your primary weapon attacks can target enemies out of your visual range, but are in your line of sight and seen by a squadmate.
+Your primary weapon attacks can now target units outside your sight range if they are seen by a squadmate.
+* You still need line of sight to the target.
 * There is no limit on how far your targets can be, but there is an aim penalty that increases with distance.
-* Overwatch attacks are not taken at squasight range.
+* Overwatch attacks are not fired at squadsight range.
 
 ## Steady Hands
 +10 Aim and +10 Crit if you did not move last turn.
@@ -1129,7 +1127,7 @@ Stun an enemy for 2 actions. 85% chance to hit at 1 Focus. +5% chance to hit per
 +1 Focus after you attack with Rend.
 
 ## Suppression
-Continuously fire at an enemy. Suppressed enemies have -25 to aim, are unable to use many abilities, and take a reaction shot from you if they move.
+Suppress an enemy. Suppressed enemies have -25 to aim, are unable to use many abilities, and you will fire a reaction shot if they move.
 * Examples of abilities restricted by Suppression include rocket launches and grenades throws.
 * {% AMMO %}
 * {% COOLDOWN %}
@@ -1141,7 +1139,7 @@ Continuously fire at an enemy. Suppressed enemies have -25 to aim, are unable to
 +20 Defense and +20 Crit while not at full health.
 
 ## Sustain
-Once per mission, when you take lethal damage, you will instead survive with 1 HP and enter Stasis until the start of your next turn.
+Once per mission, when you take lethal damage, you will instead survive with 1 HP and enter Stasis until the start of your turn.
 * Entering Stasis will not remove damaging status effects, like poison, burning, or acid burning.
 
 ## Tactical Sense
@@ -1161,15 +1159,17 @@ You are in low cover. You are a low cover object.
 
 ## Terrorize
 Volt has a chance to panic on hit. The chance is based on a contest of Wills.
-* The base chance to panic is P%. +1% chance to panic per your Will. -1% chance to panic per target Will.
+* TODO: What's the base chance?
 
 ## That's Close Enough
 During enemy turns, you automatically reaction fire your arc thrower against an enemy that moves or attacks in a 1 tile range. Shares cooldown with arc thrower Stun.
 * Will not trigger if you are concealed.
 * Works during any enemy turn: Alien, Lost, Chosen and Ruler.
+* TODO: Is the last one really necessary?
 
 ## Threat Assessment
 Your Aid Protocol target will enter Overwatch. Your Aid Protocol target has Covering Fire for the duration of the buff.
+* TODO: Does it work that way?
 
 ## Total Combat
 Grenade throws and item uses no longer end your turn. Grenade throws have no cooldown. Gain a grenade slot. Gain Volatile Mix. +3 grenade throw range. +5 aim. +1 mobility.
@@ -1205,15 +1205,15 @@ When your hack ends, the hacked unit takes up to 8 damage and loses its actions.
 Firing your arc thrower no longer ends your turn.
 
 ## Untouchable
-Once per turn, you become Untouchable on kill. While Untouchable, damaging attacks against you are forced to miss. When this happens, you are no longer Untouchable.
-* You will also exit Untouchable at the start of your turn.
+Once per turn, you become Untouchable until the start of your turn on kill. While Untouchable, damaging attacks against you are forced to miss. When this happens, you are no longer Untouchable.
 
 ## Vital Point Targeting
 Your holotargeted enemies take +1/+2/+2 damage.
+* Applies to Holo Targeting, Rapid Targeting, and Multitargeting.
 
 ## Void Conduit
 Imprison a humanoid enemy for 2 turns and deal {% VOIDCONDUITDMG %} damage to it. Deal {% VOIDCONDUITACTIONDMG %} damage to it when it loses an action to imprisonment. Damage is stolen to you as health. Costs 1 Focus.
-* Imprisoned units cannot take actions or dodge, but can be targeted by other attacks.
+* Imprisoned units cannot use actions or dodge, but can be targeted by other attacks.
 * {% COOLDOWN %}
 * TODO: Is the flat damage also stolen?
 
@@ -1254,7 +1254,7 @@ Passive: +5 will.
 
 ## Wrath
 Use the Grapple to pull yourself to an enemy and attack with your Ripjack.
-* Only the pull is subject to an Aim roll. The Ripjack attack is a guaranteed to hit.
+* Only the pull is subject to an Aim roll. The Ripjack attack is guaranteed to hit.
 * Requires an empty tile adjacent to the enemy.
 * {% COOLDOWN %}
 
@@ -1262,7 +1262,7 @@ Use the Grapple to pull yourself to an enemy and attack with your Ripjack.
 While in Overdrive, you will destroy cover and environmental objects while moving.
 
 ## Zone of Control
--15 aim and -4 mobility to all enemies in a {% ZOC_RADIUS_TILES %} tile range.
+All enemies in a {% ZOC_RADIUS_TILES %} tile range have -15 to aim and -4 to mobility.
 
 ## Clutch Shot
 Fire a pistol shot that is guaranteed to hit.
@@ -1481,7 +1481,7 @@ Deal damage a non-robotic enemy. Pierces all Armor and ablative HP. Guaranteed h
 * Damage increases with psi amp tier.
 
 ## Stasis
-Place a unit in Stasis. Units in Stasis cannot gain actions until the start of your next turn, but are immune to damage and untargetable.
+Place a unit in Stasis. Units in Stasis cannot gain actions until the start of your turn, but are immune to damage and untargetable.
 * Both allies and enemies can be targeted.
 * Cannot target units larger than 1 tile.
 * {% COOLDOWN %}
