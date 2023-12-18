@@ -64,6 +64,7 @@ Use your arc thrower to heal a robotic ally for {{ ARC_WELDER_HEAL }} HP.
 ## Area Suppression
 Target an area in a 4-tile radius around an enemy. The area and enemies that enter it become Suppressed.
 * Requires 3 ammo. Consumes 2 ammo when used and 1 ammo per reaction shot fired.
+* Ends at the start of your turn.
 * Ends if you take damage.
 * Cannot be used when concealed.
 * Cannot be used with a sniper rifle or shotgun.
@@ -212,7 +213,7 @@ You will reaction attack with your primary weapon enemies that enter, exit or at
 * {{ AMMO }}
 
 ## Close Encounters
-Once per turn, gain an action after taking a standard shot with your primary weapon at an enemy in a {{ CE_RADIUS }} tile radius.
+Once per turn, gain an action after firing a standard shot with your primary weapon at an enemy in a {{ CE_RADIUS }} tile radius.
 * A red ring will mark the range of this ability.
 * Cannot trigger on the same turn as Hit and Run.
 * Cannot trigger on the same turn as Run and Gun. Run and Gun cannot be used if you have gained an action from Close Encounters.
@@ -724,7 +725,7 @@ When you enter Run and Gun, your arc thrower cooldown resets to 0.
 +15 defense and +30 dodge after you are revealed from Shadow. 1 turn duration.
 
 ## Lock 'N Load
-Restore 1 ammo when you kill with your primary weapon.
++1 ammo on primary weapon kill.
 
 ## Lockdown
 +20 aim with attacks that trigger when a target you are suppressing moves.
@@ -1133,7 +1134,8 @@ Suppress an enemy. Suppressed enemies have -25 to aim, are unable to use many ab
 * Examples of abilities restricted by Suppression include rocket launches and grenades throws.
 * {{ AMMO }}
 * {{ COOLDOWN }}
-* Ends if you don't attack until the start of your turn.
+* Ends if you fire the reaction shot.
+* Ends at the start of your turn.
 * Ends if you take damage.
 * Cannot be used with a sniper rifle or shotgun.
 
