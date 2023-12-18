@@ -16,9 +16,11 @@
 ## Ammo points
 * "Requires N ammo to activate" if it does not necessarily consume all. e.g. Multi-shot abilities.
 * "Consumes N ammo" if it actually does consume it.
+  * Also "Consumes N ammo per shot".
 
 ## Ammo items
 * If the ability does not benefit from equipped ammo, mention it.
+  * If an ammo doesn't apply, is it just the effects, or also the damage?
 
 ## Buffs
 * Buffs are by default not stackable. Mention stacks if applicable.
@@ -54,21 +56,23 @@
 * Stun durations are measured in actions.
 
 ## Line of Sight
+Probably not yet finished. "Squadsight" might as well mean "in sight of the squad". Line of sight requirement may be clarified on the item or ability.
+* If you yourself need to see the target, "in sight".
+* If it's enough for a squadmate to see the target but you need line of sight to it, "in squadsight".
 * Squadsight range means Line of Sight + anyone in the squad sees the target.
-* "Seen by the squad" is the same as Squadsight range with no Line of Sight requirement
+* "In sight of the squad" if you don't need to see the target, but the squad does.
 
 ## Non-voluntary actions
-* "You will do X" if the action is automatic, requiring no input from the player / the player having no control over it.
+* "You will do X" instead of "you automatically do X" if the action is automatic, requiring no input from the player / the player having no control over it.
 
 ## Radius
 * "Range" if the effect is centered on you.
 
 ## Robots
-* "Robotic" if it is a robot.
-* "Organic" if it is not a robot nor weak to Bluescreens.
-* "Non-robotic" if it is not a robot, but include units weak to Bluescreens.
-* "Non-organic" if it is weak to Bluescreens.
+* "Robotic" if it is a robot, like MECs.
+* "Organic" if it is not a robot nor weak to Bluescreens, like Sectoids.
+* "Non-robotic" if it is not a robot, or it is otherwise weak to Bluescreens, like Sectoids and Codices.
+* "Non-organic" if it is weak to Bluescreens, like MECs and Codices.
 
 ## Weapon tiers
 * "Bonus/damage/effect improves with {% BOUND_WEAPON_NAME %} tier."
-
