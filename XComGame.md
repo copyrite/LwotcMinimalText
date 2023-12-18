@@ -25,7 +25,7 @@ Remotely give an explosive grenade to an ally.
 * {{ CHARGES }}
 
 ## Alpha Mike Foxtrot
-+4 primary weapon damage. +2 primary weapon critical damage.
++4 primary weapon damage. +2 primary weapon crit damage.
 
 ## Amplify
 Target an enemy in sight. It will take {{ AMPLIFY_BONUS_PCT }}% more damage from the next {{ AMPLIFY_NUM_ATTACKS }} attacks.
@@ -149,7 +149,7 @@ Fire your sawed-off shotgun at a nearby enemy. Base damage is doubled. Consumes 
 You take {{ BRAWLER_DR_PCT }}% less damage from enemies in a {{ BRAWLER_RADIUS }} tile range.
 
 ## Bring 'Em On
-Your primary weapon and explosives have +1 critical damage per every 2 enemies you can see, up to a maximum of +8.
+Your primary weapon and explosives have +1 crit damage per every 2 enemies you can see, up to a maximum of +8.
 * TODO: Units visible at squadsight ranges apply. (But do you need squadsight for it?)
 
 ## Brutality
@@ -314,7 +314,7 @@ Fire a shot with 15% less aim and 50% more base damage.
 * {{ COOLDOWN }}
 
 ## Death Dealer
-Weapon critical damage is doubled against flanked targets while in Shadow.\
+Weapon crit damage is doubled against flanked targets while in Shadow.\
 Passive: +25 crit chance.
 
 ## Death From Above
@@ -341,7 +341,7 @@ Destroy or damage the cover of an enemy. Deals no damage to the target.
 ## Disabling Shot
 Fire a shot that stuns for 2 actions on hit. +2 stun duration if the shot crits. Deals 50% reduced base damage and critical hits are converted to normal hits.
 * The hit result conversion happens after the usual hit-miss-crit-dodge resolution.
-* The hit result conversion causes Disabling Shot to never trigger other effects that depend on dealing critical damage, other than its own bonus stun duration.
+* The hit result conversion causes Disabling Shot to never trigger other effects that depend on dealing a critical hit, other than its own bonus stun duration.
 * {{ COOLDOWN }}
 
 ## Disassembly
@@ -695,7 +695,7 @@ Target an enemy. Fire a shot at it with +{{ LEAD_TARGET_AIM_BONUS }} aim if it m
 * Lead The Target is not a reaction attack, despite activating on enemy movement.
 
 ## Lethal
-+2 primary weapon damage. +1 primary weapon critical damage.
++2 primary weapon damage. +1 primary weapon crit damage.
 
 ## Lick Your Wounds
 Heal for 2 HP when you Hunker Down, up to 8 per mission. Remove poison, burning, and acid burning when you Hunker Down.
@@ -1510,7 +1510,7 @@ Mark a target for death. Your standard shots and Snap Shots with your primary we
 * Reveals you.
 
 ## Overbearing Superiority
-Single shot attacks with your primary weapon that deal critical damage are refunded.
+Your primary weapon single shot attacks that deal critical hits are refunded.
 
 ## Shieldwall
 +30 defense and 5 armor until the start of your turn. You are a high cover object until you move or attack.
