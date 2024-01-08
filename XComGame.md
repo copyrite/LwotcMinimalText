@@ -58,7 +58,7 @@ Bonuses to Rend damage, dodge and mobility per Focus above 2.
 
 ## Arc Welder
 Use your arc thrower to heal a robotic ally for {{ ARC_WELDER_HEAL }} HP.
-* TODO: {{ AP1 ET}}?
+* TODO: {{ AP1 ET }}?
 * {{ CHARGES }}
 
 ## Area Suppression
@@ -973,7 +973,7 @@ Attack an adjacent enemy with your Ripjack.
 * {{ AP1 NTE }}
 
 ## Roust
-Flamethrower attack with +{{ ROUST_LENGTH }} length, -{{ ROUST_WIDTH}} width, {{ ROUST_BURN_CHANCE }} chance to burn and -{{ ROUST_DAMAGE_PENALTY }}% less base damage. Forces targets to move on hit.
+Flamethrower attack with +{{ ROUST_LENGTH }} length, -{{ ROUST_WIDTH }} width, {{ ROUST_BURN_CHANCE }} chance to burn and -{{ ROUST_DAMAGE_PENALTY }}% less base damage. Forces targets to move on hit.
 * {{ CHARGES }}
 * Cannot be used from concealment.
 
